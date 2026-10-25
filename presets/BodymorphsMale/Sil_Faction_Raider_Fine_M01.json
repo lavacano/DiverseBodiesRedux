@@ -1,0 +1,11 @@
+{
+    "BodyMorphs": {
+        "BTAbDefinition": 0.68,
+        "BTNegStomach": 0.37,
+        "BTWaist-In": 0.32,
+        "BTPectorals": 0.11,
+        "BTBiceps": 0.22,
+        "BTShoulders": 0.19
+    },
+    "Gender": 0
+}

@@ -1,0 +1,10 @@
+{
+    "BodyMorphs": {
+        "TigerSanBBMale": 0.49,
+        "BTShoulders": 0.48,
+        "BTTraps": 0.52,
+        "BTBack": 0.42,
+        "BTAbDefinition": 0.31
+    },
+    "Gender": 0
+}

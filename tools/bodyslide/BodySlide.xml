@@ -1,0 +1,18 @@
+﻿<BodySlideConfig>
+    <SelectedOutfit>CBBE Reduced 3BBB Body [Unique Player]</SelectedOutfit>
+    <SelectedPreset>CBBE Zeroed Sliders</SelectedPreset>
+    <LastGroupFilter></LastGroupFilter>
+    <LastOutfitFilter></LastOutfitFilter>
+    <BuildMorphs>true</BuildMorphs>
+    <RegexFilterOutfits>false</RegexFilterOutfits>
+    <BodySlideFrame width="1139" height="400" previewVisible="false" previewPoppedOut="false" maximized="true" sashpos="1516" previewWidth="404"></BodySlideFrame>
+    <PreviewFrame width="720" height="720" maximized="false"></PreviewFrame>
+    <LastPresetFilter></LastPresetFilter>
+    <ForceBodyNormals>false</ForceBodyNormals>
+    <Favorites>
+        <Fallout4>
+            <Outfits></Outfits>
+            <Presets></Presets>
+        </Fallout4>
+    </Favorites>
+</BodySlideConfig>

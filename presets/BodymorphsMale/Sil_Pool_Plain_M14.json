@@ -1,0 +1,10 @@
+{
+    "BodyMorphs": {
+        "BTAbDefinition": 0.1,
+        "BTThinArm": 0.33,
+        "BTBiceps": 0.18,
+        "BTStomach": 0.11,
+        "ThinThigh": 0.48
+    },
+    "Gender": 0
+}

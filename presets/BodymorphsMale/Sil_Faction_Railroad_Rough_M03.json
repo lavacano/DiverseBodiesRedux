@@ -1,0 +1,12 @@
+{
+    "BodyMorphs": {
+        "BTStomachFat": 1.2,
+        "BTLowerStomachSize": 0.84,
+        "BTCenterStomachSize": 0.71,
+        "BTThinArm": 0.65,
+        "ThinThigh": 0.58,
+        "BTTHinCalf": 0.53,
+        "BTNegPecMuscle": 0.45
+    },
+    "Gender": 0
+}

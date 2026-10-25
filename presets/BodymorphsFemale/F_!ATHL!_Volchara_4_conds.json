@@ -1,0 +1,12 @@
+{
+    "gender": 1,
+    "formIDs": [],
+    "notFormIDs": [],
+    "editorIDs": [],
+    "notEditorIDs": [],
+    "editorIDContains": false,
+    "inFaction": [],
+    "notInFaction": [],
+    "hasKeyword": [],
+    "hasNotKeyword": []
+}

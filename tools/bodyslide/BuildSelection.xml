@@ -1,0 +1,817 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<BuildSelection>
+    <OutputChoice path="Meshes\Clothes\vault111Suit\femalevault111suit" choice="Crimsomrider&apos;s Feminine Vault Suits TWB"/>
+    <OutputChoice path="Meshes/Clothes/vault111Suit/femalevault111suit" choice="Crimsomrider&apos;s Feminine Vault Suits TWB"/>
+    <OutputChoice path="Meshes\DLC01\Armor\Mechanist\MechanistBody" choice="TWB Automatron - Mechanist"/>
+    <OutputChoice path="Meshes/DLC01/Armor/Mechanist/MechanistBody" choice="TWB Automatron - Mechanist"/>
+    <OutputChoice path="Meshes\Armor\ArmoredCoat\OutfitF" choice="TWB Vanilla - Armored Coat"/>
+    <OutputChoice path="Meshes/Armor/ArmoredCoat/OutfitF" choice="TWB Vanilla - Armored Coat"/>
+    <OutputChoice path="Meshes\Armor\ArmyFatigues\FatiguesF" choice="TWB Vanilla - Army Fatigues"/>
+    <OutputChoice path="Meshes/Armor/ArmyFatigues/FatiguesF" choice="TWB Vanilla - Army Fatigues"/>
+    <OutputChoice path="Meshes\Armor\CombatArmor\F_Arm_Heavy_L" choice="TWB Vanilla - Combat Armor - Arm Heavy L"/>
+    <OutputChoice path="Meshes/Armor/CombatArmor/F_Arm_Heavy_L" choice="TWB Vanilla - Combat Armor - Arm Heavy L"/>
+    <OutputChoice path="Meshes\Armor\CombatArmor\F_Arm_Heavy_R" choice="TWB Vanilla - Combat Armor - Arm Heavy R"/>
+    <OutputChoice path="Meshes/Armor/CombatArmor/F_Arm_Heavy_R" choice="TWB Vanilla - Combat Armor - Arm Heavy R"/>
+    <OutputChoice path="Meshes\Armor\CombatArmor\F_Arm_Lite_L" choice="TWB Vanilla - Combat Armor - Arm Lite L"/>
+    <OutputChoice path="Meshes/Armor/CombatArmor/F_Arm_Lite_L" choice="TWB Vanilla - Combat Armor - Arm Lite L"/>
+    <OutputChoice path="Meshes\Armor\CombatArmor\F_Arm_Lite_R" choice="TWB Vanilla - Combat Armor - Arm Lite R"/>
+    <OutputChoice path="Meshes/Armor/CombatArmor/F_Arm_Lite_R" choice="TWB Vanilla - Combat Armor - Arm Lite R"/>
+    <OutputChoice path="Meshes\Armor\CombatArmor\F_Arm_Mid_L" choice="TWB Vanilla - Combat Armor - Arm Mid L"/>
+    <OutputChoice path="Meshes/Armor/CombatArmor/F_Arm_Mid_L" choice="TWB Vanilla - Combat Armor - Arm Mid L"/>
+    <OutputChoice path="Meshes\Armor\CombatArmor\F_Arm_R" choice="TWB Vanilla - Combat Armor - Arm Mid R"/>
+    <OutputChoice path="Meshes/Armor/CombatArmor/F_Arm_R" choice="TWB Vanilla - Combat Armor - Arm Mid R"/>
+    <OutputChoice path="Meshes\Armor\CombatArmor\F_Leg_Heavy_L" choice="TWB Vanilla - Combat Armor - Leg Heavy L"/>
+    <OutputChoice path="Meshes/Armor/CombatArmor/F_Leg_Heavy_L" choice="TWB Vanilla - Combat Armor - Leg Heavy L"/>
+    <OutputChoice path="Meshes\Armor\CombatArmor\F_Leg_Heavy_R" choice="TWB Vanilla - Combat Armor - Leg Heavy R"/>
+    <OutputChoice path="Meshes/Armor/CombatArmor/F_Leg_Heavy_R" choice="TWB Vanilla - Combat Armor - Leg Heavy R"/>
+    <OutputChoice path="Meshes\Armor\CombatArmor\F_Leg_Lite_L" choice="TWB Vanilla - Combat Armor - Leg Lite L"/>
+    <OutputChoice path="Meshes/Armor/CombatArmor/F_Leg_Lite_L" choice="TWB Vanilla - Combat Armor - Leg Lite L"/>
+    <OutputChoice path="Meshes\Armor\CombatArmor\F_Leg_Lite_R" choice="TWB Vanilla - Combat Armor - Leg Lite R"/>
+    <OutputChoice path="Meshes/Armor/CombatArmor/F_Leg_Lite_R" choice="TWB Vanilla - Combat Armor - Leg Lite R"/>
+    <OutputChoice path="Meshes\Armor\CombatArmor\F_Leg_Mid_L" choice="TWB Vanilla - Combat Armor - Leg Mid L"/>
+    <OutputChoice path="Meshes/Armor/CombatArmor/F_Leg_Mid_L" choice="TWB Vanilla - Combat Armor - Leg Mid L"/>
+    <OutputChoice path="Meshes\Armor\CombatArmor\F_Leg_Mid_R" choice="TWB Vanilla - Combat Armor - Leg Mid R"/>
+    <OutputChoice path="Meshes/Armor/CombatArmor/F_Leg_Mid_R" choice="TWB Vanilla - Combat Armor - Leg Mid R"/>
+    <OutputChoice path="Meshes\Armor\CombatArmor\F_Torso_Heavy" choice="TWB Vanilla - Combat Armor - Torso Heavy"/>
+    <OutputChoice path="Meshes/Armor/CombatArmor/F_Torso_Heavy" choice="TWB Vanilla - Combat Armor - Torso Heavy"/>
+    <OutputChoice path="Meshes\Armor\CombatArmor\F_Torso_Lite" choice="TWB Vanilla - Combat Armor - Torso Lite"/>
+    <OutputChoice path="Meshes/Armor/CombatArmor/F_Torso_Lite" choice="TWB Vanilla - Combat Armor - Torso Lite"/>
+    <OutputChoice path="Meshes\Armor\CombatArmor\F_Torso_Mid" choice="TWB Vanilla - Combat Armor - Torso Mid"/>
+    <OutputChoice path="Meshes/Armor/CombatArmor/F_Torso_Mid" choice="TWB Vanilla - Combat Armor - Torso Mid"/>
+    <OutputChoice path="Meshes\Armor\DCGuard\FOutfit" choice="TWB Vanilla - DC Guard"/>
+    <OutputChoice path="Meshes/Armor/DCGuard/FOutfit" choice="TWB Vanilla - DC Guard"/>
+    <OutputChoice path="Meshes\Armor\DogGear\ChainCollarF" choice="TWB Vanilla - Chain Collar"/>
+    <OutputChoice path="Meshes/Armor/DogGear/ChainCollarF" choice="TWB Vanilla - Chain Collar"/>
+    <OutputChoice path="Meshes\Armor\EngineerScribe\FOutfit" choice="TWB Vanilla - Engineer Scribe"/>
+    <OutputChoice path="Meshes/Armor/EngineerScribe/FOutfit" choice="TWB Vanilla - Engineer Scribe"/>
+    <OutputChoice path="Meshes\Armor\EngineerScribe\FOutfitOfficer" choice="TWB Vanilla - Engineer Scribe Officer"/>
+    <OutputChoice path="Meshes/Armor/EngineerScribe/FOutfitOfficer" choice="TWB Vanilla - Engineer Scribe Officer"/>
+    <OutputChoice path="Meshes\Armor\FieldScribe\FOutfit" choice="TWB Vanilla - Field Scribe"/>
+    <OutputChoice path="Meshes/Armor/FieldScribe/FOutfit" choice="TWB Vanilla - Field Scribe"/>
+    <OutputChoice path="Meshes\Armor\FieldScribe\UniformF_NoPack" choice="TWB Vanilla - Field Scribe (No Pack)"/>
+    <OutputChoice path="Meshes/Armor/FieldScribe/UniformF_NoPack" choice="TWB Vanilla - Field Scribe (No Pack)"/>
+    <OutputChoice path="Meshes\Armor\HazmatSuit\FOutfit" choice="TWB Vanilla - Hazmat Suit"/>
+    <OutputChoice path="Meshes/Armor/HazmatSuit/FOutfit" choice="TWB Vanilla - Hazmat Suit"/>
+    <OutputChoice path="Meshes\Armor\HazmatSuit\FOutfitDamaged" choice="TWB Vanilla - Hazmat Suit (Damaged)"/>
+    <OutputChoice path="Meshes/Armor/HazmatSuit/FOutfitDamaged" choice="TWB Vanilla - Hazmat Suit (Damaged)"/>
+    <OutputChoice path="Meshes\Armor\HighSchoolOutfit\FJacket" choice="TWB Vanilla - High School Outfit A"/>
+    <OutputChoice path="Meshes/Armor/HighSchoolOutfit/FJacket" choice="TWB Vanilla - High School Outfit A"/>
+    <OutputChoice path="Meshes\Armor\HighSchoolOutfit\FOutfit" choice="TWB Vanilla - High School Outfit B"/>
+    <OutputChoice path="Meshes/Armor/HighSchoolOutfit/FOutfit" choice="TWB Vanilla - High School Outfit B"/>
+    <OutputChoice path="Meshes\Armor\Kellogg\FOutfit" choice="TWB Vanilla - Kellog"/>
+    <OutputChoice path="Meshes/Armor/Kellogg/FOutfit" choice="TWB Vanilla - Kellog"/>
+    <OutputChoice path="Meshes\Armor\KnightLancer\FOutfit" choice="TWB Vanilla - Knight Lancer"/>
+    <OutputChoice path="Meshes/Armor/KnightLancer/FOutfit" choice="TWB Vanilla - Knight Lancer"/>
+    <OutputChoice path="Meshes\Armor\KnightUnderArmor\FBody" choice="TWB Vanilla - Knight Underarmor (Body)"/>
+    <OutputChoice path="Meshes/Armor/KnightUnderArmor/FBody" choice="TWB Vanilla - Knight Underarmor (Body)"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Arm_Heavy_L" choice="TWB Vanilla - Leather - Arm Heavy L"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Arm_Heavy_L" choice="TWB Vanilla - Leather - Arm Heavy L"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Arm_Heavy_LStuds" choice="TWB Vanilla - Leather - Arm Heavy L (Studs)"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Arm_Heavy_LStuds" choice="TWB Vanilla - Leather - Arm Heavy L (Studs)"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Arm_Heavy_R" choice="TWB Vanilla - Leather - Arm Heavy R"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Arm_Heavy_R" choice="TWB Vanilla - Leather - Arm Heavy R"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Arm_Heavy_RStuds" choice="TWB Vanilla - Leather - Arm Heavy R (Studs)"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Arm_Heavy_RStuds" choice="TWB Vanilla - Leather - Arm Heavy R (Studs)"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Arm_Lite_L" choice="TWB Vanilla - Leather - Arm Lite L"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Arm_Lite_L" choice="TWB Vanilla - Leather - Arm Lite L"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Arm_Lite_LStuds" choice="TWB Vanilla - Leather - Arm Lite L (Studs)"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Arm_Lite_LStuds" choice="TWB Vanilla - Leather - Arm Lite L (Studs)"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Arm_Lite_R" choice="TWB Vanilla - Leather - Arm Lite R"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Arm_Lite_R" choice="TWB Vanilla - Leather - Arm Lite R"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Arm_Lite_RStuds" choice="TWB Vanilla - Leather - Arm Lite R (Studs)"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Arm_Lite_RStuds" choice="TWB Vanilla - Leather - Arm Lite R (Studs)"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Arm_Mid_L" choice="TWB Vanilla - Leather - Arm Mid L"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Arm_Mid_L" choice="TWB Vanilla - Leather - Arm Mid L"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Arm_Mid_LStuds" choice="TWB Vanilla - Leather - Arm Mid L (Studs)"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Arm_Mid_LStuds" choice="TWB Vanilla - Leather - Arm Mid L (Studs)"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Arm_Mid_R" choice="TWB Vanilla - Leather - Arm Mid R"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Arm_Mid_R" choice="TWB Vanilla - Leather - Arm Mid R"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Arm_Mid_RStuds" choice="TWB Vanilla - Leather - Arm Mid R (Studs)"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Arm_Mid_RStuds" choice="TWB Vanilla - Leather - Arm Mid R (Studs)"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Leg_Heavy_L" choice="TWB Vanilla - Leather - Leg Heavy L"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Leg_Heavy_L" choice="TWB Vanilla - Leather - Leg Heavy L"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Leg_Heavy_LStuds" choice="TWB Vanilla - Leather - Leg Heavy L (Studs)"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Leg_Heavy_LStuds" choice="TWB Vanilla - Leather - Leg Heavy L (Studs)"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Leg_Heavy_R" choice="TWB Vanilla - Leather - Leg Heavy R"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Leg_Heavy_R" choice="TWB Vanilla - Leather - Leg Heavy R"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Leg_Heavy_RStuds" choice="TWB Vanilla - Leather - Leg Heavy R (Studs)"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Leg_Heavy_RStuds" choice="TWB Vanilla - Leather - Leg Heavy R (Studs)"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Leg_Lite_L" choice="TWB Vanilla - Leather - Leg Lite L"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Leg_Lite_L" choice="TWB Vanilla - Leather - Leg Lite L"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Leg_Lite_LStuds" choice="TWB Vanilla - Leather - Leg Lite L (Studs)"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Leg_Lite_LStuds" choice="TWB Vanilla - Leather - Leg Lite L (Studs)"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Leg_Lite_R" choice="TWB Vanilla - Leather - Leg Lite R"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Leg_Lite_R" choice="TWB Vanilla - Leather - Leg Lite R"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Leg_Lite_RStuds" choice="TWB Vanilla - Leather - Leg Lite R (Studs)"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Leg_Lite_RStuds" choice="TWB Vanilla - Leather - Leg Lite R (Studs)"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Leg_Mid_L" choice="TWB Vanilla - Leather - Leg Mid L"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Leg_Mid_L" choice="TWB Vanilla - Leather - Leg Mid L"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Leg_Mid_LStuds" choice="TWB Vanilla - Leather - Leg Mid L (Studs)"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Leg_Mid_LStuds" choice="TWB Vanilla - Leather - Leg Mid L (Studs)"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Leg_Mid_R" choice="TWB Vanilla - Leather - Leg Mid R"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Leg_Mid_R" choice="TWB Vanilla - Leather - Leg Mid R"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Leg_Mid_RStuds" choice="TWB Vanilla - Leather - Leg Mid R (Studs)"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Leg_Mid_RStuds" choice="TWB Vanilla - Leather - Leg Mid R (Studs)"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Torso_Heavy" choice="TWB Vanilla - Leather - Torso Heavy 3BBB"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Torso_Heavy" choice="TWB Vanilla - Leather - Torso Heavy 3BBB"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Torso_HeavyStuds" choice="TWB Vanilla - Leather - Torso Heavy (Studs) 3BBB"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Torso_HeavyStuds" choice="TWB Vanilla - Leather - Torso Heavy (Studs) 3BBB"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Torso_Lite" choice="TWB Vanilla - Leather - Torso Lite"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Torso_Lite" choice="TWB Vanilla - Leather - Torso Lite"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Torso_LiteStuds" choice="TWB Vanilla - Leather - Torso Lite (Studs)"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Torso_LiteStuds" choice="TWB Vanilla - Leather - Torso Lite (Studs)"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Torso_Mid" choice="TWB Vanilla - Leather - Torso Mid 3BBB"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Torso_Mid" choice="TWB Vanilla - Leather - Torso Mid 3BBB"/>
+    <OutputChoice path="Meshes\Armor\Leather\F_Torso_MidStuds" choice="TWB Vanilla - Leather - Torso Mid (Studs) 3BBB"/>
+    <OutputChoice path="Meshes/Armor/Leather/F_Torso_MidStuds" choice="TWB Vanilla - Leather - Torso Mid (Studs) 3BBB"/>
+    <OutputChoice path="Meshes\Armor\MacCready\OutfitF" choice="TWB Vanilla - MacCready"/>
+    <OutputChoice path="Meshes/Armor/MacCready/OutfitF" choice="TWB Vanilla - MacCready"/>
+    <OutputChoice path="Meshes\Armor\Maxson\MaxonCoatF" choice="TWB Vanilla - Maxon Coat"/>
+    <OutputChoice path="Meshes/Armor/Maxson/MaxonCoatF" choice="TWB Vanilla - Maxon Coat"/>
+    <OutputChoice path="Meshes\Armor\Metal\FArmL_Heavy_1" choice="TWB Vanilla - Metal - Arm Heavy L"/>
+    <OutputChoice path="Meshes/Armor/Metal/FArmL_Heavy_1" choice="TWB Vanilla - Metal - Arm Heavy L"/>
+    <OutputChoice path="Meshes\Armor\Metal\FArmL_Lite_1" choice="TWB Vanilla - Metal - Arm Lite L"/>
+    <OutputChoice path="Meshes/Armor/Metal/FArmL_Lite_1" choice="TWB Vanilla - Metal - Arm Lite L"/>
+    <OutputChoice path="Meshes\Armor\Metal\FArmL_Mid_1" choice="TWB Vanilla - Metal - Arm Mid L"/>
+    <OutputChoice path="Meshes/Armor/Metal/FArmL_Mid_1" choice="TWB Vanilla - Metal - Arm Mid L"/>
+    <OutputChoice path="Meshes\Armor\Metal\FArmR_Heavy_1" choice="TWB Vanilla - Metal - Arm Heavy R"/>
+    <OutputChoice path="Meshes/Armor/Metal/FArmR_Heavy_1" choice="TWB Vanilla - Metal - Arm Heavy R"/>
+    <OutputChoice path="Meshes\Armor\Metal\FArmR_Lite_1" choice="TWB Vanilla - Metal - Arm Lite R"/>
+    <OutputChoice path="Meshes/Armor/Metal/FArmR_Lite_1" choice="TWB Vanilla - Metal - Arm Lite R"/>
+    <OutputChoice path="Meshes\Armor\Metal\FArmR_Mid_1" choice="TWB Vanilla - Metal - Arm Mid R"/>
+    <OutputChoice path="Meshes/Armor/Metal/FArmR_Mid_1" choice="TWB Vanilla - Metal - Arm Mid R"/>
+    <OutputChoice path="Meshes\Armor\Metal\FLegL_Heavy_1" choice="TWB Vanilla - Metal - Leg Heavy L"/>
+    <OutputChoice path="Meshes/Armor/Metal/FLegL_Heavy_1" choice="TWB Vanilla - Metal - Leg Heavy L"/>
+    <OutputChoice path="Meshes\Armor\Metal\FLegL_Lite_1" choice="TWB Vanilla - Metal - Leg Lite L"/>
+    <OutputChoice path="Meshes/Armor/Metal/FLegL_Lite_1" choice="TWB Vanilla - Metal - Leg Lite L"/>
+    <OutputChoice path="Meshes\Armor\Metal\FLegL_Mid_1" choice="TWB Vanilla - Metal - Leg Mid L"/>
+    <OutputChoice path="Meshes/Armor/Metal/FLegL_Mid_1" choice="TWB Vanilla - Metal - Leg Mid L"/>
+    <OutputChoice path="Meshes\Armor\Metal\FLegR_Heavy_1" choice="TWB Vanilla - Metal - Leg Heavy R"/>
+    <OutputChoice path="Meshes/Armor/Metal/FLegR_Heavy_1" choice="TWB Vanilla - Metal - Leg Heavy R"/>
+    <OutputChoice path="Meshes\Armor\Metal\FLegR_Lite_1" choice="TWB Vanilla - Metal - Leg Lite R"/>
+    <OutputChoice path="Meshes/Armor/Metal/FLegR_Lite_1" choice="TWB Vanilla - Metal - Leg Lite R"/>
+    <OutputChoice path="Meshes\Armor\Metal\FLegR_Mid_1" choice="TWB Vanilla - Metal - Leg Mid R"/>
+    <OutputChoice path="Meshes/Armor/Metal/FLegR_Mid_1" choice="TWB Vanilla - Metal - Leg Mid R"/>
+    <OutputChoice path="Meshes\Armor\Metal\FToros_Lite_1" choice="TWB Vanilla - Metal - Torso Lite 3BBB"/>
+    <OutputChoice path="Meshes/Armor/Metal/FToros_Lite_1" choice="TWB Vanilla - Metal - Torso Lite 3BBB"/>
+    <OutputChoice path="Meshes\Armor\Metal\FToroso_Heavy_1" choice="TWB Vanilla - Metal - Torso Heavy 3BBB"/>
+    <OutputChoice path="Meshes/Armor/Metal/FToroso_Heavy_1" choice="TWB Vanilla - Metal - Torso Heavy 3BBB"/>
+    <OutputChoice path="Meshes\Armor\Metal\FTorso_Mid_1" choice="TWB Vanilla - Metal - Torso Mid 3BBB"/>
+    <OutputChoice path="Meshes/Armor/Metal/FTorso_Mid_1" choice="TWB Vanilla - Metal - Torso Mid 3BBB"/>
+    <OutputChoice path="Meshes\Armor\Minuteman\FOutfit" choice="TWB Vanilla - Minuteman"/>
+    <OutputChoice path="Meshes/Armor/Minuteman/FOutfit" choice="TWB Vanilla - Minuteman"/>
+    <OutputChoice path="Meshes\Armor\MinutemanUnderarmor\FunderArmor" choice="TWB Vanilla - Minuteman Underarmor"/>
+    <OutputChoice path="Meshes/Armor/MinutemanUnderarmor/FunderArmor" choice="TWB Vanilla - Minuteman Underarmor"/>
+    <OutputChoice path="Meshes\Armor\Preston_Garvey\OutfitF" choice="TWB Vanilla - Preston Garvey"/>
+    <OutputChoice path="Meshes/Armor/Preston_Garvey/OutfitF" choice="TWB Vanilla - Preston Garvey"/>
+    <OutputChoice path="Meshes\Armor\Raider01\Raider01BodyF" choice="TWB Vanilla - Raider 1"/>
+    <OutputChoice path="Meshes/Armor/Raider01/Raider01BodyF" choice="TWB Vanilla - Raider 1"/>
+    <OutputChoice path="Meshes\Armor\Raider02\Raider02BaseArmorF" choice="TWB Vanilla - Raider 2"/>
+    <OutputChoice path="Meshes/Armor/Raider02/Raider02BaseArmorF" choice="TWB Vanilla - Raider 2"/>
+    <OutputChoice path="Meshes\Armor\Raider03\RaiderBody03F" choice="TWB Vanilla - Raider 3a"/>
+    <OutputChoice path="Meshes/Armor/Raider03/RaiderBody03F" choice="TWB Vanilla - Raider 3a"/>
+    <OutputChoice path="Meshes\Armor\Raider03\RaiderBody03FB" choice="TWB Vanilla - Raider 3b"/>
+    <OutputChoice path="Meshes/Armor/Raider03/RaiderBody03FB" choice="TWB Vanilla - Raider 3b"/>
+    <OutputChoice path="Meshes\Armor\Raider04\Raider04F" choice="TWB Vanilla - Raider Harness"/>
+    <OutputChoice path="Meshes/Armor/Raider04/Raider04F" choice="TWB Vanilla - Raider Harness"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy\FArmorHeavy" choice="TWB Vanilla - Raider Heavy"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy/FArmorHeavy" choice="TWB Vanilla - Raider Heavy"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy\FArmorMedium" choice="TWB Vanilla - Raider Medium"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy/FArmorMedium" choice="TWB Vanilla - Raider Medium"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy\FUnderArmor" choice="TWB Vanilla - Raider Heavy Underarmor"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy/FUnderArmor" choice="TWB Vanilla - Raider Heavy Underarmor"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy02\HeavyArmsL_0F" choice="TWB Vanilla - Raider - Arms Heavy L (0)"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy02/HeavyArmsL_0F" choice="TWB Vanilla - Raider - Arms Heavy L (0)"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy02\HeavyArmsL_1F" choice="TWB Vanilla - Raider - Arms Heavy L (1)"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy02/HeavyArmsL_1F" choice="TWB Vanilla - Raider - Arms Heavy L (1)"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy02\HeavyArmsL_2F" choice="TWB Vanilla - Raider - Arms Heavy L (2)"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy02/HeavyArmsL_2F" choice="TWB Vanilla - Raider - Arms Heavy L (2)"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy02\HeavyArmsR_0F" choice="TWB Vanilla - Raider - Arms Heavy R (0)"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy02/HeavyArmsR_0F" choice="TWB Vanilla - Raider - Arms Heavy R (0)"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy02\HeavyArmsR_1F" choice="TWB Vanilla - Raider - Arms Heavy R (1)"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy02/HeavyArmsR_1F" choice="TWB Vanilla - Raider - Arms Heavy R (1)"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy02\HeavyArmsR_2F" choice="TWB Vanilla - Raider - Arms Heavy R (2)"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy02/HeavyArmsR_2F" choice="TWB Vanilla - Raider - Arms Heavy R (2)"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy02\HeavyLegsL_0F" choice="TWB Vanilla - Raider - Legs Heavy L (0)"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy02/HeavyLegsL_0F" choice="TWB Vanilla - Raider - Legs Heavy L (0)"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy02\HeavyLegsL_1F" choice="TWB Vanilla - Raider - Legs Heavy L (1)"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy02/HeavyLegsL_1F" choice="TWB Vanilla - Raider - Legs Heavy L (1)"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy02\HeavyLegsL_2F" choice="TWB Vanilla - Raider - Legs Heavy L (2)"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy02/HeavyLegsL_2F" choice="TWB Vanilla - Raider - Legs Heavy L (2)"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy02\HeavyLegsR_0F" choice="TWB Vanilla - Raider - Legs Heavy R (0)"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy02/HeavyLegsR_0F" choice="TWB Vanilla - Raider - Legs Heavy R (0)"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy02\HeavyLegsR_1F" choice="TWB Vanilla - Raider - Legs Heavy R (1)"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy02/HeavyLegsR_1F" choice="TWB Vanilla - Raider - Legs Heavy R (1)"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy02\HeavyLegsR_2F" choice="TWB Vanilla - Raider - Legs Heavy R (2)"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy02/HeavyLegsR_2F" choice="TWB Vanilla - Raider - Legs Heavy R (2)"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy02\HeavyTorso_0F" choice="TWB Vanilla - Raider - Torso Heavy (0)"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy02/HeavyTorso_0F" choice="TWB Vanilla - Raider - Torso Heavy (0)"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy02\HeavyTorso_1F" choice="TWB Vanilla - Raider - Torso Heavy (1)"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy02/HeavyTorso_1F" choice="TWB Vanilla - Raider - Torso Heavy (1)"/>
+    <OutputChoice path="Meshes\Armor\RaiderHeavy02\HeavyTorso_2F" choice="TWB Vanilla - Raider - Torso Heavy (2)"/>
+    <OutputChoice path="Meshes/Armor/RaiderHeavy02/HeavyTorso_2F" choice="TWB Vanilla - Raider - Torso Heavy (2)"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\HvyLArm_F" choice="TWB Vanilla - Raider Mods - Arm Heavy L"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/HvyLArm_F" choice="TWB Vanilla - Raider Mods - Arm Heavy L"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\HvyLLeg_F" choice="TWB Vanilla - Raider Mods - Leg Heavy L"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/HvyLLeg_F" choice="TWB Vanilla - Raider Mods - Leg Heavy L"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\HvyRArm_F" choice="TWB Vanilla - Raider Mods - Arm Heavy R"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/HvyRArm_F" choice="TWB Vanilla - Raider Mods - Arm Heavy R"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\HvyRLeg_F" choice="TWB Vanilla - Raider Mods - Leg Heavy R"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/HvyRLeg_F" choice="TWB Vanilla - Raider Mods - Leg Heavy R"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\HvyTorso_F" choice="TWB Vanilla - Raider Mods - Torso Heavy"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/HvyTorso_F" choice="TWB Vanilla - Raider Mods - Torso Heavy"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\LiteLArm_F" choice="TWB Vanilla - Raider Mods - Arm Lite L"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/LiteLArm_F" choice="TWB Vanilla - Raider Mods - Arm Lite L"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\LiteLLeg_F" choice="TWB Vanilla - Raider Mods - Leg Lite L"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/LiteLLeg_F" choice="TWB Vanilla - Raider Mods - Leg Lite L"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\LiteRArm_F" choice="TWB Vanilla - Raider Mods - Arm Lite R"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/LiteRArm_F" choice="TWB Vanilla - Raider Mods - Arm Lite R"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\LiteRLeg_F" choice="TWB Vanilla - Raider Mods - Leg Lite R"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/LiteRLeg_F" choice="TWB Vanilla - Raider Mods - Leg Lite R"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\LiteTorso_F" choice="TWB Vanilla - Raider Mods - Torso Lite (1)"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/LiteTorso_F" choice="TWB Vanilla - Raider Mods - Torso Lite (1)"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\LiteTorso_F02" choice="TWB Vanilla - Raider Mods - Torso Lite (2)"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/LiteTorso_F02" choice="TWB Vanilla - Raider Mods - Torso Lite (2)"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\LiteTorso_F03" choice="TWB Vanilla - Raider Mods - Torso Lite (3)"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/LiteTorso_F03" choice="TWB Vanilla - Raider Mods - Torso Lite (3)"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\LiteTorso_F04" choice="TWB Vanilla - Raider Mods - Torso Lite (4)"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/LiteTorso_F04" choice="TWB Vanilla - Raider Mods - Torso Lite (4)"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\LiteTorso_F05" choice="TWB Vanilla - Raider Mods - Torso Lite (5)"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/LiteTorso_F05" choice="TWB Vanilla - Raider Mods - Torso Lite (5)"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\LiteTorso_F06" choice="TWB Vanilla - Raider Mods - Torso Lite (6)"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/LiteTorso_F06" choice="TWB Vanilla - Raider Mods - Torso Lite (6)"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\MedLArm_F" choice="TWB Vanilla - Raider Mods - Arm Med L"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/MedLArm_F" choice="TWB Vanilla - Raider Mods - Arm Med L"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\MedLLeg_F" choice="TWB Vanilla - Raider Mods - Leg Med L"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/MedLLeg_F" choice="TWB Vanilla - Raider Mods - Leg Med L"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\MedRArm_F" choice="TWB Vanilla - Raider Mods - Arm Med R"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/MedRArm_F" choice="TWB Vanilla - Raider Mods - Arm Med R"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\MedRLeg_F" choice="TWB Vanilla - Raider Mods - Leg Med R"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/MedRLeg_F" choice="TWB Vanilla - Raider Mods - Leg Med R"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\MedTorso_F" choice="TWB Vanilla - Raider Mods - Torso Med"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/MedTorso_F" choice="TWB Vanilla - Raider Mods - Torso Med"/>
+    <OutputChoice path="Meshes\Armor\RaiderModArmor\UnderArmor_F" choice="TWB Vanilla - Raider Mods - Underarmor"/>
+    <OutputChoice path="Meshes/Armor/RaiderModArmor/UnderArmor_F" choice="TWB Vanilla - Raider Mods - Underarmor"/>
+    <OutputChoice path="Meshes\Armor\RaiderUnderarmor\RaiderUnderArmorF" choice="TWB Vanilla - Raider Underarmor"/>
+    <OutputChoice path="Meshes/Armor/RaiderUnderarmor/RaiderUnderArmorF" choice="TWB Vanilla - Raider Underarmor"/>
+    <OutputChoice path="Meshes\Armor\RusticUnderArmor\FJacket" choice="TWB Vanilla - Rustic Underarmor Jacket"/>
+    <OutputChoice path="Meshes/Armor/RusticUnderArmor/FJacket" choice="TWB Vanilla - Rustic Underarmor Jacket"/>
+    <OutputChoice path="Meshes\Armor\RusticUnderarmor\FOutfit" choice="TWB Vanilla - Rustic Underarmor"/>
+    <OutputChoice path="Meshes/Armor/RusticUnderarmor/FOutfit" choice="TWB Vanilla - Rustic Underarmor"/>
+    <OutputChoice path="Meshes\Armor\ScienceScribe\FOutfit" choice="TWB Vanilla - Science Scribe"/>
+    <OutputChoice path="Meshes/Armor/ScienceScribe/FOutfit" choice="TWB Vanilla - Science Scribe"/>
+    <OutputChoice path="Meshes\Armor\ScienceScribe\FOutfitOfficer" choice="TWB Vanilla - Science Scribe (Officer)"/>
+    <OutputChoice path="Meshes/Armor/ScienceScribe/FOutfitOfficer" choice="TWB Vanilla - Science Scribe (Officer)"/>
+    <OutputChoice path="Meshes\Armor\Synth\SynthHvyArmL_F" choice="TWB Vanilla - Synth - Arm Heavy L"/>
+    <OutputChoice path="Meshes/Armor/Synth/SynthHvyArmL_F" choice="TWB Vanilla - Synth - Arm Heavy L"/>
+    <OutputChoice path="Meshes\Armor\Synth\SynthHvyArmR_F" choice="TWB Vanilla - Synth - Arm Heavy R"/>
+    <OutputChoice path="Meshes/Armor/Synth/SynthHvyArmR_F" choice="TWB Vanilla - Synth - Arm Heavy R"/>
+    <OutputChoice path="Meshes\Armor\Synth\SynthHvyLegL_F" choice="TWB Vanilla - Synth - Leg Heavy L"/>
+    <OutputChoice path="Meshes/Armor/Synth/SynthHvyLegL_F" choice="TWB Vanilla - Synth - Leg Heavy L"/>
+    <OutputChoice path="Meshes\Armor\Synth\SynthHvyLegR_F" choice="TWB Vanilla - Synth - Leg Heavy R"/>
+    <OutputChoice path="Meshes/Armor/Synth/SynthHvyLegR_F" choice="TWB Vanilla - Synth - Leg Heavy R"/>
+    <OutputChoice path="Meshes\Armor\Synth\SynthHvyTorso_F" choice="TWB Vanilla - Synth - Torso Heavy"/>
+    <OutputChoice path="Meshes/Armor/Synth/SynthHvyTorso_F" choice="TWB Vanilla - Synth - Torso Heavy"/>
+    <OutputChoice path="Meshes\Armor\Synth\SynthLiteArmL_F" choice="TWB Vanilla - Synth - Arm Lite L"/>
+    <OutputChoice path="Meshes/Armor/Synth/SynthLiteArmL_F" choice="TWB Vanilla - Synth - Arm Lite L"/>
+    <OutputChoice path="Meshes\Armor\Synth\SynthLiteArmR_F" choice="TWB Vanilla - Synth - Arm Lite R"/>
+    <OutputChoice path="Meshes/Armor/Synth/SynthLiteArmR_F" choice="TWB Vanilla - Synth - Arm Lite R"/>
+    <OutputChoice path="Meshes\Armor\Synth\SynthLiteLegL_F" choice="TWB Vanilla - Synth - Leg Lite L"/>
+    <OutputChoice path="Meshes/Armor/Synth/SynthLiteLegL_F" choice="TWB Vanilla - Synth - Leg Lite L"/>
+    <OutputChoice path="Meshes\Armor\Synth\SynthLiteLegR_F" choice="TWB Vanilla - Synth - Leg Lite R"/>
+    <OutputChoice path="Meshes/Armor/Synth/SynthLiteLegR_F" choice="TWB Vanilla - Synth - Leg Lite R"/>
+    <OutputChoice path="Meshes\Armor\Synth\SynthLiteTorso_F" choice="TWB Vanilla - Synth - Torso Lite"/>
+    <OutputChoice path="Meshes/Armor/Synth/SynthLiteTorso_F" choice="TWB Vanilla - Synth - Torso Lite"/>
+    <OutputChoice path="Meshes\Armor\Synth\SynthMedArmL_F" choice="TWB Vanilla - Synth - Arm Med L"/>
+    <OutputChoice path="Meshes/Armor/Synth/SynthMedArmL_F" choice="TWB Vanilla - Synth - Arm Med L"/>
+    <OutputChoice path="Meshes\Armor\Synth\SynthMedArmR_F" choice="TWB Vanilla - Synth - Arm Med R"/>
+    <OutputChoice path="Meshes/Armor/Synth/SynthMedArmR_F" choice="TWB Vanilla - Synth - Arm Med R"/>
+    <OutputChoice path="Meshes\Armor\Synth\SynthMedLegL_F" choice="TWB Vanilla - Synth - Leg Med L"/>
+    <OutputChoice path="Meshes/Armor/Synth/SynthMedLegL_F" choice="TWB Vanilla - Synth - Leg Med L"/>
+    <OutputChoice path="Meshes\Armor\Synth\SynthMedLegR_F" choice="TWB Vanilla - Synth - Leg Med R"/>
+    <OutputChoice path="Meshes/Armor/Synth/SynthMedLegR_F" choice="TWB Vanilla - Synth - Leg Med R"/>
+    <OutputChoice path="Meshes\Armor\Synth\SynthMedTorso_F" choice="TWB Vanilla - Synth - Torso Med"/>
+    <OutputChoice path="Meshes/Armor/Synth/SynthMedTorso_F" choice="TWB Vanilla - Synth - Torso Med"/>
+    <OutputChoice path="Meshes\Armor\VaultTecSecurity\VaultSecurityF" choice="TWB Vanilla - Vault Tec Security"/>
+    <OutputChoice path="Meshes/Armor/VaultTecSecurity/VaultSecurityF" choice="TWB Vanilla - Vault Tec Security"/>
+    <OutputChoice path="Meshes\Armor\VaultTecSecurity\VaultSecurityF81" choice="TWB Vanilla - Vault Tec Security 81"/>
+    <OutputChoice path="Meshes/Armor/VaultTecSecurity/VaultSecurityF81" choice="TWB Vanilla - Vault Tec Security 81"/>
+    <OutputChoice path="Meshes\Armor\VaultTecSecurity\VaultSecurityFCovenant" choice="TWB Vanilla - Vault Tec Security Covenant"/>
+    <OutputChoice path="Meshes/Armor/VaultTecSecurity/VaultSecurityFCovenant" choice="TWB Vanilla - Vault Tec Security Covenant"/>
+    <OutputChoice path="Meshes\Clothes\BaseballUniform\FOutfit" choice="TWB Vanilla - Baseball Uniform"/>
+    <OutputChoice path="Meshes/Clothes/BaseballUniform/FOutfit" choice="TWB Vanilla - Baseball Uniform"/>
+    <OutputChoice path="Meshes\Clothes\Bathrobe\OutfitF" choice="TWB Vanilla - Bathrobe"/>
+    <OutputChoice path="Meshes/Clothes/Bathrobe/OutfitF" choice="TWB Vanilla - Bathrobe"/>
+    <OutputChoice path="Meshes\Clothes\Cait\OutfitF" choice="TWB Vanilla - Cait Corset"/>
+    <OutputChoice path="Meshes/Clothes/Cait/OutfitF" choice="TWB Vanilla - Cait Corset"/>
+    <OutputChoice path="Meshes\Clothes\ChildrenOfAtom\FChestMetal" choice="TWB Vanilla - CoA Metal Chest"/>
+    <OutputChoice path="Meshes/Clothes/ChildrenOfAtom/FChestMetal" choice="TWB Vanilla - CoA Metal Chest"/>
+    <OutputChoice path="Meshes\Clothes\ChildrenOfAtom\FOutfit" choice="TWB Vanilla - CoA Outfit"/>
+    <OutputChoice path="Meshes/Clothes/ChildrenOfAtom/FOutfit" choice="TWB Vanilla - CoA Outfit"/>
+    <OutputChoice path="Meshes\Clothes\ChildrenOfAtom\FSkirt" choice="TWB Vanilla - CoA Skirt"/>
+    <OutputChoice path="Meshes/Clothes/ChildrenOfAtom/FSkirt" choice="TWB Vanilla - CoA Skirt"/>
+    <OutputChoice path="Meshes\Clothes\Courser\CourserF" choice="TWB Vanilla - Courser"/>
+    <OutputChoice path="Meshes/Clothes/Courser/CourserF" choice="TWB Vanilla - Courser"/>
+    <OutputChoice path="Meshes\Clothes\Desdemona\FOutfit" choice="TWB Vanilla - Desdemona"/>
+    <OutputChoice path="Meshes/Clothes/Desdemona/FOutfit" choice="TWB Vanilla - Desdemona"/>
+    <OutputChoice path="Meshes\Clothes\Father\FOutfit" choice="TWB Vanilla - Father"/>
+    <OutputChoice path="Meshes/Clothes/Father/FOutfit" choice="TWB Vanilla - Father"/>
+    <OutputChoice path="Meshes\Clothes\GreaserJacket\FOutfit" choice="TWB Vanilla - Greaser Jacket"/>
+    <OutputChoice path="Meshes/Clothes/GreaserJacket/FOutfit" choice="TWB Vanilla - Greaser Jacket"/>
+    <OutputChoice path="Meshes\Clothes\Grognak\FOutfit" choice="TWB Vanilla - Grognak"/>
+    <OutputChoice path="Meshes/Clothes/Grognak/FOutfit" choice="TWB Vanilla - Grognak"/>
+    <OutputChoice path="Meshes\Clothes\Hancock\FOutfit" choice="TWB Vanilla - Hancock"/>
+    <OutputChoice path="Meshes/Clothes/Hancock/FOutfit" choice="TWB Vanilla - Hancock"/>
+    <OutputChoice path="Meshes\Clothes\HouseDress\Dress" choice="TWB Vanilla - House Dress A"/>
+    <OutputChoice path="Meshes/Clothes/HouseDress/Dress" choice="TWB Vanilla - House Dress A"/>
+    <OutputChoice path="Meshes\Clothes\HouseDress\FOutfit" choice="TWB Vanilla - House Dress B"/>
+    <OutputChoice path="Meshes/Clothes/HouseDress/FOutfit" choice="TWB Vanilla - House Dress B"/>
+    <OutputChoice path="Meshes\Clothes\InstituteUniform\FLabCoat" choice="TWB Vanilla - Institute Uniform (Lab Coat)"/>
+    <OutputChoice path="Meshes/Clothes/InstituteUniform/FLabCoat" choice="TWB Vanilla - Institute Uniform (Lab Coat)"/>
+    <OutputChoice path="Meshes\Clothes\InstituteUniform\FOutfit" choice="TWB Vanilla - Institute Uniform"/>
+    <OutputChoice path="Meshes/Clothes/InstituteUniform/FOutfit" choice="TWB Vanilla - Institute Uniform"/>
+    <OutputChoice path="Meshes\Clothes\InstituteWorksuit\FOutfit" choice="TWB Vanilla - Institute Worksuit"/>
+    <OutputChoice path="Meshes/Clothes/InstituteWorksuit/FOutfit" choice="TWB Vanilla - Institute Worksuit"/>
+    <OutputChoice path="Meshes\Clothes\InstituteWorksuit\FOutfitNoHead" choice="TWB Vanilla - Institute Worksuit (No Head)"/>
+    <OutputChoice path="Meshes/Clothes/InstituteWorksuit/FOutfitNoHead" choice="TWB Vanilla - Institute Worksuit (No Head)"/>
+    <OutputChoice path="Meshes\Clothes\Irma\FOutfit" choice="TWB Vanilla - Irma"/>
+    <OutputChoice path="Meshes/Clothes/Irma/FOutfit" choice="TWB Vanilla - Irma"/>
+    <OutputChoice path="Meshes\Clothes\Longshoreman\OutfitF" choice="TWB Vanilla - Longshoreman"/>
+    <OutputChoice path="Meshes/Clothes/Longshoreman/OutfitF" choice="TWB Vanilla - Longshoreman"/>
+    <OutputChoice path="Meshes\Clothes\Lorenzo\FOutfit" choice="TWB Vanilla - Lorenzo"/>
+    <OutputChoice path="Meshes/Clothes/Lorenzo/FOutfit" choice="TWB Vanilla - Lorenzo"/>
+    <OutputChoice path="Meshes\Clothes\Mayor\SuitF" choice="Crimsomrider&apos;s Feminine Patched Suit TWB"/>
+    <OutputChoice path="Meshes/Clothes/Mayor/SuitF" choice="Crimsomrider&apos;s Feminine Patched Suit TWB"/>
+    <OutputChoice path="Meshes\Clothes\Mobsters\1MobsterFSuit" choice="TWB Vanilla - Mobsters A"/>
+    <OutputChoice path="Meshes/Clothes/Mobsters/1MobsterFSuit" choice="TWB Vanilla - Mobsters A"/>
+    <OutputChoice path="Meshes\Clothes\Mobsters\2MobsterSuitF" choice="TWB Vanilla - Mobsters B"/>
+    <OutputChoice path="Meshes/Clothes/Mobsters/2MobsterSuitF" choice="TWB Vanilla - Mobsters B"/>
+    <OutputChoice path="Meshes\Clothes\Pastor\FOutfit" choice="TWB Vanilla - Pastor"/>
+    <OutputChoice path="Meshes/Clothes/Pastor/FOutfit" choice="TWB Vanilla - Pastor"/>
+    <OutputChoice path="Meshes\Clothes\Piper\PiperBodyF" choice="TWB Vanilla - Piper"/>
+    <OutputChoice path="Meshes/Clothes/Piper/PiperBodyF" choice="TWB Vanilla - Piper"/>
+    <OutputChoice path="Meshes\Clothes\Postman\PostmanF" choice="TWB Vanilla - Postman"/>
+    <OutputChoice path="Meshes/Clothes/Postman/PostmanF" choice="TWB Vanilla - Postman"/>
+    <OutputChoice path="Meshes\Clothes\PrewarDress\PrewarDress" choice="TWB  Vanilla - Prewar Dress"/>
+    <OutputChoice path="Meshes/Clothes/PrewarDress/PrewarDress" choice="TWB  Vanilla - Prewar Dress"/>
+    <OutputChoice path="Meshes\Clothes\PrisonerRags\FOutfit" choice="TWB Vanilla - Prisoner Rags"/>
+    <OutputChoice path="Meshes/Clothes/PrisonerRags/FOutfit" choice="TWB Vanilla - Prisoner Rags"/>
+    <OutputChoice path="Meshes\Clothes\RedRocketJumpsuit\RedRocketJumpsuitF" choice="Crimsomrider&apos;s Feminine Mechanic Jumpsuits TWB"/>
+    <OutputChoice path="Meshes/Clothes/RedRocketJumpsuit/RedRocketJumpsuitF" choice="Crimsomrider&apos;s Feminine Mechanic Jumpsuits TWB"/>
+    <OutputChoice path="Meshes\Clothes\Residents\3OutfitF" choice="TWB Vanilla - Residents 3"/>
+    <OutputChoice path="Meshes/Clothes/Residents/3OutfitF" choice="TWB Vanilla - Residents 3"/>
+    <OutputChoice path="Meshes\Clothes\Residents\4SuitF" choice="TWB Vanilla - Residents 4"/>
+    <OutputChoice path="Meshes/Clothes/Residents/4SuitF" choice="TWB Vanilla - Residents 4"/>
+    <OutputChoice path="Meshes\Clothes\Residents\5SuitF" choice="TWB Vanilla - Residents 5"/>
+    <OutputChoice path="Meshes/Clothes/Residents/5SuitF" choice="TWB Vanilla - Residents 5"/>
+    <OutputChoice path="Meshes\Clothes\Residents\6SuitF" choice="TWB Vanilla - Residents 6"/>
+    <OutputChoice path="Meshes/Clothes/Residents/6SuitF" choice="TWB Vanilla - Residents 6"/>
+    <OutputChoice path="Meshes\Clothes\Residents\7SuitF" choice="TWB Vanilla - Residents 7"/>
+    <OutputChoice path="Meshes/Clothes/Residents/7SuitF" choice="TWB Vanilla - Residents 7"/>
+    <OutputChoice path="Meshes\Clothes\Ronnie\FOutfit" choice="TWB Vanilla - Ronnie"/>
+    <OutputChoice path="Meshes/Clothes/Ronnie/FOutfit" choice="TWB Vanilla - Ronnie"/>
+    <OutputChoice path="Meshes\Clothes\ShortSleeves\FOutfit" choice="TWB Vanilla - Short Sleeves"/>
+    <OutputChoice path="Meshes/Clothes/ShortSleeves/FOutfit" choice="TWB Vanilla - Short Sleeves"/>
+    <OutputChoice path="Meshes\Clothes\ShortSleevesAndSlacks\FOutfit" choice="TWB Vanilla - Short Sleeves and Slacks"/>
+    <OutputChoice path="Meshes/Clothes/ShortSleevesAndSlacks/FOutfit" choice="TWB Vanilla - Short Sleeves and Slacks"/>
+    <OutputChoice path="Meshes\Clothes\SilverShroud\SilverShroudBodyF" choice="Crimsomrider&apos;s Feminine Silver Shroud Costume TWB"/>
+    <OutputChoice path="Meshes/Clothes/SilverShroud/SilverShroudBodyF" choice="Crimsomrider&apos;s Feminine Silver Shroud Costume TWB"/>
+    <OutputChoice path="Meshes\Clothes\SlinkyDress\DressFSequin" choice="TWB Vanilla - Sequin Dress"/>
+    <OutputChoice path="Meshes/Clothes/SlinkyDress/DressFSequin" choice="TWB Vanilla - Sequin Dress"/>
+    <OutputChoice path="Meshes\Clothes\Sturgess\SturgesFTorso" choice="TWB Vanilla - Sturgess"/>
+    <OutputChoice path="Meshes/Clothes/Sturgess/SturgesFTorso" choice="TWB Vanilla - Sturgess"/>
+    <OutputChoice path="Meshes\Clothes\SubmarineCrew\FOutfit" choice="TWB Vanilla - Submarine Crew"/>
+    <OutputChoice path="Meshes/Clothes/SubmarineCrew/FOutfit" choice="TWB Vanilla - Submarine Crew"/>
+    <OutputChoice path="Meshes\Clothes\Suit\FOutfit" choice="TWB Vanilla - Suit"/>
+    <OutputChoice path="Meshes/Clothes/Suit/FOutfit" choice="TWB Vanilla - Suit"/>
+    <OutputChoice path="Meshes\Clothes\Suit\FOutfitClean" choice="Crimsomrider&apos;s Feminine Suit (Clean) TWB"/>
+    <OutputChoice path="Meshes/Clothes/Suit/FOutfitClean" choice="Crimsomrider&apos;s Feminine Suit (Clean) TWB"/>
+    <OutputChoice path="Meshes\Clothes\SummerShorts\OutfitF" choice="TWB Vanilla - Summer Shorts"/>
+    <OutputChoice path="Meshes/Clothes/SummerShorts/OutfitF" choice="TWB Vanilla - Summer Shorts"/>
+    <OutputChoice path="Meshes\Clothes\SweaterVest\FOutfit" choice="TWB Vanilla - Sweater Vest"/>
+    <OutputChoice path="Meshes/Clothes/SweaterVest/FOutfit" choice="TWB Vanilla - Sweater Vest"/>
+    <OutputChoice path="Meshes\Clothes\SynthUniform\SynthUniformF" choice="TWB Vanilla - Synth Uniform"/>
+    <OutputChoice path="Meshes/Clothes/SynthUniform/SynthUniformF" choice="TWB Vanilla - Synth Uniform"/>
+    <OutputChoice path="Meshes\Clothes\TShirtSlacks\FOutfit" choice="TWB Vanilla - T-Shirt Slacks"/>
+    <OutputChoice path="Meshes/Clothes/TShirtSlacks/FOutfit" choice="TWB Vanilla - T-Shirt Slacks"/>
+    <OutputChoice path="Meshes\Clothes\Tuxedo\SuitF" choice="TWB Vanilla - Tuxedo"/>
+    <OutputChoice path="Meshes/Clothes/Tuxedo/SuitF" choice="TWB Vanilla - Tuxedo"/>
+    <OutputChoice path="Meshes\Clothes\Valentine\FCoat" choice="TWB Vanilla - Valentine"/>
+    <OutputChoice path="Meshes/Clothes/Valentine/FCoat" choice="TWB Vanilla - Valentine"/>
+    <OutputChoice path="Meshes\Clothes\Vault111Suit\FemaleVault111Suit" choice="Crimsomrider&apos;s Feminine Vault Suits TWB"/>
+    <OutputChoice path="Meshes/Clothes/Vault111Suit/FemaleVault111Suit" choice="Crimsomrider&apos;s Feminine Vault Suits TWB"/>
+    <OutputChoice path="Meshes\Clothes\VaultTecSalesman\FCoat" choice="Crimsomrider&apos;s Feminine Trench Coat (Clean) TWB"/>
+    <OutputChoice path="Meshes/Clothes/VaultTecSalesman/FCoat" choice="Crimsomrider&apos;s Feminine Trench Coat (Clean) TWB"/>
+    <OutputChoice path="Meshes\Clothes\VaultTecSalesman\FCoatPostWar" choice="Crimsomrider&apos;s Feminine Trench Coat (Dirty) TWB"/>
+    <OutputChoice path="Meshes/Clothes/VaultTecSalesman/FCoatPostWar" choice="Crimsomrider&apos;s Feminine Trench Coat (Dirty) TWB"/>
+    <OutputChoice path="Meshes\Clothes\VaultTecScientist\VTScientistFVariant" choice="TWB Vanilla - Vault Tec Scientist (Wasteland)"/>
+    <OutputChoice path="Meshes/Clothes/VaultTecScientist/VTScientistFVariant" choice="TWB Vanilla - Vault Tec Scientist (Wasteland)"/>
+    <OutputChoice path="Meshes\Clothes\VaultTecScientist\VTScientistOutfitF" choice="TWB Vanilla - Vault Tec Scientist"/>
+    <OutputChoice path="Meshes/Clothes/VaultTecScientist/VTScientistOutfitF" choice="TWB Vanilla - Vault Tec Scientist"/>
+    <OutputChoice path="Meshes\Clothes\WasteLander\OutfitF" choice="TWB Vanilla - Wastelander"/>
+    <OutputChoice path="Meshes/Clothes/WasteLander/OutfitF" choice="TWB Vanilla - Wastelander"/>
+    <OutputChoice path="Meshes\Clothes\WastelandCommon\OutfitF" choice="TWB Vanilla - Wasteland Common"/>
+    <OutputChoice path="Meshes/Clothes/WastelandCommon/OutfitF" choice="TWB Vanilla - Wasteland Common"/>
+    <OutputChoice path="Meshes\Clothes\WastelandDress\FOutfit" choice="TWB Vanilla - Wasteland Dress"/>
+    <OutputChoice path="Meshes/Clothes/WastelandDress/FOutfit" choice="TWB Vanilla - Wasteland Dress"/>
+    <OutputChoice path="Meshes\Clothes\Wastelander02\Outfit02F" choice="TWB Vanilla - Wastelander B"/>
+    <OutputChoice path="Meshes/Clothes/Wastelander02/Outfit02F" choice="TWB Vanilla - Wastelander B"/>
+    <OutputChoice path="Meshes\Clothes\Wastelander02\Outfit02FHodded" choice="TWB Vanilla - Wastelander B (Hooded)"/>
+    <OutputChoice path="Meshes/Clothes/Wastelander02/Outfit02FHodded" choice="TWB Vanilla - Wastelander B (Hooded)"/>
+    <OutputChoice path="Meshes\Clothes\WomensCasual\FOutfit" choice="TWB Vanilla - Womens Casual"/>
+    <OutputChoice path="Meshes/Clothes/WomensCasual/FOutfit" choice="TWB Vanilla - Womens Casual"/>
+    <OutputChoice path="Meshes\Clothes\slinkydress\DressF" choice="TWB Vanilla - Slinky Dress"/>
+    <OutputChoice path="Meshes/Clothes/slinkydress/DressF" choice="TWB Vanilla - Slinky Dress"/>
+    <OutputChoice path="Meshes\DLC01\Armor\RoboArmor\RoboArmorArmLHeavyF" choice="TWB Automatron - Robo Armor - Arm Heavy L"/>
+    <OutputChoice path="Meshes/DLC01/Armor/RoboArmor/RoboArmorArmLHeavyF" choice="TWB Automatron - Robo Armor - Arm Heavy L"/>
+    <OutputChoice path="Meshes\DLC01\Armor\RoboArmor\RoboArmorArmLLightF" choice="TWB Automatron - Robo Armor - Arm Light L"/>
+    <OutputChoice path="Meshes/DLC01/Armor/RoboArmor/RoboArmorArmLLightF" choice="TWB Automatron - Robo Armor - Arm Light L"/>
+    <OutputChoice path="Meshes\DLC01\Armor\RoboArmor\RoboArmorArmLMediumF" choice="TWB Automatron - Robo Armor - Arm Medium L"/>
+    <OutputChoice path="Meshes/DLC01/Armor/RoboArmor/RoboArmorArmLMediumF" choice="TWB Automatron - Robo Armor - Arm Medium L"/>
+    <OutputChoice path="Meshes\DLC01\Armor\RoboArmor\RoboArmorArmRHeavyF" choice="TWB Automatron - Robo Armor - Arm Heavy R"/>
+    <OutputChoice path="Meshes/DLC01/Armor/RoboArmor/RoboArmorArmRHeavyF" choice="TWB Automatron - Robo Armor - Arm Heavy R"/>
+    <OutputChoice path="Meshes\DLC01\Armor\RoboArmor\RoboArmorArmRLightF" choice="TWB Automatron - Robo Armor - Arm Light R"/>
+    <OutputChoice path="Meshes/DLC01/Armor/RoboArmor/RoboArmorArmRLightF" choice="TWB Automatron - Robo Armor - Arm Light R"/>
+    <OutputChoice path="Meshes\DLC01\Armor\RoboArmor\RoboArmorArmRMediumF" choice="TWB Automatron - Robo Armor - Arm Medium R"/>
+    <OutputChoice path="Meshes/DLC01/Armor/RoboArmor/RoboArmorArmRMediumF" choice="TWB Automatron - Robo Armor - Arm Medium R"/>
+    <OutputChoice path="Meshes\DLC01\Armor\RoboArmor\RoboArmorLegLHeavyF" choice="TWB Automatron - Robo Armor - Leg Heavy L"/>
+    <OutputChoice path="Meshes/DLC01/Armor/RoboArmor/RoboArmorLegLHeavyF" choice="TWB Automatron - Robo Armor - Leg Heavy L"/>
+    <OutputChoice path="Meshes\DLC01\Armor\RoboArmor\RoboArmorLegLLightF" choice="TWB Automatron - Robo Armor - Leg Light L"/>
+    <OutputChoice path="Meshes/DLC01/Armor/RoboArmor/RoboArmorLegLLightF" choice="TWB Automatron - Robo Armor - Leg Light L"/>
+    <OutputChoice path="Meshes\DLC01\Armor\RoboArmor\RoboArmorLegLMediumF" choice="TWB Automatron - Robo Armor - Leg Medium L"/>
+    <OutputChoice path="Meshes/DLC01/Armor/RoboArmor/RoboArmorLegLMediumF" choice="TWB Automatron - Robo Armor - Leg Medium L"/>
+    <OutputChoice path="Meshes\DLC01\Armor\RoboArmor\RoboArmorLegRHeavyF" choice="TWB Automatron - Robo Armor - Leg Heavy R"/>
+    <OutputChoice path="Meshes/DLC01/Armor/RoboArmor/RoboArmorLegRHeavyF" choice="TWB Automatron - Robo Armor - Leg Heavy R"/>
+    <OutputChoice path="Meshes\DLC01\Armor\RoboArmor\RoboArmorLegRLightF" choice="TWB Automatron - Robo Armor - Leg Light R"/>
+    <OutputChoice path="Meshes/DLC01/Armor/RoboArmor/RoboArmorLegRLightF" choice="TWB Automatron - Robo Armor - Leg Light R"/>
+    <OutputChoice path="Meshes\DLC01\Armor\RoboArmor\RoboArmorLegRMediumF" choice="TWB Automatron - Robo Armor - Leg Medium R"/>
+    <OutputChoice path="Meshes/DLC01/Armor/RoboArmor/RoboArmorLegRMediumF" choice="TWB Automatron - Robo Armor - Leg Medium R"/>
+    <OutputChoice path="Meshes\DLC01\Armor\RoboArmor\RoboArmorTorsoHeavyF" choice="TWB Automatron - Robo Armor - Torso Heavy"/>
+    <OutputChoice path="Meshes/DLC01/Armor/RoboArmor/RoboArmorTorsoHeavyF" choice="TWB Automatron - Robo Armor - Torso Heavy"/>
+    <OutputChoice path="Meshes\DLC01\Armor\RoboArmor\RoboArmorTorsoLightF" choice="TWB Automatron - Robo Armor - Torso Light"/>
+    <OutputChoice path="Meshes/DLC01/Armor/RoboArmor/RoboArmorTorsoLightF" choice="TWB Automatron - Robo Armor - Torso Light"/>
+    <OutputChoice path="Meshes\DLC01\Armor\RoboArmor\RoboArmorTorsoMediumF" choice="TWB Automatron - Robo Armor - Torso Medium"/>
+    <OutputChoice path="Meshes/DLC01/Armor/RoboArmor/RoboArmorTorsoMediumF" choice="TWB Automatron - Robo Armor - Torso Medium"/>
+    <OutputChoice path="Meshes\DLC03\Armor\CombatArmor\FOutfit_CoA_L_Arm" choice="TWB Far Harbor - Combat Armor CoA - Left Arm"/>
+    <OutputChoice path="Meshes/DLC03/Armor/CombatArmor/FOutfit_CoA_L_Arm" choice="TWB Far Harbor - Combat Armor CoA - Left Arm"/>
+    <OutputChoice path="Meshes\DLC03\Armor\CombatArmor\FOutfit_CoA_L_Leg" choice="TWB Far Harbor - Combat Armor CoA - Left Leg"/>
+    <OutputChoice path="Meshes/DLC03/Armor/CombatArmor/FOutfit_CoA_L_Leg" choice="TWB Far Harbor - Combat Armor CoA - Left Leg"/>
+    <OutputChoice path="Meshes\DLC03\Armor\CombatArmor\FOutfit_CoA_R_Arm" choice="TWB Far Harbor - Combat Armor CoA - Right Arm"/>
+    <OutputChoice path="Meshes/DLC03/Armor/CombatArmor/FOutfit_CoA_R_Arm" choice="TWB Far Harbor - Combat Armor CoA - Right Arm"/>
+    <OutputChoice path="Meshes\DLC03\Armor\CombatArmor\FOutfit_CoA_R_Leg" choice="TWB Far Harbor - Combat Armor CoA - Right Leg"/>
+    <OutputChoice path="Meshes/DLC03/Armor/CombatArmor/FOutfit_CoA_R_Leg" choice="TWB Far Harbor - Combat Armor CoA - Right Leg"/>
+    <OutputChoice path="Meshes\DLC03\Armor\CombatArmor\FOutfit_CoA_Torso" choice="TWB Far Harbor - Combat Armor CoA - Torso"/>
+    <OutputChoice path="Meshes/DLC03/Armor/CombatArmor/FOutfit_CoA_Torso" choice="TWB Far Harbor - Combat Armor CoA - Torso"/>
+    <OutputChoice path="Meshes\DLC03\Armor\CombatArmor\FOutfit_L_Arm" choice="TWB Far Harbor - Combat Armor - Left Arm"/>
+    <OutputChoice path="Meshes/DLC03/Armor/CombatArmor/FOutfit_L_Arm" choice="TWB Far Harbor - Combat Armor - Left Arm"/>
+    <OutputChoice path="Meshes\DLC03\Armor\CombatArmor\FOutfit_L_Leg" choice="TWB Far Harbor - Combat Armor - Left Leg"/>
+    <OutputChoice path="Meshes/DLC03/Armor/CombatArmor/FOutfit_L_Leg" choice="TWB Far Harbor - Combat Armor - Left Leg"/>
+    <OutputChoice path="Meshes\DLC03\Armor\CombatArmor\FOutfit_R_Arm" choice="TWB Far Harbor - Combat Armor - Right Arm"/>
+    <OutputChoice path="Meshes/DLC03/Armor/CombatArmor/FOutfit_R_Arm" choice="TWB Far Harbor - Combat Armor - Right Arm"/>
+    <OutputChoice path="Meshes\DLC03\Armor\CombatArmor\FOutfit_R_Leg" choice="TWB Far Harbor - Combat Armor - Right Leg"/>
+    <OutputChoice path="Meshes/DLC03/Armor/CombatArmor/FOutfit_R_Leg" choice="TWB Far Harbor - Combat Armor - Right Leg"/>
+    <OutputChoice path="Meshes\DLC03\Armor\CombatArmor\FOutfit_Torso" choice="TWB Far Harbor - Combat Armor - Torso"/>
+    <OutputChoice path="Meshes/DLC03/Armor/CombatArmor/FOutfit_Torso" choice="TWB Far Harbor - Combat Armor - Torso"/>
+    <OutputChoice path="Meshes\DLC03\Armor\CombatUnderArmor\FOutfit" choice="TWB Far Harbor - Combat Underarmor"/>
+    <OutputChoice path="Meshes/DLC03/Armor/CombatUnderArmor/FOutfit" choice="TWB Far Harbor - Combat Underarmor"/>
+    <OutputChoice path="Meshes\DLC03\Armor\DivingSuit\FOutfit" choice="TWB Far Harbor - Diving Suit"/>
+    <OutputChoice path="Meshes/DLC03/Armor/DivingSuit/FOutfit" choice="TWB Far Harbor - Diving Suit"/>
+    <OutputChoice path="Meshes\DLC03\Armor\RaiderDiverUnderarmor\FOutfit" choice="TWB Far Harbor - Raider Diver Underarmor"/>
+    <OutputChoice path="Meshes/DLC03/Armor/RaiderDiverUnderarmor/FOutfit" choice="TWB Far Harbor - Raider Diver Underarmor"/>
+    <OutputChoice path="Meshes\DLC03\Armor\TrapperA\FOutfit_LeftArm" choice="TWB Far Harbor - Trapper - Left Arm"/>
+    <OutputChoice path="Meshes/DLC03/Armor/TrapperA/FOutfit_LeftArm" choice="TWB Far Harbor - Trapper - Left Arm"/>
+    <OutputChoice path="Meshes\DLC03\Armor\TrapperA\FOutfit_LeftLeg" choice="TWB Far Harbor - Trapper - Left Leg"/>
+    <OutputChoice path="Meshes/DLC03/Armor/TrapperA/FOutfit_LeftLeg" choice="TWB Far Harbor - Trapper - Left Leg"/>
+    <OutputChoice path="Meshes\DLC03\Armor\TrapperA\FOutfit_RightArm" choice="TWB Far Harbor - Trapper - Right Arm"/>
+    <OutputChoice path="Meshes/DLC03/Armor/TrapperA/FOutfit_RightArm" choice="TWB Far Harbor - Trapper - Right Arm"/>
+    <OutputChoice path="Meshes\DLC03\Armor\TrapperA\FOutfit_RightLeg" choice="TWB Far Harbor - Trapper - Right Leg"/>
+    <OutputChoice path="Meshes/DLC03/Armor/TrapperA/FOutfit_RightLeg" choice="TWB Far Harbor - Trapper - Right Leg"/>
+    <OutputChoice path="Meshes\DLC03\Armor\TrapperA\FOutfit_Torso" choice="TWB Far Harbor - Trapper - Torso"/>
+    <OutputChoice path="Meshes/DLC03/Armor/TrapperA/FOutfit_Torso" choice="TWB Far Harbor - Trapper - Torso"/>
+    <OutputChoice path="Meshes\DLC03\Armor\TrapperHunter\FOutfit" choice="TWB Far Harbor - Trapper Hunter"/>
+    <OutputChoice path="Meshes/DLC03/Armor/TrapperHunter/FOutfit" choice="TWB Far Harbor - Trapper Hunter"/>
+    <OutputChoice path="Meshes\DLC03\Clothes\Chase\OutfitF" choice="TWB Far Harbor - Chase"/>
+    <OutputChoice path="Meshes/DLC03/Clothes/Chase/OutfitF" choice="TWB Far Harbor - Chase"/>
+    <OutputChoice path="Meshes\DLC03\Clothes\ChildrenofAtom\FOutfit" choice="TWB Far Harbor - Children of Atom"/>
+    <OutputChoice path="Meshes/DLC03/Clothes/ChildrenofAtom/FOutfit" choice="TWB Far Harbor - Children of Atom"/>
+    <OutputChoice path="Meshes\DLC03\Clothes\CoastalRaider\CoastalRaiderFOutfit" choice="TWB Far Harbor - Coastal Raider"/>
+    <OutputChoice path="Meshes/DLC03/Clothes/CoastalRaider/CoastalRaiderFOutfit" choice="TWB Far Harbor - Coastal Raider"/>
+    <OutputChoice path="Meshes\DLC03\Clothes\Fisherman\FOutfit" choice="TWB Far Harbor - Fisherman"/>
+    <OutputChoice path="Meshes/DLC03/Clothes/Fisherman/FOutfit" choice="TWB Far Harbor - Fisherman"/>
+    <OutputChoice path="Meshes\DLC03\Clothes\Fisherman02\FOutfit" choice="TWB Far Harbor - Fisherman 2"/>
+    <OutputChoice path="Meshes/DLC03/Clothes/Fisherman02/FOutfit" choice="TWB Far Harbor - Fisherman 2"/>
+    <OutputChoice path="Meshes\DLC03\Clothes\Hunter\FOutfit" choice="TWB Far Harbor - Hunter"/>
+    <OutputChoice path="Meshes/DLC03/Clothes/Hunter/FOutfit" choice="TWB Far Harbor - Hunter"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Heavy01_ArmLeft_A_F" choice="TWB Nuka World - Disciples - Arm Heavy L (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Heavy01_ArmLeft_A_F" choice="TWB Nuka World - Disciples - Arm Heavy L (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Heavy01_ArmLeft_B_F" choice="TWB Nuka World - Disciples - Arm Heavy L (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Heavy01_ArmLeft_B_F" choice="TWB Nuka World - Disciples - Arm Heavy L (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Heavy01_ArmRight_A_F" choice="TWB Nuka World - Disciples - Arm Heavy R (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Heavy01_ArmRight_A_F" choice="TWB Nuka World - Disciples - Arm Heavy R (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Heavy01_ArmRight_B_F" choice="TWB Nuka World - Disciples - Arm Heavy R (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Heavy01_ArmRight_B_F" choice="TWB Nuka World - Disciples - Arm Heavy R (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Heavy01_Helmet_F" choice="TWB Nuka World - Disciples - Helmet Heavy"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Heavy01_Helmet_F" choice="TWB Nuka World - Disciples - Helmet Heavy"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Heavy01_LegLeft_A_F" choice="TWB Nuka World - Disciples - Leg Heavy L (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Heavy01_LegLeft_A_F" choice="TWB Nuka World - Disciples - Leg Heavy L (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Heavy01_LegLeft_B_F" choice="TWB Nuka World - Disciples - Leg Heavy L (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Heavy01_LegLeft_B_F" choice="TWB Nuka World - Disciples - Leg Heavy L (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Heavy01_LegRight_A_F" choice="TWB Nuka World - Disciples - Leg Heavy R (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Heavy01_LegRight_A_F" choice="TWB Nuka World - Disciples - Leg Heavy R (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Heavy01_LegRight_B_F" choice="TWB Nuka World - Disciples - Leg Heavy R (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Heavy01_LegRight_B_F" choice="TWB Nuka World - Disciples - Leg Heavy R (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Heavy01_Torso_F" choice="TWB Nuka World - Disciples - Torso Heavy"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Heavy01_Torso_F" choice="TWB Nuka World - Disciples - Torso Heavy"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Light02_ArmLeft_F" choice="TWB Nuka World - Disciples - Arm Light L (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Light02_ArmLeft_F" choice="TWB Nuka World - Disciples - Arm Light L (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Light02_ArmRight_F" choice="TWB Nuka World - Disciples - Arm Light R (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Light02_ArmRight_F" choice="TWB Nuka World - Disciples - Arm Light R (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Light02_LegLeft_F" choice="TWB Nuka World - Disciples - Leg Light L (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Light02_LegLeft_F" choice="TWB Nuka World - Disciples - Leg Light L (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Light02_LegRight_F" choice="TWB Nuka World - Disciples - Leg Light R (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Light02_LegRight_F" choice="TWB Nuka World - Disciples - Leg Light R (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Light02_Torso_F" choice="TWB Nuka World - Disciples - Torso Light (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Light02_Torso_F" choice="TWB Nuka World - Disciples - Torso Light (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Lite01_ArmLeft_F" choice="TWB Nuka World - Disciples - Arm Light L (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Lite01_ArmLeft_F" choice="TWB Nuka World - Disciples - Arm Light L (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Lite01_ArmRight_F" choice="TWB Nuka World - Disciples - Arm Light R (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Lite01_ArmRight_F" choice="TWB Nuka World - Disciples - Arm Light R (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Lite01_Helmet_F" choice="TWB Nuka World - Disciples - Helmet Light"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Lite01_Helmet_F" choice="TWB Nuka World - Disciples - Helmet Light"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Lite01_LegLeft1_F" choice="TWB Nuka World - Disciples - Leg Light L (1)(A)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Lite01_LegLeft1_F" choice="TWB Nuka World - Disciples - Leg Light L (1)(A)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Lite01_LegLeft2_F" choice="TWB Nuka World - Disciples - Leg Light L (1)(B)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Lite01_LegLeft2_F" choice="TWB Nuka World - Disciples - Leg Light L (1)(B)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Lite01_LegRight1_F" choice="TWB Nuka World - Disciples - Leg Light R (1)(A)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Lite01_LegRight1_F" choice="TWB Nuka World - Disciples - Leg Light R (1)(A)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Lite01_LegRight2_F" choice="TWB Nuka World - Disciples - Leg Light R (1)(B)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Lite01_LegRight2_F" choice="TWB Nuka World - Disciples - Leg Light R (1)(B)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Disciples\DLC04_Armor_Disciples_Lite01_Torso_F" choice="TWB Nuka World - Disciples - Torso Light (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Disciples/DLC04_Armor_Disciples_Lite01_Torso_F" choice="TWB Nuka World - Disciples - Torso Light (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_Heavy01_ArmLeft_A_F" choice="TWB Nuka World - Operators - Arm Heavy L (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_Heavy01_ArmLeft_A_F" choice="TWB Nuka World - Operators - Arm Heavy L (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_Heavy01_ArmLeft_B_F" choice="TWB Nuka World - Operators - Arm Heavy L (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_Heavy01_ArmLeft_B_F" choice="TWB Nuka World - Operators - Arm Heavy L (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_Heavy01_ArmRight_A_F" choice="TWB Nuka World - Operators - Arm Heavy R (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_Heavy01_ArmRight_A_F" choice="TWB Nuka World - Operators - Arm Heavy R (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_Heavy01_ArmRight_B_F" choice="TWB Nuka World - Operators - Arm Heavy R (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_Heavy01_ArmRight_B_F" choice="TWB Nuka World - Operators - Arm Heavy R (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_Heavy01_LegLeft_A_F" choice="TWB Nuka World - Operators - Leg Heavy L (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_Heavy01_LegLeft_A_F" choice="TWB Nuka World - Operators - Leg Heavy L (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_Heavy01_LegLeft_B_F" choice="TWB Nuka World - Operators - Leg Heavy L (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_Heavy01_LegLeft_B_F" choice="TWB Nuka World - Operators - Leg Heavy L (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_Heavy01_LegRight_A_F" choice="TWB Nuka World - Operators - Leg Heavy R (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_Heavy01_LegRight_A_F" choice="TWB Nuka World - Operators - Leg Heavy R (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_Heavy01_LegRight_B_F" choice="TWB Nuka World - Operators - Leg Heavy R (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_Heavy01_LegRight_B_F" choice="TWB Nuka World - Operators - Leg Heavy R (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_Heavy01_Torso_A1_F" choice="TWB Nuka World - Operators - Torso Heavy (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_Heavy01_Torso_A1_F" choice="TWB Nuka World - Operators - Torso Heavy (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_Heavy01_Torso_A_F" choice="TWB Nuka World - Operators - Torso Heavy (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_Heavy01_Torso_A_F" choice="TWB Nuka World - Operators - Torso Heavy (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_LightArmor01_ArmLeft_A_F" choice="TWB Nuka World - Operators - Arm Light L (1)(A)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_LightArmor01_ArmLeft_A_F" choice="TWB Nuka World - Operators - Arm Light L (1)(A)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_LightArmor01_ArmLeft_B_F" choice="TWB Nuka World - Operators - Arm Light L (1)(B)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_LightArmor01_ArmLeft_B_F" choice="TWB Nuka World - Operators - Arm Light L (1)(B)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_LightArmor01_ArmRight_A_F" choice="TWB Nuka World - Operators - Arm Light R (1)(A)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_LightArmor01_ArmRight_A_F" choice="TWB Nuka World - Operators - Arm Light R (1)(A)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_LightArmor01_ArmRight_B_F" choice="TWB Nuka World - Operators - Arm Light R (1)(B)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_LightArmor01_ArmRight_B_F" choice="TWB Nuka World - Operators - Arm Light R (1)(B)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_LightArmor01_LegLeft_A_F" choice="TWB Nuka World - Operators - Leg Light L (1)(A)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_LightArmor01_LegLeft_A_F" choice="TWB Nuka World - Operators - Leg Light L (1)(A)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_LightArmor01_LegLeft_B_F" choice="TWB Nuka World - Operators - Leg Light L (1)(B)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_LightArmor01_LegLeft_B_F" choice="TWB Nuka World - Operators - Leg Light L (1)(B)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_LightArmor01_LegRight_A_F" choice="TWB Nuka World - Operators - Leg Light R (1)(A)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_LightArmor01_LegRight_A_F" choice="TWB Nuka World - Operators - Leg Light R (1)(A)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_LightArmor01_LegRight_B_F" choice="TWB Nuka World - Operators - Leg Light R (1)(B)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_LightArmor01_LegRight_B_F" choice="TWB Nuka World - Operators - Leg Light R (1)(B)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_LightArmor01_Torso_F" choice="TWB Nuka World - Operators - Torso Light (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_LightArmor01_Torso_F" choice="TWB Nuka World - Operators - Torso Light (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_LightArmor02_ArmLeft_A_F" choice="TWB Nuka World - Operators - Arm Light L (2)(A)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_LightArmor02_ArmLeft_A_F" choice="TWB Nuka World - Operators - Arm Light L (2)(A)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_LightArmor02_ArmLeft_B_F" choice="TWB Nuka World - Operators - Arm Light L (2)(B)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_LightArmor02_ArmLeft_B_F" choice="TWB Nuka World - Operators - Arm Light L (2)(B)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_LightArmor02_ArmRight_A_F" choice="TWB Nuka World - Operators - Arm Light R (2)(A)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_LightArmor02_ArmRight_A_F" choice="TWB Nuka World - Operators - Arm Light R (2)(A)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_LightArmor02_ArmRight_B_F" choice="TWB Nuka World - Operators - Arm Light R (2)(B)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_LightArmor02_ArmRight_B_F" choice="TWB Nuka World - Operators - Arm Light R (2)(B)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Operators\DLC04_Clean_Cut_Set_LightArmor02_Torso_F" choice="TWB Nuka World - Operators - Torso Light (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Operators/DLC04_Clean_Cut_Set_LightArmor02_Torso_F" choice="TWB Nuka World - Operators - Torso Light (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\DLC04_ZooGang_LightArmor_ArmLeft_F" choice="TWB Nuka World - Pack - Arm Light L"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/DLC04_ZooGang_LightArmor_ArmLeft_F" choice="TWB Nuka World - Pack - Arm Light L"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\DLC04_ZooGang_LightArmor_ArmRight_F" choice="TWB Nuka World - Pack - Arm Light R"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/DLC04_ZooGang_LightArmor_ArmRight_F" choice="TWB Nuka World - Pack - Arm Light R"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\DLC04_ZooGang_LightArmor_LegLeft_F" choice="TWB Nuka World - Pack - Leg Light L"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/DLC04_ZooGang_LightArmor_LegLeft_F" choice="TWB Nuka World - Pack - Leg Light L"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\DLC04_ZooGang_LightArmor_LegRight_F" choice="TWB Nuka World - Pack - Leg Light R"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/DLC04_ZooGang_LightArmor_LegRight_F" choice="TWB Nuka World - Pack - Leg Light R"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\DLC04_ZooGang_LightArmor_Torso_F" choice="TWB Nuka World - Pack - Torso Light"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/DLC04_ZooGang_LightArmor_Torso_F" choice="TWB Nuka World - Pack - Torso Light"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\DLC04_ZooGang_UltraLightChest_01_F" choice="TWB Nuka World - Pack - Necklace (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/DLC04_ZooGang_UltraLightChest_01_F" choice="TWB Nuka World - Pack - Necklace (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\DLC04_ZooGang_UltraLightChest_02_F" choice="TWB Nuka World - Pack - Necklace (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/DLC04_ZooGang_UltraLightChest_02_F" choice="TWB Nuka World - Pack - Necklace (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\DLC04_ZooGang_UltraLightChest_03_F" choice="TWB Nuka World - Pack - Necklace (3)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/DLC04_ZooGang_UltraLightChest_03_F" choice="TWB Nuka World - Pack - Necklace (3)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\DLC04_ZooGang_UltraLightChest_04_F" choice="TWB Nuka World - Pack - Necklace (4)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/DLC04_ZooGang_UltraLightChest_04_F" choice="TWB Nuka World - Pack - Necklace (4)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\Pack_Heavy_Body_A_F" choice="TWB Nuka World - Pack - Torso Heavy"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/Pack_Heavy_Body_A_F" choice="TWB Nuka World - Pack - Torso Heavy"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\Pack_Heavy_LeftArm_A_F" choice="TWB Nuka World - Pack - Arm Heavy L"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/Pack_Heavy_LeftArm_A_F" choice="TWB Nuka World - Pack - Arm Heavy L"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\Pack_Heavy_LeftLeg_A_F" choice="TWB Nuka World - Pack - Leg Heavy L (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/Pack_Heavy_LeftLeg_A_F" choice="TWB Nuka World - Pack - Leg Heavy L (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\Pack_Heavy_LeftLeg_B_F" choice="TWB Nuka World - Pack - Leg Heavy L (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/Pack_Heavy_LeftLeg_B_F" choice="TWB Nuka World - Pack - Leg Heavy L (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\Pack_Heavy_RightArm_A_F" choice="TWB Nuka World - Pack - Arm Heavy R"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/Pack_Heavy_RightArm_A_F" choice="TWB Nuka World - Pack - Arm Heavy R"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\Pack_Heavy_RightLeg_A_F" choice="TWB Nuka World - Pack - Leg Heavy R (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/Pack_Heavy_RightLeg_A_F" choice="TWB Nuka World - Pack - Leg Heavy R (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\Pack_Heavy_RightLeg_B_ F" choice="TWB Nuka World - Pack - Leg Heavy R (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/Pack_Heavy_RightLeg_B_ F" choice="TWB Nuka World - Pack - Leg Heavy R (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\Pack_UnderArmor_01_F" choice="TWB Nuka World - Pack - Underarmor (1)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/Pack_UnderArmor_01_F" choice="TWB Nuka World - Pack - Underarmor (1)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\Pack_UnderArmor_02_F" choice="TWB Nuka World - Pack - Underarmor (2)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/Pack_UnderArmor_02_F" choice="TWB Nuka World - Pack - Underarmor (2)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\Pack_UnderArmor_03_F" choice="TWB Nuka World - Pack - Underarmor (3)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/Pack_UnderArmor_03_F" choice="TWB Nuka World - Pack - Underarmor (3)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\Pack_UnderArmor_04_F" choice="TWB Nuka World - Pack - Underarmor (4)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/Pack_UnderArmor_04_F" choice="TWB Nuka World - Pack - Underarmor (4)"/>
+    <OutputChoice path="Meshes\DLC04\Armor\Pack\Pack_UnderArmor_05_F" choice="TWB Nuka World - Pack - Underarmor (5)"/>
+    <OutputChoice path="Meshes/DLC04/Armor/Pack/Pack_UnderArmor_05_F" choice="TWB Nuka World - Pack - Underarmor (5)"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Disciples\DiscipleUnderArmorF_A" choice="TWB Nuka World - Disciples - Underarmor (1)"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Disciples/DiscipleUnderArmorF_A" choice="TWB Nuka World - Disciples - Underarmor (1)"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Disciples\DiscipleUnderArmorF_B" choice="TWB Nuka World - Disciples - Underarmor (2)"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Disciples/DiscipleUnderArmorF_B" choice="TWB Nuka World - Disciples - Underarmor (2)"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Disciples\DiscipleUnderArmorF_C" choice="TWB Nuka World - Disciples - Underarmor (3)"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Disciples/DiscipleUnderArmorF_C" choice="TWB Nuka World - Disciples - Underarmor (3)"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Disciples\DiscipleUnderArmorF_D" choice="TWB Nuka World - Disciples - Underarmor (4)"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Disciples/DiscipleUnderArmorF_D" choice="TWB Nuka World - Disciples - Underarmor (4)"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Disciples\DisciplesUnderarmorPants01F" choice="TWB Nuka World - Disciples - Underarmor Pants"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Disciples/DisciplesUnderarmorPants01F" choice="TWB Nuka World - Disciples - Underarmor Pants"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Disciples\DisciplesUnderarmorTop01F" choice="TWB Nuka World - Disciples - Underarmor Top"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Disciples/DisciplesUnderarmorTop01F" choice="TWB Nuka World - Disciples - Underarmor Top"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Gage\GageUnderArmor_f" choice="TWB Nuka World - Gage - Underarmor"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Gage/GageUnderArmor_f" choice="TWB Nuka World - Gage - Underarmor"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Mason\MasonUnderArmorNoPads_f" choice="TWB Nuka World - Mason - Underarmor (No Pads)"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Mason/MasonUnderArmorNoPads_f" choice="TWB Nuka World - Mason - Underarmor (No Pads)"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Mason\MasonUnderArmor_f" choice="TWB Nuka World - Mason - Underarmor"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Mason/MasonUnderArmor_f" choice="TWB Nuka World - Mason - Underarmor"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\NukaSpaceSuit\NukaSpaceSuitF_Body" choice="TWB Nuka World - Nuka Space Suit"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/NukaSpaceSuit/NukaSpaceSuitF_Body" choice="TWB Nuka World - Nuka Space Suit"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Operators\OperatorKnotF" choice="TWB Nuka World - Operators - Knot"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Operators/OperatorKnotF" choice="TWB Nuka World - Operators - Knot"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Operators\OperatorSuit01F" choice="TWB Nuka World - Operators - Suit and Tie"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Operators/OperatorSuit01F" choice="TWB Nuka World - Operators - Suit and Tie"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Operators\OperatorSuitDressF" choice="TWB Nuka World - Operators - Dress"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Operators/OperatorSuitDressF" choice="TWB Nuka World - Operators - Dress"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Operators\OperatorSuitDressKnotF" choice="TWB Nuka World - Operators - Dress Knot"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Operators/OperatorSuitDressKnotF" choice="TWB Nuka World - Operators - Dress Knot"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Operators\OperatorSuitF" choice="TWB Nuka World - Operators - Suit"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Operators/OperatorSuitF" choice="TWB Nuka World - Operators - Suit"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Oswald\DLC04_OswaldOutfit_F" choice="TWB Nuka World - Oswald"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Oswald/DLC04_OswaldOutfit_F" choice="TWB Nuka World - Oswald"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\SpaceSuit\SpacesuitF" choice="TWB Nuka World - Spacesuit"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/SpaceSuit/SpacesuitF" choice="TWB Nuka World - Spacesuit"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Western\WesternSuit01_f" choice="TWB Nuka World - Western - Suit"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Western/WesternSuit01_f" choice="TWB Nuka World - Western - Suit"/>
+    <OutputChoice path="Meshes\DLC04\Clothes\Wildman\WildManOutfit_F" choice="TWB Nuka World - Wildman"/>
+    <OutputChoice path="Meshes/DLC04/Clothes/Wildman/WildManOutfit_F" choice="TWB Nuka World - Wildman"/>
+    <OutputChoice path="meshes\actors\character\characterassets\FemaleBody" choice="CBBE Reduced 3BBB Body"/>
+    <OutputChoice path="meshes/actors/character/characterassets/FemaleBody" choice="CBBE Reduced 3BBB Body"/>
+    <OutputChoice path="meshes\actors\character\playercharacterassets\FemaleBody" choice="CBBE Reduced 3BBB Body [Unique Player]"/>
+    <OutputChoice path="meshes/actors/character/playercharacterassets/FemaleBody" choice="CBBE Reduced 3BBB Body [Unique Player]"/>
+    <OutputChoice path="Meshes\Armor\DCGuard\FArmLArmorLower" choice="DC FArmLArmorLower TWB"/>
+    <OutputChoice path="Meshes/Armor/DCGuard/FArmLArmorLower" choice="DC FArmLArmorLower TWB"/>
+    <OutputChoice path="Meshes\Armor\DCGuard\FArmLArmorUpper" choice="DC FArmLArmorUpper TWB"/>
+    <OutputChoice path="Meshes/Armor/DCGuard/FArmLArmorUpper" choice="DC FArmLArmorUpper TWB"/>
+    <OutputChoice path="Meshes\Armor\DCGuard\FArmRArmorLower" choice="DC FArmRArmorLower TWB"/>
+    <OutputChoice path="Meshes/Armor/DCGuard/FArmRArmorLower" choice="DC FArmRArmorLower TWB"/>
+    <OutputChoice path="Meshes\Armor\DCGuard\FArmRArmorUpper" choice="DC FArmRArmorUpper TWB"/>
+    <OutputChoice path="Meshes/Armor/DCGuard/FArmRArmorUpper" choice="DC FArmRArmorUpper TWB"/>
+    <OutputChoice path="Meshes\Armor\DCGuard\FArmorBody" choice="DC FArmorBody TWB"/>
+    <OutputChoice path="Meshes/Armor/DCGuard/FArmorBody" choice="DC FArmorBody TWB"/>
+    <OutputChoice path="meshes\DLC01\Armor\RoboArmor\RoboArmorTorsoHeavyF" choice="TWB Automatron - Robo Armor - Torso Heavy"/>
+    <OutputChoice path="meshes/DLC01/Armor/RoboArmor/RoboArmorTorsoHeavyF" choice="TWB Automatron - Robo Armor - Torso Heavy"/>
+    <OutputChoice path="meshes\DLC01\Armor\RoboArmor\RoboArmorTorsoLightF" choice="TWB Automatron - Robo Armor - Torso Light"/>
+    <OutputChoice path="meshes/DLC01/Armor/RoboArmor/RoboArmorTorsoLightF" choice="TWB Automatron - Robo Armor - Torso Light"/>
+    <OutputChoice path="meshes\DLC01\Armor\RoboArmor\RoboArmorTorsoMediumF" choice="TWB Automatron - Robo Armor - Torso Medium"/>
+    <OutputChoice path="meshes/DLC01/Armor/RoboArmor/RoboArmorTorsoMediumF" choice="TWB Automatron - Robo Armor - Torso Medium"/>
+    <OutputChoice path="meshes\armor\CombatArmor\F_Torso_Heavy" choice="TWB Vanilla - Combat Armor - Torso Heavy"/>
+    <OutputChoice path="meshes/armor/CombatArmor/F_Torso_Heavy" choice="Abe Combat Armor Heavy"/>
+    <OutputChoice path="meshes\armor\CombatArmor\F_Torso_Lite" choice="TWB Vanilla - Combat Armor - Torso Lite"/>
+    <OutputChoice path="meshes/armor/CombatArmor/F_Torso_Lite" choice="Abe Combat Armor Light"/>
+    <OutputChoice path="meshes\armor\CombatArmor\F_Torso_Mid" choice="TWB Vanilla - Combat Armor - Torso Mid"/>
+    <OutputChoice path="meshes/armor/CombatArmor/F_Torso_Mid" choice="Abe Combat Armor Medium"/>
+    <OutputChoice path="meshes\armor\DCGuard\FArmLArmorLower" choice="DC FArmLArmorLower TWB"/>
+    <OutputChoice path="meshes/armor/DCGuard/FArmLArmorLower" choice="DC FArmLArmorLower TWB"/>
+    <OutputChoice path="meshes\armor\DCGuard\FArmLArmorUpper" choice="DC FArmLArmorUpper TWB"/>
+    <OutputChoice path="meshes/armor/DCGuard/FArmLArmorUpper" choice="DC FArmLArmorUpper TWB"/>
+    <OutputChoice path="meshes\armor\DCGuard\FArmRArmorLower" choice="DC FArmRArmorLower TWB"/>
+    <OutputChoice path="meshes/armor/DCGuard/FArmRArmorLower" choice="DC FArmRArmorLower TWB"/>
+    <OutputChoice path="meshes\armor\DCGuard\FArmRArmorUpper" choice="DC FArmRArmorUpper TWB"/>
+    <OutputChoice path="meshes/armor/DCGuard/FArmRArmorUpper" choice="DC FArmRArmorUpper TWB"/>
+    <OutputChoice path="meshes\armor\DCGuard\farmorbody" choice="DC FArmorBody TWB"/>
+    <OutputChoice path="meshes/armor/DCGuard/farmorbody" choice="DC FArmorBody TWB"/>
+    <OutputChoice path="meshes\armor\Leather\F_Torso_Heavy" choice="TWB Vanilla - Leather - Torso Heavy 3BBB"/>
+    <OutputChoice path="meshes/armor/Leather/F_Torso_Heavy" choice="Abe Leather Heavy"/>
+    <OutputChoice path="meshes\armor\Leather\F_Torso_HeavyStuds" choice="TWB Vanilla - Leather - Torso Heavy (Studs) 3BBB"/>
+    <OutputChoice path="meshes/armor/Leather/F_Torso_HeavyStuds" choice="Abe Leather Studded Heavy"/>
+    <OutputChoice path="meshes\armor\Leather\F_Torso_LiteStuds" choice="TWB Vanilla - Leather - Torso Lite (Studs)"/>
+    <OutputChoice path="meshes/armor/Leather/F_Torso_LiteStuds" choice="Abe Leather Studded Light"/>
+    <OutputChoice path="meshes\armor\Leather\F_Torso_Mid" choice="TWB Vanilla - Leather - Torso Mid 3BBB"/>
+    <OutputChoice path="meshes/armor/Leather/F_Torso_Mid" choice="Abe Leather Medium"/>
+    <OutputChoice path="meshes\armor\Leather\F_Torso_MidStuds" choice="TWB Vanilla - Leather - Torso Mid (Studs) 3BBB"/>
+    <OutputChoice path="meshes/armor/Leather/F_Torso_MidStuds" choice="Abe Leather Studded Medium"/>
+    <OutputChoice path="meshes\armor\Metal\FToros_Lite_1" choice="TWB Vanilla - Metal - Torso Lite 3BBB"/>
+    <OutputChoice path="meshes/armor/Metal/FToros_Lite_1" choice="Abe Metal Armor Light"/>
+    <OutputChoice path="meshes\armor\Metal\FToroso_Heavy_1" choice="TWB Vanilla - Metal - Torso Heavy 3BBB"/>
+    <OutputChoice path="meshes/armor/Metal/FToroso_Heavy_1" choice="Abe Metal Armor Heavy"/>
+    <OutputChoice path="meshes\armor\RaiderModArmor\LiteLLeg_F" choice="TWB Vanilla - Raider Mods - Leg Lite L"/>
+    <OutputChoice path="meshes/armor/RaiderModArmor/LiteLLeg_F" choice="TWB Vanilla - Raider Mods - Leg Lite L"/>
+    <OutputChoice path="meshes\armor\RaiderModArmor\LiteRLeg_F" choice="TWB Vanilla - Raider Mods - Leg Lite R"/>
+    <OutputChoice path="meshes/armor/RaiderModArmor/LiteRLeg_F" choice="TWB Vanilla - Raider Mods - Leg Lite R"/>
+    <OutputChoice path="meshes\armor\RaiderModArmor\MedLLeg_F" choice="TWB Vanilla - Raider Mods - Leg Med L"/>
+    <OutputChoice path="meshes/armor/RaiderModArmor/MedLLeg_F" choice="TWB Vanilla - Raider Mods - Leg Med L"/>
+    <OutputChoice path="meshes\armor\RaiderModArmor\MedRLeg_F" choice="TWB Vanilla - Raider Mods - Leg Med R"/>
+    <OutputChoice path="meshes/armor/RaiderModArmor/MedRLeg_F" choice="TWB Vanilla - Raider Mods - Leg Med R"/>
+    <OutputChoice path="meshes\armor\Synth\SynthHvyTorso_F" choice="TWB Vanilla - Synth - Torso Heavy"/>
+    <OutputChoice path="meshes/armor/Synth/SynthHvyTorso_F" choice="Abe Synth Armor Heavy"/>
+    <OutputChoice path="meshes\armor\Synth\SynthLiteTorso_F" choice="TWB Vanilla - Synth - Torso Lite"/>
+    <OutputChoice path="meshes/armor/Synth/SynthLiteTorso_F" choice="Abe Synth Armor Light"/>
+    <OutputChoice path="meshes\armor\Synth\SynthMedTorso_F" choice="TWB Vanilla - Synth - Torso Med"/>
+    <OutputChoice path="meshes/armor/Synth/SynthMedTorso_F" choice="Abe Synth Armor Medium"/>
+    <OutputChoice path="Meshes\Actors\Character\CharacterAssets\FemaleBody" choice="True Wasteland Body - SMP"/>
+    <OutputChoice path="Meshes/Actors/Character/CharacterAssets/FemaleBody" choice="True Wasteland Body - SMP"/>
+    <OutputChoice path="meshes\Clothes\Sturgess\SturgesFTorso" choice="Crimsomrider&apos;s Feminine Utility Coveralls TWB"/>
+    <OutputChoice path="meshes/Clothes/Sturgess/SturgesFTorso" choice="Crimsomrider&apos;s Feminine Utility Coveralls TWB"/>
+    <OutputChoice path="meshes\DLC03\Armor\CombatArmor\FOutfit_Torso" choice="Marine Armor"/>
+    <OutputChoice path="meshes/DLC03/Armor/CombatArmor/FOutfit_Torso" choice="Marine Armor"/>
+    <OutputChoice path="meshes\DLC03\Armor\TrapperA\FOutfit_Torso" choice="Trapper Heavy"/>
+    <OutputChoice path="meshes/DLC03/Armor/TrapperA/FOutfit_Torso" choice="Trapper Heavy"/>
+    <OutputChoice path="meshes\armor\Leather\F_Torso_Lite" choice="Leather Lite"/>
+    <OutputChoice path="meshes/armor/Leather/F_Torso_Lite" choice="Leather Lite"/>
+    <OutputChoice path="meshes\armor\Leather\F_Leg_Lite_L" choice="TWB Vanilla - Leather - Leg Lite L"/>
+    <OutputChoice path="meshes/armor/Leather/F_Leg_Lite_L" choice="TWB Vanilla - Leather - Leg Lite L"/>
+    <OutputChoice path="meshes\armor\Leather\F_Leg_Lite_LStuds" choice="TWB Vanilla - Leather - Leg Lite L (Studs)"/>
+    <OutputChoice path="meshes/armor/Leather/F_Leg_Lite_LStuds" choice="TWB Vanilla - Leather - Leg Lite L (Studs)"/>
+    <OutputChoice path="meshes\armor\Leather\F_Leg_Lite_R" choice="TWB Vanilla - Leather - Leg Lite R"/>
+    <OutputChoice path="meshes/armor/Leather/F_Leg_Lite_R" choice="TWB Vanilla - Leather - Leg Lite R"/>
+    <OutputChoice path="meshes\armor\Leather\F_Leg_Lite_RStuds" choice="TWB Vanilla - Leather - Leg Lite R (Studs)"/>
+    <OutputChoice path="meshes/armor/Leather/F_Leg_Lite_RStuds" choice="TWB Vanilla - Leather - Leg Lite R (Studs)"/>
+    <OutputChoice path="meshes\armor\Leather\F_Leg_Mid_L" choice="TWB Vanilla - Leather - Leg Mid L"/>
+    <OutputChoice path="meshes/armor/Leather/F_Leg_Mid_L" choice="TWB Vanilla - Leather - Leg Mid L"/>
+    <OutputChoice path="meshes\armor\Leather\F_Leg_Mid_LStuds" choice="TWB Vanilla - Leather - Leg Mid L (Studs)"/>
+    <OutputChoice path="meshes/armor/Leather/F_Leg_Mid_LStuds" choice="TWB Vanilla - Leather - Leg Mid L (Studs)"/>
+    <OutputChoice path="meshes\armor\Leather\F_Leg_Mid_R" choice="TWB Vanilla - Leather - Leg Mid R"/>
+    <OutputChoice path="meshes/armor/Leather/F_Leg_Mid_R" choice="TWB Vanilla - Leather - Leg Mid R"/>
+    <OutputChoice path="meshes\armor\Leather\F_Leg_Mid_RStuds" choice="TWB Vanilla - Leather - Leg Mid R (Studs)"/>
+    <OutputChoice path="meshes/armor/Leather/F_Leg_Mid_RStuds" choice="TWB Vanilla - Leather - Leg Mid R (Studs)"/>
+    <OutputChoice path="meshes\armor\Metal\FLegL_Heavy_1" choice="TWB Vanilla - Metal - Leg Heavy L"/>
+    <OutputChoice path="meshes/armor/Metal/FLegL_Heavy_1" choice="TWB Vanilla - Metal - Leg Heavy L"/>
+    <OutputChoice path="meshes\armor\Metal\FLegL_Lite_1" choice="TWB Vanilla - Metal - Leg Lite L"/>
+    <OutputChoice path="meshes/armor/Metal/FLegL_Lite_1" choice="TWB Vanilla - Metal - Leg Lite L"/>
+    <OutputChoice path="meshes\armor\Metal\FLegL_Mid_1" choice="TWB Vanilla - Metal - Leg Mid L"/>
+    <OutputChoice path="meshes/armor/Metal/FLegL_Mid_1" choice="TWB Vanilla - Metal - Leg Mid L"/>
+    <OutputChoice path="meshes\armor\Metal\FLegR_Heavy_1" choice="TWB Vanilla - Metal - Leg Heavy R"/>
+    <OutputChoice path="meshes/armor/Metal/FLegR_Heavy_1" choice="TWB Vanilla - Metal - Leg Heavy R"/>
+    <OutputChoice path="meshes\armor\Metal\FLegR_Lite_1" choice="TWB Vanilla - Metal - Leg Lite R"/>
+    <OutputChoice path="meshes/armor/Metal/FLegR_Lite_1" choice="TWB Vanilla - Metal - Leg Lite R"/>
+    <OutputChoice path="meshes\armor\Metal\FLegR_Mid_1" choice="TWB Vanilla - Metal - Leg Mid R"/>
+    <OutputChoice path="meshes/armor/Metal/FLegR_Mid_1" choice="TWB Vanilla - Metal - Leg Mid R"/>
+    <OutputChoice path="meshes\armor\RaiderHeavy02\HeavyLegsL_0F" choice="TWB Vanilla - Raider - Legs Heavy L (0)"/>
+    <OutputChoice path="meshes/armor/RaiderHeavy02/HeavyLegsL_0F" choice="TWB Vanilla - Raider - Legs Heavy L (0)"/>
+    <OutputChoice path="meshes\armor\RaiderHeavy02\HeavyLegsR_0F" choice="TWB Vanilla - Raider - Legs Heavy R (0)"/>
+    <OutputChoice path="meshes/armor/RaiderHeavy02/HeavyLegsR_0F" choice="TWB Vanilla - Raider - Legs Heavy R (0)"/>
+    <OutputChoice path="meshes\armor\RaiderModArmor\HvyLArm_F" choice="TWB Vanilla - Raider Mods - Arm Heavy L"/>
+    <OutputChoice path="meshes/armor/RaiderModArmor/HvyLArm_F" choice="TWB Vanilla - Raider Mods - Arm Heavy L"/>
+    <OutputChoice path="meshes\armor\RaiderModArmor\HvyLLeg_F" choice="TWB Vanilla - Raider Mods - Leg Heavy L"/>
+    <OutputChoice path="meshes/armor/RaiderModArmor/HvyLLeg_F" choice="TWB Vanilla - Raider Mods - Leg Heavy L"/>
+    <OutputChoice path="meshes\armor\RaiderModArmor\HvyRArm_F" choice="TWB Vanilla - Raider Mods - Arm Heavy R"/>
+    <OutputChoice path="meshes/armor/RaiderModArmor/HvyRArm_F" choice="TWB Vanilla - Raider Mods - Arm Heavy R"/>
+    <OutputChoice path="meshes\armor\RaiderModArmor\LiteLArm_F" choice="TWB Vanilla - Raider Mods - Arm Lite L"/>
+    <OutputChoice path="meshes/armor/RaiderModArmor/LiteLArm_F" choice="TWB Vanilla - Raider Mods - Arm Lite L"/>
+    <OutputChoice path="meshes\armor\RaiderModArmor\LiteRArm_F" choice="TWB Vanilla - Raider Mods - Arm Lite R"/>
+    <OutputChoice path="meshes/armor/RaiderModArmor/LiteRArm_F" choice="TWB Vanilla - Raider Mods - Arm Lite R"/>
+    <OutputChoice path="meshes\armor\RaiderModArmor\MedLArm_F" choice="TWB Vanilla - Raider Mods - Arm Med L"/>
+    <OutputChoice path="meshes/armor/RaiderModArmor/MedLArm_F" choice="TWB Vanilla - Raider Mods - Arm Med L"/>
+    <OutputChoice path="meshes\armor\RaiderModArmor\MedRArm_F" choice="TWB Vanilla - Raider Mods - Arm Med R"/>
+    <OutputChoice path="meshes/armor/RaiderModArmor/MedRArm_F" choice="TWB Vanilla - Raider Mods - Arm Med R"/>
+    <OutputChoice path="meshes\Armor\ArmyFatigues\fatiguesf" choice="Crimsomrider&apos;s Feminine Army Fatigues TWB"/>
+    <OutputChoice path="meshes/Armor/ArmyFatigues/fatiguesf" choice="Crimsomrider&apos;s Feminine Army Fatigues TWB"/>
+    <OutputChoice path="meshes\Clothes\WomensCasual\FOutfit" choice="Crimsomrider&apos;s Feminine Casual Outfit TWB"/>
+    <OutputChoice path="meshes/Clothes/WomensCasual/FOutfit" choice="Crimsomrider&apos;s Feminine Casual Outfit TWB"/>
+    <OutputChoice path="meshes\Clothes\RedRocketJumpsuit\RedRocketJumpsuitF" choice="Crimsomrider&apos;s Feminine Mechanic Jumpsuits TWB"/>
+    <OutputChoice path="meshes/Clothes/RedRocketJumpsuit/RedRocketJumpsuitF" choice="Crimsomrider&apos;s Feminine Mechanic Jumpsuits TWB"/>
+    <OutputChoice path="meshes\Clothes\Postman\PostmanF" choice="Crimsomrider&apos;s Feminine Postman Uniform TWB"/>
+    <OutputChoice path="meshes/Clothes/Postman/PostmanF" choice="Crimsomrider&apos;s Feminine Postman Uniform TWB"/>
+    <OutputChoice path="meshes\Clothes\SilverShroud\SilverShroudBodyF" choice="Crimsomrider&apos;s Feminine Silver Shroud Costume TWB"/>
+    <OutputChoice path="meshes/Clothes/SilverShroud/SilverShroudBodyF" choice="Crimsomrider&apos;s Feminine Silver Shroud Costume TWB"/>
+    <OutputChoice path="meshes\Clothes\Suit\FOutfitClean" choice="Crimsomrider&apos;s Feminine Suit (Clean) TWB"/>
+    <OutputChoice path="meshes/Clothes/Suit/FOutfitClean" choice="Crimsomrider&apos;s Feminine Suit (Clean) TWB"/>
+    <OutputChoice path="meshes\Clothes\Suit\FOutfit" choice="Crimsomrider&apos;s Feminine Suit (Dirty) TWB"/>
+    <OutputChoice path="meshes/Clothes/Suit/FOutfit" choice="Crimsomrider&apos;s Feminine Suit (Dirty) TWB"/>
+    <OutputChoice path="meshes\Clothes\VaultTecSalesman\FCoat" choice="Crimsomrider&apos;s Feminine Trench Coat (Clean) TWB"/>
+    <OutputChoice path="meshes/Clothes/VaultTecSalesman/FCoat" choice="Crimsomrider&apos;s Feminine Trench Coat (Clean) TWB"/>
+    <OutputChoice path="meshes\Clothes\VaultTecSalesman\FCoatPostWar" choice="Crimsomrider&apos;s Feminine Trench Coat (Dirty) TWB"/>
+    <OutputChoice path="meshes/Clothes/VaultTecSalesman/FCoatPostWar" choice="Crimsomrider&apos;s Feminine Trench Coat (Dirty) TWB"/>
+</BuildSelection>

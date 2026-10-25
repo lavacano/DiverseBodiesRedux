@@ -1,0 +1,15 @@
+﻿<OutfitStudioConfig>
+    <OutfitStudioFrame width="1405" height="900" maximized="false"></OutfitStudioFrame>
+    <ProjectHistory maxcount="15"></ProjectHistory>
+    <BrushSettings brushsize="0.15000">
+        <Brush focus="0.500000" name="Inflate Brush" spacing="0.015000" strength="0.015000"></Brush>
+        <Brush focus="0.500000" name="Deflate Brush" spacing="0.015000" strength="0.015000"></Brush>
+        <Brush focus="0.500000" name="Move Brush" spacing="0.015000" strength="1.000000"></Brush>
+        <Brush focus="0.500000" name="Smooth Brush" spacing="0.015000" strength="0.100000"></Brush>
+        <Brush focus="0.500000" name="Undiff Brush" spacing="0.015000" strength="0.100000"></Brush>
+        <Brush focus="0.500000" name="Mask Brush" spacing="0.015000" strength="1.000000"></Brush>
+        <Brush focus="0.500000" name="Weight Paint" spacing="0.015000" strength="0.015000"></Brush>
+        <Brush focus="0.500000" name="Color Paint" spacing="0.015000" strength="0.030000"></Brush>
+        <Brush focus="0.500000" name="Alpha Brush" spacing="0.015000" strength="0.030000"></Brush>
+    </BrushSettings>
+</OutfitStudioConfig>

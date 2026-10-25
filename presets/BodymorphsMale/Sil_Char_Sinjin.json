@@ -1,0 +1,12 @@
+{
+    "BodyMorphs": {
+        "BTARYAYDA": 0.5,
+        "TigerSanBBMale": 0.4,
+        "BTTraps": 0.6,
+        "BTShoulders": 0.5,
+        "BTBiceps": 0.5,
+        "BTStomachFat": 0.3,
+        "BTThigh": 0.4
+    },
+    "Gender": 0
+}

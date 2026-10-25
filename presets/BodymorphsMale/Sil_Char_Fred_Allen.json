@@ -1,0 +1,13 @@
+{
+    "BodyMorphs": {
+        "BTThinArm": 0.95,
+        "ThinThigh": 0.9,
+        "BTTHinCalf": 0.85,
+        "BTNegStomach": 0.8,
+        "BTNegPecMuscle": 0.85,
+        "BTNegShoulder": 0.7,
+        "BTNegChestWidth": 0.7,
+        "BTNegBicepMuscle": 0.75
+    },
+    "Gender": 0
+}

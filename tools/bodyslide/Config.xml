@@ -1,0 +1,79 @@
+﻿<Config>
+    <!-- 0 = FO3, 1 = FONV, 2 = SKYRIM, 3 = FO4, 4 = SKYRIMSE, 5 = FO4VR, 6 = SKYRIMVR, 7 = FO76, 8 = OB, 9 = SF -->
+    <TargetGame>3</TargetGame>
+    <WarnMissingGamePath>true</WarnMissingGamePath>
+    <BSATextureScan>true</BSATextureScan>
+    <!-- Archives black list -->
+    <GameDataFiles>
+        <Fallout3>Anchorage - Sounds.bsa; BrokenSteel - Sounds.bsa; Fallout - MenuVoices.bsa; Fallout - Meshes.bsa; Fallout - Misc.bsa; Fallout - Sounds.bsa; Fallout - Voices.bsa; PointLookout - Sounds.bsa; ThePitt - Sounds.bsa; Zeta - Sounds.bsa</Fallout3>
+        <FalloutNewVegas>DeadMoney - Sounds.bsa; Fallout - Meshes.bsa; Fallout - Misc.bsa; Fallout - Sound.bsa; Fallout - Voices1.bsa; GunRunnersArsenal - Sounds.bsa; HonestHearts - Sounds.bsa; LonesomeRoad - Sounds.bsa; OldWorldBlues - Sounds.bsa</FalloutNewVegas>
+        <Skyrim>Skyrim - Animations.bsa; Skyrim - Interface.bsa; Skyrim - Meshes.bsa; Skyrim - Misc.bsa; Skyrim - Shaders.bsa; Skyrim - Sounds.bsa; Skyrim - Voices.bsa; Skyrim - VoicesExtra.bsa</Skyrim>
+        <Fallout4>DLCCoast - Voices_en.ba2; DLCNukaWorld - Voices_en.ba2; DLCRobot - Voices_en.ba2; DLCworkshop03 - Voices_en.ba2; Fallout4 - Animations.ba2; Fallout4 - Interface.ba2; Fallout4 - Meshes.ba2; Fallout4 - MeshesExtra.ba2; Fallout4 - Misc.ba2; Fallout4 - Nvflex.ba2; Fallout4 - Shaders.ba2; Fallout4 - Sounds.ba2; Fallout4 - Startup.ba2</Fallout4>
+        <SkyrimSpecialEdition>Skyrim - Animations.bsa; Skyrim - Interface.bsa; Skyrim - Meshes0.bsa; Skyrim - Meshes1.bsa; Skyrim - Misc.bsa; Skyrim - Shaders.bsa; Skyrim - Sounds.bsa; Skyrim - Voices_en0.bsa; Skyrim - Voices_de0.bsa</SkyrimSpecialEdition>
+        <Fallout4VR>Fallout4 - Animations.ba2; Fallout4 - Interface.ba2; Fallout4 - Meshes.ba2; Fallout4 - MeshesExtra.ba2; Fallout4 - Misc.ba2; Fallout4 - Misc - Beta.ba2; Fallout4 - Misc - Debug.ba2; Fallout4 - Shaders.ba2; Fallout4 - Sounds.ba2; Fallout4 - Startup.ba2; Fallout4 - Voices.ba2; Fallout4 - Voices_en.ba2; Fallout4 - Voices_de.ba2; Fallout4_VR - Shaders.ba2</Fallout4VR>
+        <SkyrimVR>Skyrim - Animations.bsa; Skyrim - Interface.bsa; Skyrim - Meshes0.bsa; Skyrim - Meshes1.bsa; Skyrim - Misc.bsa; Skyrim - Shaders.bsa; Skyrim - Sounds.bsa; Skyrim - Voices_en0.bsa; Skyrim - Voices_de0.bsa; Skyrim_VR - Main.bsa</SkyrimVR>
+    </GameDataFiles>
+    <GameDataPaths>
+        <Fallout3></Fallout3>
+        <FalloutNewVegas></FalloutNewVegas>
+        <Skyrim></Skyrim>
+        <Fallout4>Z:\home\lavac\.local\share\Steam\steamapps\common\Fallout 4\Data\</Fallout4>
+        <SkyrimSpecialEdition></SkyrimSpecialEdition>
+        <Fallout4VR></Fallout4VR>
+        <SkyrimVR></SkyrimVR>
+    </GameDataPaths>
+    <GameDataPath>Z:\home\lavac\.local\share\Steam\steamapps\common\Fallout 4\Data\</GameDataPath>
+    <OutputDataPath>Z:\home\lavac\Games\Amethyst\Fallout 4\profiles\Such_Fallout_4\mods\BodySlide_files\</OutputDataPath>
+    <ProjectPath>Z:\home\lavac\.local\share\Steam\steamapps\common\Fallout 4\Data\Tools\BodySlide</ProjectPath>
+    <GameRegKey/>
+    <GameRegVal/>
+    <LogLevel>3</LogLevel>
+    <Language>177</Language>
+    <!-- Default groups are the groups virtually assigned to outfits that are not currently members of any groups.
+	This information is used by BodySlide for choosing what presets to display for outfits.
+	If the attribute "includeInBuild" is true, batch building the specified groups will also build unassigned outfits. -->
+    <DefaultGroups includeInBuild="true"></DefaultGroups>
+    <!-- Group aliases provide a way for presets saved under older group names to still apply when a group has been renamed -->
+    <GroupAliases></GroupAliases>
+    <Input>
+        <!-- Sets the minimum and maximum slider values for the BodySlide UI. There might be clipping outside of the 0-100 range! -->
+        <SliderMinimum>0</SliderMinimum>
+        <SliderMaximum>100</SliderMaximum>
+        <!-- Set the left mouse button to pan the view when dragged on the canvas in Outfit Studio -->
+        <LeftMousePan>false</LeftMousePan>
+        <BrushSettingsNearCursor>true</BrushSettingsNearCursor>
+        <MaskHistory>true</MaskHistory>
+        <ShapeHoverHighlight>true</ShapeHoverHighlight>
+    </Input>
+    <Editing>
+        <!-- Center for move/rotate operations. Object = bounding box center, Origin = (0,0,0), Selected = unmasked vertex centroid -->
+        <CenterMode>Selected</CenterMode>
+    </Editing>
+    <!--Light Settings-->
+    <Lights>
+        <Ambient>20</Ambient>
+        <Frontal>20</Frontal>
+        <Directional0 x="-100" y="10" z="100">60</Directional0>
+        <Directional1 x="100" y="10" z="100">60</Directional1>
+        <Directional2 x="0" y="20" z="-100">85</Directional2>
+    </Lights>
+    <!--Rendering Settings-->
+    <Rendering>
+        <ColorBackground r="210" g="210" b="210"></ColorBackground>
+        <!-- Vertex point sizes (in logical pixels) for the vertex edit mode in Outfit Studio. -->
+        <PointSizeMin>4.0</PointSizeMin>
+        <PointSizeMax>14.0</PointSizeMax>
+        <!-- Multiplier on the screen-space spacing between neighbor vertices. Lower = smaller points on dense meshes. -->
+        <PointSizeScale>0.6</PointSizeScale>
+        <ColorWire r="80" g="80" b="80"></ColorWire>
+        <ColorPoints r="0" g="255" b="0"></ColorPoints>
+        <ColorPointsMasked r="255" g="0" b="0"></ColorPointsMasked>
+    </Rendering>
+    <!-- Animation data. The default skeleton reference is used by Outfit Studio to determine the positions and skinning transforms for all vertices of an outfit -->
+    <Anim>
+        <DefaultSkeletonReference>Z:\home\lavac\.local\share\Steam\steamapps\common\Fallout 4\Data\meshes\Actors\Character\CharacterAssets\skeleton.nif</DefaultSkeletonReference>
+        <SkeletonRootName>Root</SkeletonRootName>
+    </Anim>
+    <AppearanceMode>Light</AppearanceMode>
+    <ShowForceBodyNormals>false</ShowForceBodyNormals>
+</Config>

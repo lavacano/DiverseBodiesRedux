@@ -1,0 +1,15 @@
+{
+    "BodyMorphs": {
+        "ChubbyWaist": 0.88,
+        "WideWaistLine": 0.56,
+        "HipUpperWidth": 0.33,
+        "Belly": 0.37,
+        "Breasts": 0.16,
+        "BreastGravity2": 0.39,
+        "Hips": 0.09,
+        "Butt": -0.03,
+        "ChubbyArms": 0.16,
+        "BreastsSmall": 0.2
+    },
+    "Gender": 1
+}

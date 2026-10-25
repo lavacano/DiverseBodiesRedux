@@ -1,0 +1,13 @@
+{
+    "BodyMorphs": {
+        "BTThighWidth": 0.82,
+        "BTOuterUpperThighSize": 0.75,
+        "BTButt": 0.82,
+        "Hips": 0.88,
+        "BTNegShoulder": 0.54,
+        "BTNegChestWidth": 0.39,
+        "BTStomachFat": 0.67,
+        "BTChestSmoothing": 0.45
+    },
+    "Gender": 0
+}

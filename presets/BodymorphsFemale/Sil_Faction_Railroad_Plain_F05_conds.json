@@ -1,0 +1,25 @@
+{
+    "gender": 1,
+    "formIDs": [],
+    "notFormIDs": [],
+    "inFaction": [
+        "0x994F6|Fallout4.esm",
+        "0x61BE6|Fallout4.esm",
+        "0xA93D1|Fallout4.esm"
+    ],
+    "notInFaction": [
+        "0xF438|DLCNukaWorld.esm",
+        "0xF439|DLCNukaWorld.esm",
+        "0xF43A|DLCNukaWorld.esm",
+        "0x83AD0|Fallout4.esm",
+        "0x83AD1|Fallout4.esm",
+        "0x1C8728|Fallout4.esm",
+        "0x2FB84|Fallout4.esm",
+        "0x4462|DLCCoast.esm",
+        "0x4488|DLCCoast.esm",
+        "0x144047|Fallout4.esm",
+        "0x1FFE5|SS2.esm"
+    ],
+    "hasKeyword": [],
+    "hasNotKeyword": []
+}

@@ -1,0 +1,12 @@
+{
+    "gender": 0,
+    "formIDs": [
+        "0x2F10|Fallout4.esm",
+        "0x218F14|Fallout4.esm"
+    ],
+    "notFormIDs": [],
+    "inFaction": [],
+    "notInFaction": [],
+    "hasKeyword": [],
+    "hasNotKeyword": []
+}

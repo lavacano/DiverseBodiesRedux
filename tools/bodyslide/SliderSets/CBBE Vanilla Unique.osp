@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='utf-8'?>
+<SliderSetInfo><SliderSet name="CBBE Vanilla - Knight Underarmor (Cape Maxon)">
+        <DataFolder>CBBE Vanilla</DataFolder>
+        <SourceFile>Knight Underarmor (Cape Maxon).nif</SourceFile>
+        <OutputPath>Meshes\Armor\KnightUnderArmor</OutputPath>
+        <OutputFile GenWeights="false">FCapeMaxon</OutputFile>
+        <Shape target="FCapeMaxon:0">FCapeMaxon:0</Shape>
+        <Slider name="Breasts" invert="false" default="0">
+            <Data name="FCapeMaxon_0Breasts" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0Breasts</Data>
+        </Slider>
+        <Slider name="BreastsGone" invert="false" default="0">
+            <Data name="FCapeMaxon_0BreastsGone" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0BreastsGone</Data>
+        </Slider>
+        <Slider name="BreastsNewSH" invert="false" default="0">
+            <Data name="FCapeMaxon_0BreastsNewSH" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0BreastsNewSH</Data>
+        </Slider>
+        <Slider name="BreastsSmall" invert="false" default="0">
+            <Data name="FCapeMaxon_0BreastsSmall" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0BreastsSmall</Data>
+        </Slider>
+        <Slider name="BreastsSmall2" invert="false" default="0">
+            <Data name="FCapeMaxon_0BreastsSmall2" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0BreastsSmall2</Data>
+        </Slider>
+        <Slider name="BreastsTogether" invert="false" default="0">
+            <Data name="FCapeMaxon_0BreastsTogether" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0BreastsTogether</Data>
+        </Slider>
+        <Slider name="BreastWidth" invert="false" default="0">
+            <Data name="FCapeMaxon_0BreastWidth" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0BreastWidth</Data>
+        </Slider>
+        <Slider name="Butt" invert="false" default="0">
+            <Data name="FCapeMaxon_0Butt" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0Butt</Data>
+        </Slider>
+        <Slider name="ButtNew" invert="false" default="0">
+            <Data name="FCapeMaxon_0ButtNew" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0ButtNew</Data>
+        </Slider>
+        <Slider name="ButtShape2" invert="false" default="0">
+            <Data name="FCapeMaxon_0ButtShape2" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0ButtShape2</Data>
+        </Slider>
+        <Slider name="ChestDepth" invert="false" default="0">
+            <Data name="FCapeMaxon_0ChestDepth" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0ChestDepth</Data>
+        </Slider>
+        <Slider name="ChestWidth" invert="false" default="0">
+            <Data name="FCapeMaxon_0ChestWidth" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0ChestWidth</Data>
+        </Slider>
+        <Slider name="ChubbyButt" invert="false" default="0">
+            <Data name="FCapeMaxon_0ChubbyButt" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0ChubbyButt</Data>
+        </Slider>
+        <Slider name="ChubbyWaist" invert="false" default="0">
+            <Data name="FCapeMaxon_0ChubbyWaist" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0ChubbyWaist</Data>
+        </Slider>
+        <Slider name="DoubleMelon" invert="false" default="0">
+            <Data name="FCapeMaxon_0DoubleMelon" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0DoubleMelon</Data>
+        </Slider>
+        <Slider name="HipBack" invert="false" default="0">
+            <Data name="FCapeMaxon_0HipBack" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0HipBack</Data>
+        </Slider>
+        <Slider name="Hips" invert="false" default="0">
+            <Data name="FCapeMaxon_0Hips" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0Hips</Data>
+        </Slider>
+        <Slider name="HipUpperWidth" invert="false" default="0">
+            <Data name="FCapeMaxon_0HipUpperWidth" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0HipUpperWidth</Data>
+        </Slider>
+        <Slider name="PregnancyBelly" invert="false" default="0">
+            <Data name="FCapeMaxon_0PregnancyBelly" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0PregnancyBelly</Data>
+        </Slider>
+        <Slider name="ShoulderWidth" invert="false" default="0">
+            <Data name="FCapeMaxon_0ShoulderWidth" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0ShoulderWidth</Data>
+        </Slider>
+        <Slider name="TummyTuck" invert="false" default="0">
+            <Data name="FCapeMaxon_0TummyTuck" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0TummyTuck</Data>
+        </Slider>
+        <Slider name="VanillaFo4" invert="false" default="0">
+            <Data name="FCapeMaxon_0VanillaFo4" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0VanillaFo4</Data>
+        </Slider>
+        <Slider name="Waist" invert="false" default="0">
+            <Data name="FCapeMaxon_0Waist" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0Waist</Data>
+        </Slider>
+        <Slider name="WaistHeight" invert="false" default="0">
+            <Data name="FCapeMaxon_0WaistHeight" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0WaistHeight</Data>
+        </Slider>
+        <Slider name="WideWaistLine" invert="false" default="0">
+            <Data name="FCapeMaxon_0WideWaistLine" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0WideWaistLine</Data>
+        </Slider>
+        <Slider name="AppleCheeks" invert="false" default="0">
+            <Data name="FCapeMaxon_0AppleCheeks" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0AppleCheeks</Data>
+        </Slider>
+        <Slider name="Arms" invert="false" default="0">
+            <Data name="FCapeMaxon_0Arms" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0Arms</Data>
+        </Slider>
+        <Slider name="Back" invert="false" default="0">
+            <Data name="FCapeMaxon_0Back" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0Back</Data>
+        </Slider>
+        <Slider name="BackArch" invert="false" default="0">
+            <Data name="FCapeMaxon_0BackArch" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0BackArch</Data>
+        </Slider>
+        <Slider name="Belly" invert="false" default="0">
+            <Data name="FCapeMaxon_0Belly" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0Belly</Data>
+        </Slider>
+        <Slider name="BigBelly" invert="false" default="0">
+            <Data name="FCapeMaxon_0BigBelly" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0BigBelly</Data>
+        </Slider>
+        <Slider name="BigButt" invert="false" default="0">
+            <Data name="FCapeMaxon_0BigButt" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0BigButt</Data>
+        </Slider>
+        <Slider name="BigTorso" invert="false" default="0">
+            <Data name="FCapeMaxon_0BigTorso" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0BigTorso</Data>
+        </Slider>
+        <Slider name="BreastFantasy" invert="false" default="0">
+            <Data name="FCapeMaxon_0BreastFantasy" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0BreastFantasy</Data>
+        </Slider>
+        <Slider name="BreastFlatness2" invert="false" default="0">
+            <Data name="FCapeMaxon_0BreastFlatness2" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0BreastFlatness2</Data>
+        </Slider>
+        <Slider name="BreastHeight" invert="false" default="0">
+            <Data name="FCapeMaxon_0BreastHeight" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0BreastHeight</Data>
+        </Slider>
+        <Slider name="BreastPerkiness" invert="false" default="0">
+            <Data name="FCapeMaxon_0BreastPerkiness" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0BreastPerkiness</Data>
+        </Slider>
+        <Slider name="7B Lower" invert="false" default="0">
+            <Data name="FCapeMaxon_07B Lower" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_07B Lower</Data>
+        </Slider>
+        <Slider name="MuscularChest" invert="false" default="0">
+            <Data name="FCapeMaxon_0MuscularChest" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0MuscularChest</Data>
+        </Slider>
+        <Slider name="MuscularArms" invert="false" default="0">
+            <Data name="FCapeMaxon_0MuscularArms" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0MuscularArms</Data>
+        </Slider>
+        <Slider name="MuscularButt" invert="false" default="0">
+            <Data name="FCapeMaxon_0MuscularButt" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0MuscularButt</Data>
+        </Slider>
+        <Slider name="MuscularLegs" invert="false" default="0">
+            <Data name="FCapeMaxon_0MuscularLegs" target="FCapeMaxon:0" local="true">Knight Underarmor (Cape Maxon).osd\FCapeMaxon_0MuscularLegs</Data>
+        </Slider>
+    </SliderSet>
+    <SliderSet name="CBBE Vanilla - Knight Underarmor (Coat Kells)">
+        <DataFolder>CBBE Vanilla</DataFolder>
+        <SourceFile>Knight Underarmor (Coat Kells).nif</SourceFile>
+        <OutputPath>Meshes\Armor\KnightUnderArmor</OutputPath>
+        <OutputFile GenWeights="false">FCoatKells</OutputFile>
+        <Shape target="Body1:0">Body1:0</Shape>
+        <Slider name="Breasts" invert="false" default="0">
+            <Data name="Body1_0Breasts" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0Breasts</Data>
+        </Slider>
+        <Slider name="BreastsGone" invert="false" default="0">
+            <Data name="Body1_0BreastsGone" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0BreastsGone</Data>
+        </Slider>
+        <Slider name="BreastsNewSH" invert="false" default="0">
+            <Data name="Body1_0BreastsNewSH" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0BreastsNewSH</Data>
+        </Slider>
+        <Slider name="BreastsSmall" invert="false" default="0">
+            <Data name="Body1_0BreastsSmall" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0BreastsSmall</Data>
+        </Slider>
+        <Slider name="BreastsSmall2" invert="false" default="0">
+            <Data name="Body1_0BreastsSmall2" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0BreastsSmall2</Data>
+        </Slider>
+        <Slider name="BreastsTogether" invert="false" default="0">
+            <Data name="Body1_0BreastsTogether" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0BreastsTogether</Data>
+        </Slider>
+        <Slider name="BreastTopSlope" invert="false" default="0">
+            <Data name="Body1_0BreastTopSlope" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0BreastTopSlope</Data>
+        </Slider>
+        <Slider name="BreastWidth" invert="false" default="0">
+            <Data name="Body1_0BreastWidth" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0BreastWidth</Data>
+        </Slider>
+        <Slider name="Butt" invert="false" default="0">
+            <Data name="Body1_0Butt" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0Butt</Data>
+        </Slider>
+        <Slider name="ButtNew" invert="false" default="0">
+            <Data name="Body1_0ButtNew" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0ButtNew</Data>
+        </Slider>
+        <Slider name="ButtShape2" invert="false" default="0">
+            <Data name="Body1_0ButtShape2" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0ButtShape2</Data>
+        </Slider>
+        <Slider name="ButtSmall" invert="false" default="0">
+            <Data name="Body1_0ButtSmall" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0ButtSmall</Data>
+        </Slider>
+        <Slider name="ChestDepth" invert="false" default="0">
+            <Data name="Body1_0ChestDepth" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0ChestDepth</Data>
+        </Slider>
+        <Slider name="ChestWidth" invert="false" default="0">
+            <Data name="Body1_0ChestWidth" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0ChestWidth</Data>
+        </Slider>
+        <Slider name="ChubbyArms" invert="false" default="0">
+            <Data name="Body1_0ChubbyArms" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0ChubbyArms</Data>
+        </Slider>
+        <Slider name="ChubbyButt" invert="false" default="0">
+            <Data name="Body1_0ChubbyButt" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0ChubbyButt</Data>
+        </Slider>
+        <Slider name="ChubbyLegs" invert="false" default="0">
+            <Data name="Body1_0ChubbyLegs" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0ChubbyLegs</Data>
+        </Slider>
+        <Slider name="ChubbyWaist" invert="false" default="0">
+            <Data name="Body1_0ChubbyWaist" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0ChubbyWaist</Data>
+        </Slider>
+        <Slider name="DoubleMelon" invert="false" default="0">
+            <Data name="Body1_0DoubleMelon" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0DoubleMelon</Data>
+        </Slider>
+        <Slider name="HipBack" invert="false" default="0">
+            <Data name="Body1_0HipBack" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0HipBack</Data>
+        </Slider>
+        <Slider name="HipBone" invert="false" default="0">
+            <Data name="Body1_0HipBone" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0HipBone</Data>
+        </Slider>
+        <Slider name="Hips" invert="false" default="0">
+            <Data name="Body1_0Hips" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0Hips</Data>
+        </Slider>
+        <Slider name="HipUpperWidth" invert="false" default="0">
+            <Data name="Body1_0HipUpperWidth" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0HipUpperWidth</Data>
+        </Slider>
+        <Slider name="PregnancyBelly" invert="false" default="0">
+            <Data name="Body1_0PregnancyBelly" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0PregnancyBelly</Data>
+        </Slider>
+        <Slider name="PushUp" invert="false" default="0">
+            <Data name="Body1_0PushUp" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0PushUp</Data>
+        </Slider>
+        <Slider name="RoundAss" invert="false" default="0">
+            <Data name="Body1_0RoundAss" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0RoundAss</Data>
+        </Slider>
+        <Slider name="ShoulderSmooth" invert="false" default="0">
+            <Data name="Body1_0ShoulderSmooth" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0ShoulderSmooth</Data>
+        </Slider>
+        <Slider name="ShoulderTweak" invert="false" default="0">
+            <Data name="Body1_0ShoulderTweak" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0ShoulderTweak</Data>
+        </Slider>
+        <Slider name="ShoulderWidth" invert="false" default="0">
+            <Data name="Body1_0ShoulderWidth" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0ShoulderWidth</Data>
+        </Slider>
+        <Slider name="SlimThighs" invert="false" default="0">
+            <Data name="Body1_0SlimThighs" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0SlimThighs</Data>
+        </Slider>
+        <Slider name="Thighs" invert="false" default="0">
+            <Data name="Body1_0Thighs" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0Thighs</Data>
+        </Slider>
+        <Slider name="TummyTuck" invert="false" default="0">
+            <Data name="Body1_0TummyTuck" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0TummyTuck</Data>
+        </Slider>
+        <Slider name="VanillaFo4" invert="false" default="0">
+            <Data name="Body1_0VanillaFo4" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0VanillaFo4</Data>
+        </Slider>
+        <Slider name="Waist" invert="false" default="0">
+            <Data name="Body1_0Waist" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0Waist</Data>
+        </Slider>
+        <Slider name="WaistHeight" invert="false" default="0">
+            <Data name="Body1_0WaistHeight" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0WaistHeight</Data>
+        </Slider>
+        <Slider name="WideWaistLine" invert="false" default="0">
+            <Data name="Body1_0WideWaistLine" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0WideWaistLine</Data>
+        </Slider>
+        <Slider name="AppleCheeks" invert="false" default="0">
+            <Data name="Body1_0AppleCheeks" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0AppleCheeks</Data>
+        </Slider>
+        <Slider name="Arms" invert="false" default="0">
+            <Data name="Body1_0Arms" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0Arms</Data>
+        </Slider>
+        <Slider name="Back" invert="false" default="0">
+            <Data name="Body1_0Back" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0Back</Data>
+        </Slider>
+        <Slider name="BackArch" invert="false" default="0">
+            <Data name="Body1_0BackArch" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0BackArch</Data>
+        </Slider>
+        <Slider name="Belly" invert="false" default="0">
+            <Data name="Body1_0Belly" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0Belly</Data>
+        </Slider>
+        <Slider name="BigBelly" invert="false" default="0">
+            <Data name="Body1_0BigBelly" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0BigBelly</Data>
+        </Slider>
+        <Slider name="BigButt" invert="false" default="0">
+            <Data name="Body1_0BigButt" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0BigButt</Data>
+        </Slider>
+        <Slider name="BigTorso" invert="false" default="0">
+            <Data name="Body1_0BigTorso" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0BigTorso</Data>
+        </Slider>
+        <Slider name="BreastFantasy" invert="false" default="0">
+            <Data name="Body1_0BreastFantasy" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0BreastFantasy</Data>
+        </Slider>
+        <Slider name="BreastFlatness2" invert="false" default="0">
+            <Data name="Body1_0BreastFlatness2" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0BreastFlatness2</Data>
+        </Slider>
+        <Slider name="BreastHeight" invert="false" default="0">
+            <Data name="Body1_0BreastHeight" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0BreastHeight</Data>
+        </Slider>
+        <Slider name="BreastPerkiness" invert="false" default="0">
+            <Data name="Body1_0BreastPerkiness" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0BreastPerkiness</Data>
+        </Slider>
+        <Slider name="ArmpitHeight" invert="false" default="0">
+            <Data name="Body1_0ArmpitHeight" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0ArmpitHeight</Data>
+        </Slider>
+        <Slider name="ForearmSize" invert="false" default="0">
+            <Data name="Body1_0ForearmSize" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0ForearmSize</Data>
+        </Slider>
+        <Slider name="7B Upper" invert="false" default="0">
+            <Data name="Body1_07B Upper" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_07B Upper</Data>
+        </Slider>
+        <Slider name="7B Lower" invert="false" default="0">
+            <Data name="Body1_07B Lower" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_07B Lower</Data>
+        </Slider>
+        <Slider name="MuscularChest" invert="false" default="0">
+            <Data name="Body1_0MuscularChest" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0MuscularChest</Data>
+        </Slider>
+        <Slider name="MuscularArms" invert="false" default="0">
+            <Data name="Body1_0MuscularArms" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0MuscularArms</Data>
+        </Slider>
+        <Slider name="MuscularButt" invert="false" default="0">
+            <Data name="Body1_0MuscularButt" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0MuscularButt</Data>
+        </Slider>
+        <Slider name="MuscularLegs" invert="false" default="0">
+            <Data name="Body1_0MuscularLegs" target="Body1:0" local="true">Knight Underarmor (Coat Kells).osd\Body1_0MuscularLegs</Data>
+        </Slider>
+    </SliderSet>
+    <SliderSet name="CBBE Vanilla - Knight Underarmor (Lab Coat)">
+        <DataFolder>CBBE Vanilla</DataFolder>
+        <SourceFile>Knight Underarmor (Lab Coat).nif</SourceFile>
+        <OutputPath>Meshes\Armor\KnightUnderArmor</OutputPath>
+        <OutputFile GenWeights="false">FLabCoat</OutputFile>
+        <Shape target="FLabCoat:0">FLabCoat:0</Shape>
+        <Slider name="Breasts" invert="false" default="0">
+            <Data name="FLabCoat_0Breasts" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0Breasts</Data>
+        </Slider>
+        <Slider name="BreastsGone" invert="false" default="0">
+            <Data name="FLabCoat_0BreastsGone" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0BreastsGone</Data>
+        </Slider>
+        <Slider name="BreastsNewSH" invert="false" default="0">
+            <Data name="FLabCoat_0BreastsNewSH" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0BreastsNewSH</Data>
+        </Slider>
+        <Slider name="BreastsSmall" invert="false" default="0">
+            <Data name="FLabCoat_0BreastsSmall" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0BreastsSmall</Data>
+        </Slider>
+        <Slider name="BreastsSmall2" invert="false" default="0">
+            <Data name="FLabCoat_0BreastsSmall2" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0BreastsSmall2</Data>
+        </Slider>
+        <Slider name="BreastsTogether" invert="false" default="0">
+            <Data name="FLabCoat_0BreastsTogether" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0BreastsTogether</Data>
+        </Slider>
+        <Slider name="BreastTopSlope" invert="false" default="0">
+            <Data name="FLabCoat_0BreastTopSlope" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0BreastTopSlope</Data>
+        </Slider>
+        <Slider name="BreastWidth" invert="false" default="0">
+            <Data name="FLabCoat_0BreastWidth" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0BreastWidth</Data>
+        </Slider>
+        <Slider name="Butt" invert="false" default="0">
+            <Data name="FLabCoat_0Butt" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0Butt</Data>
+        </Slider>
+        <Slider name="ButtNew" invert="false" default="0">
+            <Data name="FLabCoat_0ButtNew" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0ButtNew</Data>
+        </Slider>
+        <Slider name="ButtShape2" invert="false" default="0">
+            <Data name="FLabCoat_0ButtShape2" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0ButtShape2</Data>
+        </Slider>
+        <Slider name="ButtSmall" invert="false" default="0">
+            <Data name="FLabCoat_0ButtSmall" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0ButtSmall</Data>
+        </Slider>
+        <Slider name="ChestDepth" invert="false" default="0">
+            <Data name="FLabCoat_0ChestDepth" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0ChestDepth</Data>
+        </Slider>
+        <Slider name="ChestWidth" invert="false" default="0">
+            <Data name="FLabCoat_0ChestWidth" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0ChestWidth</Data>
+        </Slider>
+        <Slider name="ChubbyArms" invert="false" default="0">
+            <Data name="FLabCoat_0ChubbyArms" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0ChubbyArms</Data>
+        </Slider>
+        <Slider name="ChubbyButt" invert="false" default="0">
+            <Data name="FLabCoat_0ChubbyButt" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0ChubbyButt</Data>
+        </Slider>
+        <Slider name="ChubbyLegs" invert="false" default="0">
+            <Data name="FLabCoat_0ChubbyLegs" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0ChubbyLegs</Data>
+        </Slider>
+        <Slider name="ChubbyWaist" invert="false" default="0">
+            <Data name="FLabCoat_0ChubbyWaist" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0ChubbyWaist</Data>
+        </Slider>
+        <Slider name="DoubleMelon" invert="false" default="0">
+            <Data name="FLabCoat_0DoubleMelon" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0DoubleMelon</Data>
+        </Slider>
+        <Slider name="HipBack" invert="false" default="0">
+            <Data name="FLabCoat_0HipBack" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0HipBack</Data>
+        </Slider>
+        <Slider name="HipBone" invert="false" default="0">
+            <Data name="FLabCoat_0HipBone" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0HipBone</Data>
+        </Slider>
+        <Slider name="Hips" invert="false" default="0">
+            <Data name="FLabCoat_0Hips" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0Hips</Data>
+        </Slider>
+        <Slider name="HipUpperWidth" invert="false" default="0">
+            <Data name="FLabCoat_0HipUpperWidth" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0HipUpperWidth</Data>
+        </Slider>
+        <Slider name="PregnancyBelly" invert="false" default="0">
+            <Data name="FLabCoat_0PregnancyBelly" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0PregnancyBelly</Data>
+        </Slider>
+        <Slider name="PushUp" invert="false" default="0">
+            <Data name="FLabCoat_0PushUp" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0PushUp</Data>
+        </Slider>
+        <Slider name="RoundAss" invert="false" default="0">
+            <Data name="FLabCoat_0RoundAss" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0RoundAss</Data>
+        </Slider>
+        <Slider name="ShoulderSmooth" invert="false" default="0">
+            <Data name="FLabCoat_0ShoulderSmooth" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0ShoulderSmooth</Data>
+        </Slider>
+        <Slider name="ShoulderTweak" invert="false" default="0">
+            <Data name="FLabCoat_0ShoulderTweak" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0ShoulderTweak</Data>
+        </Slider>
+        <Slider name="ShoulderWidth" invert="false" default="0">
+            <Data name="FLabCoat_0ShoulderWidth" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0ShoulderWidth</Data>
+        </Slider>
+        <Slider name="SlimThighs" invert="false" default="0">
+            <Data name="FLabCoat_0SlimThighs" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0SlimThighs</Data>
+        </Slider>
+        <Slider name="Thighs" invert="false" default="0">
+            <Data name="FLabCoat_0Thighs" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0Thighs</Data>
+        </Slider>
+        <Slider name="TummyTuck" invert="false" default="0">
+            <Data name="FLabCoat_0TummyTuck" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0TummyTuck</Data>
+        </Slider>
+        <Slider name="VanillaFo4" invert="false" default="0">
+            <Data name="FLabCoat_0VanillaFo4" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0VanillaFo4</Data>
+        </Slider>
+        <Slider name="Waist" invert="false" default="0">
+            <Data name="FLabCoat_0Waist" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0Waist</Data>
+        </Slider>
+        <Slider name="WaistHeight" invert="false" default="0">
+            <Data name="FLabCoat_0WaistHeight" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0WaistHeight</Data>
+        </Slider>
+        <Slider name="WideWaistLine" invert="false" default="0">
+            <Data name="FLabCoat_0WideWaistLine" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0WideWaistLine</Data>
+        </Slider>
+        <Slider name="AppleCheeks" invert="false" default="0">
+            <Data name="FLabCoat_0AppleCheeks" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0AppleCheeks</Data>
+        </Slider>
+        <Slider name="Arms" invert="false" default="0">
+            <Data name="FLabCoat_0Arms" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0Arms</Data>
+        </Slider>
+        <Slider name="Back" invert="false" default="0">
+            <Data name="FLabCoat_0Back" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0Back</Data>
+        </Slider>
+        <Slider name="BackArch" invert="false" default="0">
+            <Data name="FLabCoat_0BackArch" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0BackArch</Data>
+        </Slider>
+        <Slider name="Belly" invert="false" default="0">
+            <Data name="FLabCoat_0Belly" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0Belly</Data>
+        </Slider>
+        <Slider name="BigBelly" invert="false" default="0">
+            <Data name="FLabCoat_0BigBelly" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0BigBelly</Data>
+        </Slider>
+        <Slider name="BigButt" invert="false" default="0">
+            <Data name="FLabCoat_0BigButt" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0BigButt</Data>
+        </Slider>
+        <Slider name="BigTorso" invert="false" default="0">
+            <Data name="FLabCoat_0BigTorso" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0BigTorso</Data>
+        </Slider>
+        <Slider name="BreastFantasy" invert="false" default="0">
+            <Data name="FLabCoat_0BreastFantasy" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0BreastFantasy</Data>
+        </Slider>
+        <Slider name="BreastFlatness2" invert="false" default="0">
+            <Data name="FLabCoat_0BreastFlatness2" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0BreastFlatness2</Data>
+        </Slider>
+        <Slider name="BreastHeight" invert="false" default="0">
+            <Data name="FLabCoat_0BreastHeight" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0BreastHeight</Data>
+        </Slider>
+        <Slider name="BreastPerkiness" invert="false" default="0">
+            <Data name="FLabCoat_0BreastPerkiness" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0BreastPerkiness</Data>
+        </Slider>
+        <Slider name="ArmpitHeight" invert="false" default="0">
+            <Data name="FLabCoat_0ArmpitHeight" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0ArmpitHeight</Data>
+        </Slider>
+        <Slider name="ForearmSize" invert="false" default="0">
+            <Data name="FLabCoat_0ForearmSize" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0ForearmSize</Data>
+        </Slider>
+        <Slider name="7B Upper" invert="false" default="0">
+            <Data name="FLabCoat_07B Upper" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_07B Upper</Data>
+        </Slider>
+        <Slider name="7B Lower" invert="false" default="0">
+            <Data name="FLabCoat_07B Lower" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_07B Lower</Data>
+        </Slider>
+        <Slider name="MuscularChest" invert="false" default="0">
+            <Data name="FLabCoat_0MuscularChest" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0MuscularChest</Data>
+        </Slider>
+        <Slider name="MuscularArms" invert="false" default="0">
+            <Data name="FLabCoat_0MuscularArms" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0MuscularArms</Data>
+        </Slider>
+        <Slider name="MuscularButt" invert="false" default="0">
+            <Data name="FLabCoat_0MuscularButt" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0MuscularButt</Data>
+        </Slider>
+        <Slider name="MuscularLegs" invert="false" default="0">
+            <Data name="FLabCoat_0MuscularLegs" target="FLabCoat:0" local="true">Knight Underarmor (Lab Coat).osd\FLabCoat_0MuscularLegs</Data>
+        </Slider>
+    </SliderSet>
+    </SliderSetInfo>

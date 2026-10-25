@@ -1,0 +1,6570 @@
+{
+ "about": "Silhouette Factions: the faction, tier and archetype of each preset in \"Silhouette Factions.xml\" (tools/pool/factions.py, S-72).",
+ "weights": {
+  "middle": 3,
+  "ugly": 2,
+  "beautiful": 2
+ },
+ "factions": {
+  "bos": {
+   "tag": "BoS",
+   "factions": [
+    [
+     "Fallout4.esm",
+     "BrotherhoodofSteelFaction"
+    ]
+   ],
+   "look": "a drilled army, well fed: fit soldiers and heavy knights, softer scribes"
+  },
+  "minutemen": {
+   "tag": "Minutemen",
+   "factions": [
+    [
+     "Fallout4.esm",
+     "MinutemenFaction"
+    ]
+   ],
+   "look": "farmers turned militia: sturdy, work-strong, ordinary"
+  },
+  "gunner": {
+   "tag": "Gunner",
+   "factions": [
+    [
+     "Fallout4.esm",
+     "GunnerFaction"
+    ]
+   ],
+   "look": "professional mercenaries: lean and hard"
+  },
+  "disciples": {
+   "tag": "Disciple",
+   "factions": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04GangDisciplesFaction"
+    ]
+   ],
+   "look": "the Disciples: knife-lean, sinewy, all tendon"
+  },
+  "operators": {
+   "tag": "Operator",
+   "factions": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04GangOperatorsFaction"
+    ]
+   ],
+   "look": "the Operators: sleek, styled, better fed than the other gangs"
+  },
+  "pack": {
+   "tag": "Pack",
+   "factions": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04GangPackFaction"
+    ]
+   ],
+   "look": "the Pack: wild, feral, muscled"
+  },
+  "triggermen": {
+   "tag": "Triggerman",
+   "factions": [
+    [
+     "Fallout4.esm",
+     "TriggermanFaction"
+    ]
+   ],
+   "look": "Skinny Malone's mob: well fed and a little soft"
+  },
+  "raiders": {
+   "tag": "Raider",
+   "factions": [
+    [
+     "Fallout4.esm",
+     "RaiderFaction"
+    ]
+   ],
+   "look": "raiders: underfed, wiry, chem-worn, and the odd brute"
+  },
+  "institute": {
+   "tag": "Institute",
+   "factions": [
+    [
+     "Fallout4.esm",
+     "InstituteFaction"
+    ]
+   ],
+   "look": "the Institute: well fed, sedentary, soft"
+  },
+  "railroad": {
+   "tag": "Railroad",
+   "factions": [
+    [
+     "Fallout4.esm",
+     "RailroadFaction"
+    ]
+   ],
+   "look": "Railroad agents: lean and quick"
+  },
+  "atom": {
+   "tag": "Atom",
+   "factions": [
+    [
+     "Fallout4.esm",
+     "ChildrenOfAtomFaction"
+    ],
+    [
+     "DLCCoast.esm",
+     "DLC03ChildrenofAtomFaction"
+    ]
+   ],
+   "look": "the Children of Atom: gaunt, ascetic, radiation-worn"
+  }
+ },
+ "presets": {
+  "BoS Fine F01": {
+   "faction": "bos",
+   "sex": "female",
+   "tier": "beautiful",
+   "archetype": "Athletic",
+   "values": {
+    "MuscularArms": 47,
+    "MuscularLegs": 43,
+    "MuscularButt": 67,
+    "BreastsSmall": 29,
+    "Breasts": 15,
+    "ChestWidth": 13,
+    "ChubbyWaist": 15,
+    "Butt": 17,
+    "BreastPerkiness": 29,
+    "RoundAss": 21
+   },
+   "measure": {
+    "bust": 68.27,
+    "waist": 44.891,
+    "hip": 74.058,
+    "thigh": 36.404,
+    "arm": 31.11,
+    "bustProjection": 1.099,
+    "belly": 0.143,
+    "butt": 5.962,
+    "whr": 0.606,
+    "bwr": 1.521,
+    "volume": 322.247
+   }
+  },
+  "BoS Plain F01": {
+   "faction": "bos",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Sturdy",
+   "values": {
+    "BigTorso": 21,
+    "Back": 41,
+    "ChestWidth": 34,
+    "ChubbyWaist": 64,
+    "WideWaistLine": 38,
+    "MuscularLegs": 40,
+    "MuscularArms": 48,
+    "Thighs": 21,
+    "Hips": -5,
+    "ButtSmall": 4,
+    "Breasts": 12,
+    "MuscularButt": 28
+   },
+   "measure": {
+    "bust": 70.365,
+    "waist": 52.524,
+    "hip": 74.116,
+    "thigh": 37.398,
+    "arm": 31.357,
+    "bustProjection": 1.312,
+    "belly": 0.125,
+    "butt": 4.665,
+    "whr": 0.709,
+    "bwr": 1.34,
+    "volume": 334.514
+   }
+  },
+  "BoS Plain F02": {
+   "faction": "bos",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Sturdy",
+   "values": {
+    "BigTorso": 34,
+    "Back": 40,
+    "ChestWidth": 34,
+    "ChubbyWaist": 75,
+    "WideWaistLine": 40,
+    "MuscularLegs": 32,
+    "MuscularArms": 28,
+    "Thighs": 12,
+    "Hips": -5,
+    "ButtSmall": 1,
+    "Breasts": 16,
+    "MuscularButt": 13
+   },
+   "measure": {
+    "bust": 71.102,
+    "waist": 54.139,
+    "hip": 73.527,
+    "thigh": 36.781,
+    "arm": 31.237,
+    "bustProjection": 1.33,
+    "belly": 0.13,
+    "butt": 4.52,
+    "whr": 0.736,
+    "bwr": 1.313,
+    "volume": 334.805
+   }
+  },
+  "BoS Plain F03": {
+   "faction": "bos",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 23,
+    "Arms": 20,
+    "BreastsSmall": 26,
+    "ButtSmall": 24,
+    "ChubbyWaist": 59,
+    "WideWaistLine": 58,
+    "HipUpperWidth": 38,
+    "BreastGravity2": 16,
+    "Hips": -4,
+    "MuscularArms": 17,
+    "MuscularLegs": 19
+   },
+   "measure": {
+    "bust": 66.716,
+    "waist": 50.581,
+    "hip": 71.079,
+    "thigh": 35.082,
+    "arm": 30.108,
+    "bustProjection": 0.795,
+    "belly": 0.109,
+    "butt": 5.204,
+    "whr": 0.712,
+    "bwr": 1.319,
+    "volume": 318.755
+   }
+  },
+  "BoS Plain F04": {
+   "faction": "bos",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 27,
+    "Arms": 19,
+    "BreastsSmall": 26,
+    "ButtSmall": 26,
+    "ChubbyWaist": 78,
+    "WideWaistLine": 62,
+    "HipUpperWidth": 40,
+    "BreastGravity2": 21,
+    "Hips": -6,
+    "MuscularArms": 16,
+    "MuscularLegs": 13
+   },
+   "measure": {
+    "bust": 66.494,
+    "waist": 52.286,
+    "hip": 70.713,
+    "thigh": 34.846,
+    "arm": 30.074,
+    "bustProjection": 0.755,
+    "belly": 0.146,
+    "butt": 5.149,
+    "whr": 0.739,
+    "bwr": 1.272,
+    "volume": 319.334
+   }
+  },
+  "BoS Plain F05": {
+   "faction": "bos",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 79,
+    "WideWaistLine": 51,
+    "HipUpperWidth": 28,
+    "Belly": 36,
+    "Breasts": 4,
+    "BreastGravity2": 30,
+    "Hips": -2,
+    "Butt": -5,
+    "Thighs": 9,
+    "ChubbyArms": 19,
+    "BreastsSmall": 2
+   },
+   "measure": {
+    "bust": 66.672,
+    "waist": 51.819,
+    "hip": 72.376,
+    "thigh": 36.05,
+    "arm": 31.356,
+    "bustProjection": 0.915,
+    "belly": 0.404,
+    "butt": 5.268,
+    "whr": 0.716,
+    "bwr": 1.287,
+    "volume": 325.678
+   }
+  },
+  "BoS Plain F06": {
+   "faction": "bos",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 61,
+    "WideWaistLine": 30,
+    "HipUpperWidth": 33,
+    "Belly": 31,
+    "Breasts": 15,
+    "BreastGravity2": 22,
+    "Hips": -2,
+    "Butt": 0,
+    "Thighs": 8,
+    "ChubbyArms": 25,
+    "BreastsSmall": 15
+   },
+   "measure": {
+    "bust": 67.269,
+    "waist": 49.976,
+    "hip": 72.388,
+    "thigh": 36.016,
+    "arm": 31.597,
+    "bustProjection": 0.992,
+    "belly": 0.326,
+    "butt": 5.319,
+    "whr": 0.69,
+    "bwr": 1.346,
+    "volume": 324.858
+   }
+  },
+  "BoS Rough F01": {
+   "faction": "bos",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Boxy",
+   "values": {
+    "BigTorso": 59,
+    "ChestWidth": 68,
+    "Back": 76,
+    "ChubbyWaist": 86,
+    "WideWaistLine": 71,
+    "HipUpperWidth": 53,
+    "Hips": -45,
+    "ButtSmall": 52,
+    "BreastsSmall": 26,
+    "MuscularArms": 53,
+    "MuscularLegs": 12
+   },
+   "measure": {
+    "bust": 71.857,
+    "waist": 60.916,
+    "hip": 70.268,
+    "thigh": 35.483,
+    "arm": 31.73,
+    "bustProjection": 0.686,
+    "belly": 0.18,
+    "butt": 3.479,
+    "whr": 0.867,
+    "bwr": 1.18,
+    "volume": 337.467
+   }
+  },
+  "BoS Rough F02": {
+   "faction": "bos",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Boxy",
+   "values": {
+    "BigTorso": 75,
+    "ChestWidth": 69,
+    "Back": 52,
+    "ChubbyWaist": 105,
+    "WideWaistLine": 94,
+    "HipUpperWidth": 55,
+    "Hips": -43,
+    "ButtSmall": 68,
+    "BreastsSmall": 26,
+    "MuscularArms": 45,
+    "MuscularLegs": 15
+   },
+   "measure": {
+    "bust": 72.376,
+    "waist": 62.764,
+    "hip": 69.768,
+    "thigh": 35.443,
+    "arm": 31.83,
+    "bustProjection": 0.62,
+    "belly": 0.206,
+    "butt": 3.598,
+    "whr": 0.9,
+    "bwr": 1.153,
+    "volume": 339.454
+   }
+  },
+  "BoS Rough F03": {
+   "faction": "bos",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Apple",
+   "values": {
+    "BigBelly": 53,
+    "Belly": 105,
+    "ChubbyWaist": 116,
+    "WideWaistLine": 67,
+    "HipUpperWidth": 47,
+    "Back": 47,
+    "LegsThin": 34,
+    "ButtSmall": 53,
+    "SlimThighs": 22,
+    "Breasts": 18,
+    "BreastGravity2": 67,
+    "ChubbyArms": 49
+   },
+   "measure": {
+    "bust": 66.376,
+    "waist": 59.751,
+    "hip": 68.38,
+    "thigh": 33.396,
+    "arm": 32.333,
+    "bustProjection": 0.216,
+    "belly": 1.266,
+    "butt": 4.131,
+    "whr": 0.874,
+    "bwr": 1.111,
+    "volume": 325.966
+   }
+  },
+  "Minutemen Fine F01": {
+   "faction": "minutemen",
+   "sex": "female",
+   "tier": "beautiful",
+   "archetype": "Pear",
+   "values": {
+    "BreastsSmall": 17,
+    "Hips": 25,
+    "Thighs": 40,
+    "AppleCheeks": 37,
+    "Butt": 29,
+    "ChubbyWaist": 11,
+    "ChubbyButt": 18
+   },
+   "measure": {
+    "bust": 67.739,
+    "waist": 44.434,
+    "hip": 76.716,
+    "thigh": 37.853,
+    "arm": 30.264,
+    "bustProjection": 0.991,
+    "belly": 0.151,
+    "butt": 6.635,
+    "whr": 0.579,
+    "bwr": 1.524,
+    "volume": 325.122
+   }
+  },
+  "Minutemen Plain F01": {
+   "faction": "minutemen",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Sturdy",
+   "values": {
+    "BigTorso": 27,
+    "Back": 32,
+    "ChestWidth": 29,
+    "ChubbyWaist": 67,
+    "WideWaistLine": 37,
+    "MuscularLegs": 24,
+    "MuscularArms": 14,
+    "Thighs": 11,
+    "Hips": 3,
+    "ButtSmall": 17,
+    "Breasts": 8
+   },
+   "measure": {
+    "bust": 70.214,
+    "waist": 52.585,
+    "hip": 72.688,
+    "thigh": 36.492,
+    "arm": 30.998,
+    "bustProjection": 1.219,
+    "belly": 0.13,
+    "butt": 4.58,
+    "whr": 0.723,
+    "bwr": 1.335,
+    "volume": 330.467
+   }
+  },
+  "Minutemen Plain F02": {
+   "faction": "minutemen",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Sturdy",
+   "values": {
+    "BigTorso": 31,
+    "Back": 27,
+    "ChestWidth": 33,
+    "ChubbyWaist": 63,
+    "WideWaistLine": 21,
+    "MuscularLegs": 29,
+    "MuscularArms": 26,
+    "Thighs": 24,
+    "Hips": 3,
+    "ButtSmall": 1,
+    "Breasts": 19
+   },
+   "measure": {
+    "bust": 70.963,
+    "waist": 52.059,
+    "hip": 74.174,
+    "thigh": 37.384,
+    "arm": 31.203,
+    "bustProjection": 1.394,
+    "belly": 0.138,
+    "butt": 4.74,
+    "whr": 0.702,
+    "bwr": 1.363,
+    "volume": 334.371
+   }
+  },
+  "Minutemen Plain F03": {
+   "faction": "minutemen",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 71,
+    "WideWaistLine": 50,
+    "HipUpperWidth": 29,
+    "Belly": 33,
+    "Breasts": 16,
+    "BreastGravity2": 32,
+    "Hips": 5,
+    "Butt": -3,
+    "Thighs": 7,
+    "ChubbyArms": 14,
+    "BreastsSmall": 6
+   },
+   "measure": {
+    "bust": 66.949,
+    "waist": 51.187,
+    "hip": 72.308,
+    "thigh": 35.949,
+    "arm": 31.195,
+    "bustProjection": 1.07,
+    "belly": 0.372,
+    "butt": 5.288,
+    "whr": 0.708,
+    "bwr": 1.308,
+    "volume": 324.732
+   }
+  },
+  "Minutemen Plain F04": {
+   "faction": "minutemen",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 88,
+    "WideWaistLine": 56,
+    "HipUpperWidth": 33,
+    "Belly": 37,
+    "Breasts": 16,
+    "BreastGravity2": 39,
+    "Hips": 9,
+    "Butt": -3,
+    "Thighs": 0,
+    "ChubbyArms": 16,
+    "BreastsSmall": 20
+   },
+   "measure": {
+    "bust": 66.361,
+    "waist": 52.916,
+    "hip": 71.937,
+    "thigh": 35.569,
+    "arm": 31.236,
+    "bustProjection": 0.791,
+    "belly": 0.414,
+    "butt": 5.25,
+    "whr": 0.736,
+    "bwr": 1.254,
+    "volume": 324.825
+   }
+  },
+  "Minutemen Plain F05": {
+   "faction": "minutemen",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "WideHips",
+   "values": {
+    "Hips": 18,
+    "Thighs": 29,
+    "ChubbyLegs": 17,
+    "ChubbyButt": 26,
+    "ChubbyWaist": 77,
+    "HipUpperWidth": 37,
+    "Belly": 22,
+    "BreastsSmall": 27,
+    "BreastGravity2": 21
+   },
+   "measure": {
+    "bust": 66.446,
+    "waist": 50.818,
+    "hip": 75.835,
+    "thigh": 38.918,
+    "arm": 30.142,
+    "bustProjection": 0.643,
+    "belly": 0.307,
+    "butt": 5.479,
+    "whr": 0.67,
+    "bwr": 1.308,
+    "volume": 331.22
+   }
+  },
+  "Minutemen Plain F06": {
+   "faction": "minutemen",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Busty",
+   "values": {
+    "Breasts": 38,
+    "7B Upper": 14,
+    "BreastGravity2": 36,
+    "ChubbyWaist": 66,
+    "Belly": 23,
+    "WideWaistLine": 37,
+    "Hips": 3,
+    "ChubbyArms": 17
+   },
+   "measure": {
+    "bust": 69.44,
+    "waist": 49.188,
+    "hip": 71.953,
+    "thigh": 35.581,
+    "arm": 31.263,
+    "bustProjection": 2.063,
+    "belly": 0.324,
+    "butt": 5.307,
+    "whr": 0.684,
+    "bwr": 1.412,
+    "volume": 324.27
+   }
+  },
+  "Minutemen Rough F01": {
+   "faction": "minutemen",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "BottomHeavy",
+   "values": {
+    "ChubbyLegs": 98,
+    "Thighs": 77,
+    "Hips": 65,
+    "BigButt": 57,
+    "ChubbyButt": 73,
+    "BreastsSmall": 24,
+    "Breasts": 0,
+    "Arms": 21,
+    "ChubbyWaist": 56
+   },
+   "measure": {
+    "bust": 67.544,
+    "waist": 48.525,
+    "hip": 89.495,
+    "thigh": 49.934,
+    "arm": 29.877,
+    "bustProjection": 0.94,
+    "belly": 0.183,
+    "butt": 6.744,
+    "whr": 0.542,
+    "bwr": 1.392,
+    "volume": 365.186
+   }
+  },
+  "Minutemen Rough F02": {
+   "faction": "minutemen",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Saggy",
+   "values": {
+    "BreastGravity2": 102,
+    "BreastFlatness2": 82,
+    "Breasts": 40,
+    "Belly": 52,
+    "BigBelly": 30,
+    "ChubbyWaist": 78,
+    "ButtSmall": 43,
+    "WideWaistLine": 41
+   },
+   "measure": {
+    "bust": 64.052,
+    "waist": 51.527,
+    "hip": 70.337,
+    "thigh": 35.336,
+    "arm": 30.14,
+    "bustProjection": -0.176,
+    "belly": 0.708,
+    "butt": 5.06,
+    "whr": 0.733,
+    "bwr": 1.243,
+    "volume": 316.867
+   }
+  },
+  "Minutemen Rough F03": {
+   "faction": "minutemen",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Apple",
+   "values": {
+    "BigBelly": 50,
+    "Belly": 107,
+    "ChubbyWaist": 127,
+    "WideWaistLine": 69,
+    "HipUpperWidth": 46,
+    "Back": 42,
+    "LegsThin": 44,
+    "ButtSmall": 49,
+    "SlimThighs": 19,
+    "Breasts": 12,
+    "BreastGravity2": 66,
+    "ChubbyArms": 52
+   },
+   "measure": {
+    "bust": 66.183,
+    "waist": 60.391,
+    "hip": 68.792,
+    "thigh": 33.24,
+    "arm": 32.428,
+    "bustProjection": 0.138,
+    "belly": 1.292,
+    "butt": 4.201,
+    "whr": 0.878,
+    "bwr": 1.096,
+    "volume": 326.703
+   }
+  },
+  "Gunner Fine F01": {
+   "faction": "gunner",
+   "sex": "female",
+   "tier": "beautiful",
+   "archetype": "Athletic",
+   "values": {
+    "MuscularArms": 40,
+    "MuscularLegs": 37,
+    "MuscularButt": 49,
+    "BreastsSmall": 17,
+    "Breasts": 6,
+    "ChestWidth": 9,
+    "ChubbyWaist": 15,
+    "Butt": 22,
+    "BreastPerkiness": 30,
+    "RoundAss": 27
+   },
+   "measure": {
+    "bust": 68.018,
+    "waist": 44.772,
+    "hip": 73.901,
+    "thigh": 36.319,
+    "arm": 31.035,
+    "bustProjection": 1.05,
+    "belly": 0.143,
+    "butt": 5.951,
+    "whr": 0.606,
+    "bwr": 1.519,
+    "volume": 321.4
+   }
+  },
+  "Gunner Plain F01": {
+   "faction": "gunner",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 23,
+    "Arms": 15,
+    "BreastsSmall": 18,
+    "ButtSmall": 21,
+    "ChubbyWaist": 71,
+    "WideWaistLine": 49,
+    "HipUpperWidth": 24,
+    "BreastGravity2": 24,
+    "Hips": -5,
+    "MuscularArms": 11,
+    "MuscularLegs": 13
+   },
+   "measure": {
+    "bust": 66.464,
+    "waist": 50.653,
+    "hip": 71.0,
+    "thigh": 34.994,
+    "arm": 30.079,
+    "bustProjection": 0.801,
+    "belly": 0.129,
+    "butt": 5.194,
+    "whr": 0.713,
+    "bwr": 1.312,
+    "volume": 318.263
+   }
+  },
+  "Gunner Plain F02": {
+   "faction": "gunner",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 16,
+    "Arms": 12,
+    "BreastsSmall": 27,
+    "ButtSmall": 17,
+    "ChubbyWaist": 56,
+    "WideWaistLine": 44,
+    "HipUpperWidth": 20,
+    "BreastGravity2": 23,
+    "Hips": -19,
+    "MuscularArms": 19,
+    "MuscularLegs": 13
+   },
+   "measure": {
+    "bust": 66.339,
+    "waist": 49.181,
+    "hip": 71.286,
+    "thigh": 35.225,
+    "arm": 30.255,
+    "bustProjection": 0.731,
+    "belly": 0.11,
+    "butt": 5.242,
+    "whr": 0.69,
+    "bwr": 1.349,
+    "volume": 317.767
+   }
+  },
+  "Gunner Plain F03": {
+   "faction": "gunner",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 15,
+    "Arms": 13,
+    "BreastsSmall": 15,
+    "ButtSmall": 19,
+    "ChubbyWaist": 75,
+    "WideWaistLine": 55,
+    "HipUpperWidth": 34,
+    "BreastGravity2": 12,
+    "Hips": -2,
+    "MuscularArms": 15,
+    "MuscularLegs": 16
+   },
+   "measure": {
+    "bust": 67.131,
+    "waist": 51.612,
+    "hip": 71.37,
+    "thigh": 35.295,
+    "arm": 30.153,
+    "bustProjection": 0.926,
+    "belly": 0.142,
+    "butt": 5.195,
+    "whr": 0.723,
+    "bwr": 1.301,
+    "volume": 321.01
+   }
+  },
+  "Gunner Plain F04": {
+   "faction": "gunner",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Sturdy",
+   "values": {
+    "BigTorso": 32,
+    "Back": 34,
+    "ChestWidth": 24,
+    "ChubbyWaist": 65,
+    "WideWaistLine": 36,
+    "MuscularLegs": 34,
+    "MuscularArms": 24,
+    "Thighs": 18,
+    "Hips": 4,
+    "ButtSmall": 10,
+    "Breasts": 11
+   },
+   "measure": {
+    "bust": 70.627,
+    "waist": 52.688,
+    "hip": 73.661,
+    "thigh": 37.091,
+    "arm": 31.22,
+    "bustProjection": 1.251,
+    "belly": 0.138,
+    "butt": 4.564,
+    "whr": 0.715,
+    "bwr": 1.34,
+    "volume": 333.599
+   }
+  },
+  "Gunner Plain F05": {
+   "faction": "gunner",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Sturdy",
+   "values": {
+    "BigTorso": 31,
+    "Back": 41,
+    "ChestWidth": 20,
+    "ChubbyWaist": 77,
+    "WideWaistLine": 23,
+    "MuscularLegs": 26,
+    "MuscularArms": 50,
+    "Thighs": 17,
+    "Hips": 3,
+    "ButtSmall": 14,
+    "Breasts": 1
+   },
+   "measure": {
+    "bust": 70.289,
+    "waist": 53.342,
+    "hip": 73.197,
+    "thigh": 36.872,
+    "arm": 31.547,
+    "bustProjection": 1.083,
+    "belly": 0.126,
+    "butt": 4.357,
+    "whr": 0.729,
+    "bwr": 1.318,
+    "volume": 333.666
+   }
+  },
+  "Gunner Plain F06": {
+   "faction": "gunner",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 73,
+    "WideWaistLine": 51,
+    "HipUpperWidth": 31,
+    "Belly": 38,
+    "Breasts": 11,
+    "BreastGravity2": 39,
+    "Hips": -1,
+    "Butt": -6,
+    "Thighs": 9,
+    "ChubbyArms": 14,
+    "BreastsSmall": 10,
+    "MuscularArms": 11,
+    "MuscularLegs": 11
+   },
+   "measure": {
+    "bust": 66.395,
+    "waist": 51.475,
+    "hip": 72.71,
+    "thigh": 36.231,
+    "arm": 31.333,
+    "bustProjection": 0.847,
+    "belly": 0.402,
+    "butt": 5.281,
+    "whr": 0.708,
+    "bwr": 1.29,
+    "volume": 325.709
+   }
+  },
+  "Gunner Rough F01": {
+   "faction": "gunner",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Boxy",
+   "values": {
+    "BigTorso": 61,
+    "ChestWidth": 76,
+    "Back": 59,
+    "ChubbyWaist": 93,
+    "WideWaistLine": 96,
+    "HipUpperWidth": 43,
+    "Hips": -53,
+    "ButtSmall": 61,
+    "BreastsSmall": 24,
+    "MuscularArms": 36
+   },
+   "measure": {
+    "bust": 71.713,
+    "waist": 60.713,
+    "hip": 69.539,
+    "thigh": 35.233,
+    "arm": 31.497,
+    "bustProjection": 0.701,
+    "belly": 0.176,
+    "butt": 3.634,
+    "whr": 0.873,
+    "bwr": 1.181,
+    "volume": 335.425
+   }
+  },
+  "Gunner Rough F02": {
+   "faction": "gunner",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "LegsThin": 91,
+    "Arms": 77,
+    "SlimThighs": 55,
+    "ButtSmall": 69,
+    "BreastsSmall": 29,
+    "Breasts": 0,
+    "BreastGravity2": 41,
+    "Hips": -36,
+    "CalfSmooth": 56,
+    "WideWaistLine": 29
+   },
+   "measure": {
+    "bust": 65.366,
+    "waist": 43.507,
+    "hip": 63.636,
+    "thigh": 30.35,
+    "arm": 28.729,
+    "bustProjection": 0.578,
+    "belly": 0.155,
+    "butt": 5.031,
+    "whr": 0.684,
+    "bwr": 1.502,
+    "volume": 290.669
+   }
+  },
+  "Gunner Rough F03": {
+   "faction": "gunner",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Flat",
+   "values": {
+    "Breasts": 0,
+    "BreastsSmall": 24,
+    "BreastsSmall2": 62,
+    "BreastFlatness2": 64,
+    "ButtSmall": 79,
+    "Hips": -44,
+    "SlimThighs": 33,
+    "ChubbyWaist": 92,
+    "WideWaistLine": 52,
+    "HipUpperWidth": 35
+   },
+   "measure": {
+    "bust": 63.77,
+    "waist": 52.604,
+    "hip": 66.569,
+    "thigh": 33.839,
+    "arm": 30.121,
+    "bustProjection": 0.237,
+    "belly": 0.145,
+    "butt": 4.793,
+    "whr": 0.79,
+    "bwr": 1.212,
+    "volume": 310.863
+   }
+  },
+  "Disciple Fine F01": {
+   "faction": "disciples",
+   "sex": "female",
+   "tier": "beautiful",
+   "archetype": "Slender",
+   "values": {
+    "LegsThin": 21,
+    "Arms": 8,
+    "BreastsSmall": 7,
+    "Breasts": 12,
+    "BreastPerkiness": 29,
+    "ChubbyWaist": 9,
+    "Hips": 6,
+    "Butt": 7,
+    "SlimThighs": 2
+   },
+   "measure": {
+    "bust": 68.224,
+    "waist": 43.924,
+    "hip": 72.005,
+    "thigh": 34.901,
+    "arm": 30.152,
+    "bustProjection": 1.277,
+    "belly": 0.15,
+    "butt": 5.527,
+    "whr": 0.61,
+    "bwr": 1.553,
+    "volume": 314.259
+   }
+  },
+  "Disciple Plain F01": {
+   "faction": "disciples",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 40,
+    "Arms": 26,
+    "BreastsSmall": 15,
+    "ButtSmall": 31,
+    "ChubbyWaist": 62,
+    "WideWaistLine": 50,
+    "HipUpperWidth": 35,
+    "BreastGravity2": 24,
+    "Hips": 0
+   },
+   "measure": {
+    "bust": 66.478,
+    "waist": 50.436,
+    "hip": 70.089,
+    "thigh": 34.209,
+    "arm": 29.794,
+    "bustProjection": 0.836,
+    "belly": 0.11,
+    "butt": 5.154,
+    "whr": 0.72,
+    "bwr": 1.318,
+    "volume": 315.009
+   }
+  },
+  "Disciple Plain F02": {
+   "faction": "disciples",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 21,
+    "Arms": 23,
+    "BreastsSmall": 23,
+    "ButtSmall": 15,
+    "ChubbyWaist": 77,
+    "WideWaistLine": 51,
+    "HipUpperWidth": 33,
+    "BreastGravity2": 23,
+    "Hips": -12
+   },
+   "measure": {
+    "bust": 66.38,
+    "waist": 51.567,
+    "hip": 70.849,
+    "thigh": 34.865,
+    "arm": 29.81,
+    "bustProjection": 0.774,
+    "belly": 0.138,
+    "butt": 5.207,
+    "whr": 0.728,
+    "bwr": 1.287,
+    "volume": 318.145
+   }
+  },
+  "Disciple Plain F03": {
+   "faction": "disciples",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 35,
+    "Arms": 20,
+    "BreastsSmall": 16,
+    "ButtSmall": 17,
+    "ChubbyWaist": 58,
+    "WideWaistLine": 51,
+    "HipUpperWidth": 28,
+    "BreastGravity2": 10,
+    "Hips": -4
+   },
+   "measure": {
+    "bust": 67.188,
+    "waist": 49.84,
+    "hip": 70.698,
+    "thigh": 34.437,
+    "arm": 29.888,
+    "bustProjection": 0.929,
+    "belly": 0.11,
+    "butt": 5.235,
+    "whr": 0.705,
+    "bwr": 1.348,
+    "volume": 316.376
+   }
+  },
+  "Disciple Plain F04": {
+   "faction": "disciples",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 36,
+    "Arms": 27,
+    "BreastsSmall": 26,
+    "ButtSmall": 34,
+    "ChubbyWaist": 78,
+    "WideWaistLine": 64,
+    "HipUpperWidth": 28,
+    "BreastGravity2": 20,
+    "Hips": -5
+   },
+   "measure": {
+    "bust": 66.474,
+    "waist": 51.792,
+    "hip": 69.864,
+    "thigh": 34.31,
+    "arm": 29.75,
+    "bustProjection": 0.762,
+    "belly": 0.147,
+    "butt": 5.105,
+    "whr": 0.741,
+    "bwr": 1.283,
+    "volume": 316.251
+   }
+  },
+  "Disciple Plain F05": {
+   "faction": "disciples",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 79,
+    "WideWaistLine": 36,
+    "HipUpperWidth": 26,
+    "Belly": 32,
+    "Breasts": 14,
+    "BreastGravity2": 26,
+    "Hips": 0,
+    "Butt": 8,
+    "Thighs": 3,
+    "ChubbyArms": 9,
+    "BreastsSmall": 14,
+    "LegsThin": 16,
+    "Arms": 14
+   },
+   "measure": {
+    "bust": 66.996,
+    "waist": 51.29,
+    "hip": 72.069,
+    "thigh": 35.297,
+    "arm": 30.429,
+    "bustProjection": 0.951,
+    "belly": 0.381,
+    "butt": 5.302,
+    "whr": 0.712,
+    "bwr": 1.306,
+    "volume": 321.808
+   }
+  },
+  "Disciple Plain F06": {
+   "faction": "disciples",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 87,
+    "WideWaistLine": 48,
+    "HipUpperWidth": 39,
+    "Belly": 34,
+    "Breasts": 8,
+    "BreastGravity2": 37,
+    "Hips": 0,
+    "Butt": 4,
+    "Thighs": 2,
+    "ChubbyArms": 16,
+    "BreastsSmall": 24,
+    "LegsThin": 13,
+    "Arms": 15
+   },
+   "measure": {
+    "bust": 66.094,
+    "waist": 52.839,
+    "hip": 71.909,
+    "thigh": 35.315,
+    "arm": 30.797,
+    "bustProjection": 0.631,
+    "belly": 0.383,
+    "butt": 5.273,
+    "whr": 0.735,
+    "bwr": 1.251,
+    "volume": 323.068
+   }
+  },
+  "Disciple Rough F01": {
+   "faction": "disciples",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "LegsThin": 87,
+    "Arms": 80,
+    "SlimThighs": 59,
+    "ButtSmall": 69,
+    "BreastsSmall": 26,
+    "Breasts": 1,
+    "BreastGravity2": 44,
+    "Hips": -37,
+    "CalfSmooth": 67,
+    "WideWaistLine": 36
+   },
+   "measure": {
+    "bust": 65.291,
+    "waist": 43.68,
+    "hip": 63.371,
+    "thigh": 30.311,
+    "arm": 28.689,
+    "bustProjection": 0.604,
+    "belly": 0.155,
+    "butt": 5.024,
+    "whr": 0.689,
+    "bwr": 1.495,
+    "volume": 290.342
+   }
+  },
+  "Disciple Rough F02": {
+   "faction": "disciples",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "LegsThin": 78,
+    "Arms": 61,
+    "SlimThighs": 52,
+    "ButtSmall": 69,
+    "BreastsSmall": 28,
+    "Breasts": 1,
+    "BreastGravity2": 57,
+    "Hips": -32,
+    "CalfSmooth": 62,
+    "WideWaistLine": 26
+   },
+   "measure": {
+    "bust": 64.77,
+    "waist": 43.455,
+    "hip": 63.985,
+    "thigh": 30.843,
+    "arm": 28.946,
+    "bustProjection": 0.484,
+    "belly": 0.154,
+    "butt": 5.036,
+    "whr": 0.679,
+    "bwr": 1.491,
+    "volume": 291.787
+   }
+  },
+  "Disciple Rough F03": {
+   "faction": "disciples",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Flat",
+   "values": {
+    "Breasts": 2,
+    "BreastsSmall": 24,
+    "BreastsSmall2": 42,
+    "BreastFlatness2": 62,
+    "ButtSmall": 73,
+    "Hips": -46,
+    "SlimThighs": 29,
+    "ChubbyWaist": 82,
+    "WideWaistLine": 51,
+    "HipUpperWidth": 44
+   },
+   "measure": {
+    "bust": 64.07,
+    "waist": 52.227,
+    "hip": 67.068,
+    "thigh": 34.029,
+    "arm": 30.137,
+    "bustProjection": 0.241,
+    "belly": 0.119,
+    "butt": 4.854,
+    "whr": 0.779,
+    "bwr": 1.227,
+    "volume": 311.697
+   }
+  },
+  "Operator Fine F01": {
+   "faction": "operators",
+   "sex": "female",
+   "tier": "beautiful",
+   "archetype": "Hourglass",
+   "values": {
+    "Breasts": 25,
+    "7B Upper": 24,
+    "BreastPerkiness": 17,
+    "PushUp": 7,
+    "Hips": 21,
+    "Butt": 25,
+    "RoundAss": 30,
+    "ChubbyWaist": 11,
+    "Thighs": 11
+   },
+   "measure": {
+    "bust": 72.585,
+    "waist": 44.138,
+    "hip": 73.748,
+    "thigh": 36.286,
+    "arm": 27.776,
+    "bustProjection": 2.658,
+    "belly": 0.15,
+    "butt": 5.798,
+    "whr": 0.598,
+    "bwr": 1.645,
+    "volume": 318.594
+   }
+  },
+  "Operator Plain F01": {
+   "faction": "operators",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 75,
+    "WideWaistLine": 44,
+    "HipUpperWidth": 20,
+    "Belly": 27,
+    "Breasts": 5,
+    "BreastGravity2": 27,
+    "Hips": 6,
+    "Butt": 1,
+    "Thighs": 6,
+    "ChubbyArms": 20,
+    "BreastsSmall": 6
+   },
+   "measure": {
+    "bust": 66.785,
+    "waist": 50.919,
+    "hip": 72.309,
+    "thigh": 35.911,
+    "arm": 31.398,
+    "bustProjection": 0.941,
+    "belly": 0.346,
+    "butt": 5.291,
+    "whr": 0.704,
+    "bwr": 1.312,
+    "volume": 324.629
+   }
+  },
+  "Operator Plain F02": {
+   "faction": "operators",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 88,
+    "WideWaistLine": 38,
+    "HipUpperWidth": 37,
+    "Belly": 36,
+    "Breasts": 2,
+    "BreastGravity2": 29,
+    "Hips": 7,
+    "Butt": 4,
+    "Thighs": 11,
+    "ChubbyArms": 16,
+    "BreastsSmall": 23
+   },
+   "measure": {
+    "bust": 66.25,
+    "waist": 52.578,
+    "hip": 72.634,
+    "thigh": 36.196,
+    "arm": 31.236,
+    "bustProjection": 0.595,
+    "belly": 0.406,
+    "butt": 5.272,
+    "whr": 0.724,
+    "bwr": 1.26,
+    "volume": 326.326
+   }
+  },
+  "Operator Plain F03": {
+   "faction": "operators",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Busty",
+   "values": {
+    "Breasts": 41,
+    "7B Upper": 14,
+    "BreastGravity2": 48,
+    "ChubbyWaist": 70,
+    "Belly": 29,
+    "WideWaistLine": 34,
+    "Hips": -1,
+    "ChubbyArms": 17
+   },
+   "measure": {
+    "bust": 68.929,
+    "waist": 49.465,
+    "hip": 71.948,
+    "thigh": 35.581,
+    "arm": 31.256,
+    "bustProjection": 2.002,
+    "belly": 0.368,
+    "butt": 5.299,
+    "whr": 0.688,
+    "bwr": 1.394,
+    "volume": 324.016
+   }
+  },
+  "Operator Plain F04": {
+   "faction": "operators",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Busty",
+   "values": {
+    "Breasts": 35,
+    "7B Upper": 12,
+    "BreastGravity2": 43,
+    "ChubbyWaist": 55,
+    "Belly": 21,
+    "WideWaistLine": 21,
+    "Hips": 7,
+    "ChubbyArms": 12
+   },
+   "measure": {
+    "bust": 68.732,
+    "waist": 47.908,
+    "hip": 72.003,
+    "thigh": 35.581,
+    "arm": 31.085,
+    "bustProjection": 1.889,
+    "belly": 0.283,
+    "butt": 5.331,
+    "whr": 0.665,
+    "bwr": 1.435,
+    "volume": 321.975
+   }
+  },
+  "Operator Plain F05": {
+   "faction": "operators",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 19,
+    "Arms": 21,
+    "BreastsSmall": 16,
+    "ButtSmall": 31,
+    "ChubbyWaist": 69,
+    "WideWaistLine": 62,
+    "HipUpperWidth": 20,
+    "BreastGravity2": 17,
+    "Hips": -9
+   },
+   "measure": {
+    "bust": 66.81,
+    "waist": 50.661,
+    "hip": 70.303,
+    "thigh": 34.833,
+    "arm": 29.853,
+    "bustProjection": 0.877,
+    "belly": 0.12,
+    "butt": 5.141,
+    "whr": 0.721,
+    "bwr": 1.319,
+    "volume": 317.147
+   }
+  },
+  "Operator Plain F06": {
+   "faction": "operators",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 12,
+    "Arms": 21,
+    "BreastsSmall": 30,
+    "ButtSmall": 16,
+    "ChubbyWaist": 70,
+    "WideWaistLine": 43,
+    "HipUpperWidth": 37,
+    "BreastGravity2": 21,
+    "Hips": -7
+   },
+   "measure": {
+    "bust": 66.373,
+    "waist": 50.938,
+    "hip": 71.041,
+    "thigh": 35.129,
+    "arm": 29.851,
+    "bustProjection": 0.71,
+    "belly": 0.125,
+    "butt": 5.216,
+    "whr": 0.717,
+    "bwr": 1.303,
+    "volume": 318.312
+   }
+  },
+  "Operator Rough F01": {
+   "faction": "operators",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Saggy",
+   "values": {
+    "BreastGravity2": 117,
+    "BreastFlatness2": 60,
+    "Breasts": 36,
+    "Belly": 46,
+    "BigBelly": 33,
+    "ChubbyWaist": 80,
+    "ButtSmall": 38,
+    "WideWaistLine": 39
+   },
+   "measure": {
+    "bust": 64.036,
+    "waist": 51.687,
+    "hip": 70.524,
+    "thigh": 35.364,
+    "arm": 30.136,
+    "bustProjection": -0.18,
+    "belly": 0.693,
+    "butt": 5.081,
+    "whr": 0.733,
+    "bwr": 1.239,
+    "volume": 317.248
+   }
+  },
+  "Operator Rough F02": {
+   "faction": "operators",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "BottomHeavy",
+   "values": {
+    "ChubbyLegs": 95,
+    "Thighs": 77,
+    "Hips": 65,
+    "BigButt": 69,
+    "ChubbyButt": 70,
+    "BreastsSmall": 22,
+    "Breasts": 0,
+    "Arms": 26,
+    "ChubbyWaist": 57
+   },
+   "measure": {
+    "bust": 67.597,
+    "waist": 48.601,
+    "hip": 89.402,
+    "thigh": 49.621,
+    "arm": 29.803,
+    "bustProjection": 0.963,
+    "belly": 0.186,
+    "butt": 6.834,
+    "whr": 0.544,
+    "bwr": 1.391,
+    "volume": 364.449
+   }
+  },
+  "Operator Rough F03": {
+   "faction": "operators",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Apple",
+   "values": {
+    "BigBelly": 34,
+    "Belly": 108,
+    "ChubbyWaist": 129,
+    "WideWaistLine": 53,
+    "HipUpperWidth": 46,
+    "Back": 52,
+    "LegsThin": 38,
+    "ButtSmall": 41,
+    "SlimThighs": 28,
+    "Breasts": 25,
+    "BreastGravity2": 81,
+    "ChubbyArms": 51
+   },
+   "measure": {
+    "bust": 66.162,
+    "waist": 59.801,
+    "hip": 68.642,
+    "thigh": 33.111,
+    "arm": 32.381,
+    "bustProjection": 0.377,
+    "belly": 1.215,
+    "butt": 4.08,
+    "whr": 0.871,
+    "bwr": 1.106,
+    "volume": 325.588
+   }
+  },
+  "Pack Fine F01": {
+   "faction": "pack",
+   "sex": "female",
+   "tier": "beautiful",
+   "archetype": "Athletic",
+   "values": {
+    "MuscularArms": 53,
+    "MuscularLegs": 67,
+    "MuscularButt": 86,
+    "BreastsSmall": 20,
+    "Breasts": 12,
+    "ChestWidth": 10,
+    "ChubbyWaist": 16,
+    "Butt": 10,
+    "BreastPerkiness": 28,
+    "RoundAss": 35
+   },
+   "measure": {
+    "bust": 68.297,
+    "waist": 44.862,
+    "hip": 74.42,
+    "thigh": 36.849,
+    "arm": 31.204,
+    "bustProjection": 1.152,
+    "belly": 0.142,
+    "butt": 6.08,
+    "whr": 0.603,
+    "bwr": 1.522,
+    "volume": 323.686
+   }
+  },
+  "Pack Plain F01": {
+   "faction": "pack",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Sturdy",
+   "values": {
+    "BigTorso": 26,
+    "Back": 31,
+    "ChestWidth": 19,
+    "ChubbyWaist": 72,
+    "WideWaistLine": 25,
+    "MuscularLegs": 26,
+    "MuscularArms": 34,
+    "Thighs": 21,
+    "Hips": -9,
+    "ButtSmall": 2,
+    "Breasts": 10,
+    "MuscularButt": 15
+   },
+   "measure": {
+    "bust": 70.293,
+    "waist": 52.315,
+    "hip": 73.786,
+    "thigh": 37.161,
+    "arm": 31.291,
+    "bustProjection": 1.258,
+    "belly": 0.122,
+    "butt": 4.722,
+    "whr": 0.709,
+    "bwr": 1.344,
+    "volume": 333.298
+   }
+  },
+  "Pack Plain F02": {
+   "faction": "pack",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Sturdy",
+   "values": {
+    "BigTorso": 35,
+    "Back": 34,
+    "ChestWidth": 33,
+    "ChubbyWaist": 59,
+    "WideWaistLine": 33,
+    "MuscularLegs": 39,
+    "MuscularArms": 57,
+    "Thighs": 23,
+    "Hips": 2,
+    "ButtSmall": 2,
+    "Breasts": 16,
+    "MuscularButt": 19
+   },
+   "measure": {
+    "bust": 71.224,
+    "waist": 52.662,
+    "hip": 74.323,
+    "thigh": 37.501,
+    "arm": 31.672,
+    "bustProjection": 1.326,
+    "belly": 0.149,
+    "butt": 4.665,
+    "whr": 0.709,
+    "bwr": 1.352,
+    "volume": 336.555
+   }
+  },
+  "Pack Plain F03": {
+   "faction": "pack",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Sturdy",
+   "values": {
+    "BigTorso": 32,
+    "Back": 44,
+    "ChestWidth": 16,
+    "ChubbyWaist": 78,
+    "WideWaistLine": 38,
+    "MuscularLegs": 34,
+    "MuscularArms": 25,
+    "Thighs": 13,
+    "Hips": 4,
+    "ButtSmall": 7,
+    "Breasts": 17,
+    "MuscularButt": 27
+   },
+   "measure": {
+    "bust": 70.998,
+    "waist": 53.946,
+    "hip": 73.389,
+    "thigh": 36.836,
+    "arm": 31.241,
+    "bustProjection": 1.355,
+    "belly": 0.126,
+    "butt": 4.485,
+    "whr": 0.735,
+    "bwr": 1.316,
+    "volume": 334.487
+   }
+  },
+  "Pack Plain F04": {
+   "faction": "pack",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Sturdy",
+   "values": {
+    "BigTorso": 35,
+    "Back": 38,
+    "ChestWidth": 30,
+    "ChubbyWaist": 76,
+    "WideWaistLine": 30,
+    "MuscularLegs": 59,
+    "MuscularArms": 30,
+    "Thighs": 18,
+    "Hips": -8,
+    "ButtSmall": 17,
+    "Breasts": 2,
+    "MuscularButt": 11
+   },
+   "measure": {
+    "bust": 70.455,
+    "waist": 53.775,
+    "hip": 74.129,
+    "thigh": 37.502,
+    "arm": 31.294,
+    "bustProjection": 1.085,
+    "belly": 0.13,
+    "butt": 4.472,
+    "whr": 0.725,
+    "bwr": 1.31,
+    "volume": 335.95
+   }
+  },
+  "Pack Plain F05": {
+   "faction": "pack",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 21,
+    "Arms": 11,
+    "BreastsSmall": 25,
+    "ButtSmall": 23,
+    "ChubbyWaist": 68,
+    "WideWaistLine": 45,
+    "HipUpperWidth": 37,
+    "BreastGravity2": 19,
+    "Hips": -3,
+    "MuscularArms": 18,
+    "MuscularLegs": 20,
+    "MuscularButt": 19
+   },
+   "measure": {
+    "bust": 66.609,
+    "waist": 50.879,
+    "hip": 71.125,
+    "thigh": 35.164,
+    "arm": 30.234,
+    "bustProjection": 0.782,
+    "belly": 0.123,
+    "butt": 5.239,
+    "whr": 0.715,
+    "bwr": 1.309,
+    "volume": 319.41
+   }
+  },
+  "Pack Plain F06": {
+   "faction": "pack",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 27,
+    "Arms": 24,
+    "BreastsSmall": 18,
+    "ButtSmall": 34,
+    "ChubbyWaist": 57,
+    "WideWaistLine": 41,
+    "HipUpperWidth": 20,
+    "BreastGravity2": 22,
+    "Hips": -16,
+    "MuscularArms": 16,
+    "MuscularLegs": 27,
+    "MuscularButt": 25
+   },
+   "measure": {
+    "bust": 66.544,
+    "waist": 49.165,
+    "hip": 70.734,
+    "thigh": 35.048,
+    "arm": 30.041,
+    "bustProjection": 0.816,
+    "belly": 0.11,
+    "butt": 5.232,
+    "whr": 0.695,
+    "bwr": 1.353,
+    "volume": 316.619
+   }
+  },
+  "Pack Rough F01": {
+   "faction": "pack",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Boxy",
+   "values": {
+    "BigTorso": 70,
+    "ChestWidth": 66,
+    "Back": 60,
+    "ChubbyWaist": 99,
+    "WideWaistLine": 82,
+    "HipUpperWidth": 42,
+    "Hips": -52,
+    "ButtSmall": 58,
+    "BreastsSmall": 26,
+    "MuscularArms": 44,
+    "MuscularLegs": 26,
+    "MuscularButt": 25
+   },
+   "measure": {
+    "bust": 72.171,
+    "waist": 61.744,
+    "hip": 70.371,
+    "thigh": 35.691,
+    "arm": 31.76,
+    "bustProjection": 0.641,
+    "belly": 0.199,
+    "butt": 3.694,
+    "whr": 0.877,
+    "bwr": 1.169,
+    "volume": 339.189
+   }
+  },
+  "Pack Rough F02": {
+   "faction": "pack",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Boxy",
+   "values": {
+    "BigTorso": 54,
+    "ChestWidth": 82,
+    "Back": 51,
+    "ChubbyWaist": 98,
+    "WideWaistLine": 98,
+    "HipUpperWidth": 47,
+    "Hips": -50,
+    "ButtSmall": 70,
+    "BreastsSmall": 20,
+    "MuscularArms": 53,
+    "MuscularLegs": 16,
+    "MuscularButt": 24
+   },
+   "measure": {
+    "bust": 71.55,
+    "waist": 61.062,
+    "hip": 69.616,
+    "thigh": 35.448,
+    "arm": 31.599,
+    "bustProjection": 0.774,
+    "belly": 0.145,
+    "butt": 3.823,
+    "whr": 0.877,
+    "bwr": 1.172,
+    "volume": 336.323
+   }
+  },
+  "Pack Rough F03": {
+   "faction": "pack",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "BottomHeavy",
+   "values": {
+    "ChubbyLegs": 102,
+    "Thighs": 77,
+    "Hips": 63,
+    "BigButt": 67,
+    "ChubbyButt": 61,
+    "BreastsSmall": 27,
+    "Breasts": 5,
+    "Arms": 28,
+    "ChubbyWaist": 58
+   },
+   "measure": {
+    "bust": 67.75,
+    "waist": 48.569,
+    "hip": 89.837,
+    "thigh": 50.348,
+    "arm": 29.773,
+    "bustProjection": 0.989,
+    "belly": 0.184,
+    "butt": 6.728,
+    "whr": 0.541,
+    "bwr": 1.395,
+    "volume": 366.398
+   }
+  },
+  "Triggerman Fine F01": {
+   "faction": "triggermen",
+   "sex": "female",
+   "tier": "beautiful",
+   "archetype": "Hourglass",
+   "values": {
+    "Breasts": 23,
+    "7B Upper": 23,
+    "BreastPerkiness": 30,
+    "PushUp": 1,
+    "Hips": 14,
+    "Butt": 24,
+    "RoundAss": 24,
+    "ChubbyWaist": 8,
+    "Thighs": 13
+   },
+   "measure": {
+    "bust": 72.081,
+    "waist": 43.914,
+    "hip": 73.486,
+    "thigh": 36.39,
+    "arm": 27.769,
+    "bustProjection": 2.556,
+    "belly": 0.152,
+    "butt": 5.771,
+    "whr": 0.598,
+    "bwr": 1.641,
+    "volume": 317.8
+   }
+  },
+  "Triggerman Plain F01": {
+   "faction": "triggermen",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 82,
+    "WideWaistLine": 45,
+    "HipUpperWidth": 26,
+    "Belly": 30,
+    "Breasts": 11,
+    "BreastGravity2": 30,
+    "Hips": -2,
+    "Butt": -4,
+    "Thighs": 6,
+    "ChubbyArms": 33,
+    "BreastsSmall": 6
+   },
+   "measure": {
+    "bust": 66.909,
+    "waist": 51.737,
+    "hip": 72.222,
+    "thigh": 35.891,
+    "arm": 31.846,
+    "bustProjection": 1.009,
+    "belly": 0.374,
+    "butt": 5.264,
+    "whr": 0.716,
+    "bwr": 1.293,
+    "volume": 326.34
+   }
+  },
+  "Triggerman Plain F02": {
+   "faction": "triggermen",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 61,
+    "WideWaistLine": 42,
+    "HipUpperWidth": 25,
+    "Belly": 37,
+    "Breasts": 8,
+    "BreastGravity2": 38,
+    "Hips": 7,
+    "Butt": -1,
+    "Thighs": 12,
+    "ChubbyArms": 24,
+    "BreastsSmall": 21
+   },
+   "measure": {
+    "bust": 66.093,
+    "waist": 50.128,
+    "hip": 72.619,
+    "thigh": 36.229,
+    "arm": 31.561,
+    "bustProjection": 0.647,
+    "belly": 0.347,
+    "butt": 5.316,
+    "whr": 0.69,
+    "bwr": 1.318,
+    "volume": 324.422
+   }
+  },
+  "Triggerman Plain F03": {
+   "faction": "triggermen",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Busty",
+   "values": {
+    "Breasts": 39,
+    "7B Upper": 13,
+    "BreastGravity2": 43,
+    "ChubbyWaist": 74,
+    "Belly": 22,
+    "WideWaistLine": 32,
+    "Hips": 5,
+    "ChubbyArms": 18
+   },
+   "measure": {
+    "bust": 69.043,
+    "waist": 49.679,
+    "hip": 71.958,
+    "thigh": 35.581,
+    "arm": 31.275,
+    "bustProjection": 1.992,
+    "belly": 0.339,
+    "butt": 5.29,
+    "whr": 0.69,
+    "bwr": 1.39,
+    "volume": 324.392
+   }
+  },
+  "Triggerman Plain F04": {
+   "faction": "triggermen",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Busty",
+   "values": {
+    "Breasts": 37,
+    "7B Upper": 19,
+    "BreastGravity2": 35,
+    "ChubbyWaist": 56,
+    "Belly": 33,
+    "WideWaistLine": 31,
+    "Hips": 1,
+    "ChubbyArms": 24
+   },
+   "measure": {
+    "bust": 70.053,
+    "waist": 48.34,
+    "hip": 71.949,
+    "thigh": 35.581,
+    "arm": 31.584,
+    "bustProjection": 2.203,
+    "belly": 0.37,
+    "butt": 5.328,
+    "whr": 0.672,
+    "bwr": 1.449,
+    "volume": 324.672
+   }
+  },
+  "Triggerman Plain F05": {
+   "faction": "triggermen",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Soft",
+   "values": {
+    "ChubbyWaist": 86,
+    "Belly": 43,
+    "BigBelly": 32,
+    "WideWaistLine": 32,
+    "ChubbyArms": 29,
+    "ChubbyLegs": 28,
+    "Breasts": 19,
+    "BreastGravity2": 33,
+    "ChubbyButt": 13,
+    "Back": 17
+   },
+   "measure": {
+    "bust": 67.409,
+    "waist": 52.616,
+    "hip": 75.068,
+    "thigh": 38.474,
+    "arm": 31.685,
+    "bustProjection": 0.896,
+    "belly": 0.647,
+    "butt": 5.145,
+    "whr": 0.701,
+    "bwr": 1.281,
+    "volume": 335.411
+   }
+  },
+  "Triggerman Plain F06": {
+   "faction": "triggermen",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Soft",
+   "values": {
+    "ChubbyWaist": 83,
+    "Belly": 57,
+    "BigBelly": 34,
+    "WideWaistLine": 33,
+    "ChubbyArms": 30,
+    "ChubbyLegs": 17,
+    "Breasts": 11,
+    "BreastGravity2": 34,
+    "ChubbyButt": 11,
+    "Back": 30
+   },
+   "measure": {
+    "bust": 67.052,
+    "waist": 53.019,
+    "hip": 73.872,
+    "thigh": 37.335,
+    "arm": 31.716,
+    "bustProjection": 0.682,
+    "belly": 0.777,
+    "butt": 4.931,
+    "whr": 0.718,
+    "bwr": 1.265,
+    "volume": 332.044
+   }
+  },
+  "Triggerman Rough F01": {
+   "faction": "triggermen",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Obese",
+   "values": {
+    "ChubbyWaist": 134,
+    "BigBelly": 37,
+    "Belly": 113,
+    "HipUpperWidth": 63,
+    "WideWaistLine": 93,
+    "ChubbyLegs": 94,
+    "ChubbyArms": 106,
+    "ChubbyButt": 80,
+    "BigTorso": 52,
+    "Back": 63,
+    "Breasts": 50,
+    "BreastGravity2": 72,
+    "BreastFlatness2": 25,
+    "Thighs": 58,
+    "CalfSize": 52
+   },
+   "measure": {
+    "bust": 69.744,
+    "waist": 67.104,
+    "hip": 86.489,
+    "thigh": 48.525,
+    "arm": 36.311,
+    "bustProjection": 0.11,
+    "belly": 1.1,
+    "butt": 4.562,
+    "whr": 0.776,
+    "bwr": 1.039,
+    "volume": 393.009
+   }
+  },
+  "Triggerman Rough F02": {
+   "faction": "triggermen",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Saggy",
+   "values": {
+    "BreastGravity2": 116,
+    "BreastFlatness2": 63,
+    "Breasts": 32,
+    "Belly": 58,
+    "BigBelly": 20,
+    "ChubbyWaist": 76,
+    "ButtSmall": 37,
+    "WideWaistLine": 46
+   },
+   "measure": {
+    "bust": 63.978,
+    "waist": 51.203,
+    "hip": 70.562,
+    "thigh": 35.37,
+    "arm": 30.144,
+    "bustProjection": -0.14,
+    "belly": 0.685,
+    "butt": 5.095,
+    "whr": 0.726,
+    "bwr": 1.25,
+    "volume": 316.77
+   }
+  },
+  "Triggerman Rough F03": {
+   "faction": "triggermen",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Apple",
+   "values": {
+    "BigBelly": 51,
+    "Belly": 101,
+    "ChubbyWaist": 113,
+    "WideWaistLine": 57,
+    "HipUpperWidth": 56,
+    "Back": 60,
+    "LegsThin": 37,
+    "ButtSmall": 42,
+    "SlimThighs": 29,
+    "Breasts": 20,
+    "BreastGravity2": 82,
+    "ChubbyArms": 50
+   },
+   "measure": {
+    "bust": 66.047,
+    "waist": 59.944,
+    "hip": 68.546,
+    "thigh": 33.096,
+    "arm": 32.365,
+    "bustProjection": 0.166,
+    "belly": 1.222,
+    "butt": 4.001,
+    "whr": 0.875,
+    "bwr": 1.102,
+    "volume": 325.458
+   }
+  },
+  "Raider Fine F01": {
+   "faction": "raiders",
+   "sex": "female",
+   "tier": "beautiful",
+   "archetype": "Slender",
+   "values": {
+    "LegsThin": 12,
+    "Arms": 11,
+    "BreastsSmall": 13,
+    "Breasts": 19,
+    "BreastPerkiness": 28,
+    "ChubbyWaist": 10,
+    "Hips": 10,
+    "Butt": 9,
+    "SlimThighs": 6
+   },
+   "measure": {
+    "bust": 68.387,
+    "waist": 44.009,
+    "hip": 72.006,
+    "thigh": 35.02,
+    "arm": 30.106,
+    "bustProjection": 1.326,
+    "belly": 0.15,
+    "butt": 5.53,
+    "whr": 0.611,
+    "bwr": 1.554,
+    "volume": 314.655
+   }
+  },
+  "Raider Plain F01": {
+   "faction": "raiders",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 38,
+    "Arms": 23,
+    "BreastsSmall": 29,
+    "ButtSmall": 28,
+    "ChubbyWaist": 66,
+    "WideWaistLine": 49,
+    "HipUpperWidth": 31,
+    "BreastGravity2": 11,
+    "Hips": -5
+   },
+   "measure": {
+    "bust": 66.886,
+    "waist": 50.523,
+    "hip": 70.138,
+    "thigh": 34.285,
+    "arm": 29.83,
+    "bustProjection": 0.798,
+    "belly": 0.116,
+    "butt": 5.162,
+    "whr": 0.72,
+    "bwr": 1.324,
+    "volume": 315.777
+   }
+  },
+  "Raider Plain F02": {
+   "faction": "raiders",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 49,
+    "Arms": 32,
+    "BreastsSmall": 17,
+    "ButtSmall": 30,
+    "ChubbyWaist": 76,
+    "WideWaistLine": 64,
+    "HipUpperWidth": 40,
+    "BreastGravity2": 11,
+    "Hips": -20
+   },
+   "measure": {
+    "bust": 67.117,
+    "waist": 52.127,
+    "hip": 69.638,
+    "thigh": 33.949,
+    "arm": 29.203,
+    "bustProjection": 0.91,
+    "belly": 0.129,
+    "butt": 5.132,
+    "whr": 0.749,
+    "bwr": 1.288,
+    "volume": 315.186
+   }
+  },
+  "Raider Plain F03": {
+   "faction": "raiders",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 50,
+    "Arms": 34,
+    "BreastsSmall": 22,
+    "ButtSmall": 17,
+    "ChubbyWaist": 76,
+    "WideWaistLine": 69,
+    "HipUpperWidth": 22,
+    "BreastGravity2": 24,
+    "Hips": -8
+   },
+   "measure": {
+    "bust": 66.336,
+    "waist": 51.542,
+    "hip": 70.51,
+    "thigh": 33.994,
+    "arm": 29.175,
+    "bustProjection": 0.777,
+    "belly": 0.139,
+    "butt": 5.198,
+    "whr": 0.731,
+    "bwr": 1.287,
+    "volume": 314.727
+   }
+  },
+  "Raider Plain F04": {
+   "faction": "raiders",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 24,
+    "Arms": 42,
+    "BreastsSmall": 24,
+    "ButtSmall": 23,
+    "ChubbyWaist": 62,
+    "WideWaistLine": 46,
+    "HipUpperWidth": 36,
+    "BreastGravity2": 25,
+    "Hips": -10
+   },
+   "measure": {
+    "bust": 66.239,
+    "waist": 50.345,
+    "hip": 70.48,
+    "thigh": 34.73,
+    "arm": 29.09,
+    "bustProjection": 0.749,
+    "belly": 0.107,
+    "butt": 5.197,
+    "whr": 0.714,
+    "bwr": 1.316,
+    "volume": 314.705
+   }
+  },
+  "Raider Plain F05": {
+   "faction": "raiders",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Sturdy",
+   "values": {
+    "BigTorso": 24,
+    "Back": 36,
+    "ChestWidth": 19,
+    "ChubbyWaist": 72,
+    "WideWaistLine": 32,
+    "MuscularLegs": 45,
+    "MuscularArms": 39,
+    "Thighs": 19,
+    "Hips": 3,
+    "ButtSmall": 14,
+    "Breasts": 12
+   },
+   "measure": {
+    "bust": 70.358,
+    "waist": 52.573,
+    "hip": 73.916,
+    "thigh": 37.319,
+    "arm": 31.329,
+    "bustProjection": 1.3,
+    "belly": 0.123,
+    "butt": 4.537,
+    "whr": 0.711,
+    "bwr": 1.338,
+    "volume": 334.144
+   }
+  },
+  "Raider Plain F06": {
+   "faction": "raiders",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Sturdy",
+   "values": {
+    "BigTorso": 33,
+    "Back": 32,
+    "ChestWidth": 21,
+    "ChubbyWaist": 55,
+    "WideWaistLine": 25,
+    "MuscularLegs": 25,
+    "MuscularArms": 47,
+    "Thighs": 17,
+    "Hips": 3,
+    "ButtSmall": 16,
+    "Breasts": 15
+   },
+   "measure": {
+    "bust": 70.949,
+    "waist": 51.551,
+    "hip": 73.092,
+    "thigh": 36.843,
+    "arm": 31.576,
+    "bustProjection": 1.316,
+    "belly": 0.149,
+    "butt": 4.554,
+    "whr": 0.705,
+    "bwr": 1.376,
+    "volume": 332.428
+   }
+  },
+  "Raider Rough F01": {
+   "faction": "raiders",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "LegsThin": 93,
+    "Arms": 67,
+    "SlimThighs": 57,
+    "ButtSmall": 73,
+    "BreastsSmall": 26,
+    "Breasts": 2,
+    "BreastGravity2": 46,
+    "Hips": -35,
+    "CalfSmooth": 59,
+    "WideWaistLine": 34
+   },
+   "measure": {
+    "bust": 65.284,
+    "waist": 43.634,
+    "hip": 63.355,
+    "thigh": 30.193,
+    "arm": 28.864,
+    "bustProjection": 0.605,
+    "belly": 0.155,
+    "butt": 5.005,
+    "whr": 0.689,
+    "bwr": 1.496,
+    "volume": 290.388
+   }
+  },
+  "Raider Rough F02": {
+   "faction": "raiders",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "LegsThin": 72,
+    "Arms": 85,
+    "SlimThighs": 53,
+    "ButtSmall": 64,
+    "BreastsSmall": 24,
+    "Breasts": 3,
+    "BreastGravity2": 57,
+    "Hips": -35,
+    "CalfSmooth": 57,
+    "WideWaistLine": 26
+   },
+   "measure": {
+    "bust": 64.894,
+    "waist": 43.445,
+    "hip": 64.16,
+    "thigh": 31.006,
+    "arm": 28.622,
+    "bustProjection": 0.561,
+    "belly": 0.155,
+    "butt": 5.063,
+    "whr": 0.677,
+    "bwr": 1.494,
+    "volume": 291.757
+   }
+  },
+  "Raider Rough F03": {
+   "faction": "raiders",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Boxy",
+   "values": {
+    "BigTorso": 71,
+    "ChestWidth": 84,
+    "Back": 63,
+    "ChubbyWaist": 86,
+    "WideWaistLine": 88,
+    "HipUpperWidth": 53,
+    "Hips": -51,
+    "ButtSmall": 63,
+    "BreastsSmall": 24,
+    "MuscularArms": 25
+   },
+   "measure": {
+    "bust": 72.25,
+    "waist": 61.407,
+    "hip": 69.469,
+    "thigh": 35.222,
+    "arm": 31.465,
+    "bustProjection": 0.662,
+    "belly": 0.221,
+    "butt": 3.529,
+    "whr": 0.884,
+    "bwr": 1.177,
+    "volume": 336.499
+   }
+  },
+  "Institute Fine F01": {
+   "faction": "institute",
+   "sex": "female",
+   "tier": "beautiful",
+   "archetype": "Slender",
+   "values": {
+    "LegsThin": 12,
+    "Arms": 11,
+    "BreastsSmall": 4,
+    "Breasts": 11,
+    "BreastPerkiness": 35,
+    "ChubbyWaist": 9,
+    "Hips": 12,
+    "Butt": 11,
+    "SlimThighs": 13
+   },
+   "measure": {
+    "bust": 68.209,
+    "waist": 43.959,
+    "hip": 71.724,
+    "thigh": 34.752,
+    "arm": 30.108,
+    "bustProjection": 1.291,
+    "belly": 0.151,
+    "butt": 5.535,
+    "whr": 0.613,
+    "bwr": 1.552,
+    "volume": 313.613
+   }
+  },
+  "Institute Plain F01": {
+   "faction": "institute",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Soft",
+   "values": {
+    "ChubbyWaist": 85,
+    "Belly": 50,
+    "BigBelly": 16,
+    "WideWaistLine": 24,
+    "ChubbyArms": 35,
+    "ChubbyLegs": 26,
+    "Breasts": 26,
+    "BreastGravity2": 41,
+    "ChubbyButt": 22,
+    "Back": 25
+   },
+   "measure": {
+    "bust": 67.337,
+    "waist": 52.133,
+    "hip": 74.983,
+    "thigh": 38.267,
+    "arm": 31.894,
+    "bustProjection": 1.059,
+    "belly": 0.642,
+    "butt": 5.087,
+    "whr": 0.695,
+    "bwr": 1.292,
+    "volume": 334.774
+   }
+  },
+  "Institute Plain F02": {
+   "faction": "institute",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Soft",
+   "values": {
+    "ChubbyWaist": 94,
+    "Belly": 49,
+    "BigBelly": 19,
+    "WideWaistLine": 37,
+    "ChubbyArms": 29,
+    "ChubbyLegs": 20,
+    "Breasts": 12,
+    "BreastGravity2": 40,
+    "ChubbyButt": 18,
+    "Back": 30
+   },
+   "measure": {
+    "bust": 66.804,
+    "waist": 53.347,
+    "hip": 74.289,
+    "thigh": 37.646,
+    "arm": 31.662,
+    "bustProjection": 0.804,
+    "belly": 0.675,
+    "butt": 4.962,
+    "whr": 0.718,
+    "bwr": 1.252,
+    "volume": 333.056
+   }
+  },
+  "Institute Plain F03": {
+   "faction": "institute",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 87,
+    "WideWaistLine": 41,
+    "HipUpperWidth": 22,
+    "Belly": 33,
+    "Breasts": 11,
+    "BreastGravity2": 37,
+    "Hips": 7,
+    "Butt": 2,
+    "Thighs": 7,
+    "ChubbyArms": 26,
+    "BreastsSmall": 14
+   },
+   "measure": {
+    "bust": 66.401,
+    "waist": 51.904,
+    "hip": 72.381,
+    "thigh": 35.97,
+    "arm": 31.589,
+    "bustProjection": 0.811,
+    "belly": 0.415,
+    "butt": 5.268,
+    "whr": 0.717,
+    "bwr": 1.279,
+    "volume": 325.803
+   }
+  },
+  "Institute Plain F04": {
+   "faction": "institute",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 66,
+    "WideWaistLine": 35,
+    "HipUpperWidth": 29,
+    "Belly": 60,
+    "Breasts": 18,
+    "BreastGravity2": 23,
+    "Hips": -2,
+    "Butt": 8,
+    "Thighs": 9,
+    "ChubbyArms": 21,
+    "BreastsSmall": 0
+   },
+   "measure": {
+    "bust": 67.701,
+    "waist": 50.591,
+    "hip": 72.553,
+    "thigh": 36.105,
+    "arm": 31.448,
+    "bustProjection": 1.148,
+    "belly": 0.559,
+    "butt": 5.347,
+    "whr": 0.697,
+    "bwr": 1.338,
+    "volume": 325.949
+   }
+  },
+  "Institute Plain F05": {
+   "faction": "institute",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 61,
+    "WideWaistLine": 37,
+    "HipUpperWidth": 28,
+    "Belly": 33,
+    "Breasts": 16,
+    "BreastGravity2": 25,
+    "Hips": 1,
+    "Butt": -9,
+    "Thighs": 0,
+    "ChubbyArms": 18,
+    "BreastsSmall": 20
+   },
+   "measure": {
+    "bust": 67.065,
+    "waist": 49.991,
+    "hip": 71.826,
+    "thigh": 35.547,
+    "arm": 31.351,
+    "bustProjection": 0.918,
+    "belly": 0.316,
+    "butt": 5.292,
+    "whr": 0.696,
+    "bwr": 1.342,
+    "volume": 322.678
+   }
+  },
+  "Institute Plain F06": {
+   "faction": "institute",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Busty",
+   "values": {
+    "Breasts": 42,
+    "7B Upper": 13,
+    "BreastGravity2": 46,
+    "ChubbyWaist": 71,
+    "Belly": 25,
+    "WideWaistLine": 34,
+    "Hips": 0,
+    "ChubbyArms": 13
+   },
+   "measure": {
+    "bust": 68.955,
+    "waist": 49.506,
+    "hip": 71.95,
+    "thigh": 35.581,
+    "arm": 31.101,
+    "bustProjection": 2.011,
+    "belly": 0.345,
+    "butt": 5.297,
+    "whr": 0.688,
+    "bwr": 1.393,
+    "volume": 323.775
+   }
+  },
+  "Institute Rough F01": {
+   "faction": "institute",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Obese",
+   "values": {
+    "ChubbyWaist": 132,
+    "BigBelly": 32,
+    "Belly": 109,
+    "HipUpperWidth": 84,
+    "WideWaistLine": 75,
+    "ChubbyLegs": 93,
+    "ChubbyArms": 112,
+    "ChubbyButt": 79,
+    "BigTorso": 51,
+    "Back": 60,
+    "Breasts": 41,
+    "BreastGravity2": 80,
+    "BreastFlatness2": 20,
+    "Thighs": 58,
+    "CalfSize": 53
+   },
+   "measure": {
+    "bust": 69.271,
+    "waist": 66.892,
+    "hip": 86.364,
+    "thigh": 48.421,
+    "arm": 36.55,
+    "bustProjection": 0.058,
+    "belly": 1.042,
+    "butt": 4.602,
+    "whr": 0.775,
+    "bwr": 1.036,
+    "volume": 392.469
+   }
+  },
+  "Institute Rough F02": {
+   "faction": "institute",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Saggy",
+   "values": {
+    "BreastGravity2": 93,
+    "BreastFlatness2": 84,
+    "Breasts": 20,
+    "Belly": 42,
+    "BigBelly": 35,
+    "ChubbyWaist": 79,
+    "ButtSmall": 40,
+    "WideWaistLine": 33
+   },
+   "measure": {
+    "bust": 63.865,
+    "waist": 51.505,
+    "hip": 70.449,
+    "thigh": 35.353,
+    "arm": 30.138,
+    "bustProjection": -0.18,
+    "belly": 0.637,
+    "butt": 5.073,
+    "whr": 0.731,
+    "bwr": 1.24,
+    "volume": 316.801
+   }
+  },
+  "Institute Rough F03": {
+   "faction": "institute",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Apple",
+   "values": {
+    "BigBelly": 48,
+    "Belly": 95,
+    "ChubbyWaist": 138,
+    "WideWaistLine": 58,
+    "HipUpperWidth": 44,
+    "Back": 42,
+    "LegsThin": 36,
+    "ButtSmall": 54,
+    "SlimThighs": 22,
+    "Breasts": 19,
+    "BreastGravity2": 63,
+    "ChubbyArms": 48
+   },
+   "measure": {
+    "bust": 66.453,
+    "waist": 60.6,
+    "hip": 68.535,
+    "thigh": 33.331,
+    "arm": 32.265,
+    "bustProjection": 0.343,
+    "belly": 1.235,
+    "butt": 4.135,
+    "whr": 0.884,
+    "bwr": 1.097,
+    "volume": 326.781
+   }
+  },
+  "Railroad Fine F01": {
+   "faction": "railroad",
+   "sex": "female",
+   "tier": "beautiful",
+   "archetype": "Athletic",
+   "values": {
+    "MuscularArms": 39,
+    "MuscularLegs": 44,
+    "MuscularButt": 59,
+    "BreastsSmall": 21,
+    "Breasts": 5,
+    "ChestWidth": 12,
+    "ChubbyWaist": 16,
+    "Butt": 14,
+    "BreastPerkiness": 26,
+    "RoundAss": 24
+   },
+   "measure": {
+    "bust": 67.991,
+    "waist": 44.893,
+    "hip": 73.834,
+    "thigh": 36.409,
+    "arm": 31.005,
+    "bustProjection": 1.021,
+    "belly": 0.142,
+    "butt": 5.929,
+    "whr": 0.608,
+    "bwr": 1.515,
+    "volume": 321.547
+   }
+  },
+  "Railroad Plain F01": {
+   "faction": "railroad",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 16,
+    "Arms": 18,
+    "BreastsSmall": 27,
+    "ButtSmall": 22,
+    "ChubbyWaist": 64,
+    "WideWaistLine": 68,
+    "HipUpperWidth": 28,
+    "BreastGravity2": 11,
+    "Hips": -18,
+    "MuscularArms": 18,
+    "MuscularLegs": 12
+   },
+   "measure": {
+    "bust": 67.003,
+    "waist": 50.799,
+    "hip": 71.069,
+    "thigh": 35.179,
+    "arm": 30.14,
+    "bustProjection": 0.821,
+    "belly": 0.105,
+    "butt": 5.199,
+    "whr": 0.715,
+    "bwr": 1.319,
+    "volume": 319.509
+   }
+  },
+  "Railroad Plain F02": {
+   "faction": "railroad",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 23,
+    "Arms": 11,
+    "BreastsSmall": 23,
+    "ButtSmall": 35,
+    "ChubbyWaist": 69,
+    "WideWaistLine": 66,
+    "HipUpperWidth": 35,
+    "BreastGravity2": 25,
+    "Hips": -3,
+    "MuscularArms": 18,
+    "MuscularLegs": 11
+   },
+   "measure": {
+    "bust": 66.35,
+    "waist": 51.507,
+    "hip": 70.415,
+    "thigh": 34.879,
+    "arm": 30.232,
+    "bustProjection": 0.759,
+    "belly": 0.125,
+    "butt": 5.117,
+    "whr": 0.731,
+    "bwr": 1.288,
+    "volume": 318.494
+   }
+  },
+  "Railroad Plain F03": {
+   "faction": "railroad",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 29,
+    "Arms": 20,
+    "BreastsSmall": 29,
+    "ButtSmall": 22,
+    "ChubbyWaist": 61,
+    "WideWaistLine": 46,
+    "HipUpperWidth": 34,
+    "BreastGravity2": 25,
+    "Hips": -8,
+    "MuscularArms": 11,
+    "MuscularLegs": 17
+   },
+   "measure": {
+    "bust": 66.19,
+    "waist": 50.208,
+    "hip": 70.944,
+    "thigh": 34.881,
+    "arm": 30.025,
+    "bustProjection": 0.692,
+    "belly": 0.108,
+    "butt": 5.214,
+    "whr": 0.708,
+    "bwr": 1.318,
+    "volume": 317.154
+   }
+  },
+  "Railroad Plain F04": {
+   "faction": "railroad",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 74,
+    "WideWaistLine": 49,
+    "HipUpperWidth": 26,
+    "Belly": 30,
+    "Breasts": 8,
+    "BreastGravity2": 25,
+    "Hips": 7,
+    "Butt": -2,
+    "Thighs": 10,
+    "ChubbyArms": 11,
+    "BreastsSmall": 11
+   },
+   "measure": {
+    "bust": 66.853,
+    "waist": 51.309,
+    "hip": 72.494,
+    "thigh": 36.116,
+    "arm": 31.085,
+    "bustProjection": 0.921,
+    "belly": 0.363,
+    "butt": 5.285,
+    "whr": 0.708,
+    "bwr": 1.303,
+    "volume": 325.058
+   }
+  },
+  "Railroad Plain F05": {
+   "faction": "railroad",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 88,
+    "WideWaistLine": 55,
+    "HipUpperWidth": 26,
+    "Belly": 23,
+    "Breasts": 6,
+    "BreastGravity2": 35,
+    "Hips": 3,
+    "Butt": -6,
+    "Thighs": 0,
+    "ChubbyArms": 13,
+    "BreastsSmall": 23
+   },
+   "measure": {
+    "bust": 66.133,
+    "waist": 52.434,
+    "hip": 71.872,
+    "thigh": 35.558,
+    "arm": 31.131,
+    "bustProjection": 0.675,
+    "belly": 0.32,
+    "butt": 5.243,
+    "whr": 0.73,
+    "bwr": 1.261,
+    "volume": 323.817
+   }
+  },
+  "Railroad Plain F06": {
+   "faction": "railroad",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Sturdy",
+   "values": {
+    "BigTorso": 30,
+    "Back": 29,
+    "ChestWidth": 25,
+    "ChubbyWaist": 65,
+    "WideWaistLine": 38,
+    "MuscularLegs": 28,
+    "MuscularArms": 12,
+    "Thighs": 18,
+    "Hips": -2,
+    "ButtSmall": 17,
+    "Breasts": 9
+   },
+   "measure": {
+    "bust": 70.349,
+    "waist": 52.406,
+    "hip": 73.194,
+    "thigh": 36.944,
+    "arm": 31.033,
+    "bustProjection": 1.224,
+    "belly": 0.133,
+    "butt": 4.624,
+    "whr": 0.716,
+    "bwr": 1.342,
+    "volume": 331.902
+   }
+  },
+  "Railroad Rough F01": {
+   "faction": "railroad",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "LegsThin": 76,
+    "Arms": 86,
+    "SlimThighs": 68,
+    "ButtSmall": 62,
+    "BreastsSmall": 24,
+    "Breasts": 3,
+    "BreastGravity2": 52,
+    "Hips": -33,
+    "CalfSmooth": 52,
+    "WideWaistLine": 35
+   },
+   "measure": {
+    "bust": 65.07,
+    "waist": 43.683,
+    "hip": 63.388,
+    "thigh": 30.321,
+    "arm": 28.609,
+    "bustProjection": 0.598,
+    "belly": 0.155,
+    "butt": 5.049,
+    "whr": 0.689,
+    "bwr": 1.49,
+    "volume": 290.0
+   }
+  },
+  "Railroad Rough F02": {
+   "faction": "railroad",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Flat",
+   "values": {
+    "Breasts": 2,
+    "BreastsSmall": 26,
+    "BreastsSmall2": 46,
+    "BreastFlatness2": 65,
+    "ButtSmall": 82,
+    "Hips": -36,
+    "SlimThighs": 30,
+    "ChubbyWaist": 77,
+    "WideWaistLine": 77,
+    "HipUpperWidth": 37
+   },
+   "measure": {
+    "bust": 63.941,
+    "waist": 52.329,
+    "hip": 66.685,
+    "thigh": 33.94,
+    "arm": 30.147,
+    "bustProjection": 0.246,
+    "belly": 0.115,
+    "butt": 4.814,
+    "whr": 0.785,
+    "bwr": 1.222,
+    "volume": 311.127
+   }
+  },
+  "Railroad Rough F03": {
+   "faction": "railroad",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Boxy",
+   "values": {
+    "BigTorso": 59,
+    "ChestWidth": 87,
+    "Back": 63,
+    "ChubbyWaist": 95,
+    "WideWaistLine": 95,
+    "HipUpperWidth": 48,
+    "Hips": -54,
+    "ButtSmall": 60,
+    "BreastsSmall": 26,
+    "MuscularArms": 29
+   },
+   "measure": {
+    "bust": 71.695,
+    "waist": 61.068,
+    "hip": 69.574,
+    "thigh": 35.239,
+    "arm": 31.323,
+    "bustProjection": 0.685,
+    "belly": 0.167,
+    "butt": 3.601,
+    "whr": 0.878,
+    "bwr": 1.174,
+    "volume": 335.461
+   }
+  },
+  "Atom Fine F01": {
+   "faction": "atom",
+   "sex": "female",
+   "tier": "beautiful",
+   "archetype": "Slender",
+   "values": {
+    "LegsThin": 23,
+    "Arms": 10,
+    "BreastsSmall": 11,
+    "Breasts": 14,
+    "BreastPerkiness": 26,
+    "ChubbyWaist": 11,
+    "Hips": 7,
+    "Butt": 7,
+    "SlimThighs": 5
+   },
+   "measure": {
+    "bust": 68.21,
+    "waist": 44.056,
+    "hip": 71.851,
+    "thigh": 34.723,
+    "arm": 30.119,
+    "bustProjection": 1.266,
+    "belly": 0.148,
+    "butt": 5.515,
+    "whr": 0.613,
+    "bwr": 1.548,
+    "volume": 313.802
+   }
+  },
+  "Atom Plain F01": {
+   "faction": "atom",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 26,
+    "Arms": 34,
+    "BreastsSmall": 17,
+    "ButtSmall": 24,
+    "ChubbyWaist": 75,
+    "WideWaistLine": 42,
+    "HipUpperWidth": 23,
+    "BreastGravity2": 21,
+    "Hips": -11
+   },
+   "measure": {
+    "bust": 66.563,
+    "waist": 50.685,
+    "hip": 70.392,
+    "thigh": 34.664,
+    "arm": 29.177,
+    "bustProjection": 0.835,
+    "belly": 0.134,
+    "butt": 5.165,
+    "whr": 0.72,
+    "bwr": 1.313,
+    "volume": 315.322
+   }
+  },
+  "Atom Plain F02": {
+   "faction": "atom",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 41,
+    "Arms": 21,
+    "BreastsSmall": 28,
+    "ButtSmall": 35,
+    "ChubbyWaist": 76,
+    "WideWaistLine": 68,
+    "HipUpperWidth": 34,
+    "BreastGravity2": 21,
+    "Hips": -3
+   },
+   "measure": {
+    "bust": 66.395,
+    "waist": 52.027,
+    "hip": 69.805,
+    "thigh": 34.156,
+    "arm": 29.84,
+    "bustProjection": 0.732,
+    "belly": 0.143,
+    "butt": 5.104,
+    "whr": 0.745,
+    "bwr": 1.276,
+    "volume": 316.22
+   }
+  },
+  "Atom Plain F03": {
+   "faction": "atom",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 48,
+    "Arms": 22,
+    "BreastsSmall": 24,
+    "ButtSmall": 23,
+    "ChubbyWaist": 56,
+    "WideWaistLine": 57,
+    "HipUpperWidth": 23,
+    "BreastGravity2": 14,
+    "Hips": -6
+   },
+   "measure": {
+    "bust": 66.776,
+    "waist": 49.701,
+    "hip": 70.246,
+    "thigh": 34.019,
+    "arm": 29.863,
+    "bustProjection": 0.833,
+    "belly": 0.111,
+    "butt": 5.209,
+    "whr": 0.708,
+    "bwr": 1.344,
+    "volume": 314.485
+   }
+  },
+  "Atom Plain F04": {
+   "faction": "atom",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "LegsThin": 39,
+    "Arms": 31,
+    "BreastsSmall": 20,
+    "ButtSmall": 30,
+    "ChubbyWaist": 79,
+    "WideWaistLine": 69,
+    "HipUpperWidth": 33,
+    "BreastGravity2": 12,
+    "Hips": -9
+   },
+   "measure": {
+    "bust": 67.011,
+    "waist": 52.225,
+    "hip": 69.902,
+    "thigh": 34.244,
+    "arm": 29.211,
+    "bustProjection": 0.891,
+    "belly": 0.146,
+    "butt": 5.124,
+    "whr": 0.747,
+    "bwr": 1.283,
+    "volume": 316.049
+   }
+  },
+  "Atom Plain F05": {
+   "faction": "atom",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 70,
+    "WideWaistLine": 58,
+    "HipUpperWidth": 34,
+    "Belly": 32,
+    "Breasts": 7,
+    "BreastGravity2": 38,
+    "Hips": 7,
+    "Butt": 0,
+    "Thighs": 6,
+    "ChubbyArms": 15,
+    "BreastsSmall": 1,
+    "LegsThin": 11,
+    "Arms": 11
+   },
+   "measure": {
+    "bust": 66.368,
+    "waist": 51.622,
+    "hip": 72.085,
+    "thigh": 35.576,
+    "arm": 30.936,
+    "bustProjection": 0.932,
+    "belly": 0.365,
+    "butt": 5.297,
+    "whr": 0.716,
+    "bwr": 1.286,
+    "volume": 323.101
+   }
+  },
+  "Atom Plain F06": {
+   "faction": "atom",
+   "sex": "female",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "ChubbyWaist": 63,
+    "WideWaistLine": 46,
+    "HipUpperWidth": 22,
+    "Belly": 21,
+    "Breasts": 15,
+    "BreastGravity2": 29,
+    "Hips": -7,
+    "Butt": -6,
+    "Thighs": 12,
+    "ChubbyArms": 7,
+    "BreastsSmall": 2,
+    "LegsThin": 13,
+    "Arms": 16
+   },
+   "measure": {
+    "bust": 67.182,
+    "waist": 50.0,
+    "hip": 72.217,
+    "thigh": 35.818,
+    "arm": 30.182,
+    "bustProjection": 1.16,
+    "belly": 0.263,
+    "butt": 5.301,
+    "whr": 0.692,
+    "bwr": 1.344,
+    "volume": 321.399
+   }
+  },
+  "Atom Rough F01": {
+   "faction": "atom",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "LegsThin": 89,
+    "Arms": 76,
+    "SlimThighs": 65,
+    "ButtSmall": 68,
+    "BreastsSmall": 26,
+    "Breasts": 3,
+    "BreastGravity2": 54,
+    "Hips": -30,
+    "CalfSmooth": 49,
+    "WideWaistLine": 32
+   },
+   "measure": {
+    "bust": 64.994,
+    "waist": 43.615,
+    "hip": 63.307,
+    "thigh": 30.027,
+    "arm": 28.743,
+    "bustProjection": 0.561,
+    "belly": 0.155,
+    "butt": 5.02,
+    "whr": 0.689,
+    "bwr": 1.49,
+    "volume": 289.455
+   }
+  },
+  "Atom Rough F02": {
+   "faction": "atom",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "LegsThin": 82,
+    "Arms": 80,
+    "SlimThighs": 61,
+    "ButtSmall": 66,
+    "BreastsSmall": 25,
+    "Breasts": 4,
+    "BreastGravity2": 40,
+    "Hips": -34,
+    "CalfSmooth": 66,
+    "WideWaistLine": 24
+   },
+   "measure": {
+    "bust": 65.622,
+    "waist": 43.394,
+    "hip": 63.525,
+    "thigh": 30.395,
+    "arm": 28.689,
+    "bustProjection": 0.695,
+    "belly": 0.155,
+    "butt": 5.038,
+    "whr": 0.683,
+    "bwr": 1.512,
+    "volume": 290.708
+   }
+  },
+  "Atom Rough F03": {
+   "faction": "atom",
+   "sex": "female",
+   "tier": "ugly",
+   "archetype": "Saggy",
+   "values": {
+    "BreastGravity2": 103,
+    "BreastFlatness2": 65,
+    "Breasts": 33,
+    "Belly": 50,
+    "BigBelly": 27,
+    "ChubbyWaist": 83,
+    "ButtSmall": 41,
+    "WideWaistLine": 34
+   },
+   "measure": {
+    "bust": 64.06,
+    "waist": 51.584,
+    "hip": 70.412,
+    "thigh": 35.347,
+    "arm": 30.131,
+    "bustProjection": -0.162,
+    "belly": 0.692,
+    "butt": 5.06,
+    "whr": 0.733,
+    "bwr": 1.242,
+    "volume": 317.011
+   }
+  },
+  "BoS Fine M01": {
+   "faction": "bos",
+   "sex": "male",
+   "tier": "beautiful",
+   "archetype": "Muscular",
+   "values": {
+    "BTAryaydaMoreMuscular": 39,
+    "BTARYAYDA": 37,
+    "BTAbDefinition": 61,
+    "BTTraps": 44,
+    "BTPectorals": 30,
+    "BTWaist-In": 12
+   },
+   "measure": {
+    "bust": 86.164,
+    "waist": 60.743,
+    "hip": 82.307,
+    "thigh": 43.125,
+    "arm": 35.302,
+    "bustProjection": 0.74,
+    "belly": 1.076,
+    "butt": 4.883,
+    "whr": 0.738,
+    "bwr": 1.419,
+    "volume": 386.068
+   }
+  },
+  "BoS Plain M01": {
+   "faction": "bos",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Stocky",
+   "values": {
+    "BTBodyFatv2": 23,
+    "BTStomachFat": 33,
+    "BTShoulders": 49,
+    "BTTraps": 23,
+    "BTThigh": 26,
+    "BTChubbyLeg": 29,
+    "BTAbDefinition": 25,
+    "BTBiceps": 15
+   },
+   "measure": {
+    "bust": 81.517,
+    "waist": 67.475,
+    "hip": 85.666,
+    "thigh": 47.744,
+    "arm": 37.1,
+    "bustProjection": -0.541,
+    "belly": 0.627,
+    "butt": 4.339,
+    "whr": 0.788,
+    "bwr": 1.208,
+    "volume": 404.345
+   }
+  },
+  "BoS Plain M02": {
+   "faction": "bos",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Stocky",
+   "values": {
+    "BTBodyFatv2": 10,
+    "BTStomachFat": 33,
+    "BTShoulders": 59,
+    "BTTraps": 33,
+    "BTThigh": 36,
+    "BTChubbyLeg": 36,
+    "BTAbDefinition": 17,
+    "BTBiceps": 10
+   },
+   "measure": {
+    "bust": 81.246,
+    "waist": 64.674,
+    "hip": 83.775,
+    "thigh": 43.756,
+    "arm": 36.504,
+    "bustProjection": -0.382,
+    "belly": 0.529,
+    "butt": 4.431,
+    "whr": 0.772,
+    "bwr": 1.256,
+    "volume": 390.216
+   }
+  },
+  "BoS Plain M03": {
+   "faction": "bos",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 40,
+    "ThinThigh": 43,
+    "BTTHinCalf": 41,
+    "BTStomachFat": 6,
+    "BTAbDefinition": 23,
+    "BTBiceps": 7
+   },
+   "measure": {
+    "bust": 79.348,
+    "waist": 58.892,
+    "hip": 74.374,
+    "thigh": 38.121,
+    "arm": 34.128,
+    "bustProjection": 0.008,
+    "belly": 0.802,
+    "butt": 4.49,
+    "whr": 0.792,
+    "bwr": 1.347,
+    "volume": 357.111
+   }
+  },
+  "BoS Plain M04": {
+   "faction": "bos",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 38,
+    "ThinThigh": 50,
+    "BTTHinCalf": 32,
+    "BTStomachFat": 19,
+    "BTAbDefinition": 12,
+    "BTBiceps": 13
+   },
+   "measure": {
+    "bust": 79.316,
+    "waist": 60.702,
+    "hip": 75.231,
+    "thigh": 38.476,
+    "arm": 34.591,
+    "bustProjection": -0.13,
+    "belly": 0.863,
+    "butt": 4.39,
+    "whr": 0.807,
+    "bwr": 1.307,
+    "volume": 361.382
+   }
+  },
+  "BoS Plain M05": {
+   "faction": "bos",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "BTStomachFat": 38,
+    "BTChubbyArm": 32,
+    "BTChubbyLeg": 21,
+    "BTPectorals": 3,
+    "BTChestSmoothing": 35,
+    "Hips": 17
+   },
+   "measure": {
+    "bust": 80.923,
+    "waist": 63.386,
+    "hip": 80.028,
+    "thigh": 42.149,
+    "arm": 36.584,
+    "bustProjection": -0.251,
+    "belly": 0.862,
+    "butt": 4.298,
+    "whr": 0.792,
+    "bwr": 1.277,
+    "volume": 381.804
+   }
+  },
+  "BoS Plain M06": {
+   "faction": "bos",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "BTStomachFat": 20,
+    "BTChubbyArm": 22,
+    "BTChubbyLeg": 36,
+    "BTPectorals": 3,
+    "BTChestSmoothing": 34,
+    "Hips": 18
+   },
+   "measure": {
+    "bust": 80.489,
+    "waist": 61.177,
+    "hip": 79.28,
+    "thigh": 41.781,
+    "arm": 35.836,
+    "bustProjection": -0.088,
+    "belly": 1.018,
+    "butt": 4.45,
+    "whr": 0.772,
+    "bwr": 1.316,
+    "volume": 376.179
+   }
+  },
+  "BoS Rough M01": {
+   "faction": "bos",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "BeerBelly",
+   "values": {
+    "BTStomachFat": 120,
+    "BTLowerStomachSize": 69,
+    "BTCenterStomachSize": 69,
+    "BTThinArm": 59,
+    "ThinThigh": 58,
+    "BTTHinCalf": 31,
+    "BTNegPecMuscle": 36
+   },
+   "measure": {
+    "bust": 81.146,
+    "waist": 74.042,
+    "hip": 83.002,
+    "thigh": 47.127,
+    "arm": 36.926,
+    "bustProjection": -0.839,
+    "belly": 2.473,
+    "butt": 3.975,
+    "whr": 0.892,
+    "bwr": 1.096,
+    "volume": 406.297
+   }
+  },
+  "BoS Rough M02": {
+   "faction": "bos",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Moobs",
+   "values": {
+    "BTChestSmoothing": 93,
+    "BTStomachFat": 83,
+    "BTBodyFatv2": 31,
+    "BTChubbyArm": 72,
+    "BTNegPecMuscle": 42,
+    "Hips": 64
+   },
+   "measure": {
+    "bust": 84.952,
+    "waist": 75.767,
+    "hip": 88.546,
+    "thigh": 49.942,
+    "arm": 41.627,
+    "bustProjection": -0.46,
+    "belly": 1.511,
+    "butt": 4.146,
+    "whr": 0.856,
+    "bwr": 1.121,
+    "volume": 432.403
+   }
+  },
+  "BoS Rough M03": {
+   "faction": "bos",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "BTThinArm": 95,
+    "ThinThigh": 89,
+    "BTTHinCalf": 97,
+    "BTNegBicepMuscle": 75,
+    "BTNegPecMuscle": 89,
+    "BTNegChestWidth": 70,
+    "BTNegShoulder": 58,
+    "BTNegScapularMuscle": 41
+   },
+   "measure": {
+    "bust": 75.972,
+    "waist": 58.779,
+    "hip": 72.114,
+    "thigh": 36.369,
+    "arm": 29.98,
+    "bustProjection": 0.031,
+    "belly": 0.837,
+    "butt": 4.504,
+    "whr": 0.815,
+    "bwr": 1.292,
+    "volume": 339.564
+   }
+  },
+  "Minutemen Fine M01": {
+   "faction": "minutemen",
+   "sex": "male",
+   "tier": "beautiful",
+   "archetype": "Broad",
+   "values": {
+    "TigerSanBBMale": 51,
+    "BTShoulders": 51,
+    "BTTraps": 44,
+    "BTBack": 33,
+    "BTAbDefinition": 29
+   },
+   "measure": {
+    "bust": 86.863,
+    "waist": 59.802,
+    "hip": 79.931,
+    "thigh": 42.048,
+    "arm": 38.725,
+    "bustProjection": 0.046,
+    "belly": 0.704,
+    "butt": 3.888,
+    "whr": 0.748,
+    "bwr": 1.453,
+    "volume": 388.141
+   }
+  },
+  "Minutemen Plain M01": {
+   "faction": "minutemen",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Stocky",
+   "values": {
+    "BTBodyFatv2": 14,
+    "BTStomachFat": 41,
+    "BTShoulders": 27,
+    "BTTraps": 30,
+    "BTThigh": 32,
+    "BTChubbyLeg": 27
+   },
+   "measure": {
+    "bust": 80.927,
+    "waist": 67.109,
+    "hip": 84.615,
+    "thigh": 47.186,
+    "arm": 36.537,
+    "bustProjection": -0.525,
+    "belly": 0.841,
+    "butt": 4.385,
+    "whr": 0.793,
+    "bwr": 1.206,
+    "volume": 400.096
+   }
+  },
+  "Minutemen Plain M02": {
+   "faction": "minutemen",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Stocky",
+   "values": {
+    "BTBodyFatv2": 21,
+    "BTStomachFat": 49,
+    "BTShoulders": 33,
+    "BTTraps": 38,
+    "BTThigh": 31,
+    "BTChubbyLeg": 27
+   },
+   "measure": {
+    "bust": 81.576,
+    "waist": 69.66,
+    "hip": 86.771,
+    "thigh": 48.963,
+    "arm": 37.247,
+    "bustProjection": -0.377,
+    "belly": 0.974,
+    "butt": 4.388,
+    "whr": 0.803,
+    "bwr": 1.171,
+    "volume": 410.427
+   }
+  },
+  "Minutemen Plain M03": {
+   "faction": "minutemen",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Dad",
+   "values": {
+    "BTStomachFat": 67,
+    "BTLowerStomachSize": 27,
+    "BTChestSmoothing": 49,
+    "BTChubbyArm": 40,
+    "BTBodyFatv2": 8,
+    "Hips": 35
+   },
+   "measure": {
+    "bust": 82.462,
+    "waist": 68.927,
+    "hip": 82.889,
+    "thigh": 45.513,
+    "arm": 38.971,
+    "bustProjection": -0.306,
+    "belly": 1.353,
+    "butt": 4.166,
+    "whr": 0.832,
+    "bwr": 1.196,
+    "volume": 403.247
+   }
+  },
+  "Minutemen Plain M04": {
+   "faction": "minutemen",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Dad",
+   "values": {
+    "BTStomachFat": 77,
+    "BTLowerStomachSize": 40,
+    "BTChestSmoothing": 43,
+    "BTChubbyArm": 35,
+    "BTBodyFatv2": 15,
+    "Hips": 39
+   },
+   "measure": {
+    "bust": 82.691,
+    "waist": 71.287,
+    "hip": 84.389,
+    "thigh": 47.113,
+    "arm": 39.331,
+    "bustProjection": -0.404,
+    "belly": 1.59,
+    "butt": 4.133,
+    "whr": 0.845,
+    "bwr": 1.16,
+    "volume": 411.256
+   }
+  },
+  "Minutemen Plain M05": {
+   "faction": "minutemen",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "BTStomachFat": 40,
+    "BTChubbyArm": 41,
+    "BTChubbyLeg": 24,
+    "BTPectorals": 9,
+    "BTChestSmoothing": 24,
+    "Hips": 11
+   },
+   "measure": {
+    "bust": 80.986,
+    "waist": 63.633,
+    "hip": 80.375,
+    "thigh": 42.466,
+    "arm": 36.952,
+    "bustProjection": -0.29,
+    "belly": 0.88,
+    "butt": 4.286,
+    "whr": 0.792,
+    "bwr": 1.273,
+    "volume": 383.829
+   }
+  },
+  "Minutemen Plain M06": {
+   "faction": "minutemen",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "BTStomachFat": 21,
+    "BTChubbyArm": 25,
+    "BTChubbyLeg": 20,
+    "BTPectorals": 14,
+    "BTChestSmoothing": 22,
+    "Hips": 18
+   },
+   "measure": {
+    "bust": 80.739,
+    "waist": 61.303,
+    "hip": 78.475,
+    "thigh": 40.928,
+    "arm": 35.961,
+    "bustProjection": -0.119,
+    "belly": 1.033,
+    "butt": 4.43,
+    "whr": 0.781,
+    "bwr": 1.317,
+    "volume": 374.295
+   }
+  },
+  "Minutemen Rough M01": {
+   "faction": "minutemen",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "BeerBelly",
+   "values": {
+    "BTStomachFat": 120,
+    "BTLowerStomachSize": 75,
+    "BTCenterStomachSize": 64,
+    "BTThinArm": 58,
+    "ThinThigh": 54,
+    "BTTHinCalf": 48,
+    "BTNegPecMuscle": 45
+   },
+   "measure": {
+    "bust": 81.026,
+    "waist": 73.977,
+    "hip": 83.149,
+    "thigh": 46.985,
+    "arm": 36.94,
+    "bustProjection": -0.819,
+    "belly": 2.473,
+    "butt": 3.978,
+    "whr": 0.89,
+    "bwr": 1.095,
+    "volume": 406.0
+   }
+  },
+  "Minutemen Rough M02": {
+   "faction": "minutemen",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Pear",
+   "values": {
+    "BTThighWidth": 82,
+    "BTOuterUpperThighSize": 75,
+    "BTButt": 82,
+    "Hips": 88,
+    "BTNegShoulder": 54,
+    "BTNegChestWidth": 39,
+    "BTStomachFat": 67,
+    "BTChestSmoothing": 45
+   },
+   "measure": {
+    "bust": 81.214,
+    "waist": 67.066,
+    "hip": 89.443,
+    "thigh": 41.378,
+    "arm": 36.126,
+    "bustProjection": -0.262,
+    "belly": 1.112,
+    "butt": 5.263,
+    "whr": 0.75,
+    "bwr": 1.211,
+    "volume": 392.732
+   }
+  },
+  "Minutemen Rough M03": {
+   "faction": "minutemen",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "SkinnyFat",
+   "values": {
+    "BTStomachFat": 84,
+    "BTThinArm": 67,
+    "ThinThigh": 68,
+    "BTNegShoulder": 41,
+    "BTNegChestWidth": 45,
+    "BTChestSmoothing": 65
+   },
+   "measure": {
+    "bust": 81.97,
+    "waist": 68.815,
+    "hip": 79.911,
+    "thigh": 44.283,
+    "arm": 35.645,
+    "bustProjection": -0.31,
+    "belly": 1.272,
+    "butt": 4.065,
+    "whr": 0.861,
+    "bwr": 1.191,
+    "volume": 390.55
+   }
+  },
+  "Gunner Fine M01": {
+   "faction": "gunner",
+   "sex": "male",
+   "tier": "beautiful",
+   "archetype": "Athlete",
+   "values": {
+    "TigerSanBBMale": 27,
+    "BTAbDefinition": 67,
+    "BTPectorals": 43,
+    "BTShoulders": 41,
+    "BTWaist-In": 47,
+    "BT2AdonisBelt": 54
+   },
+   "measure": {
+    "bust": 84.686,
+    "waist": 58.86,
+    "hip": 77.741,
+    "thigh": 41.178,
+    "arm": 36.785,
+    "bustProjection": 0.277,
+    "belly": 1.03,
+    "butt": 4.152,
+    "whr": 0.757,
+    "bwr": 1.439,
+    "volume": 377.212
+   }
+  },
+  "Gunner Plain M01": {
+   "faction": "gunner",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Wiry",
+   "values": {
+    "BTAbDefinition": 38,
+    "BTThinArm": 36,
+    "BTBiceps": 30,
+    "BTStomach": 20,
+    "ThinThigh": 41
+   },
+   "measure": {
+    "bust": 79.211,
+    "waist": 57.736,
+    "hip": 73.935,
+    "thigh": 37.454,
+    "arm": 34.066,
+    "bustProjection": 0.116,
+    "belly": 1.032,
+    "butt": 4.494,
+    "whr": 0.781,
+    "bwr": 1.372,
+    "volume": 353.921
+   }
+  },
+  "Gunner Plain M02": {
+   "faction": "gunner",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Wiry",
+   "values": {
+    "BTAbDefinition": 20,
+    "BTThinArm": 31,
+    "BTBiceps": 25,
+    "BTStomach": 20,
+    "ThinThigh": 50
+   },
+   "measure": {
+    "bust": 79.257,
+    "waist": 58.15,
+    "hip": 73.592,
+    "thigh": 37.25,
+    "arm": 34.127,
+    "bustProjection": 0.136,
+    "belly": 0.942,
+    "butt": 4.507,
+    "whr": 0.79,
+    "bwr": 1.363,
+    "volume": 353.754
+   }
+  },
+  "Gunner Plain M03": {
+   "faction": "gunner",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 48,
+    "ThinThigh": 43,
+    "BTTHinCalf": 20,
+    "BTStomachFat": 6,
+    "BTAbDefinition": 26,
+    "BTBiceps": 13
+   },
+   "measure": {
+    "bust": 79.329,
+    "waist": 58.852,
+    "hip": 74.374,
+    "thigh": 38.121,
+    "arm": 34.029,
+    "bustProjection": 0.017,
+    "belly": 0.817,
+    "butt": 4.487,
+    "whr": 0.791,
+    "bwr": 1.348,
+    "volume": 356.855
+   }
+  },
+  "Gunner Plain M04": {
+   "faction": "gunner",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 32,
+    "ThinThigh": 22,
+    "BTTHinCalf": 37,
+    "BTStomachFat": 19,
+    "BTAbDefinition": 28,
+    "BTBiceps": 9
+   },
+   "measure": {
+    "bust": 79.296,
+    "waist": 60.261,
+    "hip": 76.318,
+    "thigh": 39.147,
+    "arm": 34.665,
+    "bustProjection": -0.113,
+    "belly": 0.76,
+    "butt": 4.391,
+    "whr": 0.79,
+    "bwr": 1.316,
+    "volume": 363.497
+   }
+  },
+  "Gunner Plain M05": {
+   "faction": "gunner",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Stocky",
+   "values": {
+    "BTBodyFatv2": 19,
+    "BTStomachFat": 37,
+    "BTShoulders": 33,
+    "BTTraps": 36,
+    "BTThigh": 28,
+    "BTChubbyLeg": 26,
+    "BTAbDefinition": 11,
+    "BTBiceps": 7
+   },
+   "measure": {
+    "bust": 81.202,
+    "waist": 67.443,
+    "hip": 85.09,
+    "thigh": 47.371,
+    "arm": 36.91,
+    "bustProjection": -0.541,
+    "belly": 0.718,
+    "butt": 4.356,
+    "whr": 0.793,
+    "bwr": 1.204,
+    "volume": 402.297
+   }
+  },
+  "Gunner Plain M06": {
+   "faction": "gunner",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Stocky",
+   "values": {
+    "BTBodyFatv2": 11,
+    "BTStomachFat": 30,
+    "BTShoulders": 33,
+    "BTTraps": 22,
+    "BTThigh": 24,
+    "BTChubbyLeg": 29,
+    "BTAbDefinition": 18,
+    "BTBiceps": 7
+   },
+   "measure": {
+    "bust": 80.652,
+    "waist": 64.515,
+    "hip": 82.987,
+    "thigh": 44.023,
+    "arm": 36.243,
+    "bustProjection": -0.366,
+    "belly": 0.564,
+    "butt": 4.362,
+    "whr": 0.777,
+    "bwr": 1.25,
+    "volume": 388.686
+   }
+  },
+  "Gunner Rough M01": {
+   "faction": "gunner",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "BTThinArm": 87,
+    "ThinThigh": 88,
+    "BTTHinCalf": 91,
+    "BTNegBicepMuscle": 76,
+    "BTNegPecMuscle": 88,
+    "BTNegChestWidth": 58,
+    "BTNegShoulder": 79,
+    "BTNegScapularMuscle": 44
+   },
+   "measure": {
+    "bust": 76.051,
+    "waist": 58.78,
+    "hip": 72.152,
+    "thigh": 36.391,
+    "arm": 30.059,
+    "bustProjection": 0.031,
+    "belly": 0.837,
+    "butt": 4.505,
+    "whr": 0.815,
+    "bwr": 1.294,
+    "volume": 339.883
+   }
+  },
+  "Gunner Rough M02": {
+   "faction": "gunner",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "SkinnyFat",
+   "values": {
+    "BTStomachFat": 86,
+    "BTThinArm": 73,
+    "ThinThigh": 64,
+    "BTNegShoulder": 49,
+    "BTNegChestWidth": 61,
+    "BTChestSmoothing": 64
+   },
+   "measure": {
+    "bust": 81.828,
+    "waist": 68.952,
+    "hip": 79.858,
+    "thigh": 44.524,
+    "arm": 36.011,
+    "bustProjection": -0.32,
+    "belly": 1.289,
+    "butt": 4.063,
+    "whr": 0.863,
+    "bwr": 1.187,
+    "volume": 391.708
+   }
+  },
+  "Gunner Rough M03": {
+   "faction": "gunner",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "BeerBelly",
+   "values": {
+    "BTStomachFat": 121,
+    "BTLowerStomachSize": 78,
+    "BTCenterStomachSize": 63,
+    "BTThinArm": 50,
+    "ThinThigh": 62,
+    "BTTHinCalf": 37,
+    "BTNegPecMuscle": 42
+   },
+   "measure": {
+    "bust": 81.114,
+    "waist": 74.085,
+    "hip": 82.936,
+    "thigh": 46.864,
+    "arm": 37.061,
+    "bustProjection": -0.82,
+    "belly": 2.494,
+    "butt": 3.969,
+    "whr": 0.893,
+    "bwr": 1.095,
+    "volume": 405.985
+   }
+  },
+  "Disciple Fine M01": {
+   "faction": "disciples",
+   "sex": "male",
+   "tier": "beautiful",
+   "archetype": "Swimmer",
+   "values": {
+    "BTAbDefinition": 35,
+    "BTBiceps": 45,
+    "BTButt": 48,
+    "BTCalves": 65,
+    "BTShoulders": 16,
+    "BTStomach": 39,
+    "BTTraps": 13,
+    "BTWaist-In": 32,
+    "BTThinArm": 39,
+    "ThinThigh": 43
+   },
+   "measure": {
+    "bust": 79.316,
+    "waist": 56.924,
+    "hip": 74.699,
+    "thigh": 37.413,
+    "arm": 34.167,
+    "bustProjection": 0.164,
+    "belly": 1.026,
+    "butt": 5.053,
+    "whr": 0.762,
+    "bwr": 1.393,
+    "volume": 354.1
+   }
+  },
+  "Disciple Plain M01": {
+   "faction": "disciples",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Wiry",
+   "values": {
+    "BTAbDefinition": 37,
+    "BTThinArm": 34,
+    "BTBiceps": 17,
+    "BTStomach": 17,
+    "ThinThigh": 41
+   },
+   "measure": {
+    "bust": 79.216,
+    "waist": 57.779,
+    "hip": 73.935,
+    "thigh": 37.454,
+    "arm": 34.085,
+    "bustProjection": 0.109,
+    "belly": 1.025,
+    "butt": 4.495,
+    "whr": 0.781,
+    "bwr": 1.371,
+    "volume": 354.008
+   }
+  },
+  "Disciple Plain M02": {
+   "faction": "disciples",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Wiry",
+   "values": {
+    "BTAbDefinition": 20,
+    "BTThinArm": 48,
+    "BTBiceps": 25,
+    "BTStomach": 19,
+    "ThinThigh": 31
+   },
+   "measure": {
+    "bust": 79.231,
+    "waist": 58.16,
+    "hip": 74.319,
+    "thigh": 37.681,
+    "arm": 33.912,
+    "bustProjection": 0.132,
+    "belly": 0.938,
+    "butt": 4.518,
+    "whr": 0.783,
+    "bwr": 1.362,
+    "volume": 354.897
+   }
+  },
+  "Disciple Plain M03": {
+   "faction": "disciples",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Wiry",
+   "values": {
+    "BTAbDefinition": 24,
+    "BTThinArm": 30,
+    "BTBiceps": 18,
+    "BTStomach": 11,
+    "ThinThigh": 46
+   },
+   "measure": {
+    "bust": 79.25,
+    "waist": 58.118,
+    "hip": 73.744,
+    "thigh": 37.341,
+    "arm": 34.137,
+    "bustProjection": 0.103,
+    "belly": 0.957,
+    "butt": 4.505,
+    "whr": 0.788,
+    "bwr": 1.364,
+    "volume": 354.067
+   }
+  },
+  "Disciple Plain M04": {
+   "faction": "disciples",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Wiry",
+   "values": {
+    "BTAbDefinition": 45,
+    "BTThinArm": 34,
+    "BTBiceps": 22,
+    "BTStomach": 25,
+    "ThinThigh": 32
+   },
+   "measure": {
+    "bust": 79.199,
+    "waist": 57.575,
+    "hip": 74.279,
+    "thigh": 37.658,
+    "arm": 34.087,
+    "bustProjection": 0.132,
+    "belly": 1.068,
+    "butt": 4.493,
+    "whr": 0.775,
+    "bwr": 1.376,
+    "volume": 354.545
+   }
+  },
+  "Disciple Plain M05": {
+   "faction": "disciples",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 46,
+    "ThinThigh": 54,
+    "BTTHinCalf": 26,
+    "BTStomachFat": 7,
+    "BTAbDefinition": 0
+   },
+   "measure": {
+    "bust": 79.408,
+    "waist": 59.61,
+    "hip": 74.039,
+    "thigh": 37.932,
+    "arm": 34.069,
+    "bustProjection": -0.033,
+    "belly": 0.832,
+    "butt": 4.497,
+    "whr": 0.805,
+    "bwr": 1.332,
+    "volume": 357.059
+   }
+  },
+  "Disciple Plain M06": {
+   "faction": "disciples",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 56,
+    "ThinThigh": 59,
+    "BTTHinCalf": 25,
+    "BTStomachFat": 19,
+    "BTAbDefinition": 4
+   },
+   "measure": {
+    "bust": 79.315,
+    "waist": 60.929,
+    "hip": 74.884,
+    "thigh": 38.261,
+    "arm": 34.207,
+    "bustProjection": -0.139,
+    "belly": 0.953,
+    "butt": 4.393,
+    "whr": 0.814,
+    "bwr": 1.302,
+    "volume": 360.063
+   }
+  },
+  "Disciple Rough M01": {
+   "faction": "disciples",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "BTThinArm": 87,
+    "ThinThigh": 91,
+    "BTTHinCalf": 99,
+    "BTNegBicepMuscle": 79,
+    "BTNegPecMuscle": 78,
+    "BTNegChestWidth": 57,
+    "BTNegShoulder": 73,
+    "BTNegScapularMuscle": 53
+   },
+   "measure": {
+    "bust": 76.101,
+    "waist": 58.779,
+    "hip": 72.039,
+    "thigh": 36.324,
+    "arm": 29.975,
+    "bustProjection": 0.031,
+    "belly": 0.837,
+    "butt": 4.503,
+    "whr": 0.816,
+    "bwr": 1.295,
+    "volume": 339.516
+   }
+  },
+  "Disciple Rough M02": {
+   "faction": "disciples",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "BTThinArm": 82,
+    "ThinThigh": 82,
+    "BTTHinCalf": 86,
+    "BTNegBicepMuscle": 62,
+    "BTNegPecMuscle": 83,
+    "BTNegChestWidth": 50,
+    "BTNegShoulder": 54,
+    "BTNegScapularMuscle": 65
+   },
+   "measure": {
+    "bust": 76.01,
+    "waist": 58.78,
+    "hip": 72.378,
+    "thigh": 36.527,
+    "arm": 31.201,
+    "bustProjection": 0.031,
+    "belly": 0.836,
+    "butt": 4.508,
+    "whr": 0.812,
+    "bwr": 1.293,
+    "volume": 342.624
+   }
+  },
+  "Disciple Rough M03": {
+   "faction": "disciples",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "SkinnyFat",
+   "values": {
+    "BTStomachFat": 88,
+    "BTThinArm": 58,
+    "ThinThigh": 60,
+    "BTNegShoulder": 60,
+    "BTNegChestWidth": 67,
+    "BTChestSmoothing": 61
+   },
+   "measure": {
+    "bust": 81.748,
+    "waist": 69.189,
+    "hip": 80.003,
+    "thigh": 44.258,
+    "arm": 36.241,
+    "bustProjection": -0.334,
+    "belly": 1.306,
+    "butt": 4.06,
+    "whr": 0.865,
+    "bwr": 1.182,
+    "volume": 391.937
+   }
+  },
+  "Operator Fine M01": {
+   "faction": "operators",
+   "sex": "male",
+   "tier": "beautiful",
+   "archetype": "Classic",
+   "values": {
+    "BTPectorals": 28,
+    "BTShoulders": 26,
+    "BTAbDefinition": 39,
+    "BTBiceps": 25,
+    "BTWaist-In": 20,
+    "BTButt": 29
+   },
+   "measure": {
+    "bust": 80.705,
+    "waist": 57.377,
+    "hip": 75.686,
+    "thigh": 38.387,
+    "arm": 34.888,
+    "bustProjection": 0.075,
+    "belly": 1.019,
+    "butt": 4.83,
+    "whr": 0.758,
+    "bwr": 1.407,
+    "volume": 360.319
+   }
+  },
+  "Operator Plain M01": {
+   "faction": "operators",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "BTStomachFat": 43,
+    "BTChubbyArm": 24,
+    "BTChubbyLeg": 20,
+    "BTPectorals": 9,
+    "BTChestSmoothing": 21,
+    "Hips": 22
+   },
+   "measure": {
+    "bust": 80.886,
+    "waist": 64.009,
+    "hip": 80.419,
+    "thigh": 41.909,
+    "arm": 36.414,
+    "bustProjection": -0.323,
+    "belly": 0.906,
+    "butt": 4.261,
+    "whr": 0.796,
+    "bwr": 1.264,
+    "volume": 381.96
+   }
+  },
+  "Operator Plain M02": {
+   "faction": "operators",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "BTStomachFat": 22,
+    "BTChubbyArm": 31,
+    "BTChubbyLeg": 21,
+    "BTPectorals": 1,
+    "BTChestSmoothing": 38,
+    "Hips": 23
+   },
+   "measure": {
+    "bust": 80.62,
+    "waist": 61.424,
+    "hip": 78.62,
+    "thigh": 41.057,
+    "arm": 36.192,
+    "bustProjection": -0.098,
+    "belly": 1.048,
+    "butt": 4.422,
+    "whr": 0.781,
+    "bwr": 1.313,
+    "volume": 375.162
+   }
+  },
+  "Operator Plain M03": {
+   "faction": "operators",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 38,
+    "ThinThigh": 35,
+    "BTTHinCalf": 31,
+    "BTStomachFat": 13,
+    "BTAbDefinition": 3
+   },
+   "measure": {
+    "bust": 79.296,
+    "waist": 60.248,
+    "hip": 75.29,
+    "thigh": 37.809,
+    "arm": 34.306,
+    "bustProjection": -0.085,
+    "belly": 0.874,
+    "butt": 4.457,
+    "whr": 0.8,
+    "bwr": 1.316,
+    "volume": 359.064
+   }
+  },
+  "Operator Plain M04": {
+   "faction": "operators",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 46,
+    "ThinThigh": 35,
+    "BTTHinCalf": 21,
+    "BTStomachFat": 1,
+    "BTAbDefinition": 16
+   },
+   "measure": {
+    "bust": 79.262,
+    "waist": 58.488,
+    "hip": 74.252,
+    "thigh": 37.658,
+    "arm": 33.947,
+    "bustProjection": 0.059,
+    "belly": 0.884,
+    "butt": 4.512,
+    "whr": 0.788,
+    "bwr": 1.355,
+    "volume": 355.211
+   }
+  },
+  "Operator Plain M05": {
+   "faction": "operators",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Soft",
+   "values": {
+    "BTStomachFat": 50,
+    "BTChestSmoothing": 60,
+    "BTChubbyArm": 51,
+    "BTChubbyLeg": 36,
+    "Hips": 45
+   },
+   "measure": {
+    "bust": 81.872,
+    "waist": 64.89,
+    "hip": 81.792,
+    "thigh": 42.094,
+    "arm": 38.216,
+    "bustProjection": -0.313,
+    "belly": 0.966,
+    "butt": 4.231,
+    "whr": 0.793,
+    "bwr": 1.262,
+    "volume": 389.174
+   }
+  },
+  "Operator Plain M06": {
+   "faction": "operators",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Soft",
+   "values": {
+    "BTStomachFat": 40,
+    "BTChestSmoothing": 48,
+    "BTChubbyArm": 48,
+    "BTChubbyLeg": 41,
+    "Hips": 43
+   },
+   "measure": {
+    "bust": 81.279,
+    "waist": 63.641,
+    "hip": 81.331,
+    "thigh": 43.447,
+    "arm": 37.206,
+    "bustProjection": -0.244,
+    "belly": 0.879,
+    "butt": 4.299,
+    "whr": 0.782,
+    "bwr": 1.277,
+    "volume": 387.557
+   }
+  },
+  "Operator Rough M01": {
+   "faction": "operators",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Moobs",
+   "values": {
+    "BTChestSmoothing": 89,
+    "BTStomachFat": 85,
+    "BTBodyFatv2": 31,
+    "BTChubbyArm": 71,
+    "BTNegPecMuscle": 53,
+    "Hips": 49
+   },
+   "measure": {
+    "bust": 84.769,
+    "waist": 76.009,
+    "hip": 88.698,
+    "thigh": 49.997,
+    "arm": 41.642,
+    "bustProjection": -0.475,
+    "belly": 1.529,
+    "butt": 4.148,
+    "whr": 0.857,
+    "bwr": 1.115,
+    "volume": 432.755
+   }
+  },
+  "Operator Rough M02": {
+   "faction": "operators",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Pear",
+   "values": {
+    "BTThighWidth": 74,
+    "BTOuterUpperThighSize": 88,
+    "BTButt": 69,
+    "Hips": 85,
+    "BTNegShoulder": 58,
+    "BTNegChestWidth": 57,
+    "BTStomachFat": 69,
+    "BTChestSmoothing": 46
+   },
+   "measure": {
+    "bust": 81.152,
+    "waist": 67.303,
+    "hip": 89.369,
+    "thigh": 45.289,
+    "arm": 36.175,
+    "bustProjection": -0.269,
+    "belly": 1.13,
+    "butt": 5.095,
+    "whr": 0.753,
+    "bwr": 1.206,
+    "volume": 400.751
+   }
+  },
+  "Operator Rough M03": {
+   "faction": "operators",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "BeerBelly",
+   "values": {
+    "BTStomachFat": 119,
+    "BTLowerStomachSize": 65,
+    "BTCenterStomachSize": 63,
+    "BTThinArm": 56,
+    "ThinThigh": 53,
+    "BTTHinCalf": 40,
+    "BTNegPecMuscle": 42
+   },
+   "measure": {
+    "bust": 81.023,
+    "waist": 73.84,
+    "hip": 83.105,
+    "thigh": 46.688,
+    "arm": 36.941,
+    "bustProjection": -0.811,
+    "belly": 2.398,
+    "butt": 3.981,
+    "whr": 0.889,
+    "bwr": 1.097,
+    "volume": 405.225
+   }
+  },
+  "Pack Fine M01": {
+   "faction": "pack",
+   "sex": "male",
+   "tier": "beautiful",
+   "archetype": "Broad",
+   "values": {
+    "TigerSanBBMale": 50,
+    "BTShoulders": 51,
+    "BTTraps": 45,
+    "BTBack": 36,
+    "BTAbDefinition": 30
+   },
+   "measure": {
+    "bust": 86.791,
+    "waist": 59.778,
+    "hip": 79.837,
+    "thigh": 41.948,
+    "arm": 38.687,
+    "bustProjection": 0.047,
+    "belly": 0.714,
+    "butt": 3.898,
+    "whr": 0.749,
+    "bwr": 1.452,
+    "volume": 387.677
+   }
+  },
+  "Pack Plain M01": {
+   "faction": "pack",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Stocky",
+   "values": {
+    "BTBodyFatv2": 21,
+    "BTStomachFat": 35,
+    "BTShoulders": 49,
+    "BTTraps": 35,
+    "BTThigh": 31,
+    "BTChubbyLeg": 29,
+    "BTAbDefinition": 20,
+    "BTBiceps": 24
+   },
+   "measure": {
+    "bust": 81.472,
+    "waist": 67.399,
+    "hip": 85.623,
+    "thigh": 47.808,
+    "arm": 37.079,
+    "bustProjection": -0.539,
+    "belly": 0.637,
+    "butt": 4.37,
+    "whr": 0.787,
+    "bwr": 1.209,
+    "volume": 404.268
+   }
+  },
+  "Pack Plain M02": {
+   "faction": "pack",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Stocky",
+   "values": {
+    "BTBodyFatv2": 11,
+    "BTStomachFat": 31,
+    "BTShoulders": 32,
+    "BTTraps": 29,
+    "BTThigh": 38,
+    "BTChubbyLeg": 23,
+    "BTAbDefinition": 20,
+    "BTBiceps": 15
+   },
+   "measure": {
+    "bust": 80.649,
+    "waist": 64.584,
+    "hip": 83.143,
+    "thigh": 44.32,
+    "arm": 36.261,
+    "bustProjection": -0.374,
+    "belly": 0.497,
+    "butt": 4.435,
+    "whr": 0.777,
+    "bwr": 1.249,
+    "volume": 389.538
+   }
+  },
+  "Pack Plain M03": {
+   "faction": "pack",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Stocky",
+   "values": {
+    "BTBodyFatv2": 25,
+    "BTStomachFat": 48,
+    "BTShoulders": 52,
+    "BTTraps": 23,
+    "BTThigh": 25,
+    "BTChubbyLeg": 36,
+    "BTAbDefinition": 29,
+    "BTBiceps": 11
+   },
+   "measure": {
+    "bust": 81.92,
+    "waist": 69.598,
+    "hip": 87.449,
+    "thigh": 49.701,
+    "arm": 38.094,
+    "bustProjection": -0.384,
+    "belly": 0.753,
+    "butt": 4.34,
+    "whr": 0.796,
+    "bwr": 1.177,
+    "volume": 414.558
+   }
+  },
+  "Pack Plain M04": {
+   "faction": "pack",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Wiry",
+   "values": {
+    "BTAbDefinition": 45,
+    "BTThinArm": 48,
+    "BTBiceps": 42,
+    "BTStomach": 14,
+    "ThinThigh": 40,
+    "BTShoulders": 18
+   },
+   "measure": {
+    "bust": 79.32,
+    "waist": 57.66,
+    "hip": 73.972,
+    "thigh": 37.477,
+    "arm": 34.07,
+    "bustProjection": 0.109,
+    "belly": 1.064,
+    "butt": 4.488,
+    "whr": 0.779,
+    "bwr": 1.376,
+    "volume": 354.046
+   }
+  },
+  "Pack Plain M05": {
+   "faction": "pack",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 36,
+    "ThinThigh": 38,
+    "BTTHinCalf": 48,
+    "BTStomachFat": 9,
+    "BTAbDefinition": 43,
+    "BTBiceps": 24,
+    "BTShoulders": 16
+   },
+   "measure": {
+    "bust": 79.47,
+    "waist": 58.815,
+    "hip": 74.824,
+    "thigh": 38.445,
+    "arm": 34.383,
+    "bustProjection": 0.041,
+    "belly": 0.831,
+    "butt": 4.449,
+    "whr": 0.786,
+    "bwr": 1.351,
+    "volume": 358.765
+   }
+  },
+  "Pack Plain M06": {
+   "faction": "pack",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 21,
+    "ThinThigh": 29,
+    "BTTHinCalf": 24,
+    "BTStomachFat": 19,
+    "BTAbDefinition": 17,
+    "BTBiceps": 24,
+    "BTShoulders": 16
+   },
+   "measure": {
+    "bust": 79.673,
+    "waist": 60.565,
+    "hip": 76.046,
+    "thigh": 38.979,
+    "arm": 34.938,
+    "bustProjection": -0.125,
+    "belly": 0.829,
+    "butt": 4.397,
+    "whr": 0.796,
+    "bwr": 1.315,
+    "volume": 364.116
+   }
+  },
+  "Pack Rough M01": {
+   "faction": "pack",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "BeerBelly",
+   "values": {
+    "BTStomachFat": 120,
+    "BTLowerStomachSize": 78,
+    "BTCenterStomachSize": 62,
+    "BTThinArm": 41,
+    "ThinThigh": 56,
+    "BTTHinCalf": 59,
+    "BTNegPecMuscle": 40
+   },
+   "measure": {
+    "bust": 81.102,
+    "waist": 73.951,
+    "hip": 83.076,
+    "thigh": 47.175,
+    "arm": 37.149,
+    "bustProjection": -0.811,
+    "belly": 2.477,
+    "butt": 3.976,
+    "whr": 0.89,
+    "bwr": 1.097,
+    "volume": 406.777
+   }
+  },
+  "Pack Rough M02": {
+   "faction": "pack",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Pear",
+   "values": {
+    "BTThighWidth": 90,
+    "BTOuterUpperThighSize": 61,
+    "BTButt": 84,
+    "Hips": 82,
+    "BTNegShoulder": 59,
+    "BTNegChestWidth": 60,
+    "BTStomachFat": 66,
+    "BTChestSmoothing": 48
+   },
+   "measure": {
+    "bust": 81.117,
+    "waist": 66.945,
+    "hip": 89.5,
+    "thigh": 41.307,
+    "arm": 36.109,
+    "bustProjection": -0.253,
+    "belly": 1.104,
+    "butt": 5.293,
+    "whr": 0.748,
+    "bwr": 1.212,
+    "volume": 392.394
+   }
+  },
+  "Pack Rough M03": {
+   "faction": "pack",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Obese",
+   "values": {
+    "BTBodyFatv2": 84,
+    "BTStomachFat": 117,
+    "BTLowerStomachSize": 58,
+    "BTChubbyArm": 95,
+    "BTChubbyLeg": 81,
+    "BTChestSmoothing": 78,
+    "Hips": 81
+   },
+   "measure": {
+    "bust": 92.133,
+    "waist": 92.039,
+    "hip": 107.523,
+    "thigh": 65.624,
+    "arm": 46.169,
+    "bustProjection": -1.645,
+    "belly": 2.646,
+    "butt": 4.674,
+    "whr": 0.856,
+    "bwr": 1.001,
+    "volume": 515.282
+   }
+  },
+  "Triggerman Fine M01": {
+   "faction": "triggermen",
+   "sex": "male",
+   "tier": "beautiful",
+   "archetype": "Broad",
+   "values": {
+    "TigerSanBBMale": 51,
+    "BTShoulders": 47,
+    "BTTraps": 57,
+    "BTBack": 35,
+    "BTAbDefinition": 30
+   },
+   "measure": {
+    "bust": 86.803,
+    "waist": 59.791,
+    "hip": 79.931,
+    "thigh": 42.048,
+    "arm": 38.685,
+    "bustProjection": 0.047,
+    "belly": 0.709,
+    "butt": 3.886,
+    "whr": 0.748,
+    "bwr": 1.452,
+    "volume": 387.99
+   }
+  },
+  "Triggerman Plain M01": {
+   "faction": "triggermen",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Dad",
+   "values": {
+    "BTStomachFat": 71,
+    "BTLowerStomachSize": 43,
+    "BTChestSmoothing": 37,
+    "BTChubbyArm": 41,
+    "BTBodyFatv2": 6,
+    "Hips": 35
+   },
+   "measure": {
+    "bust": 82.126,
+    "waist": 68.979,
+    "hip": 82.715,
+    "thigh": 45.881,
+    "arm": 39.047,
+    "bustProjection": -0.329,
+    "belly": 1.481,
+    "butt": 4.149,
+    "whr": 0.834,
+    "bwr": 1.191,
+    "volume": 403.675
+   }
+  },
+  "Triggerman Plain M02": {
+   "faction": "triggermen",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Dad",
+   "values": {
+    "BTStomachFat": 51,
+    "BTLowerStomachSize": 31,
+    "BTChestSmoothing": 31,
+    "BTChubbyArm": 55,
+    "BTBodyFatv2": 6,
+    "Hips": 25
+   },
+   "measure": {
+    "bust": 81.526,
+    "waist": 66.517,
+    "hip": 81.092,
+    "thigh": 43.672,
+    "arm": 39.08,
+    "bustProjection": -0.466,
+    "belly": 1.227,
+    "butt": 4.172,
+    "whr": 0.82,
+    "bwr": 1.226,
+    "volume": 394.64
+   }
+  },
+  "Triggerman Plain M03": {
+   "faction": "triggermen",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Stocky",
+   "values": {
+    "BTBodyFatv2": 17,
+    "BTStomachFat": 40,
+    "BTShoulders": 33,
+    "BTTraps": 34,
+    "BTThigh": 32,
+    "BTChubbyLeg": 28
+   },
+   "measure": {
+    "bust": 81.19,
+    "waist": 67.672,
+    "hip": 85.213,
+    "thigh": 48.03,
+    "arm": 36.667,
+    "bustProjection": -0.555,
+    "belly": 0.857,
+    "butt": 4.389,
+    "whr": 0.794,
+    "bwr": 1.2,
+    "volume": 403.467
+   }
+  },
+  "Triggerman Plain M04": {
+   "faction": "triggermen",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Stocky",
+   "values": {
+    "BTBodyFatv2": 12,
+    "BTStomachFat": 30,
+    "BTShoulders": 29,
+    "BTTraps": 25,
+    "BTThigh": 35,
+    "BTChubbyLeg": 30
+   },
+   "measure": {
+    "bust": 80.67,
+    "waist": 65.258,
+    "hip": 83.544,
+    "thigh": 44.667,
+    "arm": 36.239,
+    "bustProjection": -0.398,
+    "belly": 0.713,
+    "butt": 4.443,
+    "whr": 0.781,
+    "bwr": 1.236,
+    "volume": 391.284
+   }
+  },
+  "Triggerman Plain M05": {
+   "faction": "triggermen",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Soft",
+   "values": {
+    "BTStomachFat": 52,
+    "BTChestSmoothing": 54,
+    "BTChubbyArm": 56,
+    "BTChubbyLeg": 38,
+    "Hips": 35
+   },
+   "measure": {
+    "bust": 81.787,
+    "waist": 65.14,
+    "hip": 82.085,
+    "thigh": 45.069,
+    "arm": 38.743,
+    "bustProjection": -0.343,
+    "belly": 0.984,
+    "butt": 4.228,
+    "whr": 0.794,
+    "bwr": 1.256,
+    "volume": 396.635
+   }
+  },
+  "Triggerman Plain M06": {
+   "faction": "triggermen",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Soft",
+   "values": {
+    "BTStomachFat": 41,
+    "BTChestSmoothing": 67,
+    "BTChubbyArm": 46,
+    "BTChubbyLeg": 43,
+    "Hips": 31
+   },
+   "measure": {
+    "bust": 81.818,
+    "waist": 63.762,
+    "hip": 81.533,
+    "thigh": 41.839,
+    "arm": 37.156,
+    "bustProjection": -0.217,
+    "belly": 0.888,
+    "butt": 4.293,
+    "whr": 0.782,
+    "bwr": 1.283,
+    "volume": 385.105
+   }
+  },
+  "Triggerman Rough M01": {
+   "faction": "triggermen",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Obese",
+   "values": {
+    "BTBodyFatv2": 85,
+    "BTStomachFat": 119,
+    "BTLowerStomachSize": 74,
+    "BTChubbyArm": 86,
+    "BTChubbyLeg": 76,
+    "BTChestSmoothing": 85,
+    "Hips": 69
+   },
+   "measure": {
+    "bust": 92.556,
+    "waist": 92.348,
+    "hip": 107.732,
+    "thigh": 65.635,
+    "arm": 45.876,
+    "bustProjection": -1.828,
+    "belly": 2.891,
+    "butt": 4.89,
+    "whr": 0.857,
+    "bwr": 1.002,
+    "volume": 515.658
+   }
+  },
+  "Triggerman Rough M02": {
+   "faction": "triggermen",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "BeerBelly",
+   "values": {
+    "BTStomachFat": 123,
+    "BTLowerStomachSize": 81,
+    "BTCenterStomachSize": 64,
+    "BTThinArm": 56,
+    "ThinThigh": 53,
+    "BTTHinCalf": 44,
+    "BTNegPecMuscle": 48
+   },
+   "measure": {
+    "bust": 81.12,
+    "waist": 74.342,
+    "hip": 83.426,
+    "thigh": 47.217,
+    "arm": 37.035,
+    "bustProjection": -0.833,
+    "belly": 2.535,
+    "butt": 3.97,
+    "whr": 0.891,
+    "bwr": 1.091,
+    "volume": 407.391
+   }
+  },
+  "Triggerman Rough M03": {
+   "faction": "triggermen",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Moobs",
+   "values": {
+    "BTChestSmoothing": 86,
+    "BTStomachFat": 87,
+    "BTBodyFatv2": 31,
+    "BTChubbyArm": 73,
+    "BTNegPecMuscle": 45,
+    "Hips": 65
+   },
+   "measure": {
+    "bust": 84.879,
+    "waist": 76.254,
+    "hip": 88.975,
+    "thigh": 50.133,
+    "arm": 41.984,
+    "bustProjection": -0.488,
+    "belly": 1.546,
+    "butt": 4.149,
+    "whr": 0.857,
+    "bwr": 1.113,
+    "volume": 434.342
+   }
+  },
+  "Raider Fine M01": {
+   "faction": "raiders",
+   "sex": "male",
+   "tier": "beautiful",
+   "archetype": "Lean",
+   "values": {
+    "BTAbDefinition": 68,
+    "BTNegStomach": 37,
+    "BTWaist-In": 32,
+    "BTPectorals": 11,
+    "BTBiceps": 22,
+    "BTShoulders": 19
+   },
+   "measure": {
+    "bust": 79.807,
+    "waist": 55.713,
+    "hip": 75.514,
+    "thigh": 38.386,
+    "arm": 34.832,
+    "bustProjection": 0.439,
+    "belly": 1.88,
+    "butt": 4.489,
+    "whr": 0.738,
+    "bwr": 1.432,
+    "volume": 357.47
+   }
+  },
+  "Raider Plain M01": {
+   "faction": "raiders",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Wiry",
+   "values": {
+    "BTAbDefinition": 18,
+    "BTThinArm": 53,
+    "BTBiceps": 19,
+    "BTStomach": 21,
+    "ThinThigh": 55
+   },
+   "measure": {
+    "bust": 79.228,
+    "waist": 58.19,
+    "hip": 73.401,
+    "thigh": 37.137,
+    "arm": 33.846,
+    "bustProjection": 0.138,
+    "belly": 0.933,
+    "butt": 4.506,
+    "whr": 0.793,
+    "bwr": 1.362,
+    "volume": 352.787
+   }
+  },
+  "Raider Plain M02": {
+   "faction": "raiders",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Wiry",
+   "values": {
+    "BTAbDefinition": 10,
+    "BTThinArm": 42,
+    "BTBiceps": 10,
+    "BTStomach": 11,
+    "ThinThigh": 69
+   },
+   "measure": {
+    "bust": 79.262,
+    "waist": 58.447,
+    "hip": 72.869,
+    "thigh": 36.82,
+    "arm": 33.981,
+    "bustProjection": 0.091,
+    "belly": 0.89,
+    "butt": 4.506,
+    "whr": 0.802,
+    "bwr": 1.356,
+    "volume": 352.181
+   }
+  },
+  "Raider Plain M03": {
+   "faction": "raiders",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Wiry",
+   "values": {
+    "BTAbDefinition": 11,
+    "BTThinArm": 70,
+    "BTBiceps": 15,
+    "BTStomach": 14,
+    "ThinThigh": 43
+   },
+   "measure": {
+    "bust": 79.22,
+    "waist": 58.405,
+    "hip": 73.86,
+    "thigh": 37.409,
+    "arm": 33.632,
+    "bustProjection": 0.102,
+    "belly": 0.891,
+    "butt": 4.519,
+    "whr": 0.791,
+    "bwr": 1.356,
+    "volume": 353.566
+   }
+  },
+  "Raider Plain M04": {
+   "faction": "raiders",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 49,
+    "ThinThigh": 61,
+    "BTTHinCalf": 34,
+    "BTStomachFat": 7,
+    "BTAbDefinition": 2
+   },
+   "measure": {
+    "bust": 79.399,
+    "waist": 59.556,
+    "hip": 73.771,
+    "thigh": 37.768,
+    "arm": 34.032,
+    "bustProjection": -0.031,
+    "belly": 0.803,
+    "butt": 4.491,
+    "whr": 0.807,
+    "bwr": 1.333,
+    "volume": 356.324
+   }
+  },
+  "Raider Plain M05": {
+   "faction": "raiders",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 46,
+    "ThinThigh": 40,
+    "BTTHinCalf": 23,
+    "BTStomachFat": 20,
+    "BTAbDefinition": 9
+   },
+   "measure": {
+    "bust": 79.328,
+    "waist": 60.908,
+    "hip": 75.706,
+    "thigh": 38.786,
+    "arm": 34.353,
+    "bustProjection": -0.143,
+    "belly": 0.902,
+    "butt": 4.391,
+    "whr": 0.805,
+    "bwr": 1.302,
+    "volume": 362.219
+   }
+  },
+  "Raider Plain M06": {
+   "faction": "raiders",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Stocky",
+   "values": {
+    "BTBodyFatv2": 16,
+    "BTStomachFat": 44,
+    "BTShoulders": 33,
+    "BTTraps": 26,
+    "BTThigh": 29,
+    "BTChubbyLeg": 25,
+    "BTAbDefinition": 20,
+    "BTBiceps": 6
+   },
+   "measure": {
+    "bust": 81.178,
+    "waist": 67.327,
+    "hip": 85.07,
+    "thigh": 47.58,
+    "arm": 36.727,
+    "bustProjection": -0.557,
+    "belly": 0.688,
+    "butt": 4.352,
+    "whr": 0.791,
+    "bwr": 1.206,
+    "volume": 402.187
+   }
+  },
+  "Raider Rough M01": {
+   "faction": "raiders",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "BTThinArm": 99,
+    "ThinThigh": 92,
+    "BTTHinCalf": 88,
+    "BTNegBicepMuscle": 77,
+    "BTNegPecMuscle": 79,
+    "BTNegChestWidth": 54,
+    "BTNegShoulder": 67,
+    "BTNegScapularMuscle": 51
+   },
+   "measure": {
+    "bust": 76.14,
+    "waist": 58.779,
+    "hip": 72.001,
+    "thigh": 36.301,
+    "arm": 29.865,
+    "bustProjection": 0.031,
+    "belly": 0.837,
+    "butt": 4.502,
+    "whr": 0.816,
+    "bwr": 1.295,
+    "volume": 339.252
+   }
+  },
+  "Raider Rough M02": {
+   "faction": "raiders",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "BTThinArm": 89,
+    "ThinThigh": 81,
+    "BTTHinCalf": 95,
+    "BTNegBicepMuscle": 64,
+    "BTNegPecMuscle": 62,
+    "BTNegChestWidth": 58,
+    "BTNegShoulder": 63,
+    "BTNegScapularMuscle": 45
+   },
+   "measure": {
+    "bust": 76.506,
+    "waist": 58.781,
+    "hip": 72.416,
+    "thigh": 36.549,
+    "arm": 31.074,
+    "bustProjection": 0.031,
+    "belly": 0.835,
+    "butt": 4.509,
+    "whr": 0.812,
+    "bwr": 1.302,
+    "volume": 342.949
+   }
+  },
+  "Raider Rough M03": {
+   "faction": "raiders",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "SkinnyFat",
+   "values": {
+    "BTStomachFat": 88,
+    "BTThinArm": 68,
+    "ThinThigh": 63,
+    "BTNegShoulder": 61,
+    "BTNegChestWidth": 64,
+    "BTChestSmoothing": 64
+   },
+   "measure": {
+    "bust": 81.846,
+    "waist": 69.189,
+    "hip": 79.884,
+    "thigh": 44.185,
+    "arm": 36.119,
+    "bustProjection": -0.329,
+    "belly": 1.307,
+    "butt": 4.058,
+    "whr": 0.866,
+    "bwr": 1.183,
+    "volume": 391.528
+   }
+  },
+  "Institute Fine M01": {
+   "faction": "institute",
+   "sex": "male",
+   "tier": "beautiful",
+   "archetype": "Classic",
+   "values": {
+    "BTPectorals": 35,
+    "BTShoulders": 27,
+    "BTAbDefinition": 41,
+    "BTBiceps": 21,
+    "BTWaist-In": 23,
+    "BTButt": 31
+   },
+   "measure": {
+    "bust": 81.027,
+    "waist": 57.261,
+    "hip": 75.697,
+    "thigh": 38.387,
+    "arm": 34.894,
+    "bustProjection": 0.076,
+    "belly": 1.029,
+    "butt": 4.856,
+    "whr": 0.756,
+    "bwr": 1.415,
+    "volume": 360.548
+   }
+  },
+  "Institute Plain M01": {
+   "faction": "institute",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Soft",
+   "values": {
+    "BTStomachFat": 48,
+    "BTChestSmoothing": 58,
+    "BTChubbyArm": 54,
+    "BTChubbyLeg": 37,
+    "Hips": 32
+   },
+   "measure": {
+    "bust": 81.777,
+    "waist": 64.636,
+    "hip": 81.67,
+    "thigh": 42.007,
+    "arm": 38.285,
+    "bustProjection": -0.299,
+    "belly": 0.949,
+    "butt": 4.238,
+    "whr": 0.791,
+    "bwr": 1.265,
+    "volume": 388.668
+   }
+  },
+  "Institute Plain M02": {
+   "faction": "institute",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Soft",
+   "values": {
+    "BTStomachFat": 59,
+    "BTChestSmoothing": 67,
+    "BTChubbyArm": 56,
+    "BTChubbyLeg": 45,
+    "Hips": 45
+   },
+   "measure": {
+    "bust": 82.409,
+    "waist": 66.033,
+    "hip": 83.066,
+    "thigh": 46.272,
+    "arm": 39.126,
+    "bustProjection": -0.194,
+    "belly": 1.044,
+    "butt": 4.218,
+    "whr": 0.795,
+    "bwr": 1.248,
+    "volume": 402.307
+   }
+  },
+  "Institute Plain M03": {
+   "faction": "institute",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Dad",
+   "values": {
+    "BTStomachFat": 67,
+    "BTLowerStomachSize": 32,
+    "BTChestSmoothing": 39,
+    "BTChubbyArm": 53,
+    "BTBodyFatv2": 7,
+    "Hips": 35
+   },
+   "measure": {
+    "bust": 82.19,
+    "waist": 68.712,
+    "hip": 82.681,
+    "thigh": 45.366,
+    "arm": 39.449,
+    "bustProjection": -0.314,
+    "belly": 1.379,
+    "butt": 4.162,
+    "whr": 0.831,
+    "bwr": 1.196,
+    "volume": 403.212
+   }
+  },
+  "Institute Plain M04": {
+   "faction": "institute",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Dad",
+   "values": {
+    "BTStomachFat": 51,
+    "BTLowerStomachSize": 41,
+    "BTChestSmoothing": 34,
+    "BTChubbyArm": 48,
+    "BTBodyFatv2": 5,
+    "Hips": 28
+   },
+   "measure": {
+    "bust": 81.469,
+    "waist": 66.299,
+    "hip": 80.885,
+    "thigh": 40.941,
+    "arm": 38.773,
+    "bustProjection": -0.452,
+    "belly": 1.288,
+    "butt": 4.171,
+    "whr": 0.82,
+    "bwr": 1.229,
+    "volume": 388.081
+   }
+  },
+  "Institute Plain M05": {
+   "faction": "institute",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "BTStomachFat": 53,
+    "BTChubbyArm": 54,
+    "BTChubbyLeg": 32,
+    "BTPectorals": 10,
+    "BTChestSmoothing": 37,
+    "Hips": 26
+   },
+   "measure": {
+    "bust": 81.782,
+    "waist": 65.264,
+    "hip": 81.834,
+    "thigh": 44.796,
+    "arm": 38.689,
+    "bustProjection": -0.384,
+    "belly": 0.993,
+    "butt": 4.222,
+    "whr": 0.798,
+    "bwr": 1.253,
+    "volume": 395.851
+   }
+  },
+  "Institute Plain M06": {
+   "faction": "institute",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "BTStomachFat": 31,
+    "BTChubbyArm": 42,
+    "BTChubbyLeg": 13,
+    "BTPectorals": 6,
+    "BTChestSmoothing": 22,
+    "Hips": 13
+   },
+   "measure": {
+    "bust": 80.598,
+    "waist": 62.521,
+    "hip": 78.974,
+    "thigh": 41.518,
+    "arm": 36.783,
+    "bustProjection": -0.211,
+    "belly": 1.197,
+    "butt": 4.343,
+    "whr": 0.792,
+    "bwr": 1.289,
+    "volume": 378.695
+   }
+  },
+  "Institute Rough M01": {
+   "faction": "institute",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Obese",
+   "values": {
+    "BTBodyFatv2": 88,
+    "BTStomachFat": 115,
+    "BTLowerStomachSize": 52,
+    "BTChubbyArm": 82,
+    "BTChubbyLeg": 85,
+    "BTChestSmoothing": 78,
+    "Hips": 64
+   },
+   "measure": {
+    "bust": 92.508,
+    "waist": 92.707,
+    "hip": 108.531,
+    "thigh": 66.326,
+    "arm": 45.707,
+    "bustProjection": -1.671,
+    "belly": 2.612,
+    "butt": 4.707,
+    "whr": 0.854,
+    "bwr": 0.998,
+    "volume": 517.811
+   }
+  },
+  "Institute Rough M02": {
+   "faction": "institute",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Moobs",
+   "values": {
+    "BTChestSmoothing": 83,
+    "BTStomachFat": 84,
+    "BTBodyFatv2": 32,
+    "BTChubbyArm": 75,
+    "BTNegPecMuscle": 53,
+    "Hips": 41
+   },
+   "measure": {
+    "bust": 84.646,
+    "waist": 76.116,
+    "hip": 88.826,
+    "thigh": 50.071,
+    "arm": 42.021,
+    "bustProjection": -0.485,
+    "belly": 1.529,
+    "butt": 4.155,
+    "whr": 0.857,
+    "bwr": 1.112,
+    "volume": 433.772
+   }
+  },
+  "Institute Rough M03": {
+   "faction": "institute",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "SkinnyFat",
+   "values": {
+    "BTStomachFat": 82,
+    "BTThinArm": 70,
+    "ThinThigh": 70,
+    "BTNegShoulder": 68,
+    "BTNegChestWidth": 64,
+    "BTChestSmoothing": 45
+   },
+   "measure": {
+    "bust": 81.19,
+    "waist": 68.582,
+    "hip": 79.654,
+    "thigh": 44.091,
+    "arm": 35.567,
+    "bustProjection": -0.329,
+    "belly": 1.255,
+    "butt": 4.069,
+    "whr": 0.861,
+    "bwr": 1.184,
+    "volume": 388.741
+   }
+  },
+  "Railroad Fine M01": {
+   "faction": "railroad",
+   "sex": "male",
+   "tier": "beautiful",
+   "archetype": "Swimmer",
+   "values": {
+    "BTAbDefinition": 44,
+    "BTBiceps": 30,
+    "BTButt": 50,
+    "BTCalves": 53,
+    "BTShoulders": 14,
+    "BTStomach": 36,
+    "BTTraps": 17,
+    "BTWaist-In": 28,
+    "BTThinArm": 31,
+    "ThinThigh": 46
+   },
+   "measure": {
+    "bust": 79.27,
+    "waist": 56.842,
+    "hip": 74.653,
+    "thigh": 37.345,
+    "arm": 34.245,
+    "bustProjection": 0.162,
+    "belly": 1.091,
+    "butt": 5.068,
+    "whr": 0.761,
+    "bwr": 1.395,
+    "volume": 353.945
+   }
+  },
+  "Railroad Plain M01": {
+   "faction": "railroad",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 37,
+    "ThinThigh": 37,
+    "BTTHinCalf": 29,
+    "BTStomachFat": 6,
+    "BTAbDefinition": 24,
+    "BTBiceps": 7
+   },
+   "measure": {
+    "bust": 79.35,
+    "waist": 58.867,
+    "hip": 74.605,
+    "thigh": 38.261,
+    "arm": 34.166,
+    "bustProjection": 0.011,
+    "belly": 0.806,
+    "butt": 4.492,
+    "whr": 0.789,
+    "bwr": 1.348,
+    "volume": 357.677
+   }
+  },
+  "Railroad Plain M02": {
+   "faction": "railroad",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 34,
+    "ThinThigh": 46,
+    "BTTHinCalf": 21,
+    "BTStomachFat": 19,
+    "BTAbDefinition": 13,
+    "BTBiceps": 14
+   },
+   "measure": {
+    "bust": 79.321,
+    "waist": 60.675,
+    "hip": 75.386,
+    "thigh": 38.572,
+    "arm": 34.642,
+    "bustProjection": -0.129,
+    "belly": 0.856,
+    "butt": 4.391,
+    "whr": 0.805,
+    "bwr": 1.307,
+    "volume": 361.808
+   }
+  },
+  "Railroad Plain M03": {
+   "faction": "railroad",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 24,
+    "ThinThigh": 33,
+    "BTTHinCalf": 40,
+    "BTStomachFat": 14,
+    "BTAbDefinition": 37,
+    "BTBiceps": 6
+   },
+   "measure": {
+    "bust": 79.201,
+    "waist": 59.479,
+    "hip": 75.452,
+    "thigh": 37.925,
+    "arm": 34.652,
+    "bustProjection": -0.021,
+    "belly": 0.68,
+    "butt": 4.416,
+    "whr": 0.788,
+    "bwr": 1.332,
+    "volume": 359.286
+   }
+  },
+  "Railroad Plain M04": {
+   "faction": "railroad",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Wiry",
+   "values": {
+    "BTAbDefinition": 18,
+    "BTThinArm": 43,
+    "BTBiceps": 11,
+    "BTStomach": 16,
+    "ThinThigh": 39
+   },
+   "measure": {
+    "bust": 79.243,
+    "waist": 58.227,
+    "hip": 74.013,
+    "thigh": 37.5,
+    "arm": 33.969,
+    "bustProjection": 0.117,
+    "belly": 0.927,
+    "butt": 4.515,
+    "whr": 0.787,
+    "bwr": 1.361,
+    "volume": 354.42
+   }
+  },
+  "Railroad Plain M05": {
+   "faction": "railroad",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Wiry",
+   "values": {
+    "BTAbDefinition": 30,
+    "BTThinArm": 37,
+    "BTBiceps": 15,
+    "BTStomach": 19,
+    "ThinThigh": 49
+   },
+   "measure": {
+    "bust": 79.226,
+    "waist": 57.923,
+    "hip": 73.629,
+    "thigh": 37.273,
+    "arm": 34.046,
+    "bustProjection": 0.121,
+    "belly": 0.992,
+    "butt": 4.498,
+    "whr": 0.787,
+    "bwr": 1.368,
+    "volume": 353.418
+   }
+  },
+  "Railroad Plain M06": {
+   "faction": "railroad",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Average",
+   "values": {
+    "BTStomachFat": 37,
+    "BTChubbyArm": 37,
+    "BTChubbyLeg": 21,
+    "BTPectorals": 13,
+    "BTChestSmoothing": 22,
+    "Hips": 11
+   },
+   "measure": {
+    "bust": 81.01,
+    "waist": 63.261,
+    "hip": 79.939,
+    "thigh": 42.485,
+    "arm": 36.74,
+    "bustProjection": -0.266,
+    "belly": 0.854,
+    "butt": 4.305,
+    "whr": 0.791,
+    "bwr": 1.281,
+    "volume": 382.661
+   }
+  },
+  "Railroad Rough M01": {
+   "faction": "railroad",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "BTThinArm": 99,
+    "ThinThigh": 89,
+    "BTTHinCalf": 87,
+    "BTNegBicepMuscle": 67,
+    "BTNegPecMuscle": 75,
+    "BTNegChestWidth": 67,
+    "BTNegShoulder": 51,
+    "BTNegScapularMuscle": 53
+   },
+   "measure": {
+    "bust": 76.105,
+    "waist": 58.779,
+    "hip": 72.114,
+    "thigh": 36.369,
+    "arm": 30.119,
+    "bustProjection": 0.031,
+    "belly": 0.837,
+    "butt": 4.504,
+    "whr": 0.815,
+    "bwr": 1.295,
+    "volume": 339.973
+   }
+  },
+  "Railroad Rough M02": {
+   "faction": "railroad",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "SkinnyFat",
+   "values": {
+    "BTStomachFat": 89,
+    "BTThinArm": 62,
+    "ThinThigh": 67,
+    "BTNegShoulder": 56,
+    "BTNegChestWidth": 53,
+    "BTChestSmoothing": 59
+   },
+   "measure": {
+    "bust": 81.851,
+    "waist": 69.308,
+    "hip": 79.813,
+    "thigh": 44.157,
+    "arm": 36.207,
+    "bustProjection": -0.341,
+    "belly": 1.316,
+    "butt": 4.053,
+    "whr": 0.868,
+    "bwr": 1.181,
+    "volume": 391.699
+   }
+  },
+  "Railroad Rough M03": {
+   "faction": "railroad",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "BeerBelly",
+   "values": {
+    "BTStomachFat": 120,
+    "BTLowerStomachSize": 84,
+    "BTCenterStomachSize": 71,
+    "BTThinArm": 65,
+    "ThinThigh": 58,
+    "BTTHinCalf": 53,
+    "BTNegPecMuscle": 45
+   },
+   "measure": {
+    "bust": 81.022,
+    "waist": 74.072,
+    "hip": 83.002,
+    "thigh": 47.127,
+    "arm": 36.854,
+    "bustProjection": -0.847,
+    "belly": 2.576,
+    "butt": 3.975,
+    "whr": 0.892,
+    "bwr": 1.094,
+    "volume": 406.058
+   }
+  },
+  "Atom Fine M01": {
+   "faction": "atom",
+   "sex": "male",
+   "tier": "beautiful",
+   "archetype": "Lean",
+   "values": {
+    "BTAbDefinition": 67,
+    "BTNegStomach": 26,
+    "BTWaist-In": 37,
+    "BTPectorals": 16,
+    "BTBiceps": 26,
+    "BTShoulders": 17
+   },
+   "measure": {
+    "bust": 79.96,
+    "waist": 55.867,
+    "hip": 75.514,
+    "thigh": 38.386,
+    "arm": 34.818,
+    "bustProjection": 0.249,
+    "belly": 1.638,
+    "butt": 4.49,
+    "whr": 0.74,
+    "bwr": 1.431,
+    "volume": 357.749
+   }
+  },
+  "Atom Plain M01": {
+   "faction": "atom",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 53,
+    "ThinThigh": 37,
+    "BTTHinCalf": 24,
+    "BTStomachFat": 13,
+    "BTAbDefinition": 7
+   },
+   "measure": {
+    "bust": 79.26,
+    "waist": 60.14,
+    "hip": 75.212,
+    "thigh": 37.763,
+    "arm": 34.119,
+    "bustProjection": -0.081,
+    "belly": 0.822,
+    "butt": 4.452,
+    "whr": 0.8,
+    "bwr": 1.318,
+    "volume": 358.376
+   }
+  },
+  "Atom Plain M02": {
+   "faction": "atom",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 60,
+    "ThinThigh": 58,
+    "BTTHinCalf": 50,
+    "BTStomachFat": 1,
+    "BTAbDefinition": 8
+   },
+   "measure": {
+    "bust": 79.259,
+    "waist": 58.692,
+    "hip": 73.373,
+    "thigh": 37.137,
+    "arm": 33.698,
+    "bustProjection": 0.031,
+    "belly": 0.848,
+    "butt": 4.507,
+    "whr": 0.8,
+    "bwr": 1.35,
+    "volume": 352.993
+   }
+  },
+  "Atom Plain M03": {
+   "faction": "atom",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Lean",
+   "values": {
+    "BTThinArm": 67,
+    "ThinThigh": 55,
+    "BTTHinCalf": 22,
+    "BTStomachFat": 20,
+    "BTAbDefinition": 2
+   },
+   "measure": {
+    "bust": 79.338,
+    "waist": 61.107,
+    "hip": 75.125,
+    "thigh": 38.427,
+    "arm": 34.022,
+    "bustProjection": -0.15,
+    "belly": 0.998,
+    "butt": 4.389,
+    "whr": 0.813,
+    "bwr": 1.298,
+    "volume": 360.468
+   }
+  },
+  "Atom Plain M04": {
+   "faction": "atom",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Wiry",
+   "values": {
+    "BTAbDefinition": 19,
+    "BTThinArm": 59,
+    "BTBiceps": 17,
+    "BTStomach": 18,
+    "ThinThigh": 54
+   },
+   "measure": {
+    "bust": 79.218,
+    "waist": 58.187,
+    "hip": 73.439,
+    "thigh": 37.16,
+    "arm": 33.77,
+    "bustProjection": 0.127,
+    "belly": 0.936,
+    "butt": 4.505,
+    "whr": 0.792,
+    "bwr": 1.361,
+    "volume": 352.704
+   }
+  },
+  "Atom Plain M05": {
+   "faction": "atom",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Wiry",
+   "values": {
+    "BTAbDefinition": 27,
+    "BTThinArm": 65,
+    "BTBiceps": 12,
+    "BTStomach": 22,
+    "ThinThigh": 68
+   },
+   "measure": {
+    "bust": 79.192,
+    "waist": 57.969,
+    "hip": 72.906,
+    "thigh": 36.843,
+    "arm": 33.693,
+    "bustProjection": 0.143,
+    "belly": 0.982,
+    "butt": 4.49,
+    "whr": 0.795,
+    "bwr": 1.366,
+    "volume": 351.139
+   }
+  },
+  "Atom Plain M06": {
+   "faction": "atom",
+   "sex": "male",
+   "tier": "middle",
+   "archetype": "Wiry",
+   "values": {
+    "BTAbDefinition": 14,
+    "BTThinArm": 48,
+    "BTBiceps": 18,
+    "BTStomach": 10,
+    "ThinThigh": 41
+   },
+   "measure": {
+    "bust": 79.244,
+    "waist": 58.354,
+    "hip": 73.936,
+    "thigh": 37.454,
+    "arm": 33.909,
+    "bustProjection": 0.091,
+    "belly": 0.904,
+    "butt": 4.518,
+    "whr": 0.789,
+    "bwr": 1.358,
+    "volume": 354.261
+   }
+  },
+  "Atom Rough M01": {
+   "faction": "atom",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "BTThinArm": 87,
+    "ThinThigh": 91,
+    "BTTHinCalf": 91,
+    "BTNegBicepMuscle": 73,
+    "BTNegPecMuscle": 76,
+    "BTNegChestWidth": 59,
+    "BTNegShoulder": 76,
+    "BTNegScapularMuscle": 54
+   },
+   "measure": {
+    "bust": 76.092,
+    "waist": 58.779,
+    "hip": 72.039,
+    "thigh": 36.324,
+    "arm": 30.125,
+    "bustProjection": 0.031,
+    "belly": 0.837,
+    "butt": 4.503,
+    "whr": 0.816,
+    "bwr": 1.295,
+    "volume": 339.807
+   }
+  },
+  "Atom Rough M02": {
+   "faction": "atom",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "Frail",
+   "values": {
+    "BTThinArm": 98,
+    "ThinThigh": 81,
+    "BTTHinCalf": 88,
+    "BTNegBicepMuscle": 70,
+    "BTNegPecMuscle": 69,
+    "BTNegChestWidth": 69,
+    "BTNegShoulder": 59,
+    "BTNegScapularMuscle": 69
+   },
+   "measure": {
+    "bust": 75.944,
+    "waist": 58.781,
+    "hip": 72.416,
+    "thigh": 36.549,
+    "arm": 30.041,
+    "bustProjection": 0.031,
+    "belly": 0.835,
+    "butt": 4.509,
+    "whr": 0.812,
+    "bwr": 1.292,
+    "volume": 340.32
+   }
+  },
+  "Atom Rough M03": {
+   "faction": "atom",
+   "sex": "male",
+   "tier": "ugly",
+   "archetype": "SkinnyFat",
+   "values": {
+    "BTStomachFat": 88,
+    "BTThinArm": 75,
+    "ThinThigh": 49,
+    "BTNegShoulder": 59,
+    "BTNegChestWidth": 70,
+    "BTChestSmoothing": 62
+   },
+   "measure": {
+    "bust": 81.731,
+    "waist": 69.19,
+    "hip": 80.438,
+    "thigh": 44.524,
+    "arm": 36.039,
+    "bustProjection": -0.332,
+    "belly": 1.305,
+    "butt": 4.069,
+    "whr": 0.86,
+    "bwr": 1.181,
+    "volume": 392.485
+   }
+  }
+ }
+}

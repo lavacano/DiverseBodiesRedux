@@ -1,0 +1,13 @@
+{
+    "gender": 1,
+    "formIDs": [],
+    "notFormIDs": [],
+    "inFaction": [
+        "0xF439|DLCNukaWorld.esm"
+    ],
+    "notInFaction": [
+        "0xF438|DLCNukaWorld.esm"
+    ],
+    "hasKeyword": [],
+    "hasNotKeyword": []
+}

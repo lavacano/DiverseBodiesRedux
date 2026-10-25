@@ -1,0 +1,10 @@
+{
+    "BodyMorphs": {
+        "BTStomachFat": 0.4,
+        "BTChestSmoothing": 0.48,
+        "BTChubbyArm": 0.48,
+        "BTChubbyLeg": 0.41,
+        "Hips": 0.43
+    },
+    "Gender": 0
+}

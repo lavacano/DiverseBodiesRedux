@@ -1,0 +1,11 @@
+{
+    "BodyMorphs": {
+        "TigerSanBBMale": 0.27,
+        "BTAbDefinition": 0.67,
+        "BTPectorals": 0.43,
+        "BTShoulders": 0.41,
+        "BTWaist-In": 0.47,
+        "BT2AdonisBelt": 0.54
+    },
+    "Gender": 0
+}

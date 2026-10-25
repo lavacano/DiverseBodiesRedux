@@ -1,0 +1,14 @@
+{
+    "BodyMorphs": {
+        "LegsThin": 0.12,
+        "Arms": 0.21,
+        "BreastsSmall": 0.3,
+        "ButtSmall": 0.16,
+        "ChubbyWaist": 0.7,
+        "WideWaistLine": 0.43,
+        "HipUpperWidth": 0.37,
+        "BreastGravity2": 0.21,
+        "Hips": -0.07
+    },
+    "Gender": 1
+}

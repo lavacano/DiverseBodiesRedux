@@ -1,0 +1,4385 @@
+{
+ "about": "Silhouette Characters: the NPC records each preset of \"Silhouette Characters.xml\" is bound to (tools/pool/characters.py, S-66).",
+ "characters": {
+  "Piper Wright": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "CompanionPiper",
+     "002F1E"
+    ]
+   ],
+   "vibe": "wiry, restless reporter: slim, small-chested, narrow hips, a real waist",
+   "values": {
+    "LegsThin": 20,
+    "Arms": 15,
+    "BreastsSmall": 30,
+    "BreastGravity2": 15,
+    "ChubbyWaist": 65,
+    "WideWaistLine": 45,
+    "HipUpperWidth": 25,
+    "Hips": -15,
+    "ButtSmall": 20
+   }
+  },
+  "Cait": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "CompanionCait",
+     "079249"
+    ]
+   ],
+   "vibe": "cage fighter: lean muscle, strong shoulders and legs, a small hard chest",
+   "values": {
+    "MuscularArms": 50,
+    "MuscularLegs": 55,
+    "MuscularButt": 60,
+    "ChestWidth": 25,
+    "Back": 20,
+    "BreastsSmall": 30,
+    "BreastPerkiness": 20,
+    "ChubbyWaist": 55,
+    "WideWaistLine": 35,
+    "Hips": -10,
+    "ButtSmall": 10
+   }
+  },
+  "Curie": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "CompanionCurie",
+     "027686"
+    ],
+    [
+     "Fallout4.esm",
+     "EncCurieSynth",
+     "1647C6"
+    ]
+   ],
+   "vibe": "a new synth body, soft and unassuming: gentle curves, a little soft at the middle",
+   "values": {
+    "ChubbyWaist": 70,
+    "Belly": 25,
+    "Breasts": 15,
+    "BreastGravity2": 25,
+    "Hips": 5,
+    "ChubbyArms": 15,
+    "Thighs": 10,
+    "AppleCheeks": 15
+   }
+  },
+  "Magnolia": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Magnolia",
+     "02268A"
+    ]
+   ],
+   "vibe": "lounge singer, the Commonwealth's one real hourglass",
+   "values": {
+    "Breasts": 35,
+    "7B Upper": 20,
+    "BreastPerkiness": 20,
+    "Hips": 20,
+    "Butt": 25,
+    "RoundAss": 35,
+    "ChubbyWaist": 20,
+    "Thighs": 15,
+    "BreastGravity2": 10
+   }
+  },
+  "Desdemona": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Desdemona",
+     "045AD1"
+    ]
+   ],
+   "vibe": "Railroad leader, middle-aged and severe: long, flat and square",
+   "values": {
+    "BreastsSmall": 30,
+    "BreastGravity2": 35,
+    "ChubbyWaist": 75,
+    "WideWaistLine": 55,
+    "HipUpperWidth": 30,
+    "Hips": -20,
+    "ButtSmall": 30,
+    "LegsThin": 15,
+    "Back": 15
+   }
+  },
+  "Glory": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Glory",
+     "045ACF"
+    ]
+   ],
+   "vibe": "the Railroad's heavy: a powerful, broad-shouldered athlete",
+   "values": {
+    "MuscularArms": 90,
+    "MuscularLegs": 85,
+    "MuscularButt": 60,
+    "ChestWidth": 55,
+    "Back": 55,
+    "BigTorso": 35,
+    "BreastsSmall": 25,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 30,
+    "Thighs": 30,
+    "CalfSize": 30
+   }
+  },
+  "Haylen": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "BoSScribeHaylen",
+     "05DE3F"
+    ]
+   ],
+   "vibe": "scribe, bookish: a desk body, soft arms and a soft belly",
+   "values": {
+    "ChubbyWaist": 85,
+    "Belly": 55,
+    "BigBelly": 20,
+    "ChubbyArms": 45,
+    "ChubbyLegs": 30,
+    "Breasts": 15,
+    "BreastGravity2": 40,
+    "WideWaistLine": 35,
+    "ChubbyButt": 25
+   }
+  },
+  "Madison Li": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "MadisonLi",
+     "05E63F"
+    ]
+   ],
+   "vibe": "scientist in her fifties: thin and narrow, gone soft at the middle",
+   "values": {
+    "LegsThin": 30,
+    "Arms": 25,
+    "BreastsSmall": 30,
+    "BreastGravity2": 50,
+    "BreastFlatness2": 20,
+    "ChubbyWaist": 80,
+    "WideWaistLine": 50,
+    "Belly": 25,
+    "Hips": -20,
+    "ButtSmall": 35
+   }
+  },
+  "Mama Murphy": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "MamaMurphy",
+     "019FD8"
+    ]
+   ],
+   "vibe": "old chem-worn seer: frail and sagging, thin limbs",
+   "values": {
+    "LegsThin": 80,
+    "Arms": 70,
+    "SlimThighs": 50,
+    "ButtSmall": 70,
+    "BreastGravity2": 100,
+    "BreastFlatness2": 60,
+    "Breasts": 10,
+    "Belly": 40,
+    "ChubbyWaist": 85,
+    "WideWaistLine": 40,
+    "Hips": -30
+   }
+  },
+  "Marcy Long": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "MarcyLong",
+     "019FDC"
+    ]
+   ],
+   "vibe": "bitter survivor: hard, thin, worn out",
+   "values": {
+    "LegsThin": 35,
+    "Arms": 30,
+    "BreastsSmall": 30,
+    "BreastGravity2": 45,
+    "ChubbyWaist": 75,
+    "WideWaistLine": 55,
+    "Hips": -25,
+    "ButtSmall": 40,
+    "SlimThighs": 20
+   }
+  },
+  "Fahrenheit": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Fahrenheit",
+     "022616"
+    ]
+   ],
+   "vibe": "Hancock's bodyguard: big, broad, muscled and heavy",
+   "values": {
+    "BigTorso": 70,
+    "ChestWidth": 70,
+    "Back": 70,
+    "MuscularArms": 70,
+    "MuscularLegs": 55,
+    "ChubbyArms": 30,
+    "ChubbyWaist": 100,
+    "WideWaistLine": 70,
+    "Thighs": 45,
+    "Breasts": 10,
+    "CalfSize": 50,
+    "Hips": -15
+   }
+  },
+  "Irma": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Irma",
+     "0228A5"
+    ]
+   ],
+   "vibe": "Memory Den hostess: faded glamour, soft and full-figured",
+   "values": {
+    "Breasts": 55,
+    "7B Upper": 15,
+    "BreastGravity2": 65,
+    "Hips": 25,
+    "Thighs": 30,
+    "ChubbyWaist": 80,
+    "Belly": 35,
+    "ChubbyArms": 30,
+    "ChubbyButt": 30,
+    "BigButt": 20
+   }
+  },
+  "Mags Black": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04MagsBlack",
+     "00D3EB"
+    ]
+   ],
+   "vibe": "the Operators' boss: slim, elegant, cold",
+   "values": {
+    "LegsThin": 10,
+    "BreastsSmall": 20,
+    "Breasts": 5,
+    "BreastPerkiness": 25,
+    "ChubbyWaist": 45,
+    "Hips": 5,
+    "RoundAss": 20,
+    "SlimThighs": 10
+   }
+  },
+  "Nisha": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04Nisha",
+     "00A4E2"
+    ]
+   ],
+   "vibe": "the Disciples' leader: sinewy and knife-lean, all tendon",
+   "values": {
+    "LegsThin": 30,
+    "Arms": 25,
+    "MuscularArms": 30,
+    "MuscularLegs": 25,
+    "BreastsSmall": 30,
+    "BreastsSmall2": 20,
+    "ChubbyWaist": 50,
+    "WideWaistLine": 40,
+    "Hips": -20,
+    "ButtSmall": 30
+   }
+  },
+  "Kasumi Nakano": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03KasumiNakano",
+     "003ECA"
+    ]
+   ],
+   "vibe": "young runaway: small, slight, girlish",
+   "values": {
+    "BreastsSmall": 30,
+    "BreastPerkiness": 30,
+    "SlimThighs": 20,
+    "Arms": 15,
+    "LegsThin": 15,
+    "ChubbyWaist": 55,
+    "WideWaistLine": 30,
+    "Hips": -5,
+    "ButtSmall": 10
+   }
+  },
+  "Ronnie Shaw": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "RonnieShaw",
+     "03A458"
+    ]
+   ],
+   "vibe": "old Minutemen veteran: stocky, thick-waisted, tough",
+   "values": {
+    "BigTorso": 30,
+    "Back": 35,
+    "ChestWidth": 25,
+    "ChubbyWaist": 95,
+    "WideWaistLine": 60,
+    "Belly": 35,
+    "BreastGravity2": 60,
+    "BreastFlatness2": 30,
+    "ButtSmall": 30,
+    "Hips": -15,
+    "MuscularArms": 15
+   }
+  },
+  "Myrna": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Myrna",
+     "002CBF"
+    ]
+   ],
+   "vibe": "sour shopkeeper: pear-shaped, thick through the hips",
+   "values": {
+    "BreastsSmall": 30,
+    "Hips": 35,
+    "Thighs": 40,
+    "ChubbyLegs": 35,
+    "ChubbyButt": 40,
+    "ChubbyWaist": 80,
+    "Belly": 30,
+    "HipUpperWidth": 35,
+    "BreastGravity2": 40
+   }
+  },
+  "Doctor Amari": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DoctorAmari",
+     "09A680"
+    ]
+   ],
+   "vibe": "neuroscientist, middle-aged: ordinary and a little soft",
+   "values": {
+    "ChubbyWaist": 80,
+    "WideWaistLine": 40,
+    "Belly": 30,
+    "Breasts": 10,
+    "BreastGravity2": 40,
+    "ChubbyArms": 15,
+    "Thighs": 10
+   }
+  },
+  "Trudy": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Trudy",
+     "1069FC"
+    ]
+   ],
+   "vibe": "Drumlin Diner owner: a heavy apple shape",
+   "values": {
+    "BigBelly": 30,
+    "Belly": 95,
+    "ChubbyWaist": 120,
+    "WideWaistLine": 60,
+    "HipUpperWidth": 50,
+    "Back": 45,
+    "LegsThin": 20,
+    "ButtSmall": 30,
+    "Breasts": 25,
+    "BreastGravity2": 75,
+    "ChubbyArms": 50
+   }
+  },
+  "Ellie Perkins": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "ElliePerkins",
+     "0222A2"
+    ]
+   ],
+   "vibe": "the detective's secretary: plain and average",
+   "values": {
+    "ChubbyWaist": 70,
+    "WideWaistLine": 40,
+    "HipUpperWidth": 25,
+    "Belly": 25,
+    "Breasts": 5,
+    "BreastGravity2": 25,
+    "BreastsSmall": 10,
+    "ChubbyArms": 10
+   }
+  },
+  "Cricket": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Cricket",
+     "12FCCE"
+    ]
+   ],
+   "vibe": "arms dealer: tough, thick-armed, broad",
+   "values": {
+    "BigTorso": 30,
+    "Back": 35,
+    "ChestWidth": 30,
+    "ChubbyWaist": 80,
+    "WideWaistLine": 40,
+    "MuscularArms": 30,
+    "ChubbyArms": 25,
+    "Thighs": 20,
+    "Breasts": 20,
+    "BreastGravity2": 40
+   }
+  },
+  "Carla": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Carla",
+     "0DC936"
+    ]
+   ],
+   "vibe": "caravan trader: lean and weathered, a walker's legs",
+   "values": {
+    "LegsThin": 10,
+    "MuscularLegs": 30,
+    "CalfSize": 20,
+    "BreastsSmall": 30,
+    "ChubbyWaist": 65,
+    "WideWaistLine": 45,
+    "Hips": -10,
+    "ButtSmall": 15,
+    "BreastGravity2": 30
+   }
+  },
+  "Captain Avery": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03CaptainAvery",
+     "005C80"
+    ]
+   ],
+   "vibe": "Far Harbor's leader: a sturdy fisherwoman with a broad back",
+   "values": {
+    "Back": 40,
+    "ChestWidth": 30,
+    "BigTorso": 25,
+    "MuscularArms": 25,
+    "ChubbyWaist": 85,
+    "WideWaistLine": 45,
+    "Belly": 20,
+    "Breasts": 10,
+    "BreastGravity2": 45,
+    "Thighs": 20
+   }
+  },
+  "Aster": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03Aster",
+     "00463E"
+    ]
+   ],
+   "vibe": "Acadia's synth: willowy and flat",
+   "values": {
+    "LegsThin": 25,
+    "Arms": 20,
+    "BreastsSmall": 30,
+    "ChubbyWaist": 55,
+    "WideWaistLine": 40,
+    "Hips": -15,
+    "ButtSmall": 25,
+    "SlimThighs": 25
+   }
+  },
+  "Ivy": {
+   "sex": "female",
+   "forms": [
+    [
+     "CompanionIvy.esm",
+     "IVYCOMP",
+     "000803"
+    ]
+   ],
+   "vibe": "NX-2C pleasure bot on a Courser combat chassis, a raider boss's brain: an engineered hourglass over toned muscle (the owner's pick, option A, 2026-09-24; made fuller by their poll the same night: \"too slim\" at breasts 25 / butt 15; then, by a rendered poll, option B: a big powerful glute shelf, \"a woman with powerful ass muscles\" cannot have a small one, and a more muscled back and arms)",
+   "values": {
+    "Breasts": 70,
+    "7B Upper": 15,
+    "BreastPerkiness": 45,
+    "PushUp": 20,
+    "ChestWidth": 10,
+    "MuscularArms": 70,
+    "ForearmSize": 25,
+    "Back": 30,
+    "ShoulderWidth": 10,
+    "ChubbyWaist": 5,
+    "Butt": 100,
+    "BigButt": 75,
+    "RoundAss": 80,
+    "MuscularButt": 100,
+    "AppleCheeks": 60,
+    "HipBack": 35,
+    "BackArch": 35,
+    "Hips": 45,
+    "Thighs": 70,
+    "MuscularLegs": 65
+   }
+  },
+  "Geneva": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Geneva",
+     "002F0A"
+    ]
+   ],
+   "vibe": "the mayor's secretary, famous among players for being hot: sleek and office-neat -- a perky bust, a slim waist, a high round bottom (the owner's pick from three renders, option B, 2026-09-25; the pool had rolled her a Boxy body)",
+   "values": {
+    "Breasts": 35,
+    "7B Upper": 15,
+    "BreastPerkiness": 45,
+    "PushUp": 20,
+    "Hips": 15,
+    "Butt": 30,
+    "RoundAss": 55,
+    "AppleCheeks": 30,
+    "Thighs": 10,
+    "ChubbyWaist": 10
+   }
+  },
+  "Polly": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Polly",
+     "002CD4"
+    ]
+   ],
+   "vibe": "the Choice Chops butcher who secretly writes poems about dancing in the dark: a butcher's meaty arms, shoulders and belly, and under them a dancer's round bottom",
+   "values": {
+    "MuscularArms": 60,
+    "ChubbyArms": 70,
+    "ForearmSize": 60,
+    "Back": 60,
+    "ShoulderWidth": 45,
+    "BigTorso": 35,
+    "Breasts": 60,
+    "BreastGravity2": 60,
+    "ChubbyWaist": 105,
+    "Belly": 70,
+    "WideWaistLine": 40,
+    "Hips": 20,
+    "Butt": 40,
+    "RoundAss": 60,
+    "Thighs": 40,
+    "MuscularLegs": 30
+   }
+  },
+  "Cathy": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Cathy",
+     "002CCF"
+    ]
+   ],
+   "vibe": "the salon gossip who greets you with \"You look terrible\": bloodshot, graying -- and a wreck herself, skinny-fat and sagging",
+   "values": {
+    "BreastGravity2": 120,
+    "BreastFlatness2": 90,
+    "Breasts": 20,
+    "Belly": 90,
+    "BigBelly": 45,
+    "ChubbyWaist": 105,
+    "WideWaistLine": 45,
+    "LegsThin": 60,
+    "Arms": 55,
+    "ButtSmall": 70,
+    "Hips": -35
+   }
+  },
+  "Becky Fallon": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "BeckyFallon",
+     "002CC6"
+    ]
+   ],
+   "vibe": "Fallon's Basement, \"quality and affordability\": everything has sunk to the basement -- a small bust over enormous hips, thighs and bottom",
+   "values": {
+    "BreastsSmall": 30,
+    "Breasts": 0,
+    "ChubbyWaist": 65,
+    "Hips": 85,
+    "Thighs": 105,
+    "ChubbyLegs": 110,
+    "BigButt": 85,
+    "ChubbyButt": 95,
+    "HipUpperWidth": 55,
+    "AppleCheeks": 35,
+    "Arms": 25
+   }
+  },
+  "Scarlett": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Scarlett",
+     "04B240"
+    ]
+   ],
+   "vibe": "the Dugout Inn waitress, \"hopefully nothing will poison ya\": she never eats what she serves -- bony, run off her feet",
+   "values": {
+    "LegsThin": 85,
+    "Arms": 80,
+    "SlimThighs": 70,
+    "ButtSmall": 85,
+    "BreastsSmall": 30,
+    "Breasts": 0,
+    "BreastFlatness2": 45,
+    "Hips": -45,
+    "ChubbyWaist": 45,
+    "WideWaistLine": 35,
+    "CalfSmooth": 60
+   }
+  },
+  "Roxy": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DN054AtomCat_Roxy",
+     "1164F7"
+    ]
+   ],
+   "vibe": "Atom Cats greaser in street clothes: a grease-monkey's wiry arms and a cocky little swagger at the hips",
+   "values": {
+    "MuscularArms": 35,
+    "ForearmSize": 30,
+    "LegsThin": 15,
+    "BreastsSmall": 20,
+    "BreastPerkiness": 30,
+    "ChubbyWaist": 50,
+    "Hips": 10,
+    "RoundAss": 35,
+    "Butt": 15
+   }
+  },
+  "Rowdy": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DN054Rowdy",
+     "01DB56"
+    ]
+   ],
+   "vibe": "Atom Cats bruiser in leather, named for what she is: broad shoulders, heavy forearms, solid all through",
+   "values": {
+    "ShoulderWidth": 45,
+    "Back": 45,
+    "BigTorso": 35,
+    "MuscularArms": 60,
+    "ForearmSize": 55,
+    "ChubbyWaist": 85,
+    "WideWaistLine": 45,
+    "Thighs": 35,
+    "MuscularLegs": 35,
+    "Breasts": 20,
+    "BreastGravity2": 30
+   }
+  },
+  "Alana Secord": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "AlanaSecord",
+     "05E564"
+    ]
+   ],
+   "vibe": "the Institute's cold, climbing department head in office wear: a pressed, narrow, upright body with no spare ounce",
+   "values": {
+    "LegsThin": 25,
+    "Arms": 20,
+    "BreastsSmall": 25,
+    "BreastPerkiness": 25,
+    "ChubbyWaist": 45,
+    "WideWaistLine": 35,
+    "Hips": -10,
+    "ButtSmall": 20,
+    "SlimThighs": 20
+   }
+  },
+  "Rosalind Orman": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "RosalindOrman",
+     "05E562"
+    ]
+   ],
+   "vibe": "the Institute's veteran director of robotics, in a suit: decades at a desk under the ground -- broad, soft and settled",
+   "values": {
+    "ChubbyWaist": 90,
+    "WideWaistLine": 55,
+    "Belly": 45,
+    "Breasts": 30,
+    "BreastGravity2": 70,
+    "ChubbyArms": 35,
+    "Hips": 25,
+    "Thighs": 30,
+    "ChubbyButt": 30,
+    "HipUpperWidth": 30
+   }
+  },
+  "Allie Filmore": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "AllieFilmore",
+     "05E557"
+    ]
+   ],
+   "vibe": "the Institute's synth-retention zealot, wound tight: a tense, rail-thin body that never relaxes",
+   "values": {
+    "LegsThin": 45,
+    "Arms": 40,
+    "SlimThighs": 40,
+    "BreastsSmall": 30,
+    "BreastsSmall2": 20,
+    "ChubbyWaist": 40,
+    "WideWaistLine": 30,
+    "Hips": -25,
+    "ButtSmall": 45
+   }
+  },
+  "Kessler": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Kessler",
+     "01995C"
+    ]
+   ],
+   "vibe": "Bunker Hill's boss, who keeps the caravans and the Institute and the Brotherhood all at arm's length: a tough trader built square, tactical clothes over solid muscle",
+   "values": {
+    "Back": 40,
+    "ChestWidth": 30,
+    "BigTorso": 25,
+    "MuscularArms": 40,
+    "MuscularLegs": 30,
+    "ChubbyWaist": 80,
+    "WideWaistLine": 45,
+    "Breasts": 15,
+    "BreastGravity2": 35,
+    "Thighs": 20
+   }
+  },
+  "Kay": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Kay",
+     "01997A"
+    ]
+   ],
+   "vibe": "Bunker Hill local in street clothes: an ordinary, sturdy settler, a little thick at the waist",
+   "values": {
+    "ChubbyWaist": 80,
+    "WideWaistLine": 40,
+    "Belly": 20,
+    "Breasts": 15,
+    "BreastGravity2": 30,
+    "Thighs": 20,
+    "ChubbyArms": 15
+   }
+  },
+  "Deb": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Deb",
+     "019978"
+    ]
+   ],
+   "vibe": "Bunker Hill trader who sells you everything at her stall: a comfortable, well-fed shopkeeper",
+   "values": {
+    "ChubbyWaist": 95,
+    "Belly": 45,
+    "Breasts": 35,
+    "BreastGravity2": 55,
+    "Hips": 25,
+    "Thighs": 30,
+    "ChubbyLegs": 25,
+    "ChubbyArms": 30,
+    "ChubbyButt": 25
+   }
+  },
+  "Rachel": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Rachel",
+     "02A823"
+    ]
+   ],
+   "vibe": "Vault 81 cook in her vault suit: she tastes everything she makes -- round, soft and homely",
+   "values": {
+    "ChubbyWaist": 100,
+    "Belly": 60,
+    "BigBelly": 15,
+    "Breasts": 40,
+    "BreastGravity2": 55,
+    "ChubbyArms": 40,
+    "Hips": 30,
+    "Thighs": 35,
+    "ChubbyLegs": 30,
+    "ChubbyButt": 35
+   }
+  },
+  "Tina De Luca": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "V81_TinaDeLuca",
+     "02A82A"
+    ]
+   ],
+   "vibe": "Vault 81's restless young flirt, who wants out to see the world: petite and curvy, a pin-up in a vault suit",
+   "values": {
+    "Breasts": 35,
+    "BreastPerkiness": 40,
+    "PushUp": 15,
+    "ChubbyWaist": 40,
+    "Hips": 25,
+    "RoundAss": 45,
+    "Butt": 25,
+    "AppleCheeks": 30,
+    "Thighs": 15,
+    "Arms": 10
+   }
+  },
+  "Katherine Pinn": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "V81_KatherinePinn",
+     "02A827"
+    ]
+   ],
+   "vibe": "Katy of Vault 81, shirt over her suit: a soft, ordinary vault-born body that never walked a mile",
+   "values": {
+    "ChubbyWaist": 75,
+    "WideWaistLine": 35,
+    "Belly": 25,
+    "Breasts": 20,
+    "BreastGravity2": 30,
+    "ChubbyArms": 20,
+    "Hips": 10,
+    "Thighs": 15
+   }
+  },
+  "Alexis Combes": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "V81_AlexisCombes",
+     "02A819"
+    ]
+   ],
+   "vibe": "Vault 81 mother in a tactical suit, ready to fight for her family: a solid, capable, broad-hipped body",
+   "values": {
+    "ChubbyWaist": 80,
+    "WideWaistLine": 40,
+    "Hips": 30,
+    "HipUpperWidth": 30,
+    "Thighs": 30,
+    "MuscularArms": 25,
+    "Back": 20,
+    "Breasts": 30,
+    "BreastGravity2": 50,
+    "Belly": 20
+   }
+  },
+  "Doctor Penske": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "V81_PriscillaPenske",
+     "02A825"
+    ]
+   ],
+   "vibe": "Vault 81's doctor, all clinic and no bedside manner, in a dark nurse's uniform: tall-looking, lean and severe",
+   "values": {
+    "LegsThin": 20,
+    "Arms": 20,
+    "BreastsSmall": 20,
+    "BreastPerkiness": 20,
+    "ChubbyWaist": 50,
+    "WideWaistLine": 35,
+    "Hips": 0,
+    "ButtSmall": 15,
+    "SlimThighs": 15,
+    "CalfSmooth": 40
+   }
+  },
+  "Gwen McNamara": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "V81_GwenMcNamara",
+     "02A833"
+    ]
+   ],
+   "vibe": "Vault 81's Overseer, armour over her suit: an authority in her fifties -- square-shouldered, thick-waisted, immovable",
+   "values": {
+    "ShoulderWidth": 30,
+    "Back": 35,
+    "BigTorso": 30,
+    "ChubbyWaist": 95,
+    "WideWaistLine": 60,
+    "Belly": 30,
+    "Breasts": 25,
+    "BreastGravity2": 65,
+    "ButtSmall": 15,
+    "Hips": -5
+   }
+  },
+  "Penny Fitzgerald": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "MS17PennyFitzgerald",
+     "0537E2"
+    ]
+   ],
+   "vibe": "Covenant's cheerful hostess in a party dress, smiling over a town that tests you for synths: a too-perfect doll's figure -- nothing out of place, which is the unsettling part",
+   "values": {
+    "Breasts": 40,
+    "7B Upper": 15,
+    "BreastPerkiness": 50,
+    "PushUp": 25,
+    "ChubbyWaist": 25,
+    "Hips": 25,
+    "Butt": 30,
+    "RoundAss": 50,
+    "AppleCheeks": 35,
+    "CalfSmooth": 60,
+    "Thighs": 15
+   }
+  },
+  "Wilhelmina Cabot": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "WilhelminaCabot",
+     "047EBF"
+    ]
+   ],
+   "vibe": "the Cabots' mother, kept alive for centuries by the Lazarus serum and locked in her room, still in an evening dress: preserved, not young -- a dried-out, sagging, brittle body",
+   "values": {
+    "LegsThin": 90,
+    "Arms": 85,
+    "SlimThighs": 70,
+    "ButtSmall": 80,
+    "BreastGravity2": 120,
+    "BreastFlatness2": 80,
+    "Breasts": 15,
+    "Belly": 30,
+    "ChubbyWaist": 70,
+    "WideWaistLine": 45,
+    "Hips": -35
+   }
+  },
+  "Tessa": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DN109_QuincyGunnerBossTessa",
+     "1A679A"
+    ]
+   ],
+   "vibe": "the Gunner commander who holds Quincy after the massacre, in Gunner kit with a radio: a hard, drilled soldier, muscle under the webbing",
+   "values": {
+    "MuscularArms": 65,
+    "MuscularLegs": 55,
+    "Back": 50,
+    "ChestWidth": 35,
+    "ShoulderWidth": 30,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 30,
+    "BreastsSmall": 25,
+    "Thighs": 30,
+    "CalfSize": 30
+   }
+  },
+  "Captain Bridget": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DN061_LvlGunnerBoss",
+     "051E91"
+    ]
+   ],
+   "vibe": "Gunner captain in shoulder plates: a heavy, brawny mercenary who leads from the front",
+   "values": {
+    "BigTorso": 50,
+    "ChestWidth": 50,
+    "Back": 60,
+    "ShoulderWidth": 45,
+    "MuscularArms": 80,
+    "MuscularLegs": 60,
+    "ChubbyWaist": 90,
+    "WideWaistLine": 55,
+    "Thighs": 45,
+    "CalfSize": 40,
+    "Breasts": 15
+   }
+  },
+  "Rei Nakano": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03MrsNakano",
+     "00220D"
+    ]
+   ],
+   "vibe": "Kasumi's mother, sick with worry since her daughter ran away: a middle-aged body grown thin and tired",
+   "values": {
+    "LegsThin": 30,
+    "Arms": 30,
+    "BreastGravity2": 60,
+    "BreastFlatness2": 25,
+    "Breasts": 10,
+    "ChubbyWaist": 75,
+    "WideWaistLine": 45,
+    "Belly": 20,
+    "Hips": -10,
+    "ButtSmall": 25
+   }
+  },
+  "Cassie Dalton": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03CassieDalton",
+     "005C95"
+    ]
+   ],
+   "vibe": "Far Harbor hunter who wants the Children of Atom gone: a lean, weathered woman with a hunter's legs",
+   "values": {
+    "MuscularLegs": 45,
+    "CalfSize": 30,
+    "MuscularArms": 30,
+    "LegsThin": 10,
+    "BreastsSmall": 20,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 40,
+    "Hips": -5,
+    "ButtSmall": 10,
+    "MuscularButt": 30
+   }
+  },
+  "Sandra Lee": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03SandraLee",
+     "005C93"
+    ]
+   ],
+   "vibe": "Far Harbor islander in her going-out clothes: a fisherman's town body, full and strong",
+   "values": {
+    "ChubbyWaist": 80,
+    "WideWaistLine": 40,
+    "Breasts": 35,
+    "BreastGravity2": 40,
+    "Hips": 25,
+    "Thighs": 30,
+    "Butt": 20,
+    "Back": 20,
+    "MuscularArms": 15
+   }
+  },
+  "Debby": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03FarHarborLastPlankF01Waitress",
+     "005CC2"
+    ]
+   ],
+   "vibe": "the Last Plank's waitress in a frilly maid's outfit, in a bar full of fishermen: a buxom barmaid",
+   "values": {
+    "Breasts": 55,
+    "7B Upper": 20,
+    "BreastPerkiness": 25,
+    "PushUp": 25,
+    "ChubbyWaist": 60,
+    "Hips": 30,
+    "Butt": 35,
+    "RoundAss": 40,
+    "Thighs": 30,
+    "ChubbyArms": 20
+   }
+  },
+  "Miranda": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03Miranda",
+     "00463B"
+    ]
+   ],
+   "vibe": "Acadia synth who chose to forget what she was: a sleek, made-to-measure body that does not know it",
+   "values": {
+    "Breasts": 25,
+    "BreastPerkiness": 40,
+    "ChubbyWaist": 35,
+    "Hips": 10,
+    "RoundAss": 30,
+    "LegsThin": 10,
+    "CalfSmooth": 70,
+    "SlimThighs": 10,
+    "Arms": 10
+   }
+  },
+  "Jule": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03Jule",
+     "004642"
+    ]
+   ],
+   "vibe": "Acadia's synth guard in a bodysuit: an athlete's body to a factory spec -- long, lean muscle",
+   "values": {
+    "MuscularLegs": 50,
+    "MuscularArms": 40,
+    "MuscularButt": 50,
+    "Back": 25,
+    "BreastsSmall": 20,
+    "BreastPerkiness": 35,
+    "ChubbyWaist": 45,
+    "WideWaistLine": 25,
+    "CalfSize": 25,
+    "RoundAss": 25
+   }
+  },
+  "Dixie": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04Dixie",
+     "00A4E6"
+    ]
+   ],
+   "vibe": "Disciple in a raider bikini, Nisha's kind: a bladed, starved body, ribs and tendons, nothing soft",
+   "values": {
+    "LegsThin": 50,
+    "Arms": 45,
+    "MuscularArms": 30,
+    "BreastsSmall": 30,
+    "BreastsSmall2": 25,
+    "ChubbyWaist": 35,
+    "WideWaistLine": 45,
+    "Hips": -25,
+    "ButtSmall": 50,
+    "SlimThighs": 40
+   }
+  },
+  "Sierra Petrovita": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04SierraPetrovita",
+     "013A43"
+    ]
+   ],
+   "vibe": "the Commonwealth's greatest Nuka-Cola fan, in a party dress, who has drunk the product for years: bubbly, round and soft, a soda belly",
+   "values": {
+    "Belly": 55,
+    "BigBelly": 20,
+    "ChubbyWaist": 90,
+    "Breasts": 40,
+    "BreastGravity2": 35,
+    "Hips": 35,
+    "Thighs": 40,
+    "ChubbyLegs": 35,
+    "ChubbyArms": 35,
+    "ChubbyButt": 40,
+    "AppleCheeks": 30
+   }
+  },
+  "Shelbie Chase": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04ShelbieChase",
+     "01CB74"
+    ]
+   ],
+   "vibe": "Nuka-World trader in a Nuka-Cherry costume: a park mascot's perky, cheerful curves",
+   "values": {
+    "Breasts": 35,
+    "BreastPerkiness": 45,
+    "PushUp": 20,
+    "ChubbyWaist": 50,
+    "Hips": 20,
+    "RoundAss": 40,
+    "Butt": 20,
+    "Thighs": 15
+   }
+  },
+  "Mackenzie Bridgeman": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04MackenzieBridgeman",
+     "01CB65"
+    ]
+   ],
+   "vibe": "Nuka-World trader in a Red Rocket uniform: a pump-attendant's plain, practical body",
+   "values": {
+    "ChubbyWaist": 75,
+    "WideWaistLine": 40,
+    "Belly": 20,
+    "Breasts": 15,
+    "BreastGravity2": 30,
+    "Thighs": 20,
+    "MuscularArms": 15
+   }
+  },
+  "Lola": {
+   "sex": "female",
+   "forms": [
+    [
+     "3DNPC_FO4.esp",
+     "f3DNPC_Prostitute01F",
+     "001E9E"
+    ]
+   ],
+   "vibe": "brothel worker in lingerie, the house's favourite: lush and full, an hourglass made for her trade",
+   "values": {
+    "Breasts": 70,
+    "7B Upper": 20,
+    "BreastPerkiness": 25,
+    "PushUp": 30,
+    "ChubbyWaist": 35,
+    "Hips": 45,
+    "Butt": 50,
+    "BigButt": 30,
+    "RoundAss": 55,
+    "Thighs": 40,
+    "AppleCheeks": 35
+   }
+  },
+  "Cherry": {
+   "sex": "female",
+   "forms": [
+    [
+     "3DNPC_FO4.esp",
+     "f3DNPC_Prostitute02F",
+     "001E9F"
+    ]
+   ],
+   "vibe": "brothel worker in lingerie, the young one: petite and perky, small and round",
+   "values": {
+    "Breasts": 25,
+    "BreastPerkiness": 50,
+    "ChubbyWaist": 40,
+    "Hips": 20,
+    "RoundAss": 50,
+    "Butt": 25,
+    "AppleCheeks": 40,
+    "Arms": 15,
+    "LegsThin": 10
+   }
+  },
+  "Lana Lafferty": {
+   "sex": "female",
+   "forms": [
+    [
+     "3DNPC_FO4.esp",
+     "f3DNPC_Karaoke_LanaLafferty",
+     "009711"
+    ]
+   ],
+   "vibe": "the karaoke bar's headline singer in an evening gown: a showgirl's glamour hourglass",
+   "values": {
+    "Breasts": 50,
+    "7B Upper": 20,
+    "BreastPerkiness": 35,
+    "PushUp": 20,
+    "ChubbyWaist": 25,
+    "Hips": 35,
+    "Butt": 35,
+    "RoundAss": 45,
+    "Thighs": 25,
+    "CalfSmooth": 60
+   }
+  },
+  "Sonja": {
+   "sex": "female",
+   "forms": [
+    [
+     "3DNPC_FO4.esp",
+     "f3DNPC_Karaoke_SadSinger",
+     "00A730"
+    ]
+   ],
+   "vibe": "the karaoke \"Sad Singer\" in a party dress no one is celebrating in: slender, drooping, her shoulders fallen",
+   "values": {
+    "LegsThin": 30,
+    "Arms": 30,
+    "BreastGravity2": 55,
+    "Breasts": 15,
+    "ChubbyWaist": 55,
+    "WideWaistLine": 40,
+    "Hips": -5,
+    "ButtSmall": 25,
+    "SlimThighs": 20
+   }
+  },
+  "Maisie": {
+   "sex": "female",
+   "forms": [
+    [
+     "3DNPC_FO4.esp",
+     "f3DNPC_Maisie",
+     "002BFB"
+    ]
+   ],
+   "vibe": "Interesting NPCs' Maisie in a dress: a pretty, soft, girl-next-door figure",
+   "values": {
+    "Breasts": 30,
+    "BreastPerkiness": 30,
+    "ChubbyWaist": 60,
+    "Hips": 20,
+    "Butt": 20,
+    "RoundAss": 30,
+    "Thighs": 20,
+    "ChubbyArms": 10,
+    "Belly": 10
+   }
+  },
+  "Penelope": {
+   "sex": "female",
+   "forms": [
+    [
+     "3DNPC_FO4.esp",
+     "f3DNPC_Penelope",
+     "0057A9"
+    ]
+   ],
+   "vibe": "Interesting NPCs' Penelope in a secretary's suit: a prim pencil-skirt figure, slim and neat",
+   "values": {
+    "Breasts": 20,
+    "BreastPerkiness": 35,
+    "ChubbyWaist": 40,
+    "Hips": 15,
+    "RoundAss": 35,
+    "LegsThin": 15,
+    "CalfSmooth": 60,
+    "Arms": 15
+   }
+  },
+  "Switch": {
+   "sex": "female",
+   "forms": [
+    [
+     "3DNPC_FO4.esp",
+     "f3DNPC_RaiderSwitch",
+     "005052"
+    ]
+   ],
+   "vibe": "raider in furs: a big, brawling body, heavy shoulders and thick limbs",
+   "values": {
+    "BigTorso": 45,
+    "Back": 55,
+    "ShoulderWidth": 40,
+    "MuscularArms": 60,
+    "ChubbyArms": 35,
+    "ChubbyWaist": 95,
+    "WideWaistLine": 55,
+    "Thighs": 45,
+    "ChubbyLegs": 30,
+    "Breasts": 30,
+    "BreastGravity2": 45
+   }
+  },
+  "Spitball": {
+   "sex": "female",
+   "forms": [
+    [
+     "3DNPC_FO4.esp",
+     "f3DNPC_RaiderSpitball",
+     "0029DC"
+    ]
+   ],
+   "vibe": "raider in a sleeveless top, a scrappy runt with a nasty nickname: skinny, wiry, small",
+   "values": {
+    "LegsThin": 55,
+    "Arms": 50,
+    "SlimThighs": 45,
+    "MuscularArms": 20,
+    "BreastsSmall": 30,
+    "ChubbyWaist": 45,
+    "WideWaistLine": 40,
+    "Hips": -20,
+    "ButtSmall": 45
+   }
+  },
+  "Rabbit": {
+   "sex": "female",
+   "forms": [
+    [
+     "3DNPC_FO4.esp",
+     "f3DNPC_JetFueled_Rabbit",
+     "005610"
+    ]
+   ],
+   "vibe": "a Jet-fueled bar's girl in club clothes, jittery on her own stock: bony and twitchy, jet-thin",
+   "values": {
+    "LegsThin": 75,
+    "Arms": 70,
+    "SlimThighs": 60,
+    "ButtSmall": 70,
+    "BreastsSmall": 30,
+    "BreastFlatness2": 35,
+    "Hips": -35,
+    "ChubbyWaist": 40,
+    "WideWaistLine": 35
+   }
+  },
+  "Harley Evans": {
+   "sex": "female",
+   "forms": [
+    [
+     "SouthOfTheSea.esm",
+     "00sots_000Swamps_Harley",
+     "05F4A9"
+    ]
+   ],
+   "vibe": "swamp settler of South of the Sea in work clothes: a strong, sun-and-mud body, broad and capable",
+   "values": {
+    "Back": 30,
+    "MuscularArms": 35,
+    "MuscularLegs": 35,
+    "ChubbyWaist": 80,
+    "WideWaistLine": 40,
+    "Thighs": 35,
+    "Breasts": 25,
+    "BreastGravity2": 35,
+    "CalfSize": 25
+   }
+  },
+  "Doctor Kane": {
+   "sex": "female",
+   "forms": [
+    [
+     "AmericaRising2.esm",
+     "AR_EnclaveDoctorKane",
+     "00150B"
+    ]
+   ],
+   "vibe": "Enclave medic: military fitness standards kept to the letter -- trim, toned, nothing out of regulation",
+   "values": {
+    "MuscularArms": 30,
+    "MuscularLegs": 35,
+    "MuscularButt": 35,
+    "BreastsSmall": 15,
+    "BreastPerkiness": 30,
+    "ChubbyWaist": 45,
+    "WideWaistLine": 30,
+    "Hips": 5,
+    "CalfSize": 20
+   }
+  },
+  "Quartermaster Barratt": {
+   "sex": "female",
+   "forms": [
+    [
+     "AmericaRising2.esm",
+     "AR_EnclaveVendorQuartermasterBarratt",
+     "00130F"
+    ]
+   ],
+   "vibe": "Enclave quartermaster: years of counting crates -- a stocky, thick-waisted supply sergeant",
+   "values": {
+    "BigTorso": 30,
+    "Back": 35,
+    "ChestWidth": 25,
+    "MuscularArms": 25,
+    "ChubbyWaist": 95,
+    "WideWaistLine": 55,
+    "Belly": 35,
+    "Breasts": 25,
+    "BreastGravity2": 50,
+    "Thighs": 30
+   }
+  },
+  "Christine Stennett": {
+   "sex": "female",
+   "forms": [
+    [
+     "Vault4.esp",
+     "Vlt04Stennett",
+     "06BB6D"
+    ]
+   ],
+   "vibe": "Vault 4's doctor in a dark nurse's uniform, whose vault keeps what it bred out of sight: cool and clinical, slender and long-limbed",
+   "values": {
+    "LegsThin": 25,
+    "Arms": 20,
+    "Breasts": 15,
+    "BreastPerkiness": 30,
+    "ChubbyWaist": 45,
+    "Hips": 5,
+    "RoundAss": 20,
+    "CalfSmooth": 60,
+    "SlimThighs": 15
+   }
+  },
+  "Paula McKenzie": {
+   "sex": "female",
+   "forms": [
+    [
+     "Vault4.esp",
+     "Vlt04McKenzie",
+     "045676"
+    ]
+   ],
+   "vibe": "Vault 4 dweller in a vault suit: soft and pale from a life underground",
+   "values": {
+    "ChubbyWaist": 85,
+    "Belly": 35,
+    "Breasts": 30,
+    "BreastGravity2": 45,
+    "Hips": 20,
+    "Thighs": 25,
+    "ChubbyArms": 25,
+    "ChubbyButt": 20
+   }
+  },
+  "Susan Janeway": {
+   "sex": "female",
+   "forms": [
+    [
+     "Vault4.esp",
+     "Vlt04Janeway",
+     "071733"
+    ]
+   ],
+   "vibe": "Vault 4 dweller, a captain's name and a captain's bearing: upright, fit and square-shouldered",
+   "values": {
+    "ShoulderWidth": 25,
+    "Back": 25,
+    "MuscularArms": 25,
+    "MuscularLegs": 25,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 35,
+    "Breasts": 20,
+    "BreastPerkiness": 25,
+    "Hips": 5
+   }
+  },
+  "Kate Armstrong": {
+   "sex": "female",
+   "forms": [
+    [
+     "Vault4.esp",
+     "Vlt04MS20KateArmstrong",
+     "07555C"
+    ]
+   ],
+   "vibe": "Vault 4's Kate Armstrong, living up to the name: big strong arms on a sturdy frame",
+   "values": {
+    "MuscularArms": 85,
+    "ForearmSize": 60,
+    "ChubbyArms": 20,
+    "ShoulderWidth": 35,
+    "Back": 40,
+    "ChubbyWaist": 75,
+    "WideWaistLine": 40,
+    "Breasts": 25,
+    "Thighs": 25
+   }
+  },
+  "June Waters": {
+   "sex": "female",
+   "forms": [
+    [
+     "Vault4.esp",
+     "Vlt04Waters",
+     "018021"
+    ]
+   ],
+   "vibe": "Vault 4 dweller in a maid's vault suit: a plump, homely housekeeper",
+   "values": {
+    "ChubbyWaist": 100,
+    "Belly": 50,
+    "Breasts": 45,
+    "BreastGravity2": 60,
+    "Hips": 35,
+    "Thighs": 40,
+    "ChubbyLegs": 35,
+    "ChubbyArms": 40,
+    "ChubbyButt": 40
+   }
+  },
+  "Nadine": {
+   "sex": "female",
+   "forms": [
+    [
+     "CWPointLookoutFO4.esm",
+     "00DCDLC04Nadine",
+     "00871B"
+    ]
+   ],
+   "vibe": "Point Lookout survivor in leathers: swamp-lean and hard, a body the bayou boiled down",
+   "values": {
+    "LegsThin": 25,
+    "MuscularArms": 35,
+    "MuscularLegs": 35,
+    "BreastsSmall": 25,
+    "ChubbyWaist": 50,
+    "WideWaistLine": 40,
+    "Hips": -10,
+    "ButtSmall": 20,
+    "CalfSize": 20
+   }
+  },
+  "Marguerite": {
+   "sex": "female",
+   "forms": [
+    [
+     "CWPointLookoutFO4.esm",
+     "00DCDLC04FF03Marguerite",
+     "008F3C"
+    ]
+   ],
+   "vibe": "Point Lookout local in street clothes: a full, warm, generous figure",
+   "values": {
+    "Breasts": 50,
+    "BreastGravity2": 45,
+    "ChubbyWaist": 75,
+    "Hips": 40,
+    "Butt": 40,
+    "BigButt": 25,
+    "Thighs": 40,
+    "ChubbyLegs": 20,
+    "ChubbyArms": 25
+   }
+  },
+  "Panada": {
+   "sex": "female",
+   "forms": [
+    [
+     "CWPointLookoutFO4.esm",
+     "00DCDLC04Panada",
+     "008706"
+    ]
+   ],
+   "vibe": "Point Lookout local in casual clothes: a short, round, sturdy body",
+   "values": {
+    "ChubbyWaist": 95,
+    "Belly": 40,
+    "WideWaistLine": 45,
+    "Breasts": 30,
+    "BreastGravity2": 45,
+    "Thighs": 35,
+    "ChubbyLegs": 35,
+    "ChubbyArms": 30,
+    "Hips": 20
+   }
+  },
+  "Marcella": {
+   "sex": "female",
+   "forms": [
+    [
+     "CWPointLookoutFO4.esm",
+     "00DCDLC04FF02Marcella",
+     "013DCC"
+    ]
+   ],
+   "vibe": "Point Lookout runner in sporty clothes: a long-legged athlete's body, lean and quick",
+   "values": {
+    "MuscularLegs": 55,
+    "MuscularButt": 50,
+    "CalfSize": 35,
+    "MuscularArms": 20,
+    "BreastsSmall": 25,
+    "BreastPerkiness": 35,
+    "ChubbyWaist": 45,
+    "WideWaistLine": 25,
+    "RoundAss": 30
+   }
+  },
+  "Lisa": {
+   "sex": "female",
+   "forms": [
+    [
+     "GoodneighborExpanded.esp",
+     "Goodneighbor_Lisa",
+     "4F1B45"
+    ]
+   ],
+   "vibe": "Goodneighbor clubgoer in club clothes: slim, made for the dance floor",
+   "values": {
+    "Breasts": 20,
+    "BreastPerkiness": 40,
+    "ChubbyWaist": 40,
+    "Hips": 15,
+    "RoundAss": 40,
+    "LegsThin": 15,
+    "CalfSmooth": 50,
+    "Arms": 15
+   }
+  },
+  "Sasha": {
+   "sex": "female",
+   "forms": [
+    [
+     "GoodneighborExpanded.esp",
+     "Goodneighbor_H_Sasha",
+     "79EE65"
+    ]
+   ],
+   "vibe": "Goodneighbor nightlife in lingerie: a lush, soft hourglass",
+   "values": {
+    "Breasts": 65,
+    "7B Upper": 15,
+    "BreastPerkiness": 20,
+    "PushUp": 25,
+    "ChubbyWaist": 45,
+    "Hips": 45,
+    "Butt": 45,
+    "RoundAss": 45,
+    "Thighs": 40,
+    "ChubbyLegs": 15,
+    "AppleCheeks": 30
+   }
+  },
+  "Nikki": {
+   "sex": "female",
+   "forms": [
+    [
+     "GoodneighborExpanded.esp",
+     "Goodneighbor_H_Niki",
+     "79EE67"
+    ]
+   ],
+   "vibe": "Goodneighbor nightlife in an elite bikini: a fitness-model body, toned and high-set",
+   "values": {
+    "Breasts": 35,
+    "BreastPerkiness": 50,
+    "PushUp": 20,
+    "MuscularButt": 60,
+    "RoundAss": 55,
+    "Butt": 30,
+    "MuscularLegs": 40,
+    "MuscularArms": 20,
+    "ChubbyWaist": 30,
+    "Hips": 20,
+    "AppleCheeks": 40
+   }
+  },
+  "Pest Tilly": {
+   "sex": "female",
+   "forms": [
+    [
+     "LobotomitePack.esm",
+     "LBT_NPC_Lobotomite_Horsemen_PestTilly",
+     "00731F"
+    ]
+   ],
+   "vibe": "the Lobotomite horseman Pestilence, in heavy toxic-raider gear: disease made flesh -- a bloated, swollen belly on wasted limbs",
+   "values": {
+    "BigBelly": 60,
+    "Belly": 100,
+    "ChubbyWaist": 115,
+    "WideWaistLine": 55,
+    "LegsThin": 70,
+    "Arms": 70,
+    "SlimThighs": 50,
+    "BreastGravity2": 90,
+    "BreastFlatness2": 50,
+    "ButtSmall": 60,
+    "Hips": -20
+   }
+  },
+  "Stingbreath": {
+   "sex": "female",
+   "forms": [
+    [
+     "UniqueRaiderPatrols2.esp",
+     "Breathless_LvlRaiderBoss_Female_Stingbreath",
+     "0008C8"
+    ]
+   ],
+   "vibe": "raider boss in a gas mask, who breathes poison so you don't have to: a wiry, wasp-waisted stinger",
+   "values": {
+    "LegsThin": 30,
+    "Arms": 30,
+    "MuscularArms": 30,
+    "BreastsSmall": 25,
+    "ChubbyWaist": 25,
+    "Hips": 15,
+    "RoundAss": 30,
+    "MuscularLegs": 25,
+    "SlimThighs": 20
+   }
+  },
+  "White Widow": {
+   "sex": "female",
+   "forms": [
+    [
+     "UniqueRaiderPatrols2.esp",
+     "Duskspider_LvlRaiderBoss_Female_Whitewidow",
+     "0008D7"
+    ]
+   ],
+   "vibe": "raider boss in a harness, named for the spider: a black widow's hourglass on long, thin legs",
+   "values": {
+    "Breasts": 45,
+    "BreastPerkiness": 30,
+    "ChubbyWaist": 15,
+    "Hips": 40,
+    "Butt": 40,
+    "RoundAss": 50,
+    "BigButt": 25,
+    "LegsThin": 40,
+    "SlimThighs": 30,
+    "Arms": 25,
+    "CalfSmooth": 60
+   }
+  },
+  "Kelly Canhead": {
+   "sex": "female",
+   "forms": [
+    [
+     "UniqueRaiderPatrols2.esp",
+     "Grillroast_LvlRaiderBoss_Female_KellyCanhead",
+     "0008DF"
+    ]
+   ],
+   "vibe": "raider boss in a jacket, called Canhead: a thick-skulled brute -- heavy, broad, beer-bellied",
+   "values": {
+    "BigTorso": 50,
+    "Back": 55,
+    "ShoulderWidth": 40,
+    "MuscularArms": 45,
+    "ChubbyArms": 45,
+    "ChubbyWaist": 110,
+    "Belly": 60,
+    "WideWaistLine": 60,
+    "Thighs": 40,
+    "ChubbyLegs": 35,
+    "Breasts": 30,
+    "BreastGravity2": 60
+   }
+  },
+  "Confessor Campbell": {
+   "sex": "female",
+   "forms": [
+    [
+     "MFC2024_EndAlz_ShadyMotives.esm",
+     "VP24_Actor_Campbell",
+     "000FB3"
+    ]
+   ],
+   "vibe": "the Confessor of Shady Motives in office clothes, who hears everyone's secrets: a buttoned-up, narrow, severe body that gives none away",
+   "values": {
+    "LegsThin": 20,
+    "Arms": 20,
+    "BreastsSmall": 25,
+    "ChubbyWaist": 55,
+    "WideWaistLine": 40,
+    "Hips": -10,
+    "ButtSmall": 25,
+    "SlimThighs": 20,
+    "BreastGravity2": 20
+   }
+  },
+  "Daisy": {
+   "sex": "female",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Daisy",
+     "022952"
+    ]
+   ],
+   "vibe": "Goodneighbor's ghoul shopkeeper, two hundred years past the bombs, still dressed for the club: a withered, sagging old body that never stopped going out",
+   "values": {
+    "LegsThin": 70,
+    "Arms": 65,
+    "SlimThighs": 55,
+    "ButtSmall": 60,
+    "BreastGravity2": 110,
+    "BreastFlatness2": 60,
+    "Breasts": 20,
+    "Belly": 35,
+    "ChubbyWaist": 75,
+    "WideWaistLine": 45,
+    "Hips": -25
+   }
+  },
+  "Overseer Barstow": {
+   "sex": "female",
+   "forms": [
+    [
+     "DLCworkshop03.esm",
+     "DLC06VaultOverseer",
+     "0042B4"
+    ]
+   ],
+   "vibe": "the Vault-Tec Workshop's ghoul Overseer in armoured vault blue, a company woman to the bone: a stocky, square-cut middle manager",
+   "values": {
+    "BigTorso": 30,
+    "Back": 30,
+    "ShoulderWidth": 20,
+    "ChubbyWaist": 95,
+    "WideWaistLine": 55,
+    "Belly": 35,
+    "Breasts": 25,
+    "BreastGravity2": 60,
+    "ButtSmall": 15,
+    "Thighs": 20
+   }
+  },
+  "Sammy": {
+   "sex": "female",
+   "forms": [
+    [
+     "SouthOfTheSea.esm",
+     "00sots_Sammy",
+     "00CFE5"
+    ]
+   ],
+   "vibe": "South of the Sea's ghoul in street clothes: a scrawny, rangy survivor, all knuckles and knees",
+   "values": {
+    "LegsThin": 55,
+    "Arms": 50,
+    "SlimThighs": 40,
+    "BreastsSmall": 30,
+    "ChubbyWaist": 50,
+    "WideWaistLine": 40,
+    "Hips": -20,
+    "ButtSmall": 45,
+    "MuscularArms": 20
+   }
+  },
+  "Preston Garvey": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "PrestonGarvey",
+     "019FD9"
+    ]
+   ],
+   "vibe": "earnest Minuteman: lean, a little gaunt from hard years",
+   "values": {
+    "BTThinArm": 30,
+    "ThinThigh": 25,
+    "BTTHinCalf": 20,
+    "BTAbDefinition": 15,
+    "BTShoulders": 10,
+    "BTStomachFat": 10
+   }
+  },
+  "Paladin Danse": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "BoSPaladinDanse",
+     "027683"
+    ]
+   ],
+   "vibe": "Brotherhood paladin: big and heavily muscled, thick neck and traps",
+   "values": {
+    "BTAryaydaMoreMuscular": 45,
+    "BTARYAYDA": 40,
+    "TigerSanBBMale": 30,
+    "BTTraps": 55,
+    "BTShoulders": 40,
+    "BTBack": 30,
+    "BTAbDefinition": 30,
+    "BTStomachFat": 10
+   }
+  },
+  "Robert MacCready": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "CompanionMacCready",
+     "02740E"
+    ]
+   ],
+   "vibe": "young mercenary: skinny, narrow-shouldered, all elbows",
+   "values": {
+    "BTThinArm": 60,
+    "ThinThigh": 55,
+    "BTTHinCalf": 50,
+    "BTNegChestWidth": 35,
+    "BTNegShoulder": 30,
+    "BTNegPecMuscle": 30,
+    "BTAbDefinition": 10
+   }
+  },
+  "Deacon": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "CompanionDeacon",
+     "045AC9"
+    ]
+   ],
+   "vibe": "the spy nobody remembers: perfectly average",
+   "values": {
+    "BTStomachFat": 30,
+    "BTChubbyArm": 25,
+    "BTChubbyLeg": 20,
+    "BTChestSmoothing": 30,
+    "Hips": 15
+   }
+  },
+  "Arthur Maxson": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "BoSElderMaxson",
+     "0642B8"
+    ]
+   ],
+   "vibe": "the young Elder: broad, imposing, heavy-built",
+   "values": {
+    "TigerSanBBMale": 45,
+    "BTShoulders": 50,
+    "BTTraps": 50,
+    "BTBack": 40,
+    "BTPectorals": 30,
+    "BTStomachFat": 25,
+    "BTBodyFatv2": 10
+   }
+  },
+  "X6-88": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "CompanionX6-88",
+     "0BBEE6"
+    ]
+   ],
+   "vibe": "Courser: athletic and lean-muscled, built to a spec",
+   "values": {
+    "BTAbDefinition": 60,
+    "BTWaist-In": 40,
+    "BTShoulders": 35,
+    "BTPectorals": 30,
+    "BTBiceps": 30,
+    "BT2AdonisBelt": 40,
+    "BTCalves": 30
+   }
+  },
+  "Old Longfellow": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03_CompanionOldLongfellow",
+     "006E5B"
+    ]
+   ],
+   "vibe": "old hunter: stringy and weathered, a drinker's gut",
+   "values": {
+    "BTThinArm": 45,
+    "ThinThigh": 40,
+    "BTTHinCalf": 35,
+    "BTNegPecMuscle": 35,
+    "BTStomachFat": 55,
+    "BTLowerStomachSize": 30,
+    "BTNegShoulder": 20
+   }
+  },
+  "Porter Gage": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04Gage",
+     "00881D"
+    ]
+   ],
+   "vibe": "raider lieutenant: a stocky bruiser with a gut",
+   "values": {
+    "BTBodyFatv2": 25,
+    "BTStomachFat": 50,
+    "BTShoulders": 35,
+    "BTTraps": 40,
+    "BTThigh": 35,
+    "BTChubbyLeg": 30,
+    "BTBiceps": 25
+   }
+  },
+  "Sturges": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Sturges",
+     "019FDA"
+    ]
+   ],
+   "vibe": "mechanic: solid, broad-chested, a bit of a belly",
+   "values": {
+    "BTShoulders": 25,
+    "BTPectorals": 20,
+    "BTStomachFat": 40,
+    "BTLowerStomachSize": 15,
+    "BTBiceps": 25,
+    "BTChubbyArm": 20
+   }
+  },
+  "Kellogg": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Kellogg",
+     "09BC6C"
+    ],
+    [
+     "Fallout4.esm",
+     "MQ101Kellogg",
+     "0CF917"
+    ]
+   ],
+   "vibe": "mercenary: compact and dense, hard muscle",
+   "values": {
+    "BTARYAYDA": 35,
+    "BTTraps": 45,
+    "BTShoulders": 30,
+    "BTAbDefinition": 35,
+    "BTBiceps": 35,
+    "BTStomachFat": 15,
+    "BTThigh": 25
+   }
+  },
+  "Travis Miles": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "TravisMiles",
+     "002F26"
+    ]
+   ],
+   "vibe": "nervous DJ: soft, narrow-shouldered, an indoor body",
+   "values": {
+    "BTNegShoulder": 35,
+    "BTNegChestWidth": 30,
+    "BTChestSmoothing": 50,
+    "BTStomachFat": 40,
+    "BTThinArm": 30,
+    "Hips": 30
+   }
+  },
+  "Mayor McDonough": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "MayorMcDonough",
+     "002F08"
+    ]
+   ],
+   "vibe": "the fat cat of \"Mankind for McDonough\", who threw the ghouls out and smiles a mile-long smile: a heavy, soft politician (S-94, alasdairn for the owner, 2026-10-18: \"more natural\"; was grossly obese, a 135% stomach that ballooned his suit sideways)",
+   "values": {
+    "BTBodyFatv2": 65,
+    "BTStomachFat": 50,
+    "BTChubbyArm": 50,
+    "BTChubbyLeg": 35,
+    "BTChestSmoothing": 60,
+    "Hips": 30
+   }
+  },
+  "Vadim Bobrov": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "VadimBobrov",
+     "002EFC"
+    ]
+   ],
+   "vibe": "barkeep: a big beer belly, heavy arms",
+   "values": {
+    "BTStomachFat": 100,
+    "BTLowerStomachSize": 60,
+    "BTCenterStomachSize": 45,
+    "BTChubbyArm": 50,
+    "BTChestSmoothing": 50,
+    "Hips": 30
+   }
+  },
+  "Moe Cronin": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "MoeCronin",
+     "002CB2"
+    ]
+   ],
+   "vibe": "Swatters' owner: a pot belly on thin legs",
+   "values": {
+    "BTStomachFat": 90,
+    "BTLowerStomachSize": 50,
+    "ThinThigh": 40,
+    "BTThinArm": 35,
+    "BTNegPecMuscle": 30
+   }
+  },
+  "Father": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "shaun",
+     "02A19A"
+    ]
+   ],
+   "vibe": "the Institute's director, sixty and dying: thin and frail",
+   "values": {
+    "BTThinArm": 95,
+    "ThinThigh": 90,
+    "BTTHinCalf": 90,
+    "BTNegPecMuscle": 75,
+    "BTNegBicepMuscle": 70,
+    "BTNegShoulder": 60,
+    "BTNegChestWidth": 60,
+    "BTNegScapularMuscle": 50,
+    "BTStomachFat": 25
+   }
+  },
+  "Paladin Brandis": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "BoSM01_PaladinBrandis",
+     "0B1DAF"
+    ],
+    [
+     "Fallout4.esm",
+     "BoSM01_PaladinBrandis_Postquest",
+     "0B35BD"
+    ]
+   ],
+   "vibe": "hermit survivor: gaunt, the muscle wasted away",
+   "values": {
+    "BTThinArm": 75,
+    "ThinThigh": 70,
+    "BTTHinCalf": 60,
+    "BTNegPecMuscle": 55,
+    "BTNegBicepMuscle": 60,
+    "BTNegScapularMuscle": 40,
+    "BTAbDefinition": 40,
+    "BTNegStomach": 45
+   }
+  },
+  "Tinker Tom": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "TinkerTom",
+     "045ACB"
+    ]
+   ],
+   "vibe": "paranoid tinkerer: skinny-fat",
+   "values": {
+    "BTStomachFat": 50,
+    "BTThinArm": 50,
+    "ThinThigh": 45,
+    "BTNegShoulder": 40,
+    "BTChestSmoothing": 40
+   }
+  },
+  "John": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "John",
+     "002CCB"
+    ]
+   ],
+   "vibe": "Cathy's son at the Super Salon, \"practically deaf in this ear\" from ma's yelling: henpecked -- narrow shoulders, soft, a mama's boy's hips",
+   "values": {
+    "BTNegShoulder": 85,
+    "BTNegChestWidth": 70,
+    "BTChestSmoothing": 80,
+    "BTStomachFat": 60,
+    "BTThinArm": 75,
+    "Hips": 95,
+    "BTButt": 50
+   }
+  },
+  "Arturo Rodriguez": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "ArturoRodriguez",
+     "002CB7"
+    ]
+   ],
+   "vibe": "Commonwealth Weaponry, \"the real secret is in the mods\": an ordinary dad body with over-modded arms",
+   "values": {
+    "BTBiceps": 100,
+    "BTShoulders": 80,
+    "BTTraps": 75,
+    "BTPectorals": 45,
+    "BTStomachFat": 85,
+    "BTLowerStomachSize": 50,
+    "ThinThigh": 45,
+    "Hips": 15
+   }
+  },
+  "Solomon": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Solomon",
+     "002CBB"
+    ]
+   ],
+   "vibe": "Chem-I-Care, slightly stoned: \"all the chems you need to ... balance you out\" -- and nothing about him is balanced: sunken chest, stick limbs, a soft little gut",
+   "values": {
+    "BTStomachFat": 95,
+    "BTLowerStomachSize": 45,
+    "BTThinArm": 100,
+    "ThinThigh": 90,
+    "BTTHinCalf": 80,
+    "BTNegShoulder": 85,
+    "BTNegChestWidth": 85,
+    "BTNegPecMuscle": 85,
+    "BTChestSmoothing": 60
+   }
+  },
+  "Doctor Sun": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DoctorSun",
+     "020B8E"
+    ]
+   ],
+   "vibe": "the doctor who \"can cure just about anything\" and scorns facial surgery as not real medicine: a hollow, bony ascetic who forgets to eat",
+   "values": {
+    "BTNegStomach": 90,
+    "BTThinArm": 90,
+    "ThinThigh": 85,
+    "BTTHinCalf": 80,
+    "BTNegPecMuscle": 80,
+    "BTNegBicepMuscle": 70,
+    "BTNegShoulder": 55,
+    "BTNegScapularMuscle": 55,
+    "BTNegChestWidth": 40
+   }
+  },
+  "Abbot": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Abbot",
+     "002F28"
+    ]
+   ],
+   "vibe": "one of the oldest citizens, keeper of the Wall (\"the great, green guardian\"): he has become one -- old, broad, square and barrel-bellied",
+   "values": {
+    "BTBack": 70,
+    "BTShoulders": 55,
+    "BTTraps": 45,
+    "BTBodyFatv2": 35,
+    "BTStomachFat": 80,
+    "BTCenterStomachSize": 55,
+    "BTChubbyArm": 45,
+    "BTChubbyLeg": 40,
+    "BTChestSmoothing": 50
+   }
+  },
+  "Sheffield": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Sheffield",
+     "002F06"
+    ]
+   ],
+   "vibe": "the market's former alcoholic, \"doctors said I shot my liver\", begging for Nuka-Cola: stick limbs and a swollen gut",
+   "values": {
+    "BTStomachFat": 125,
+    "BTLowerStomachSize": 85,
+    "BTCenterStomachSize": 80,
+    "BTThinArm": 90,
+    "ThinThigh": 90,
+    "BTTHinCalf": 80,
+    "BTNegPecMuscle": 70,
+    "BTNegShoulder": 55,
+    "BTNegChestWidth": 50
+   }
+  },
+  "Malcolm Latimer": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "MalcolmLatimer",
+     "002F10"
+    ],
+    [
+     "Fallout4.esm",
+     "MS13Photo_MalcolmLatimer",
+     "218F14"
+    ]
+   ],
+   "vibe": "the rich man who \"practically runs Diamond City\", pays the mayor and hires others for his dirty work, confidence \"Cowardly\": a pampered pear that never lifted anything",
+   "values": {
+    "Hips": 110,
+    "BTButt": 100,
+    "BTThighWidth": 100,
+    "BTOuterUpperThighSize": 90,
+    "BTNegShoulder": 85,
+    "BTNegChestWidth": 70,
+    "BTStomachFat": 70,
+    "BTChestSmoothing": 80,
+    "BTChubbyArm": 50
+   }
+  },
+  "Finn": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Finn",
+     "033585"
+    ]
+   ],
+   "vibe": "Goodneighbor's \"insurance\" man, confidence \"Foolhardy\", who tells Hancock there will be a new mayor: all mouth -- a scrawny runt",
+   "values": {
+    "BTThinArm": 100,
+    "ThinThigh": 100,
+    "BTTHinCalf": 95,
+    "BTNegShoulder": 90,
+    "BTNegChestWidth": 90,
+    "BTNegPecMuscle": 90,
+    "BTNegBicepMuscle": 85,
+    "BTNegScapularMuscle": 70
+   }
+  },
+  "Wayne Delancy": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "MS04WayneDelancy",
+     "03FEC8"
+    ]
+   ],
+   "vibe": "the Goodneighbor hitman who killed Miss Selmy and her child for two caps and calls drifters \"meat\": gaunt, sinewy and hungry",
+   "values": {
+    "BTNegStomach": 90,
+    "BTThinArm": 70,
+    "ThinThigh": 70,
+    "BTTHinCalf": 60,
+    "BTNegPecMuscle": 55,
+    "BTAbDefinition": 30,
+    "BTWaist-In": 60,
+    "BTTraps": 45,
+    "BTNegChestWidth": 30
+   }
+  },
+  "Parker Quinn": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "ParkerQuinn",
+     "0843E6"
+    ]
+   ],
+   "vibe": "the charge-card con man of South Boston: all show, like his card -- a pumped chest and arms on chicken legs (the joke is the scam; his face is modelled on a real person, his body is not)",
+   "values": {
+    "BTPectorals": 100,
+    "BTBiceps": 95,
+    "BTShoulders": 85,
+    "BTTraps": 80,
+    "TigerSanBBMale": 35,
+    "ThinThigh": 100,
+    "BTTHinCalf": 100,
+    "BTStomachFat": 30
+   }
+  },
+  "Winlock": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "GunnerWinlock",
+     "03467F"
+    ]
+   ],
+   "vibe": "the Gunner who tells MacCready \"we know how to play the game\", O-positive tattooed on his forehead: the big, broad boss of the pair",
+   "values": {
+    "TigerSanBBMale": 90,
+    "BTShoulders": 85,
+    "BTTraps": 85,
+    "BTBack": 75,
+    "BTPectorals": 55,
+    "BTBiceps": 60,
+    "BTStomachFat": 35,
+    "BTThigh": 50
+   }
+  },
+  "Barnes": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "GunnerBarnes",
+     "034680"
+    ]
+   ],
+   "vibe": "Winlock's sidekick: \"Winlock, tell me we don't have to listen to this shit...\" -- short-armed, soft and narrow beside him",
+   "values": {
+    "BTStomachFat": 95,
+    "BTLowerStomachSize": 65,
+    "BTChestSmoothing": 75,
+    "BTChubbyArm": 60,
+    "BTNegShoulder": 65,
+    "BTNegChestWidth": 55,
+    "Hips": 70,
+    "BTChubbyLeg": 40
+   }
+  },
+  "Rufus Rubins": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "RufusRubins",
+     "01A255"
+    ]
+   ],
+   "vibe": "the Hotel Rexford handyman who works for room and board and waits politely for Magnolia to finish singing: the one honest body in Goodneighbor -- wiry and work-strong",
+   "values": {
+    "BTAbDefinition": 25,
+    "BTThinArm": 25,
+    "BTBiceps": 40,
+    "BTShoulders": 20,
+    "BTStomach": 20,
+    "ThinThigh": 30,
+    "BTTraps": 20
+   }
+  },
+  "Hancock": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Hancock",
+     "022613"
+    ]
+   ],
+   "vibe": "Goodneighbor's ghoul mayor, who took a chem to become one and wears a frock coat over it: a lean, ropy, showman's body, all sinew",
+   "values": {
+    "BTThinArm": 40,
+    "ThinThigh": 35,
+    "BTTHinCalf": 30,
+    "BTNegPecMuscle": 30,
+    "BTAbDefinition": 40,
+    "BTWaist-In": 50,
+    "BTShoulders": 10,
+    "BTNegStomach": 50
+   }
+  },
+  "Jack Cabot": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "JackCabot",
+     "047EB7"
+    ]
+   ],
+   "vibe": "the Cabots' scholar, kept young for centuries on the serum, never far from a book: a soft, pale, narrow-shouldered gentleman",
+   "values": {
+    "BTNegShoulder": 35,
+    "BTNegChestWidth": 30,
+    "BTChestSmoothing": 50,
+    "BTStomachFat": 35,
+    "BTThinArm": 30,
+    "Hips": 25
+   }
+  },
+  "Lorenzo Cabot": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "LorenzoCabot",
+     "047EC5"
+    ]
+   ],
+   "vibe": "the brother locked in Parsons asylum for decades, the Artifact's power in his blood: a wasted prisoner's frame with the ropes of something unnatural under it",
+   "values": {
+    "BTThinArm": 60,
+    "ThinThigh": 55,
+    "BTTHinCalf": 50,
+    "BTNegStomach": 70,
+    "BTAbDefinition": 60,
+    "BTTraps": 50,
+    "BTWaist-In": 50,
+    "BTNegChestWidth": 20
+   }
+  },
+  "Edward Deegan": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "EdwardDeegan",
+     "047EC0"
+    ]
+   ],
+   "vibe": "the Cabots' ghoul bodyguard, two centuries in the job: a big, old, heavy guard gone thick at the middle",
+   "values": {
+    "BTShoulders": 50,
+    "BTTraps": 45,
+    "BTBack": 45,
+    "BTStomachFat": 60,
+    "BTLowerStomachSize": 35,
+    "BTChubbyArm": 30,
+    "BTBiceps": 30,
+    "BTThigh": 30
+   }
+  },
+  "Ham": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Ham",
+     "02268C"
+    ]
+   ],
+   "vibe": "the Third Rail's ghoul bouncer: a wide door of a man, barrel chest and heavy arms",
+   "values": {
+    "TigerSanBBMale": 40,
+    "BTShoulders": 60,
+    "BTBack": 55,
+    "BTTraps": 55,
+    "BTPectorals": 40,
+    "BTBiceps": 45,
+    "BTStomachFat": 50,
+    "BTBodyFatv2": 25,
+    "BTThigh": 40
+   }
+  },
+  "Kent Connolly": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "KentConnolly",
+     "0228AA"
+    ]
+   ],
+   "vibe": "the ghoul who listens to the Silver Shroud all day in Memory Den's back room: a fan, not a hero -- skinny, round-shouldered, soft little belly",
+   "values": {
+    "BTThinArm": 70,
+    "ThinThigh": 60,
+    "BTTHinCalf": 55,
+    "BTNegShoulder": 60,
+    "BTNegChestWidth": 55,
+    "BTNegPecMuscle": 60,
+    "BTStomachFat": 45,
+    "BTChestSmoothing": 40
+   }
+  },
+  "Marowski": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Marowski",
+     "0226E2"
+    ]
+   ],
+   "vibe": "Goodneighbor's chem kingpin, who never touches his own stock or his own dirty work: a soft, well-fed back-room boss",
+   "values": {
+    "BTStomachFat": 80,
+    "BTLowerStomachSize": 45,
+    "BTChestSmoothing": 60,
+    "BTChubbyArm": 45,
+    "BTChubbyLeg": 35,
+    "BTNegShoulder": 25,
+    "Hips": 45
+   }
+  },
+  "Doc Crocker": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DocCrocker",
+     "002CD6"
+    ]
+   ],
+   "vibe": "Diamond City's face surgeon with a past he cut away: a dry, narrow, tidy man, clean hands, no muscle",
+   "values": {
+    "BTThinArm": 45,
+    "ThinThigh": 40,
+    "BTNegShoulder": 40,
+    "BTNegChestWidth": 35,
+    "BTNegPecMuscle": 40,
+    "BTStomachFat": 25,
+    "BTNegBicepMuscle": 35
+   }
+  },
+  "Bobby De Luca": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "V81_BobbyDeLuca",
+     "02A829"
+    ]
+   ],
+   "vibe": "Vault 81's chem addict who wants to dig his way out: twitchy and hollow, a junkie's stick body",
+   "values": {
+    "BTThinArm": 85,
+    "ThinThigh": 80,
+    "BTTHinCalf": 75,
+    "BTNegStomach": 70,
+    "BTNegPecMuscle": 75,
+    "BTNegShoulder": 60,
+    "BTNegChestWidth": 60,
+    "BTNegBicepMuscle": 60
+   }
+  },
+  "Jacob Orden": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "JacobOrden",
+     "039FD3"
+    ]
+   ],
+   "vibe": "Covenant's smiling founder, whose perfect little town hides a torture lab: a pleasant, well-kept, comfortable middle-aged body -- too comfortable",
+   "values": {
+    "BTStomachFat": 55,
+    "BTChestSmoothing": 45,
+    "BTChubbyArm": 30,
+    "BTShoulders": 15,
+    "Hips": 25,
+    "BTLowerStomachSize": 25
+   }
+  },
+  "Old Man Stockton": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "OldManStockton",
+     "039FCB"
+    ]
+   ],
+   "vibe": "old caravan man of Bunker Hill, a lifetime on the road: shrunken and bowed, legs still hard from walking",
+   "values": {
+    "BTThinArm": 70,
+    "BTNegPecMuscle": 65,
+    "BTNegShoulder": 50,
+    "BTNegChestWidth": 45,
+    "BTStomachFat": 40,
+    "BTCalves": 30,
+    "ThinThigh": 40,
+    "BTNegScapularMuscle": 40
+   }
+  },
+  "Henry Cooke": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "HenryCooke",
+     "0399DD"
+    ]
+   ],
+   "vibe": "the Colonial Taphouse owner, a gangster in an apron: a heavy, well-fed tavern boss",
+   "values": {
+    "BTStomachFat": 90,
+    "BTLowerStomachSize": 55,
+    "BTCenterStomachSize": 40,
+    "BTBodyFatv2": 30,
+    "BTShoulders": 30,
+    "BTChubbyArm": 45,
+    "BTChubbyLeg": 35,
+    "BTTraps": 30
+   }
+  },
+  "Danny Sullivan": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DannySullivan",
+     "0190BF"
+    ]
+   ],
+   "vibe": "the Diamond City gate guard who opens the doors for you: a plain, regulation guardsman",
+   "values": {
+    "BTShoulders": 20,
+    "BTPectorals": 15,
+    "BTBiceps": 15,
+    "BTStomachFat": 30,
+    "BTAbDefinition": 10
+   }
+  },
+  "Abraham Finch": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "AbrahamFinch",
+     "03F23D"
+    ]
+   ],
+   "vibe": "the Finch farm's patriarch, a hard old farmer: big work hands, thick shoulders, a settled gut",
+   "values": {
+    "BTShoulders": 45,
+    "BTTraps": 40,
+    "BTBiceps": 40,
+    "BTBack": 35,
+    "BTStomachFat": 55,
+    "BTLowerStomachSize": 30,
+    "BTThigh": 30,
+    "BTChubbyArm": 20
+   }
+  },
+  "Sinjin": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "MS04Sinjin",
+     "0456FD"
+    ]
+   ],
+   "vibe": "the raider boss who came for Kill or Be Killed's gang war: a big, mean brawler",
+   "values": {
+    "BTARYAYDA": 50,
+    "TigerSanBBMale": 40,
+    "BTTraps": 60,
+    "BTShoulders": 50,
+    "BTBiceps": 50,
+    "BTStomachFat": 30,
+    "BTThigh": 40
+   }
+  },
+  "Bullet": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "Bullet",
+     "028DB4"
+    ]
+   ],
+   "vibe": "raider boss who calls himself Bullet: wiry and quick, a lean fighter",
+   "values": {
+    "BTAbDefinition": 50,
+    "BTWaist-In": 50,
+    "BTThinArm": 20,
+    "BTBiceps": 30,
+    "BTTraps": 30,
+    "ThinThigh": 25,
+    "BTNegStomach": 40
+   }
+  },
+  "Skinny Malone": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "MQ104SkinnyMalone",
+     "083FB4"
+    ]
+   ],
+   "vibe": "the Triggermen boss of Vault 114, called Skinny: he is not -- a crime boss's gut on a soft, heavy body",
+   "values": {
+    "BTStomachFat": 120,
+    "BTLowerStomachSize": 80,
+    "BTCenterStomachSize": 70,
+    "BTBodyFatv2": 60,
+    "BTChubbyArm": 70,
+    "BTChubbyLeg": 60,
+    "BTChestSmoothing": 80,
+    "Hips": 60
+   }
+  },
+  "Pickman": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DN101Pickman",
+     "04AD4D"
+    ]
+   ],
+   "vibe": "the painter who murders raiders for his art: gaunt and long-boned, a hollow, starved artist",
+   "values": {
+    "BTNegStomach": 85,
+    "BTThinArm": 80,
+    "ThinThigh": 75,
+    "BTTHinCalf": 70,
+    "BTNegPecMuscle": 70,
+    "BTNegShoulder": 45,
+    "BTWaist-In": 55,
+    "BTNegScapularMuscle": 45
+   }
+  },
+  "Zeke": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DN054Zeke",
+     "048622"
+    ]
+   ],
+   "vibe": "the Atom Cats' leader, a power-armour greaser: a mechanic's strong forearms and a cocky chest",
+   "values": {
+    "BTBiceps": 45,
+    "BTPectorals": 40,
+    "BTShoulders": 30,
+    "BTAbDefinition": 25,
+    "BTStomachFat": 20,
+    "BTTraps": 25
+   }
+  },
+  "Captain Kells": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "BoSLancerCaptainKells",
+     "0642B2"
+    ]
+   ],
+   "vibe": "the Prydwen's Lancer-Captain, who runs the ship by the book: a fit, stiff officer's body",
+   "values": {
+    "BTShoulders": 35,
+    "BTPectorals": 30,
+    "BTAbDefinition": 35,
+    "BTWaist-In": 30,
+    "BTTraps": 30,
+    "BTBiceps": 25
+   }
+  },
+  "Proctor Teagan": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "BoSProctorTeagan",
+     "0642B4"
+    ]
+   ],
+   "vibe": "the Prydwen's quartermaster, who trades but never fights: a soft supply officer's belly",
+   "values": {
+    "BTStomachFat": 75,
+    "BTLowerStomachSize": 45,
+    "BTChestSmoothing": 55,
+    "BTChubbyArm": 40,
+    "BTChubbyLeg": 30,
+    "Hips": 35
+   }
+  },
+  "Proctor Quinlan": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "BoSProctorQuinlan",
+     "0642B6"
+    ]
+   ],
+   "vibe": "the Prydwen's head scribe, who would rather read about the world than walk it: a thin, stooped archivist",
+   "values": {
+    "BTThinArm": 55,
+    "ThinThigh": 50,
+    "BTNegShoulder": 45,
+    "BTNegChestWidth": 45,
+    "BTNegPecMuscle": 50,
+    "BTStomachFat": 30,
+    "BTChestSmoothing": 30
+   }
+  },
+  "Knight Rhys": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "BoSKnightRhys",
+     "05DE40"
+    ]
+   ],
+   "vibe": "Danse's hothead knight, who wants every mutant dead: a hard, aggressive, muscled soldier",
+   "values": {
+    "BTARYAYDA": 45,
+    "BTTraps": 50,
+    "BTShoulders": 40,
+    "BTPectorals": 40,
+    "BTBiceps": 45,
+    "BTAbDefinition": 35,
+    "BTStomachFat": 10
+   }
+  },
+  "Doctor Carrington": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DoctorCarrington",
+     "045ACD"
+    ]
+   ],
+   "vibe": "the Railroad's grumpy doctor, who tells you everyone else is incompetent: thin, sour, round-shouldered",
+   "values": {
+    "BTThinArm": 50,
+    "ThinThigh": 45,
+    "BTNegShoulder": 45,
+    "BTNegPecMuscle": 45,
+    "BTStomachFat": 35,
+    "BTNegChestWidth": 35
+   }
+  },
+  "Drummer Boy": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DrummerBoy",
+     "0678CE"
+    ]
+   ],
+   "vibe": "the Railroad's youngest courier, eager and underfed: a skinny kid of a man",
+   "values": {
+    "BTThinArm": 65,
+    "ThinThigh": 60,
+    "BTTHinCalf": 55,
+    "BTNegShoulder": 50,
+    "BTNegChestWidth": 50,
+    "BTNegPecMuscle": 55
+   }
+  },
+  "Alan Binet": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "AlanBinet",
+     "05E560"
+    ]
+   ],
+   "vibe": "head of the Institute's Robotics, bitter at being outranked: a soft, sedentary engineer",
+   "values": {
+    "BTStomachFat": 55,
+    "BTChestSmoothing": 50,
+    "BTNegShoulder": 30,
+    "BTChubbyArm": 25,
+    "Hips": 25,
+    "BTLowerStomachSize": 25
+   }
+  },
+  "Max Loken": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "MaxLoken",
+     "05E55F"
+    ]
+   ],
+   "vibe": "the Institute's ambitious young synth-retention head: groomed and fit, a climber's gym body",
+   "values": {
+    "BTAbDefinition": 40,
+    "BTWaist-In": 40,
+    "BTPectorals": 30,
+    "BTShoulders": 25,
+    "BTBiceps": 20
+   }
+  },
+  "Clayton Holdren": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "ClaytonHoldren",
+     "05E55C"
+    ]
+   ],
+   "vibe": "the Institute's old director of Advanced Systems: a thin old academic, chest gone hollow",
+   "values": {
+    "BTThinArm": 60,
+    "ThinThigh": 55,
+    "BTNegPecMuscle": 60,
+    "BTNegShoulder": 45,
+    "BTStomachFat": 35,
+    "BTNegChestWidth": 40,
+    "BTNegScapularMuscle": 30
+   }
+  },
+  "Newton Oberly": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "NewtonOberly",
+     "05E55B"
+    ]
+   ],
+   "vibe": "the Institute's gentle director of BioScience, who grows the food: well fed on it -- round and mild",
+   "values": {
+    "BTStomachFat": 85,
+    "BTLowerStomachSize": 50,
+    "BTCenterStomachSize": 35,
+    "BTChestSmoothing": 65,
+    "BTChubbyArm": 50,
+    "BTChubbyLeg": 40,
+    "Hips": 50
+   }
+  },
+  "Jun Long": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "JunLong",
+     "019FDB"
+    ]
+   ],
+   "vibe": "the Concord survivor broken by his son's death, who sits and stares: a slumped, deflated body",
+   "values": {
+    "BTThinArm": 45,
+    "BTNegPecMuscle": 55,
+    "BTNegShoulder": 50,
+    "BTStomachFat": 50,
+    "BTChestSmoothing": 45,
+    "ThinThigh": 35,
+    "BTNegScapularMuscle": 40
+   }
+  },
+  "Clint": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DN109_QuincyGunnerBossClint",
+     "1A679E"
+    ]
+   ],
+   "vibe": "the Gunner who led the Quincy massacre, Tessa's partner in it: a thick, brutal heavy",
+   "values": {
+    "TigerSanBBMale": 60,
+    "BTARYAYDA": 40,
+    "BTShoulders": 60,
+    "BTTraps": 65,
+    "BTBack": 55,
+    "BTBiceps": 50,
+    "BTStomachFat": 45,
+    "BTThigh": 45
+   }
+  },
+  "Allen Lee": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03AllenLee",
+     "005C99"
+    ]
+   ],
+   "vibe": "Far Harbor's gunsmith, a grouch who hates everyone and the fog most: a squat, sour, thick-necked man",
+   "values": {
+    "BTTraps": 50,
+    "BTShoulders": 30,
+    "BTStomachFat": 70,
+    "BTLowerStomachSize": 40,
+    "BTChubbyArm": 30,
+    "BTThigh": 30,
+    "Hips": 20
+   }
+  },
+  "Teddy Wright": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03TeddyWright",
+     "005C97"
+    ]
+   ],
+   "vibe": "Far Harbor's fisherman: a rope-hauler's heavy shoulders and forearms over a working belly",
+   "values": {
+    "BTShoulders": 50,
+    "BTBack": 45,
+    "BTBiceps": 45,
+    "BTTraps": 40,
+    "BTStomachFat": 45,
+    "BTThigh": 30
+   }
+  },
+  "Brooks": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03Brooks",
+     "005C9B"
+    ]
+   ],
+   "vibe": "the harbour's gruff old islander who saved his rifle for the fog: weathered and stringy, old but tough",
+   "values": {
+    "BTThinArm": 35,
+    "ThinThigh": 30,
+    "BTAbDefinition": 30,
+    "BTNegPecMuscle": 30,
+    "BTTraps": 30,
+    "BTStomachFat": 30
+   }
+  },
+  "Mitch": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03Mitch",
+     "005C9F"
+    ]
+   ],
+   "vibe": "Far Harbor islander: an ordinary, sturdy fisherman",
+   "values": {
+    "BTShoulders": 30,
+    "BTBiceps": 30,
+    "BTStomachFat": 40,
+    "BTBack": 25,
+    "BTThigh": 20
+   }
+  },
+  "Faraday": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03Faraday",
+     "00463C"
+    ]
+   ],
+   "vibe": "Acadia's synth scientist, polite and precise: a slight, neat, unassuming lab body",
+   "values": {
+    "BTThinArm": 40,
+    "ThinThigh": 35,
+    "BTNegShoulder": 35,
+    "BTNegChestWidth": 30,
+    "BTChestSmoothing": 30,
+    "BTStomachFat": 15
+   }
+  },
+  "High Confessor Tektus": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03CoA_HighConfessorTektus",
+     "004464"
+    ]
+   ],
+   "vibe": "the Children of Atom's High Confessor, who hungers for the Glow and power: a rad-fed zealot -- an ascetic chest over a self-satisfied paunch",
+   "values": {
+    "BTNegPecMuscle": 55,
+    "BTNegShoulder": 40,
+    "BTThinArm": 55,
+    "BTStomachFat": 75,
+    "BTLowerStomachSize": 50,
+    "ThinThigh": 45,
+    "BTChestSmoothing": 40
+   }
+  },
+  "Mason": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04Mason",
+     "00F436"
+    ]
+   ],
+   "vibe": "the Pack's alpha, who rules by strength alone: a huge, pumped, savage body",
+   "values": {
+    "BTAryaydaMoreMuscular": 70,
+    "BTARYAYDA": 60,
+    "TigerSanBBMale": 60,
+    "BTTraps": 80,
+    "BTShoulders": 70,
+    "BTPectorals": 60,
+    "BTBiceps": 70,
+    "BTAbDefinition": 40,
+    "BTThigh": 50
+   }
+  },
+  "Overboss Colter": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04OverbossColter",
+     "00A50A"
+    ]
+   ],
+   "vibe": "Nuka-World's Overboss, who never leaves his power armour: soft and lazy inside the steel",
+   "values": {
+    "BTStomachFat": 85,
+    "BTLowerStomachSize": 50,
+    "BTChestSmoothing": 60,
+    "BTChubbyArm": 45,
+    "BTShoulders": 30,
+    "BTBodyFatv2": 30,
+    "Hips": 30
+   }
+  },
+  "William Black": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04WilliamBlack",
+     "00D3ED"
+    ]
+   ],
+   "vibe": "the Operators' second, Mags' brother: sleek and cold, a slim, tailored killer",
+   "values": {
+    "BTAbDefinition": 30,
+    "BTWaist-In": 45,
+    "BTThinArm": 25,
+    "ThinThigh": 25,
+    "BTShoulders": 15,
+    "BTNegStomach": 35
+   }
+  },
+  "Shank": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04Shank",
+     "00DBDF"
+    ]
+   ],
+   "vibe": "Nuka-World's fixer, ex-Pack and ex-Disciple, now the go-between: a worn, wiry survivor",
+   "values": {
+    "BTAbDefinition": 30,
+    "BTThinArm": 30,
+    "ThinThigh": 30,
+    "BTTraps": 30,
+    "BTStomachFat": 25,
+    "BTNegPecMuscle": 25
+   }
+  },
+  "Oswald": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04Oswald",
+     "01763B"
+    ]
+   ],
+   "vibe": "Oswald the Outrageous, the ghoul magician of the Kiddie Kingdom: a stage magician's pot belly on spindly limbs",
+   "values": {
+    "BTStomachFat": 85,
+    "BTLowerStomachSize": 50,
+    "BTThinArm": 60,
+    "ThinThigh": 55,
+    "BTTHinCalf": 50,
+    "BTNegShoulder": 40,
+    "BTNegPecMuscle": 40
+   }
+  },
+  "Harvey": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCNukaWorld.esm",
+     "DLC04Harvey",
+     "007D59"
+    ]
+   ],
+   "vibe": "trader in Nuka-World, minding his stall under the raiders' guns: a nervous, ordinary, soft trader",
+   "values": {
+    "BTStomachFat": 50,
+    "BTChestSmoothing": 40,
+    "BTNegShoulder": 25,
+    "BTChubbyArm": 20,
+    "Hips": 20
+   }
+  },
+  "War": {
+   "sex": "male",
+   "forms": [
+    [
+     "LobotomitePack.esm",
+     "LBT_NPC_Lobotomite_Horsemen_Wor",
+     "00731E"
+    ]
+   ],
+   "vibe": "the Lobotomite horseman War: a slab of brutal muscle, bred for the fight",
+   "values": {
+    "BTAryaydaMoreMuscular": 80,
+    "BTARYAYDA": 70,
+    "TigerSanBBMale": 70,
+    "BTTraps": 90,
+    "BTShoulders": 80,
+    "BTBack": 70,
+    "BTBiceps": 80,
+    "BTPectorals": 65,
+    "BTThigh": 60
+   }
+  },
+  "Fat Min": {
+   "sex": "male",
+   "forms": [
+    [
+     "LobotomitePack.esm",
+     "LBT_NPC_Lobotomite_Horsemen_FatMin",
+     "007320"
+    ]
+   ],
+   "vibe": "the Lobotomite horseman Famine -- \"Fat Min\": the one rider who never went hungry, enormous and soft",
+   "values": {
+    "BTBodyFatv2": 100,
+    "BTStomachFat": 130,
+    "BTLowerStomachSize": 90,
+    "BTCenterStomachSize": 70,
+    "BTChubbyArm": 95,
+    "BTChubbyLeg": 85,
+    "BTChestSmoothing": 95,
+    "Hips": 90
+   }
+  },
+  "Crazy Marty": {
+   "sex": "male",
+   "forms": [
+    [
+     "LobotomitePack.esm",
+     "LBT_NPC_CrazyMarty",
+     "00F760"
+    ]
+   ],
+   "vibe": "Crazy Marty of the Lobotomite pack: a jittery, scrawny wild man",
+   "values": {
+    "BTThinArm": 75,
+    "ThinThigh": 70,
+    "BTTHinCalf": 65,
+    "BTNegStomach": 60,
+    "BTNegPecMuscle": 60,
+    "BTAbDefinition": 30,
+    "BTNegShoulder": 40
+   }
+  },
+  "Tobar": {
+   "sex": "male",
+   "forms": [
+    [
+     "CWPointLookoutFO4.esm",
+     "00DCDLC04Tobar",
+     "000872"
+    ]
+   ],
+   "vibe": "Tobar the ferryman, who rows you to Point Lookout for a price: an oarsman's broad back and arms on a lean, salt-dried body",
+   "values": {
+    "BTBack": 50,
+    "BTShoulders": 45,
+    "BTBiceps": 45,
+    "BTTraps": 35,
+    "BTAbDefinition": 30,
+    "ThinThigh": 30,
+    "BTNegStomach": 30
+   }
+  },
+  "Obadiah Blackhall": {
+   "sex": "male",
+   "forms": [
+    [
+     "CWPointLookoutFO4.esm",
+     "00DCDLC04FF02ObadiahBlackhall",
+     "0130A0"
+    ]
+   ],
+   "vibe": "Obadiah Blackhall, the swamp's old moonshiner patriarch: a gaunt old backwoodsman with a liquor belly",
+   "values": {
+    "BTThinArm": 60,
+    "ThinThigh": 55,
+    "BTTHinCalf": 50,
+    "BTNegPecMuscle": 55,
+    "BTStomachFat": 70,
+    "BTLowerStomachSize": 45,
+    "BTNegShoulder": 35
+   }
+  },
+  "Mayor Wayne Sanders": {
+   "sex": "male",
+   "forms": [
+    [
+     "Vault4.esp",
+     "Vlt04MayorSanders",
+     "009613"
+    ]
+   ],
+   "vibe": "Fourville's mayor in Vault 4: a small-town politician's soft, prosperous paunch",
+   "values": {
+    "BTStomachFat": 85,
+    "BTLowerStomachSize": 50,
+    "BTChestSmoothing": 55,
+    "BTChubbyArm": 40,
+    "BTChubbyLeg": 30,
+    "Hips": 40
+   }
+  },
+  "Father of the Four": {
+   "sex": "male",
+   "forms": [
+    [
+     "Vault4.esp",
+     "Vlt04FatherofTheFour",
+     "004F63"
+    ]
+   ],
+   "vibe": "the Father of the Four, Vault 4's prophet: a gaunt, robed holy man, all bone and certainty",
+   "values": {
+    "BTNegStomach": 75,
+    "BTThinArm": 75,
+    "ThinThigh": 70,
+    "BTTHinCalf": 65,
+    "BTNegPecMuscle": 65,
+    "BTNegShoulder": 45,
+    "BTNegChestWidth": 40
+   }
+  },
+  "Hailstorm": {
+   "sex": "male",
+   "forms": [
+    [
+     "AmericaRising2.esm",
+     "AR_MQ102RadioFacilityRaiderBoss",
+     "03332D"
+    ]
+   ],
+   "vibe": "Hailstorm, the raider boss holding the radio facility: a hulking, heavy-handed brute",
+   "values": {
+    "TigerSanBBMale": 65,
+    "BTARYAYDA": 50,
+    "BTShoulders": 65,
+    "BTTraps": 70,
+    "BTBack": 60,
+    "BTBiceps": 55,
+    "BTStomachFat": 55,
+    "BTBodyFatv2": 25,
+    "BTThigh": 45
+   }
+  },
+  "Doctor Armstrong": {
+   "sex": "male",
+   "forms": [
+    [
+     "AmericaRising2.esm",
+     "AR_InstituteArmstrong",
+     "02F99E"
+    ]
+   ],
+   "vibe": "Doctor Armstrong of the Institute: a lab man with nothing of his name -- thin arms, soft middle",
+   "values": {
+    "BTThinArm": 70,
+    "BTNegBicepMuscle": 60,
+    "BTNegShoulder": 40,
+    "BTStomachFat": 50,
+    "BTChestSmoothing": 45,
+    "ThinThigh": 40
+   }
+  },
+  "Angelo": {
+   "sex": "male",
+   "forms": [
+    [
+     "MFC2024_EndAlz_ShadyMotives.esm",
+     "VP24_Actor_Angelo",
+     "000FA8"
+    ]
+   ],
+   "vibe": "Angelo of Shady Motives, the man with a secret worth hiding: a fit, ordinary, presentable body",
+   "values": {
+    "BTShoulders": 25,
+    "BTPectorals": 25,
+    "BTAbDefinition": 25,
+    "BTBiceps": 20,
+    "BTStomachFat": 15
+   }
+  },
+  "Doctor Cabbage": {
+   "sex": "male",
+   "forms": [
+    [
+     "MFC2024_EndAlz_ShadyMotives.esm",
+     "VP24_Actor_DrCabbage",
+     "000FB1"
+    ]
+   ],
+   "vibe": "Dr. Cabbage of Shady Motives, named like a vegetable and shaped like one: short, round and leafy-soft",
+   "values": {
+    "BTStomachFat": 110,
+    "BTLowerStomachSize": 70,
+    "BTCenterStomachSize": 60,
+    "BTBodyFatv2": 50,
+    "BTChubbyArm": 60,
+    "BTChubbyLeg": 55,
+    "BTChestSmoothing": 75,
+    "Hips": 70
+   }
+  },
+  "Knight-Captain Cade": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "BoSKnightCaptainCade",
+     "0642B3"
+    ]
+   ],
+   "vibe": "the Prydwen's doctor in an esquire's uniform: a fit, upright middle-aged medic who keeps to regulation",
+   "values": {
+    "BTShoulders": 25,
+    "BTPectorals": 20,
+    "BTAbDefinition": 20,
+    "BTStomachFat": 30,
+    "BTBiceps": 15
+   }
+  },
+  "Knight Gavil": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "BoSKnightGavil",
+     "0B26EF"
+    ]
+   ],
+   "vibe": "a Brotherhood knight in light combat armour: a drilled, solid soldier",
+   "values": {
+    "BTShoulders": 40,
+    "BTTraps": 40,
+    "BTPectorals": 35,
+    "BTBiceps": 35,
+    "BTAbDefinition": 25,
+    "BTThigh": 25
+   }
+  },
+  "Initiate Clarke": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "BoSInitiateClarke",
+     "0B26EE"
+    ]
+   ],
+   "vibe": "a raw Brotherhood recruit in borrowed fatigues: lanky and untrained, not filled out yet",
+   "values": {
+    "BTThinArm": 45,
+    "ThinThigh": 40,
+    "BTTHinCalf": 35,
+    "BTNegChestWidth": 30,
+    "BTNegPecMuscle": 35,
+    "BTNegShoulder": 25
+   }
+  },
+  "Scribe Faris": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "BoSM01_ScribeFaris",
+     "0B1DB5"
+    ]
+   ],
+   "vibe": "the scribe of Brandis's lost recon squad, in field armour he never grew into: a narrow, bookish body",
+   "values": {
+    "BTThinArm": 45,
+    "ThinThigh": 40,
+    "BTNegShoulder": 40,
+    "BTNegChestWidth": 35,
+    "BTNegPecMuscle": 40,
+    "BTStomachFat": 20
+   }
+  },
+  "Justin Ayo": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "JustinAyo",
+     "05E563"
+    ]
+   ],
+   "vibe": "head of Synth Retention, who hunts escaped synths in an expedition suit: a hard, trim, cold enforcer",
+   "values": {
+    "BTAbDefinition": 45,
+    "BTWaist-In": 50,
+    "BTShoulders": 30,
+    "BTTraps": 35,
+    "BTBiceps": 30,
+    "BTNegStomach": 35
+   }
+  },
+  "Dean Volkert": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DeanVolkert",
+     "05E55E"
+    ]
+   ],
+   "vibe": "the Institute's fussy Facilities director: a soft, pear-shaped administrator",
+   "values": {
+    "Hips": 60,
+    "BTButt": 45,
+    "BTStomachFat": 60,
+    "BTChestSmoothing": 55,
+    "BTNegShoulder": 40,
+    "BTChubbyArm": 30,
+    "BTThighWidth": 40
+   }
+  },
+  "Evan Watson": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "EvanWatson",
+     "05E561"
+    ]
+   ],
+   "vibe": "Institute Synth Retention man in casual clothes: an ordinary, average office body",
+   "values": {
+    "BTStomachFat": 35,
+    "BTChestSmoothing": 30,
+    "BTChubbyArm": 15,
+    "BTShoulders": 10
+   }
+  },
+  "Isaac Karlin": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "IsaacKarlin",
+     "05E55D"
+    ]
+   ],
+   "vibe": "BioScience's nervous researcher: thin, round-shouldered, a little hunched over his samples",
+   "values": {
+    "BTThinArm": 50,
+    "ThinThigh": 45,
+    "BTNegShoulder": 45,
+    "BTNegPecMuscle": 45,
+    "BTNegChestWidth": 35,
+    "BTStomachFat": 25
+   }
+  },
+  "Calvin Whitaker": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "V81_CalvinWhitaker",
+     "15384F"
+    ]
+   ],
+   "vibe": "Vault 81 dweller in a pilot's jacket over his suit, dreaming of the sky: a slim, keen young man",
+   "values": {
+    "BTThinArm": 25,
+    "ThinThigh": 25,
+    "BTAbDefinition": 25,
+    "BTWaist-In": 30,
+    "BTShoulders": 15
+   }
+  },
+  "Neil Freund": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "V81_NeilFreund",
+     "0AB3DA"
+    ]
+   ],
+   "vibe": "Vault 81 dweller in canvas vault gear: soft and pale, a life spent indoors",
+   "values": {
+    "BTStomachFat": 55,
+    "BTChestSmoothing": 45,
+    "BTChubbyArm": 30,
+    "BTChubbyLeg": 25,
+    "Hips": 25
+   }
+  },
+  "Holt Combes": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "V81_HoltCombes",
+     "02A82F"
+    ]
+   ],
+   "vibe": "Vault 81's security man in a plated suit, a father on guard: a square, sturdy body",
+   "values": {
+    "BTShoulders": 40,
+    "BTBack": 35,
+    "BTTraps": 35,
+    "BTPectorals": 25,
+    "BTStomachFat": 40,
+    "BTThigh": 30
+   }
+  },
+  "Jacob Forsythe": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "V81_JacobForsythe",
+     "02A821"
+    ]
+   ],
+   "vibe": "Vault 81's scavver in patched vault gear, the one who goes outside: lean and capable",
+   "values": {
+    "BTAbDefinition": 30,
+    "BTBiceps": 25,
+    "BTShoulders": 20,
+    "BTThinArm": 15,
+    "BTCalves": 25,
+    "BTStomachFat": 15
+   }
+  },
+  "Mark Summerset": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "V81_MarkSummerset",
+     "02A81D"
+    ]
+   ],
+   "vibe": "Vault 81 dweller in the general suit: a comfortable, middle-aged, middle-everything body",
+   "values": {
+    "BTStomachFat": 60,
+    "BTLowerStomachSize": 30,
+    "BTChestSmoothing": 40,
+    "BTChubbyArm": 25,
+    "Hips": 20
+   }
+  },
+  "Yefim Bobrov": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "YefimBobrov",
+     "002EFE"
+    ]
+   ],
+   "vibe": "Vadim's brother at the Dugout Inn, the one who worries while Vadim drinks the profits: wiry and tense, all the belly went to his brother",
+   "values": {
+    "BTThinArm": 45,
+    "ThinThigh": 40,
+    "BTNegStomach": 55,
+    "BTNegPecMuscle": 40,
+    "BTTraps": 30,
+    "BTWaist-In": 40,
+    "BTAbDefinition": 25
+   }
+  },
+  "Eddie Winter": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "EddieWinter",
+     "0969C6"
+    ]
+   ],
+   "vibe": "the gangster who turned himself into a ghoul to wait out two hundred years in a bunker: a thick, heavy mob boss in a duster",
+   "values": {
+    "BTStomachFat": 80,
+    "BTBodyFatv2": 35,
+    "BTShoulders": 45,
+    "BTTraps": 45,
+    "BTChubbyArm": 45,
+    "BTLowerStomachSize": 45,
+    "BTThigh": 30
+   }
+  },
+  "Fred Allen": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "FredAllen",
+     "0226D9"
+    ]
+   ],
+   "vibe": "Goodneighbor's chem addict who wants you to run his errands for a fix: a hollowed-out jet-stick",
+   "values": {
+    "BTThinArm": 95,
+    "ThinThigh": 90,
+    "BTTHinCalf": 85,
+    "BTNegStomach": 80,
+    "BTNegPecMuscle": 85,
+    "BTNegShoulder": 70,
+    "BTNegChestWidth": 70,
+    "BTNegBicepMuscle": 75
+   }
+  },
+  "Blake Abernathy": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "BlakeAbernathy",
+     "06B4D3"
+    ]
+   ],
+   "vibe": "Abernathy farm's father in overalls, grieving and working: a lean, worn farmer with hard forearms",
+   "values": {
+    "BTThinArm": 25,
+    "BTBiceps": 30,
+    "BTNegPecMuscle": 25,
+    "BTAbDefinition": 25,
+    "ThinThigh": 25,
+    "BTStomachFat": 20
+   }
+  },
+  "Roger Warwick": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "RogerWarwick",
+     "03F23C"
+    ]
+   ],
+   "vibe": "Warwick Homestead's stubborn, eccentric farmer in white overalls: a stringy, stiff, sun-dried man",
+   "values": {
+    "BTThinArm": 45,
+    "ThinThigh": 40,
+    "BTNegPecMuscle": 40,
+    "BTNegStomach": 40,
+    "BTNegShoulder": 25,
+    "BTTraps": 20
+   }
+  },
+  "Jake Finch": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "JakeFinch",
+     "03F22D"
+    ]
+   ],
+   "vibe": "the Finch farm's boy who ran off to the raiders, stars and stripes on his back: young, cocky, lean muscle he is proud of",
+   "values": {
+    "BTAbDefinition": 45,
+    "BTBiceps": 35,
+    "BTPectorals": 30,
+    "BTWaist-In": 40,
+    "BTShoulders": 20,
+    "BTNegStomach": 30
+   }
+  },
+  "Daniel Finch": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DanielFinch",
+     "03F22B"
+    ]
+   ],
+   "vibe": "Jake's older brother who stayed on the farm: broad and steady, a worker's shoulders",
+   "values": {
+    "BTShoulders": 45,
+    "BTBack": 40,
+    "BTBiceps": 35,
+    "BTTraps": 30,
+    "BTStomachFat": 35,
+    "BTThigh": 30
+   }
+  },
+  "Lucas Miller": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "LucasMiller",
+     "130B78"
+    ]
+   ],
+   "vibe": "caravan trader on the roads between settlements: a walker's lean legs and a sun-browned, wiry frame",
+   "values": {
+    "BTCalves": 40,
+    "ThinThigh": 25,
+    "BTThinArm": 25,
+    "BTAbDefinition": 25,
+    "BTNegStomach": 30,
+    "BTShoulders": 10
+   }
+  },
+  "Honest Dan": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "HonestDan",
+     "039FC5"
+    ]
+   ],
+   "vibe": "caravan guard for hire, hunting what killed his caravan: a seasoned, solid fighter",
+   "values": {
+    "BTShoulders": 40,
+    "BTTraps": 40,
+    "BTBiceps": 40,
+    "BTPectorals": 30,
+    "BTAbDefinition": 25,
+    "BTStomachFat": 25,
+    "BTThigh": 30
+   }
+  },
+  "Captain Baker": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DN109_QuincyGunnerBossBaker",
+     "1A679C"
+    ]
+   ],
+   "vibe": "the Gunner officer at Quincy in spec-ops kit: a hard, fit professional killer",
+   "values": {
+    "BTARYAYDA": 35,
+    "BTTraps": 45,
+    "BTShoulders": 40,
+    "BTAbDefinition": 40,
+    "BTBiceps": 40,
+    "BTWaist-In": 30
+   }
+  },
+  "Bluejay": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "DN054AtomCat_Bluejay",
+     "04863B"
+    ]
+   ],
+   "vibe": "the Atom Cats' hipster in raider-chic: skinny, cool, too cool to lift anything",
+   "values": {
+    "BTThinArm": 55,
+    "ThinThigh": 50,
+    "BTTHinCalf": 45,
+    "BTNegChestWidth": 40,
+    "BTNegPecMuscle": 40,
+    "BTWaist-In": 40
+   }
+  },
+  "Brother Ward": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "CoABrotherWard",
+     "13426F"
+    ]
+   ],
+   "vibe": "a Child of Atom in the Crater, in burrower robes: a rad-starved ascetic, ribs and faith",
+   "values": {
+    "BTNegStomach": 75,
+    "BTThinArm": 70,
+    "ThinThigh": 65,
+    "BTNegPecMuscle": 65,
+    "BTNegShoulder": 45,
+    "BTNegChestWidth": 40
+   }
+  },
+  "Brother Ogden": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "CoABrotherOgden",
+     "13426D"
+    ]
+   ],
+   "vibe": "a Child of Atom in the Crater, in boarder robes: an ordinary convert, plain and a little thin",
+   "values": {
+    "BTThinArm": 30,
+    "ThinThigh": 25,
+    "BTNegPecMuscle": 25,
+    "BTStomachFat": 25
+   }
+  },
+  "Brother Foster": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "CoABrotherFoster",
+     "12DB4C"
+    ]
+   ],
+   "vibe": "a Child of Atom in the Crater, in rider robes: lean and hard from the glowing road",
+   "values": {
+    "BTAbDefinition": 35,
+    "BTThinArm": 25,
+    "ThinThigh": 25,
+    "BTNegStomach": 40,
+    "BTTraps": 25
+   }
+  },
+  "Brother Griffith": {
+   "sex": "male",
+   "forms": [
+    [
+     "Fallout4.esm",
+     "CoABrotherGriffith",
+     "12DB4A"
+    ]
+   ],
+   "vibe": "a Child of Atom in the Crater, in burgher robes: the well-fed one, soft and round under the brown cloth",
+   "values": {
+    "BTStomachFat": 80,
+    "BTLowerStomachSize": 45,
+    "BTChestSmoothing": 55,
+    "BTChubbyArm": 40,
+    "Hips": 35
+   }
+  },
+  "Grand Zealot Richter": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03CoA_GrandZealotRichter",
+     "004465"
+    ]
+   ],
+   "vibe": "the Nucleus's Grand Zealot, Atom's soldier in combatant robes: a big, militant, muscled zealot",
+   "values": {
+    "BTARYAYDA": 45,
+    "TigerSanBBMale": 40,
+    "BTTraps": 55,
+    "BTShoulders": 50,
+    "BTPectorals": 40,
+    "BTBiceps": 45,
+    "BTStomachFat": 20
+   }
+  },
+  "Zealot Ware": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03CoA_ZealotWare",
+     "004467"
+    ]
+   ],
+   "vibe": "a Nucleus zealot in contender robes: a lean, fervent fighter",
+   "values": {
+    "BTAbDefinition": 40,
+    "BTWaist-In": 40,
+    "BTBiceps": 30,
+    "BTTraps": 30,
+    "BTNegStomach": 35,
+    "BTThinArm": 15
+   }
+  },
+  "Brother Kane": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03CoA_BrotherKane",
+     "004471"
+    ]
+   ],
+   "vibe": "a Child of Atom of the Nucleus in rover robes: an average, mild believer",
+   "values": {
+    "BTStomachFat": 35,
+    "BTChestSmoothing": 30,
+    "BTThinArm": 15,
+    "BTShoulders": 10
+   }
+  },
+  "Brother Devin": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03CoA_BrotherDevin",
+     "00446F"
+    ]
+   ],
+   "vibe": "a Child of Atom of the Nucleus, a hooded ranger of the fog: wiry and quiet",
+   "values": {
+    "BTThinArm": 35,
+    "ThinThigh": 30,
+    "BTAbDefinition": 30,
+    "BTNegStomach": 35,
+    "BTCalves": 25
+   }
+  },
+  "Andre Michaud": {
+   "sex": "male",
+   "forms": [
+    [
+     "DLCCoast.esm",
+     "DLC03AndreMichaud",
+     "005C9D"
+    ]
+   ],
+   "vibe": "Far Harbor islander in lumberjack overalls: a big, burly woodsman",
+   "values": {
+    "TigerSanBBMale": 40,
+    "BTShoulders": 55,
+    "BTBack": 50,
+    "BTTraps": 45,
+    "BTBiceps": 50,
+    "BTStomachFat": 45,
+    "BTBodyFatv2": 20,
+    "BTThigh": 40
+   }
+  }
+ }
+}

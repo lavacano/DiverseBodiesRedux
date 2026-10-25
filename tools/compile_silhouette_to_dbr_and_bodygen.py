@@ -1,11 +1,35 @@
 #!/usr/bin/env python3
-import os, re, json, struct, zlib
+"""
+Compile Silhouette (ReidenXerx/fo4-silhouette) body morph pools, faction pools,
+and named character presets into Diverse Bodies Redux (Option B — Sole Morph Authority).
+
+In-Engine Resolution Hierarchy (DBR PresetsGenerator.hpp + Conditions.cpp):
+  1. Named Characters (Sil_Char_*_conds.json):
+     Uses "formIDs" -> CoincidenceLevel::FULL (0x7FFFFFFF). Wins unconditionally.
+  2. Faction Members (Sil_Faction_*_conds.json):
+     Uses "inFaction" + priority-ordered "notInFaction" ("formIDs": [])
+     -> CoincidenceLevel::GENDER | CoincidenceLevel::FACTIONS (5).
+  3. General Population / Settlers (Sil_Pool_* + curated DBR presets):
+     Uses directory conds.json fallback -> CoincidenceLevel::GENDER (1).
+
+Pass --with-bodygen to also emit LooksMenu BodyGen templates.ini / morphs.ini (Option A).
+"""
+import os, sys, re, json, struct, zlib, shutil
+
+WITH_BODYGEN = "--with-bodygen" in sys.argv
 
 data_dir = "/home/lavac/.local/share/Steam/steamapps/common/Fallout 4/Data"
 plugins_txt = "/home/lavac/.local/share/Steam/steamapps/compatdata/377160/pfx/drive_c/users/steamuser/AppData/Local/Fallout4/plugins.txt"
-sil_dir = "/home/lavac/.gemini/antigravity/brain/f414056b-e88d-4f2a-8025-fc9a9dedef6e/scratch/silhouette"
 
-dbr_mod_base = "/home/lavac/Games/Amethyst/Fallout 4/profiles/Such_Fallout_4/mods/Diverse Bodies Redux/DiverseBodiesRedux"
+script_dir = os.path.dirname(os.path.abspath(__file__))
+sil_dir = os.path.join(script_dir, "silhouette")
+if not os.path.exists(sil_dir):
+    sil_dir = "/home/lavac/.gemini/antigravity/brain/f414056b-e88d-4f2a-8025-fc9a9dedef6e/scratch/silhouette"
+
+dbr_mod_root = "/home/lavac/Games/Amethyst/Fallout 4/profiles/Such_Fallout_4/mods/Diverse Bodies Redux"
+dbr_mod_base = os.path.join(dbr_mod_root, "DiverseBodiesRedux")
+dbr_ini_path = os.path.join(dbr_mod_root, "MCM/Settings/DiverseBodiesRedux.ini")
+f4ee_ini_path = "/home/lavac/Games/Amethyst/Fallout 4/profiles/Such_Fallout_4/mods/LooksMenu v1/F4SE/Plugins/f4ee.ini"
 dbr_data_base = os.path.join(data_dir, "DiverseBodiesRedux")
 
 templates_ini_path = "/home/lavac/Games/Amethyst/Fallout 4/profiles/Such_Fallout_4/mods/Real Body Randomizer CBBE/Data/F4SE/Plugins/F4EE/BodyGen/Fallout4.esm/templates.ini"
@@ -28,6 +52,42 @@ for sub in ["HeadsFemale", "HeadsMale", "HeadsFemaleRaiders", "HeadsFemaleSlaves
                     json.dump(d, f, indent=4)
                 stripped_heads += 1
 print(f"[1/5] Ensured embedded BodyMorphs=null across DBR Head preset folders (updated {stripped_heads} files).")
+
+# 1b. Disable exaggerated/balloon original DBR female presets (>0.55 Breasts / DoubleMelon / SEXY)
+fem_mod_dir = os.path.join(dbr_mod_base, "BodymorphsFemale")
+fem_disabled_dir = os.path.join(dbr_mod_base, "BodymorphsFemale_Disabled")
+mal_mod_dir = os.path.join(dbr_mod_base, "BodymorphsMale")
+fem_data_dir = os.path.join(dbr_data_base, "BodymorphsFemale")
+mal_data_dir = os.path.join(dbr_data_base, "BodymorphsMale")
+
+os.makedirs(fem_disabled_dir, exist_ok=True)
+disabled_moved = 0
+if os.path.exists(fem_mod_dir):
+    for fn in sorted(os.listdir(fem_mod_dir)):
+        if fn.startswith("Sil_") or fn == "conds.json" or fn.endswith("_conds.json"):
+            continue
+        if "ANTEGO_4_Ivy" in fn:
+            continue
+        fp = os.path.join(fem_mod_dir, fn)
+        should_disable = False
+        if fn.startswith("F_!SEXY!_") or fn in ("F_!FAT!_NAE_2.json", "F_!SLIM!_Zallbard_SLIM_SEXY01.json") or fn.endswith(".xml"):
+            should_disable = True
+        elif fn.endswith(".json"):
+            try:
+                with open(fp) as f:
+                    d = json.load(f)
+                bm = d.get("BodyMorphs") or {}
+                if bm.get("Breasts", 0) > 0.55 or bm.get("DoubleMelon", 0) > 0 or bm.get("BreastFantasy", 0) > 0:
+                    should_disable = True
+            except Exception:
+                pass
+        if should_disable:
+            shutil.move(fp, os.path.join(fem_disabled_dir, fn))
+            disabled_moved += 1
+            cond_fn = os.path.splitext(fn)[0] + "_conds.json"
+            cond_fp = os.path.join(fem_mod_dir, cond_fn)
+            if os.path.exists(cond_fp):
+                shutil.move(cond_fp, os.path.join(fem_disabled_dir, cond_fn))
 
 # 2. Scan active plugins in load order
 base_masters = [
@@ -287,12 +347,6 @@ faction_priority = [
     "raiders",
 ]
 
-# Resolve every adult HumanRace NPC_ to its winning Silhouette faction
-# Note: Because f4ee.dll maintains completely separate Male and Female hash maps,
-# and template/leveled-chain NPC_ records (like EncRaider01Template or LvlRaiderMixed)
-# are walked at runtime for both Female and Male spawned actors, registering both
-# |Female and |Male on template/mixed NPCs (and matching sex on fixed NPCs, or both maps)
-# guarantees 100% coverage!
 faction_npc_targets = {fk: [] for fk in factions_data["factions"]}
 for nk in sorted(npcs.keys(), key=lambda x: (active_plugins.index(x[0]) if x[0] in active_plugins else 999, x[1])):
     if nk[0] not in active_map.values():
@@ -336,16 +390,25 @@ def format_template_rhs(norm_dict, is_female=True):
     return ",".join(parts)
 
 # 3. Write DBR JSON files + _conds.json in BodymorphsFemale and BodymorphsMale and sync symlinks
-fem_mod_dir = os.path.join(dbr_mod_base, "BodymorphsFemale")
-mal_mod_dir = os.path.join(dbr_mod_base, "BodymorphsMale")
-fem_data_dir = os.path.join(dbr_data_base, "BodymorphsFemale")
-mal_data_dir = os.path.join(dbr_data_base, "BodymorphsMale")
-
 for d in (fem_mod_dir, mal_mod_dir, fem_data_dir, mal_data_dir):
     if os.path.exists(d):
         for fn in os.listdir(d):
-            if fn.startswith("Sil_"):
-                os.remove(os.path.join(d, fn))
+            if fn.startswith("Sil_") or (os.path.islink(os.path.join(d, fn)) and not os.path.exists(os.path.join(d, fn))):
+                os.unlink(os.path.join(d, fn))
+
+# Ensure directory fallback conds.json exists in BodymorphsFemale (gender 1) and BodymorphsMale (gender 0)
+for target_dir, g_val in [(fem_mod_dir, 1), (mal_mod_dir, 0)]:
+    os.makedirs(target_dir, exist_ok=True)
+    with open(os.path.join(target_dir, "conds.json"), "w") as f:
+        json.dump({
+            "gender": g_val,
+            "formIDs": [],
+            "notFormIDs": [],
+            "inFaction": [],
+            "notInFaction": [],
+            "hasKeyword": [],
+            "hasNotKeyword": []
+        }, f, indent=4)
 
 def write_dbr_preset(is_female, base_name, norm_sliders, conds_obj=None):
     target_dir = fem_mod_dir if is_female else mal_mod_dir
@@ -364,52 +427,66 @@ def write_dbr_preset(is_female, base_name, norm_sliders, conds_obj=None):
         with open(conds_path, "w") as f:
             json.dump(conds_obj, f, indent=4)
 
-# 3a. General Pool -> DBR JSON
+# 3a. General Pool -> DBR JSON (uses directory conds.json -> CoincidenceLevel::GENDER = 1)
 for pname, pinfo in pool_data["presets"].items():
     is_fem = (pinfo["sex"] == "female")
     norm_s = convert_sliders(pinfo["values"])
     write_dbr_preset(is_fem, f"Sil_Pool_{pname}", norm_s, None)
 
-# 3b. Faction Pool -> DBR JSON + _conds.json
+# 3b. Faction Pool -> DBR JSON + _conds.json (uses inFaction + priority notInFaction -> CoincidenceLevel::GENDER | FACTIONS = 5)
+# Note: Keeping formIDs=[] is critical so Conditions.cpp evaluates inFaction (score 5) instead of short-circuiting
+# to CoincidenceLevel::FULL (0x7FFFFFFF) and colliding with Named Character presets!
 faction_in_faction_strs = {}
 for fk, fv in factions_data["factions"].items():
     inf_list = []
-    for f_plug, f_edid in fv["factions"]:
+    all_edids = [f_edid for _, f_edid in fv["factions"]] + extra_subfactions.get(fk, [])
+    for f_edid in all_edids:
         fk_id = edid_to_fact.get(f_edid.lower())
         if fk_id:
             f_hex = format_local_fid(fk_id[0], fk_id[1])
-            inf_list.append(f"0x{f_hex}|{fk_id[0]}")
+            entry_str = f"0x{f_hex}|{fk_id[0]}"
+            if entry_str not in inf_list:
+                inf_list.append(entry_str)
     faction_in_faction_strs[fk] = inf_list
+
+faction_not_in_faction_strs = {}
+for idx, fk in enumerate(faction_priority):
+    higher_factions = []
+    for higher_fk in faction_priority[:idx]:
+        for f_str in faction_in_faction_strs.get(higher_fk, []):
+            if f_str not in higher_factions:
+                higher_factions.append(f_str)
+    faction_not_in_faction_strs[fk] = higher_factions
 
 for pname, pinfo in factions_data["presets"].items():
     is_fem = (pinfo["sex"] == "female")
     fk = pinfo["faction"]
     norm_s = convert_sliders(pinfo["values"])
-    f_fids = [
-        f"0x{format_local_fid(plug, lid)}|{plug}"
-        for plug, lid, _ in faction_npc_targets.get(fk, [])
-    ]
     conds = {
         "gender": 1 if is_fem else 0,
-        "formIDs": f_fids,
+        "formIDs": [],
         "notFormIDs": [],
         "inFaction": faction_in_faction_strs.get(fk, []),
-        "notInFaction": [],
+        "notInFaction": faction_not_in_faction_strs.get(fk, []),
         "hasKeyword": [],
         "hasNotKeyword": []
     }
     write_dbr_preset(is_fem, f"Sil_Faction_{pname}", norm_s, conds)
 
-# 3c. Characters -> DBR JSON + _conds.json
+# 3c. Named Characters -> DBR JSON + _conds.json (uses formIDs -> CoincidenceLevel::FULL = 0x7FFFFFFF)
 for cname, cinfo in chars_data["characters"].items():
     is_fem = (cinfo["sex"] == "female")
     norm_s = convert_sliders(cinfo["values"])
     c_fids = []
     for plug, edid, fid_hex in cinfo["forms"]:
-        real_plug = active_map.get(plug.lower(), plug)
+        if plug.lower() not in active_map:
+            continue
+        real_plug = active_map[plug.lower()]
         fid_int = int(fid_hex, 16)
         f_hex = format_local_fid(real_plug, fid_int)
         c_fids.append(f"0x{f_hex}|{real_plug}")
+    if not c_fids:
+        continue
     conds = {
         "gender": 1 if is_fem else 0,
         "formIDs": c_fids,
@@ -429,9 +506,30 @@ for mod_d, data_d in [(fem_mod_dir, fem_data_dir), (mal_mod_dir, mal_data_dir)]:
         if not os.path.lexists(dst):
             os.symlink(src, dst)
 
-print(f"[3/5] Wrote DBR JSONs & _conds.json: BodymorphsFemale={len(os.listdir(fem_mod_dir))} files, BodymorphsMale={len(os.listdir(mal_mod_dir))} files.")
+print(f"[3/5] Wrote DBR JSONs & _conds.json: BodymorphsFemale={len(os.listdir(fem_mod_dir))} files, BodymorphsMale={len(os.listdir(mal_mod_dir))} files (moved {disabled_moved} extreme presets to BodymorphsFemale_Disabled).")
 
-# 4. Update BodyGen templates.ini
+# 4. Enforce Option B INI settings (DBR Sole Morph Authority) unless --with-bodygen is passed
+if not WITH_BODYGEN:
+    if os.path.exists(f4ee_ini_path):
+        with open(f4ee_ini_path, "rb") as f:
+            c = f.read()
+        nc = c.replace(b"bEnableBodyGen=1", b"bEnableBodyGen=0")
+        if nc != c:
+            with open(f4ee_ini_path, "wb") as f:
+                f.write(nc)
+    if os.path.exists(dbr_ini_path):
+        with open(dbr_ini_path, "rb") as f:
+            c = f.read()
+        target_line = b"sBodymorphsFolders=Data/DiverseBodiesRedux/BodymorphsFemale,Data/DiverseBodiesRedux/BodymorphsMale"
+        if target_line not in c:
+            nc = re.sub(rb"sBodymorphsFolders=[^\r\n]*", target_line, c)
+            with open(dbr_ini_path, "wb") as f:
+                f.write(nc)
+    print("[4/5] Option B active (DBR Sole Morph Authority): bEnableBodyGen=0 in f4ee.ini, sBodymorphsFolders enabled in DiverseBodiesRedux.ini.")
+    print("[5/5] Skipped BodyGen templates.ini / morphs.ini generation (pass --with-bodygen for Option A).")
+    sys.exit(0)
+
+# Optional Option A: Update BodyGen templates.ini & morphs.ini
 with open(templates_ini_path) as f:
     orig_templates = f.read()
 
@@ -469,129 +567,3 @@ with open(templates_ini_path, "w") as f:
     f.write(base_templates + "\n" + "\n".join(sil_template_lines) + "\n")
 
 print(f"[4/5] Updated templates.ini with {len(pool_data['presets']) + len(factions_data['presets']) + len(chars_data['characters'])} Silhouette templates.")
-
-# 5. Build BodyGen morphs.ini with 4-tier priority hierarchy
-pool_weights = pool_data["weights"]
-fem_pool_weighted = []
-mal_pool_weighted = []
-for pname, pinfo in pool_data["presets"].items():
-    w = pool_weights.get(pinfo["tier"], 1)
-    tname = f"Sil_{pname}"
-    if pinfo["sex"] == "female":
-        fem_pool_weighted.extend([tname] * w)
-    else:
-        mal_pool_weighted.extend([tname] * w)
-
-existing_curated_female = [
-    "tmbv2", "Victoria", "Rhaenys", "Rhaenys [Outfit]", "Pear (Outfit)", "Pear",
-    "NoirOutfit", "NoirNudeBody", "Natural Curves", "Natural Curves(clothes)",
-    "CBBE Slim (Outfit)", "CBBE Petite (Outfit)", "CBBE Curvy (Outfit)",
-    "[VM] Vanilla+ BASE (outfit)", "Realistic (Small) (O)"
-]
-all_female_human_rhs = "|".join(fem_pool_weighted + existing_curated_female)
-all_male_human_rhs = "|".join(mal_pool_weighted)
-
-fac_weights = factions_data["weights"]
-faction_rhs = {fk: {"female": [], "male": []} for fk in factions_data["factions"]}
-for pname, pinfo in factions_data["presets"].items():
-    fk = pinfo["faction"]
-    w = fac_weights.get(pinfo["tier"], 1)
-    tname = f"Sil_{pname}"
-    faction_rhs[fk][pinfo["sex"]].extend([tname] * w)
-
-morph_lines = [
-    "# =============================================================================",
-    "# BODYGEN MORPHS.INI — SILHOUETTE + CURATED OVERRIDES",
-    "# Priority Order (later lines overwrite earlier lines in f4ee.dll):",
-    "#   Tier 1: General Race Pools (All|Sex|Race)",
-    "#   Tier 2: Faction Pool Override Selectors (Plugin|FormID|Sex across load order)",
-    "#   Tier 3: Named Character Override Selectors (207 Silhouette + Custom NPCs)",
-    "#   Tier 4: Player & Pre-War Spouse Exclusions (No Change)",
-    "# =============================================================================",
-    "",
-    "# --- TIER 1: GENERAL RACE POOLS ---",
-    "All|Female|GhoulRace=CBBE Slim (Outfit)|CBBE Petite (Outfit)",
-    f"All|Female|HumanRace={all_female_human_rhs}",
-    f"All|Male|HumanRace={all_male_human_rhs}",
-    "",
-    "# --- TIER 2: FACTION POOL OVERRIDE SELECTORS (Plugin|FormID|Sex) ---",
-]
-
-tier2_count = 0
-for fk in factions_data["factions"]:
-    fem_rhs_str = "|".join(faction_rhs[fk]["female"])
-    mal_rhs_str = "|".join(faction_rhs[fk]["male"])
-    morph_lines.append(f"# Faction: {fk} ({factions_data['factions'][fk]['look']})")
-    for plug, lid, edid in faction_npc_targets[fk]:
-        f_hex = format_local_fid(plug, lid)
-        # Emit both |Female (populates f4ee Female map) and |Male (populates f4ee Male map)
-        # so template roots (e.g. EncRaider01Template) work for both Female and Male spawned actors!
-        morph_lines.append(f"{plug}|{f_hex}|Female={fem_rhs_str}")
-        morph_lines.append(f"{plug}|{f_hex}|Male={mal_rhs_str}")
-        tier2_count += 2
-    morph_lines.append("")
-
-morph_lines.append("# --- TIER 3: NAMED CHARACTER OVERRIDE SELECTORS ---")
-tier3_active = 0
-tier3_commented = 0
-silhouette_covered_forms = set()
-
-for cname, cinfo in chars_data["characters"].items():
-    sex_label = "Female" if cinfo["sex"] == "female" else "Male"
-    tname = f"Sil_Char_{cname}"
-    for plug, edid, fid_hex in cinfo["forms"]:
-        fid_int = int(fid_hex, 16)
-        if plug.lower() in active_map:
-            real_plug = active_map[plug.lower()]
-            f_hex = format_local_fid(real_plug, fid_int)
-            silhouette_covered_forms.add((real_plug.lower(), int(f_hex, 16)))
-            morph_lines.append(f"# {cname} ({edid})")
-            morph_lines.append(f"{real_plug}|{f_hex}|{sex_label}={tname}")
-            tier3_active += 1
-        else:
-            f_hex = f"{fid_int & 0xFFFFFF:X}"
-            morph_lines.append(f"# {cname} ({edid}) [unloaded mod]")
-            morph_lines.append(f"#{plug}|{f_hex}|{sex_label}={tname}")
-            tier3_commented += 1
-
-extra_custom_npcs = [
-    ("Companion Charlotte", "companion_charlotte.esp", 0x1740, "Female", "Charlotte_Body(clothing)"),
-    ("Katy Pinn", "Fallout4.esm", 0x2A827, "Female", "PlasticSurgery BodySlide Preset"),
-    ("Professor Scara", "Fallout4.esm", 0xB2FC7, "Female", "KillerCurves_Alice_SmallNips1"),
-    ("Rowdy", "Fallout4.esm", 0x1DB56, "Female", "PerfectBody_SmallBoobsClothed"),
-    ("Scarlet", "Fallout4.esm", 0x4B240, "Female", "PerfectBody_SmallBoobsClothed"),
-    ("Roxy (Atom Cat)", "Fallout4.esm", 0x1164F7, "Female", "CBBE_CUSTOM_HOT_NUDE"),
-    ("Myrna (Diamond City Surplus)", "Fallout4.esm", 0x1A054, "Female", "[VM] Vanilla+ BASE (outfit)|Realistic (Small) (O)|CBBE Slim (Outfit)"),
-    ("Cathy (Diamond City Mega Surgery)", "Fallout4.esm", 0x1A057, "Female", "[VM] Vanilla+ BASE (outfit)|Realistic (Small) (O)|CBBE Petite (Outfit)"),
-    ("Polly (Diamond City Choice Chops)", "Fallout4.esm", 0x1A056, "Female", "[VM] Vanilla+ BASE (outfit)|CBBE Slim (Outfit)"),
-    ("Becky Fallon (Fallon's Basement)", "Fallout4.esm", 0x1A053, "Female", "[VM] Vanilla+ BASE (outfit)|CBBE Petite (Outfit)"),
-]
-
-morph_lines.append("")
-morph_lines.append("# --- TIER 3B: ADDITIONAL CUSTOM NPC OVERRIDES ---")
-for label, plug, lid, sex_label, rhs in extra_custom_npcs:
-    if (plug.lower(), lid) in silhouette_covered_forms:
-        continue
-    if plug.lower() in active_map:
-        real_plug = active_map[plug.lower()]
-        f_hex = format_local_fid(real_plug, lid)
-        morph_lines.append(f"# {label}")
-        morph_lines.append(f"{real_plug}|{f_hex}|{sex_label}={rhs}")
-        tier3_active += 1
-    else:
-        morph_lines.append(f"# {label} [unloaded mod]")
-        morph_lines.append(f"#{plug}|{lid:X}|{sex_label}={rhs}")
-
-morph_lines.extend([
-    "",
-    "# --- TIER 4: PLAYER & PRE-WAR SPOUSE EXCLUSIONS (ALWAYS LAST) ---",
-    "Fallout4.esm|7=No Change",
-    "Fallout4.esm|A7D34=No Change",
-    "Fallout4.esm|A7D35=No Change",
-    ""
-])
-
-with open(morphs_ini_path, "w") as f:
-    f.write("\n".join(morph_lines))
-
-print(f"[5/5] Wrote morphs.ini: {tier2_count} faction selectors, {tier3_active} active named character selectors ({tier3_commented} unloaded commented), 3 player exclusions.")

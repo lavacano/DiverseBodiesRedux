@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='utf-8'?>
+<SliderSetInfo><SliderSet name="CBBE Nuka World - Western - Duster">
+        <DataFolder>CBBE Nuka World</DataFolder>
+        <SourceFile>Western - Duster.nif</SourceFile>
+        <OutputPath>Meshes\DLC04\Clothes\Western</OutputPath>
+        <OutputFile GenWeights="false" PreventMorphFile="false" KeepZappedShapes="false">WesternDuster_f</OutputFile>
+        <Shape target="OutfitF:0">OutfitF:0</Shape>
+        <Slider name="Breasts" invert="false" default="0">
+            <Data name="OutfitF_0Breasts" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0Breasts</Data>
+        </Slider>
+        <Slider name="BreastsGone" invert="false" default="0">
+            <Data name="OutfitF_0BreastsGone" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0BreastsGone</Data>
+        </Slider>
+        <Slider name="BreastsNewSH" invert="false" default="0">
+            <Data name="OutfitF_0BreastsNewSH" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0BreastsNewSH</Data>
+        </Slider>
+        <Slider name="BreastsSmall" invert="false" default="0">
+            <Data name="OutfitF_0BreastsSmall" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0BreastsSmall</Data>
+        </Slider>
+        <Slider name="BreastsSmall2" invert="false" default="0">
+            <Data name="OutfitF_0BreastsSmall2" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0BreastsSmall2</Data>
+        </Slider>
+        <Slider name="BreastsTogether" invert="false" default="0">
+            <Data name="OutfitF_0BreastsTogether" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0BreastsTogether</Data>
+        </Slider>
+        <Slider name="BreastTopSlope" invert="false" default="0">
+            <Data name="OutfitF_0BreastTopSlope" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0BreastTopSlope</Data>
+        </Slider>
+        <Slider name="BreastWidth" invert="false" default="0">
+            <Data name="OutfitF_0BreastWidth" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0BreastWidth</Data>
+        </Slider>
+        <Slider name="Butt" invert="false" default="0">
+            <Data name="OutfitF_0Butt" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0Butt</Data>
+        </Slider>
+        <Slider name="ButtNew" invert="false" default="0">
+            <Data name="OutfitF_0ButtNew" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0ButtNew</Data>
+        </Slider>
+        <Slider name="ButtShape2" invert="false" default="0">
+            <Data name="OutfitF_0ButtShape2" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0ButtShape2</Data>
+        </Slider>
+        <Slider name="ButtSmall" invert="false" default="0">
+            <Data name="OutfitF_0ButtSmall" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0ButtSmall</Data>
+        </Slider>
+        <Slider name="CalfSize" invert="false" default="0">
+            <Data name="OutfitF_0CalfSize" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0CalfSize</Data>
+        </Slider>
+        <Slider name="CalfSmooth" invert="false" default="0">
+            <Data name="OutfitF_0CalfSmooth" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0CalfSmooth</Data>
+        </Slider>
+        <Slider name="ChestDepth" invert="false" default="0">
+            <Data name="OutfitF_0ChestDepth" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0ChestDepth</Data>
+        </Slider>
+        <Slider name="ChestWidth" invert="false" default="0">
+            <Data name="OutfitF_0ChestWidth" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0ChestWidth</Data>
+        </Slider>
+        <Slider name="ChubbyArms" invert="false" default="0">
+            <Data name="OutfitF_0ChubbyArms" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0ChubbyArms</Data>
+        </Slider>
+        <Slider name="ChubbyButt" invert="false" default="0">
+            <Data name="OutfitF_0ChubbyButt" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0ChubbyButt</Data>
+        </Slider>
+        <Slider name="ChubbyLegs" invert="false" default="0">
+            <Data name="OutfitF_0ChubbyLegs" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0ChubbyLegs</Data>
+        </Slider>
+        <Slider name="ChubbyWaist" invert="false" default="0">
+            <Data name="OutfitF_0ChubbyWaist" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0ChubbyWaist</Data>
+        </Slider>
+        <Slider name="CrotchBack" invert="false" default="0">
+            <Data name="OutfitF_0CrotchBack" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0CrotchBack</Data>
+        </Slider>
+        <Slider name="DoubleMelon" invert="false" default="0">
+            <Data name="OutfitF_0DoubleMelon" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0DoubleMelon</Data>
+        </Slider>
+        <Slider name="Groin" invert="false" default="0">
+            <Data name="OutfitF_0Groin" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0Groin</Data>
+        </Slider>
+        <Slider name="HipBack" invert="false" default="0">
+            <Data name="OutfitF_0HipBack" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0HipBack</Data>
+        </Slider>
+        <Slider name="HipBone" invert="false" default="0">
+            <Data name="OutfitF_0HipBone" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0HipBone</Data>
+        </Slider>
+        <Slider name="Hips" invert="false" default="0">
+            <Data name="OutfitF_0Hips" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0Hips</Data>
+        </Slider>
+        <Slider name="HipUpperWidth" invert="false" default="0">
+            <Data name="OutfitF_0HipUpperWidth" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0HipUpperWidth</Data>
+        </Slider>
+        <Slider name="KneeHeight" invert="false" default="0">
+            <Data name="OutfitF_0KneeHeight" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0KneeHeight</Data>
+        </Slider>
+        <Slider name="LegShape" invert="false" default="0">
+            <Data name="OutfitF_0LegShape" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0LegShape</Data>
+        </Slider>
+        <Slider name="LegsThin" invert="false" default="0">
+            <Data name="OutfitF_0LegsThin" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0LegsThin</Data>
+        </Slider>
+        <Slider name="PregnancyBelly" invert="false" default="0">
+            <Data name="OutfitF_0PregnancyBelly" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0PregnancyBelly</Data>
+        </Slider>
+        <Slider name="PushUp" invert="false" default="0">
+            <Data name="OutfitF_0PushUp" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0PushUp</Data>
+        </Slider>
+        <Slider name="RoundAss" invert="false" default="0">
+            <Data name="OutfitF_0RoundAss" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0RoundAss</Data>
+        </Slider>
+        <Slider name="ShoulderSmooth" invert="false" default="0">
+            <Data name="OutfitF_0ShoulderSmooth" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0ShoulderSmooth</Data>
+        </Slider>
+        <Slider name="ShoulderTweak" invert="false" default="0">
+            <Data name="OutfitF_0ShoulderTweak" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0ShoulderTweak</Data>
+        </Slider>
+        <Slider name="ShoulderWidth" invert="false" default="0">
+            <Data name="OutfitF_0ShoulderWidth" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0ShoulderWidth</Data>
+        </Slider>
+        <Slider name="SlimThighs" invert="false" default="0">
+            <Data name="OutfitF_0SlimThighs" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0SlimThighs</Data>
+        </Slider>
+        <Slider name="Thighs" invert="false" default="0">
+            <Data name="OutfitF_0Thighs" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0Thighs</Data>
+        </Slider>
+        <Slider name="TummyTuck" invert="false" default="0">
+            <Data name="OutfitF_0TummyTuck" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0TummyTuck</Data>
+        </Slider>
+        <Slider name="VanillaFo4" invert="false" default="0">
+            <Data name="OutfitF_0VanillaFo4" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0VanillaFo4</Data>
+        </Slider>
+        <Slider name="Waist" invert="false" default="0">
+            <Data name="OutfitF_0Waist" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0Waist</Data>
+        </Slider>
+        <Slider name="WaistHeight" invert="false" default="0">
+            <Data name="OutfitF_0WaistHeight" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0WaistHeight</Data>
+        </Slider>
+        <Slider name="WideWaistLine" invert="false" default="0">
+            <Data name="OutfitF_0WideWaistLine" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0WideWaistLine</Data>
+        </Slider>
+        <Slider name="Ankles" invert="false" default="0">
+            <Data name="OutfitF_0Ankles" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0Ankles</Data>
+        </Slider>
+        <Slider name="AppleCheeks" invert="false" default="0">
+            <Data name="OutfitF_0AppleCheeks" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0AppleCheeks</Data>
+        </Slider>
+        <Slider name="Arms" invert="false" default="0">
+            <Data name="OutfitF_0Arms" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0Arms</Data>
+        </Slider>
+        <Slider name="Back" invert="false" default="0">
+            <Data name="OutfitF_0Back" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0Back</Data>
+        </Slider>
+        <Slider name="BackArch" invert="false" default="0">
+            <Data name="OutfitF_0BackArch" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0BackArch</Data>
+        </Slider>
+        <Slider name="Belly" invert="false" default="0">
+            <Data name="OutfitF_0Belly" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0Belly</Data>
+        </Slider>
+        <Slider name="BigBelly" invert="false" default="0">
+            <Data name="OutfitF_0BigBelly" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0BigBelly</Data>
+        </Slider>
+        <Slider name="BigButt" invert="false" default="0">
+            <Data name="OutfitF_0BigButt" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0BigButt</Data>
+        </Slider>
+        <Slider name="BigTorso" invert="false" default="0">
+            <Data name="OutfitF_0BigTorso" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0BigTorso</Data>
+        </Slider>
+        <Slider name="BreastFantasy" invert="false" default="0">
+            <Data name="OutfitF_0BreastFantasy" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0BreastFantasy</Data>
+        </Slider>
+        <Slider name="BreastFlatness2" invert="false" default="0">
+            <Data name="OutfitF_0BreastFlatness2" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0BreastFlatness2</Data>
+        </Slider>
+        <Slider name="BreastHeight" invert="false" default="0">
+            <Data name="OutfitF_0BreastHeight" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0BreastHeight</Data>
+        </Slider>
+        <Slider name="BreastPerkiness" invert="false" default="0">
+            <Data name="OutfitF_0BreastPerkiness" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0BreastPerkiness</Data>
+        </Slider>
+        <Slider name="ArmpitHeight" invert="false" default="0">
+            <Data name="OutfitF_0ArmpitHeight" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0ArmpitHeight</Data>
+        </Slider>
+        <Slider name="ForearmSize" invert="false" default="0">
+            <Data name="OutfitF_0ForearmSize" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0ForearmSize</Data>
+        </Slider>
+        <Slider name="7B Upper" invert="false" default="0">
+            <Data name="OutfitF_07B Upper" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_07B Upper</Data>
+        </Slider>
+        <Slider name="7B Lower" invert="false" default="0">
+            <Data name="OutfitF_07B Lower" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_07B Lower</Data>
+        </Slider>
+        <Slider name="MuscularChest" invert="false" default="0">
+            <Data name="OutfitF_0MuscularChest" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0MuscularChest</Data>
+        </Slider>
+        <Slider name="MuscularArms" invert="false" default="0">
+            <Data name="OutfitF_0MuscularArms" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0MuscularArms</Data>
+        </Slider>
+        <Slider name="MuscularButt" invert="false" default="0">
+            <Data name="OutfitF_0MuscularButt" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0MuscularButt</Data>
+        </Slider>
+        <Slider name="MuscularLegs" invert="false" default="0">
+            <Data name="OutfitF_0MuscularLegs" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF_0MuscularLegs</Data>
+        </Slider>
+        <Slider name="FeetFeminine" invert="false" default="0">
+            <Data name="OutfitF:0FeetFeminine" target="OutfitF:0" local="true">Western - Duster.osd\OutfitF:0FeetFeminine</Data>
+        </Slider>
+    </SliderSet>
+    </SliderSetInfo>
