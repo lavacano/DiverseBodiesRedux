@@ -25,12 +25,12 @@ namespace
 		return shader;
 	}
 
-	// TESObjectREFR::ApplyEffectShader (OG ID 652173, в этом CommonLibF4 нет обёртки). Возвращает
+	// TESObjectREFR::ApplyEffectShader (1.11.240.0 RVA 0x5E21A0 / NG_ID 2205201; OG ID 652173 / 1.10.163 RVA 0x422180). Возвращает
 	// ShaderReferenceEffect*, нам он не нужен: останавливаем через ProcessLists::FinishShaderEffect.
 	void ApplyShader(RE::TESObjectREFR* a_ref, RE::TESEffectShader* a_shader)
 	{
 		using func_t = void* (*)(RE::TESObjectREFR*, RE::TESEffectShader*, float, RE::TESObjectREFR*, bool, bool, RE::NiAVObject*, bool);
-		static REL::Relocation<func_t> func{ REL::ID(652173) };
+		static REL::Relocation<func_t> func{ REL::Module::get().base() + 0x5E21A0 };
 		func(a_ref, a_shader, -1.0f, nullptr, false, false, nullptr, false);
 	}
 

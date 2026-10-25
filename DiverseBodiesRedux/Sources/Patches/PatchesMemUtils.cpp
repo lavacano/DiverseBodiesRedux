@@ -73,7 +73,7 @@ namespace patches
 		const auto fn = reinterpret_cast<const std::uint8_t*>(base + kBSClothExtraData_SetWorld_RVA);
 		if (!fn) return false;
 
-		// Ищем сигнатуру: 44 8B 05 xx xx xx xx
+		// РС‰РµРј СЃРёРіРЅР°С‚СѓСЂСѓ: 44 8B 05 xx xx xx xx
 		for (std::size_t i = 0; i < 0x80; ++i) {
 			const auto p = fn + i;
 			if (p[0] == 0x44 && p[1] == 0x8B && p[2] == 0x05) {

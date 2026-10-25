@@ -1,6 +1,7 @@
 #include "MainMenuHandler.h"
 
-Hooks<MenuLoaderListener::MainMenuLoaderHandler> MenuLoaderListener::mainMenuLoaderHandler{"", 0x12A2B20, MenuLoaderListener::Hooked_MainMenuLoaderHandler};
+// Fallout 4 1.11.240.0 MainMenu::ctor RVA 0x106E5F0 (NG_ID 2248863; 1.10.163 RVA 0x12A2B20)
+Hooks<MenuLoaderListener::MainMenuLoaderHandler> MenuLoaderListener::mainMenuLoaderHandler{"", 0x106E5F0, MenuLoaderListener::Hooked_MainMenuLoaderHandler};
 std::vector<std::pair<std::string, std::function<void()>>> MenuLoaderListener::HookedMainMenuLoaderActions{};
 
 MenuLoaderListener& MenuLoaderListener::get() {
