@@ -512,7 +512,7 @@ private:
 			return;
 
 		// Проверяем, установлен ли LooksMenu, только один раз
-		// LooksMenu 1.7.0.4 (Next-Gen) registers as "Fallout 4 Engine Extender" instead of "F4EE"
+		// LooksMenu 1.7.0.4 (AE) registers as "Fallout 4 Engine Extender" instead of "F4EE"
 		if ((F4SE::GetPluginInfo("F4EE").has_value() || F4SE::GetPluginInfo("Fallout 4 Engine Extender").has_value() || GetModuleHandleA("f4ee.dll") != nullptr) && !LooksMenu_isInstalled) {
 			// Получаем контрольную сумму
 			if (auto sum = checksum("Data/F4SE/Plugins/f4ee.dll"); sum > 0) {

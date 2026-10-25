@@ -1,11 +1,11 @@
-# Diverse Bodies Redux - Fallout 4 Next-Gen (1.11.240.0) Port & Binary Patching Architecture
+# Diverse Bodies Redux - Fallout 4 Anniversary Edition / AE (1.11.240.0) Port & Binary Patching Architecture
 
 ## 1. Executive Summary
 
-Upstream **Diverse Bodies Redux (DBR)** (rebased onto **v2.10.0**, commit `c5206ba`) targets Fallout 4 runtime **1.10.163.0** and LooksMenu **1.6.20**. When loaded on Fallout 4 Next-Gen (**1.11.240.0**) with F4SE **0.7.2** and LooksMenu **1.7.0.4**, the unmodified plugin fails immediately with multiple fatal access violations, infinite spin-locks, or silent CTDs during actor 3D initialization.
+Upstream **Diverse Bodies Redux (DBR)** (rebased onto **v2.10.0**, commit `c5206ba`) targets Fallout 4 runtime **1.10.163.0** and LooksMenu **1.6.20**. When loaded on Fallout 4 Anniversary Edition (AE) (**1.11.240.0**) with F4SE **0.7.2** and LooksMenu **1.7.0.4**, the unmodified plugin fails immediately with multiple fatal access violations, infinite spin-locks, or silent CTDs during actor 3D initialization.
 
 This repository branch (`next-gen-port`) provides:
-1. **Source-Level Next-Gen (1.11.240.0) & LooksMenu (1.7.0.4) Port**:
+1. **Source-Level Anniversary Edition / AE (1.11.240.0) & LooksMenu (1.7.0.4) Port**:
    - Converted all 35 UTF-16LE / CP1251 C++ source and header files under `DiverseBodiesRedux/Sources/` to clean UTF-8.
    - Updated `LooksMenuInterfaces.h` to support **LooksMenu 1.7.0.4** (`checksum = 0x600771d`, plugin name `"Fallout 4 Engine Extender"`, Next-Gen interface offsets `0x10DBD0`..`0x10E020` / `0xFD6D0`) alongside 1.6.20, and eliminated the infinite spin-lock in `GetInterface()`.
    - Updated all hardcoded Fallout 4 `1.10.163.0` RVAs in `ActorResetQueue.cpp` (`TESNPC::GetBodyTintColor` `0x5B58E0` -> `0x655910`, `ApplySkinTintToTree` `0x68C530` -> `0x6EF070`), `ActorHighlight.cpp` (`TESObjectREFR::ApplyEffectShader` `ID 652173` / `0x422180` -> `0x5E21A0` / `NG_ID 2205201`), `ActorsManager.cpp` (`TESObjectREFR_Events` `0x436A40`/`0x436A70`/`0x436590`/`0x4365C0` -> `0x52D940`/`0x52D970`/`0x52D560`/`0x52D590`), `MainMenuHandler.cpp` (`0x12A2B20` -> `0x106E5F0`), `Patches.cpp`, and `PatchesMemUtils.h` (`0x1DA7A40` -> `0x18A1B60`, `0x1DDC7A0` -> `0x18C8530`, `0x5B52E0` -> `0x655350`, `0x1DAF3B0` -> `0x18A79F0`, `0x1DADA50` -> `0x18A6070`, `0x1DA6C30` -> `0x18A0DA0`, `0x67B2D0` -> `0x6E0DA0`).
@@ -37,7 +37,7 @@ This repository branch (`next-gen-port`) provides:
 - **Spin-Lock Removal**: Bypassed busy-spin loops in `LooksMenuInterfaces<T>::GetInterface()` at `0x1658a`, `0x1663a`, and `0x5a47a` (`74 a4` $\to$ `90 90`).
 
 ### B. DetourXS Engine Hook Incompatibilities
-- **Root Cause**: Upstream DBR utilized DetourXS to place runtime jumps on internal Fallout 4 engine functions. On Next-Gen (1.11.240.0), these detours fail catastrophically:
+- **Root Cause**: Upstream DBR utilized DetourXS to place runtime jumps on internal Fallout 4 engine functions. On Anniversary Edition / AE (1.11.240.0), these detours fail catastrophically:
   1. `TESNPC::ChangeHeadPartRemovePart`: The prologue contains a RIP-relative conditional branch (`je 0x140655755`). When copied directly into the heap trampoline by DetourXS without RIP recalculation, it branches into unmapped process memory, resulting in an immediate CTD.
   2. `MainMenu::ctor`: The detour hook stomps `rax`, corrupting the `MainMenu` singleton pointer.
   3. Havok Cloth Physics Hooks (`hclClothInstance::setTransformSet`, `BSClothUtils`): Low-level Havok calling convention changes cause unaligned SIMD faults.
@@ -63,7 +63,7 @@ This repository branch (`next-gen-port`) provides:
 - Intercepts Address Library lookups at RVA `0x151b0`, translating legacy IDs to 1.11.240.0 RVAs, static dummy buffers (for removed singletons like `bFileUncacheOnMenuOpen`), or safe stub functions.
 
 ### E. Next-Gen F4SE Plugin Version Structure
-- Fallout 4 Next-Gen F4SE (0.7.2+) requires plugins to export an `F4SEPluginVersionData` structure or `F4SEPlugin_Version`.
+- Fallout 4 Anniversary Edition (AE) F4SE (0.7.2+) requires plugins to export an `F4SEPluginVersionData` structure or `F4SEPlugin_Version`.
 - The patch appends a `.dbrng` PE section with:
   - `F4SEPluginVersionData` initialized for Fallout 4 1.11.240.0.
   - An export directory exporting `F4SEPlugin_Load`, `F4SEPlugin_Query`, and `F4SEPlugin_Version`.

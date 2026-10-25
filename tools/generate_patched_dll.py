@@ -136,7 +136,7 @@ def build_dbr_ng(input_dll: str, output_dll: str):
 
     # 1j. Neutralize dangerous/broken DetourXS engine & overlay hooks
     # ChangeHeadPartRemovePart copies RIP-relative je 0x140655755 into heap trampoline causing immediate CTD.
-    # Havok cloth physics hooks patch low-level engine physics functions causing desync/crashes in Next-Gen.
+    # Havok cloth physics hooks patch low-level engine physics functions causing desync/crashes in AE 1.11.240.0.
     dangerous_hooks = [
         (0x5500F, b'\xe8\xbc\x3f\x00\x00', 'SetTransformSet'),
         (0x5501B, b'\xe8\xd0\x3c\x00\x00', 'SetSettle'),
