@@ -1,7 +1,7 @@
 #include "Bodymorphs.h"
 #include "PugiXML/pugixml.hpp"
 #include "LooksMenu/LooksMenuInterfaces.h"
-#include "Ini/ini.h"
+#include "Ini/Ini.h"
 #include "Details/ProcessingGuard.hpp"
 #include "ActorsManager/ActorResetQueue.h"
 

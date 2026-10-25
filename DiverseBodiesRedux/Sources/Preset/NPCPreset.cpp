@@ -504,7 +504,7 @@ bool NPCPreset::applyImpl(RE::Actor* actor, bool reset3d, bool checkAlreadyAppli
 		// Ёмкость нового массива >= любого счётчика, который может увидеть
 		// конкурентный читатель (IO-поток движка при построении головы), — чтобы он
 		// не вышел за границы, даже прочитав новый указатель со старым numHeadParts.
-		const std::size_t capacity = std::max({ newCount, oldNPCCount, oldFaceCount, std::size_t{ 1 } });
+		const std::size_t capacity = (std::max)({ newCount, oldNPCCount, oldFaceCount, std::size_t{ 1 } });
 
 		auto fillHeadParts = [&](RE::BGSHeadPart** mem) {
 			for (std::size_t i = 0; i < newCount; ++i) mem[i] = m_headParts[static_cast<std::uint32_t>(i)];

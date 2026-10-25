@@ -6,7 +6,7 @@
 #include <atomic>
 #include <thread>
 #include <mutex>
-#include "Globals.h"
+#include "globals.h"
 #include "Utils/utility.h"
 #include <typeinfo>
 

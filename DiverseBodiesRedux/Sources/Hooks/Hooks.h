@@ -2,7 +2,7 @@
 #include <string>
 #include "F4SE/F4SE.h"
 #include "RE/Fallout.h"
-#include <detourXS/DetourXS.h>
+#include <detourxs/detourxs.h>
 #include <typeinfo>
 #include <functional>
 

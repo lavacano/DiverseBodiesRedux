@@ -1,6 +1,6 @@
 #pragma once
 #include "PCH.h"
-#include "Ini/ini.h"
+#include "Ini/Ini.h"
 
 namespace logger = F4SE::log;
 
