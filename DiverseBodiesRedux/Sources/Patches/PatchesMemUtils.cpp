@@ -1,3 +1,4 @@
+#include <windows.h>
 #include "PatchesMemUtils.h"
 #define PAGE_EXECUTE_READWRITE_ 0x40
 

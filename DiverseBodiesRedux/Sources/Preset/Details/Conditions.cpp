@@ -1,5 +1,5 @@
 #include "Conditions.h"
-#include <utils/utility.h>
+#include <Utils/utility.h>
 #include <filesystem>
 #include <fstream>
 #include "globals.h"
@@ -35,7 +35,7 @@ void for_each_filter(const std::function<void(Filter)>& func) noexcept {
 	}
 }
 
-constexpr std::string_view getFilterString(Filter filter) noexcept {
+std::string_view getFilterString(Filter filter) noexcept {
 	switch (filter) {
 	case Filter::Gender:
 		return "Gender";

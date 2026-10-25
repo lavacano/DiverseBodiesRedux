@@ -3,7 +3,7 @@
 #include <RE/Fallout.h>
 #include <Preset/Preset.h>
 #include <PresetsManager/PresetsManager.h>
-#include <Preset/BodyMorphs.h>
+#include <Preset/Bodymorphs.h>
 #include <Preset/Bodyhairs.h>
 #include <Preset/BodyTattoos.h>
 #include <Preset/Nails.h>

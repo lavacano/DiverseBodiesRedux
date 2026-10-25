@@ -1,4 +1,5 @@
 #pragma once
+#undef interface
 #include "F4SE/F4SE.h"
 #include "RE/Fallout.h"
 #include <Hooks/Hooks.h>
@@ -96,15 +97,15 @@ namespace looksMenuHooks {
 
     // Generic hook initialization helper
     template<typename HandlerType>
-    inline bool initializeHookHelper(Hooks<HandlerType>& hook, void* interface, size_t vtableIndex, 
+    inline bool initializeHookHelper(Hooks<HandlerType>& hook, void* a_interface, size_t vtableIndex, 
                                      HandlerType hookFunction, const char* hookName = "Unknown") {
-        if (!interface) {
+        if (!a_interface) {
             logger::error("{}: interface is nullptr!", hookName);
             return false;
         }
 
         hook = Hooks<HandlerType>{
-            getVirtualFncAddr(interface, vtableIndex),
+            getVirtualFncAddr(a_interface, vtableIndex),
             hookFunction
         };
 
