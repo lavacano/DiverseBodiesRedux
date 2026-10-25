@@ -9,19 +9,19 @@ namespace logger = F4SE::log;
 
 namespace
 {
-	// TESNPC::GetBodyTintColor (Fallout4.exe 1.10.163, RVA 0x5B58E0).
+	// TESNPC::GetBodyTintColor (Fallout4.exe 1.11.240.0 RVA 0x655910 / NG_ID 2207435; 1.10.163 RVA 0x5B58E0).
 	// Возвращает цвет кожи NPC в out. force=true — заново найти в tintingData запись слота
 	// kSkinTone и пересчитать кэш TESNPC::bodyTintColor{R,G,B,A}; force=false — вернуть кэш.
 	// Голова зовёт её с force=true (поэтому берёт свежие тинты), тело и ладони — с force=false.
 	// 5-й аргумент (байт на стеке) во всех вызовах движка равен 0.
 	using GetBodyTintColor_t = void* (*)(RE::TESNPC*, RE::NiColorA*, void*, bool, bool);
 
-	// Fallout4.exe RVA 0x68C530: рекурсивно красит skin-tint шейдеры (тип 5) поддерева в цвет color.
+	// Fallout4.exe 1.11.240.0 RVA 0x6EF070 (1.10.163 RVA 0x68C530): рекурсивно красит skin-tint шейдеры (тип 5) поддерева в цвет color.
 	using ApplySkinTintToTree_t = void* (*)(RE::NiAVObject*, const RE::NiColorA*);
 
 	inline bool getBodyTintColor(RE::TESNPC* npc, RE::NiColorA& out, bool force) {
 		if (!npc) return false;
-		REL::Relocation<GetBodyTintColor_t> func{ REL::Module::get().base() + 0x5B58E0 };
+		REL::Relocation<GetBodyTintColor_t> func{ REL::Module::get().base() + 0x655910 };
 		out = RE::NiColorA{};
 		func(npc, &out, nullptr, force, false);
 		return true;
@@ -29,7 +29,7 @@ namespace
 
 	inline void applySkinTintToTree(RE::NiAVObject* root, const RE::NiColorA& color) {
 		if (!root) return;
-		REL::Relocation<ApplySkinTintToTree_t> func{ REL::Module::get().base() + 0x68C530 };
+		REL::Relocation<ApplySkinTintToTree_t> func{ REL::Module::get().base() + 0x6EF070 };
 		func(root, &color);
 	}
 
