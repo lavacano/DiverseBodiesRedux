@@ -293,12 +293,17 @@ void ActorResetQueue::DoRefreshSkinTint(RE::Actor* actor)
 	RE::NiColorA color{};
 	if (!getBodyTintColor(source, color, true)) return;
 
+	const auto rByte = static_cast<int8_t>(std::clamp(color.r * 255.0f, 0.0f, 255.0f));
+	const auto gByte = static_cast<int8_t>(std::clamp(color.g * 255.0f, 0.0f, 255.0f));
+	const auto bByte = static_cast<int8_t>(std::clamp(color.b * 255.0f, 0.0f, 255.0f));
+	const auto aByte = static_cast<int8_t>(std::clamp(color.a * 255.0f, 0.0f, 255.0f));
+
 	// Распространяем пересчитанный кэш цвета и данные тинтов по всей цепочке шаблонов:
 	for (auto* cur = npc; cur; cur = cur->faceNPC) {
-		cur->bodyTintColorR = source->bodyTintColorR;
-		cur->bodyTintColorG = source->bodyTintColorG;
-		cur->bodyTintColorB = source->bodyTintColorB;
-		cur->bodyTintColorA = source->bodyTintColorA;
+		cur->bodyTintColorR = rByte;
+		cur->bodyTintColorG = gByte;
+		cur->bodyTintColorB = bByte;
+		cur->bodyTintColorA = aByte;
 		if (!cur->tintingData && source->tintingData) {
 			cur->tintingData = source->tintingData;
 		}

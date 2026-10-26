@@ -105,13 +105,31 @@ bool BodymorphsPreset::apply(RE::Actor* actor, bool reset3d) const
 		return false;
 	}
 
+	auto Interface = LooksMenuInterfaces<BodyMorphInterface>::GetInterface();
+	if (!Interface) {
+		logger::critical("BodyMorphInterface is nullptr!");
+		return false;
+	}
+
+	const bool isFemale = (actor->GetSex() == RE::Actor::Sex::Female);
+
+	if (isFemale) {
+		// Hands have static wrist circumference in CBBE/TWB.
+		// Explicitly zero arm-widening sliders to prevent wrist seam step / normal separation:
+		Interface->SetMorph(actor, true, "Arms", globals::kwd_diversed, 0.0f);
+		Interface->SetMorph(actor, true, "ChubbyArms", globals::kwd_diversed, 0.0f);
+		Interface->SetMorph(actor, true, "ForearmSize", globals::kwd_diversed, 0.0f);
+		Interface->SetMorph(actor, true, "MuscularArms", globals::kwd_diversed, 0.0f);
+	}
+
 	for (const auto& [morphName, morphValue] : m_morphs) {
-		auto Interface = LooksMenuInterfaces<BodyMorphInterface>::GetInterface();
-		if (!Interface) {
-			logger::critical("BodyMorphInterface is nullptr!");
-			return false;
+		if (isFemale) {
+			if (morphName == "Arms" || morphName == "ChubbyArms" ||
+			    morphName == "ForearmSize" || morphName == "MuscularArms") {
+				continue;
+			}
 		}
-		Interface->SetMorph(actor, actor->GetSex() == RE::Actor::Sex::Female, morphName, globals::kwd_diversed, morphValue);
+		Interface->SetMorph(actor, isFemale, morphName, globals::kwd_diversed, morphValue);
 	}
 
 	// UpdateMorphs применяет записанные значения к геометрии 3D-нода.
