@@ -10,6 +10,7 @@ namespace patches {
 	// Дублирование с неверной сигнатурой (void*, uint32_t, void*) вместо (void*) повреждало стек и вызывало краш.
 	Hooks<BSClothExtraData_SetSettle_t> BSClothExtraData_SetSettle_Handler{ "", 0x18A1B60 /* 1.10.163: 0x1DA7A40 */, Hooked_BSClothExtraData_SetSettle };
 	Hooks<SetTransformSet_Handler_t> SetTransformSet_Handler{ "", 0x18C8530 /* 1.10.163: 0x1DDC7A0 */, Hooked_SetTransformSet };
+	Hooks<SetTransformSet_Handler_t> SetTransformSet2_Handler{ "", 0x18C85F0, Hooked_SetTransformSet2 };
 	Hooks<ChangeHeadPartRemovePartHandler_t> ChangeHeadPartRemovePart{ "", 0x6555A0 /* 1.10.163: 0x5B5560 (5985632) */, Hooked_ChangeHeadPartRemovePart };
 	Hooks<ChangeHeadPartHandler_t> ChangeHeadPart{ "", 0x6599B0 /* 1.10.163: 0x5B9B30 (6003504) */, Hooked_ChangeHeadPart };
 	Hooks<cbp_sub_1800024C0_t> cbp_sub_1800024C0_Hook{ "cbp.dll", 0x24C0, Hooked_cbp_sub_1800024C0 };
@@ -64,6 +65,31 @@ namespace patches {
 		}
 		__except (EXCEPTION_EXECUTE_HANDLER) {
 			logger::error("Hooked_SetTransformSet: exception at 0x{:x}", reinterpret_cast<uintptr_t>(_ReturnAddress()));
+		}
+	}
+
+	void Hooked_SetTransformSet2(void* instance, uint32_t index, void* transformSet) {
+		// Twin overload of hclClothInstance::setTransformSet at RVA 0x18C85F0.
+		// Dereferences transformSet at +0x0A (cmp word ptr [r8+0xA], 0).
+		// When called with transformSet = nullptr (e.g. physics hair/outfit missing cloth bones),
+		// it crashes at Fallout4.exe+18C85FF without null check.
+		__try {
+			if (!instance || !IsReadableFast(instance, 0x48)) {
+				logger::warn("Hooked_SetTransformSet2: invalid instance (0x{:x})", reinterpret_cast<uintptr_t>(instance));
+				return;
+			}
+			if (!transformSet) {
+				logger::warn("Hooked_SetTransformSet2: transformSet is null. Skipping...");
+				return;
+			}
+			if (!IsReadableFast(transformSet, 0x0C)) {
+				logger::warn("Hooked_SetTransformSet2: invalid transformSet (0x{:x})", reinterpret_cast<uintptr_t>(transformSet));
+				return;
+			}
+			SetTransformSet2_Handler.GetOriginal()(instance, index, transformSet);
+		}
+		__except (EXCEPTION_EXECUTE_HANDLER) {
+			logger::error("Hooked_SetTransformSet2: exception at 0x{:x}", reinterpret_cast<uintptr_t>(_ReturnAddress()));
 		}
 	}
 

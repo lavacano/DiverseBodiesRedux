@@ -13,6 +13,8 @@ namespace patches {
 	using SetTransformSet_Handler_t = void(__fastcall*)(void*, uint32_t, void*);
 	void Hooked_SetTransformSet(void* instance, uint32_t index, void* transformSet);
 	extern Hooks<SetTransformSet_Handler_t> SetTransformSet_Handler;
+	void Hooked_SetTransformSet2(void* instance, uint32_t index, void* transformSet);
+	extern Hooks<SetTransformSet_Handler_t> SetTransformSet2_Handler;
 
 	// ChangeHeadPart patches
 	void removeWithExtra(RE::TESNPC* npc, RE::BGSHeadPart* hpart);

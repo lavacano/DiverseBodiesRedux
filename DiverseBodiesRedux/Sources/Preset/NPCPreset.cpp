@@ -152,6 +152,10 @@ namespace {
 		for (auto* hp : headParts) {
 			if (!hp || hp->IsExtraPart()) continue;
 
+			// Restrict fallback hairs and eyes strictly to vanilla Fallout4.esm (index 0x00).
+			// Mod hairs (such as physics hairs from KS Hairdos) crash actors without cloth bones on their skeleton.
+			if ((hp->formID >> 24) != 0x00) continue;
+
 			if (hp->type.get() == RE::BGSHeadPart::HeadPartType::kHair) {
 				if (hp->flags.all(RE::BGSHeadPart::Flag::kPlayable)) {
 					if (!hp->flags.all(RE::BGSHeadPart::Flag::kCantBeFemale)) {

@@ -266,6 +266,7 @@ void initAfterGameDataWasLoaded() {
 	patches::PrewarmClothTlsGuard();
 
 	patches::SetTransformSet_Handler.Install();
+	patches::SetTransformSet2_Handler.Install();
 	patches::BSClothExtraData__SetSettleOnTransitionToSim_Bool_Handler.Install();
 	patches::BSClothUtils_BSTransformSet_QClothSupportsLOD_Handler.Install();
 	patches::BSClothUtils_BSTransformSet_ResetPrediction_void_Handler.Install();
