@@ -457,7 +457,7 @@ namespace patches {
 	// ещё не пропатченные байты.
 	void PrewarmClothTlsGuard()
 	{
-		HasGameTLSGuardSlot();
+		GetGameTlsIndexPtr();
 	}
 
 	// Легкая валидация без IsBadReadPtr/IsBadWritePtr — проверяем массивы через VirtualQuery и null-check'и
@@ -543,6 +543,9 @@ namespace patches {
 
 		// Всё валидно и на верном потоке — вызываем оригинал
 		auto orig = BSClothExtraData_SetWorld_Handler.GetOriginal();
+		if (!orig) {
+			return;
+		}
 		CallOriginalSafe(orig, thisPtr, newWorld);
 	}
 }

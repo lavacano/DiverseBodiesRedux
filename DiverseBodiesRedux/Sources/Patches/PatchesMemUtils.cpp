@@ -68,46 +68,77 @@ namespace patches
 		return (off + minSize) <= mbi.RegionSize;
 	}
 
-	bool ResolveGameTlsIndex(std::uint32_t& outIdx)
-	{
-		const auto base = reinterpret_cast<std::uintptr_t>(::GetModuleHandleA(nullptr)); // Fallout4.exe base (0x140000000)
-		const auto fn = reinterpret_cast<const std::uint8_t*>(base + kBSClothExtraData_SetWorld_RVA);
-		if (!fn) return false;
+	static const std::uint32_t* s_gameTlsIndexPtr = nullptr;
+	static std::atomic<bool> s_tlsPtrResolved{ false };
 
-		// Ищем сигнатуру: 44 8B 05 xx xx xx xx
-		for (std::size_t i = 0; i < 0x80; ++i) {
-			const auto p = fn + i;
-			if (p[0] == 0x44 && p[1] == 0x8B && p[2] == 0x05) {
-				const auto disp = *reinterpret_cast<const std::int32_t*>(p + 3);
-				const auto next = reinterpret_cast<std::uintptr_t>(p + 7);
-				const auto idxAddr = next + disp;
-				if (!::IsBadReadPtr(reinterpret_cast<const void*>(idxAddr), sizeof(std::uint32_t))) {
-					outIdx = *reinterpret_cast<const std::uint32_t*>(idxAddr);
-					return true;
+	const std::uint32_t* GetGameTlsIndexPtr()
+	{
+		if (s_tlsPtrResolved.load(std::memory_order_acquire)) {
+			return s_gameTlsIndexPtr;
+		}
+
+		const auto base = reinterpret_cast<std::uintptr_t>(::GetModuleHandleA(nullptr)); // Fallout4.exe base (0x140000000)
+		if (!base) return nullptr;
+
+		const auto fn = reinterpret_cast<const std::uint8_t*>(base + kBSClothExtraData_SetWorld_RVA);
+		if (fn) {
+			// Ищем сигнатуру: 44 8B 05 xx xx xx xx
+			for (std::size_t i = 0; i < 0x80; ++i) {
+				const auto p = fn + i;
+				if (p[0] == 0x44 && p[1] == 0x8B && p[2] == 0x05) {
+					const auto disp = *reinterpret_cast<const std::int32_t*>(p + 3);
+					const auto next = reinterpret_cast<std::uintptr_t>(p + 7);
+					const auto idxAddr = reinterpret_cast<const std::uint32_t*>(next + disp);
+					if (IsReadableFast(idxAddr, sizeof(std::uint32_t))) {
+						s_gameTlsIndexPtr = idxAddr;
+						s_tlsPtrResolved.store(true, std::memory_order_release);
+						return s_gameTlsIndexPtr;
+					}
+					break;
 				}
-				return false;
 			}
 		}
-		return false;
+
+		// Fallback для Fallout 4 1.10.980 (Next-Gen) RVA 0x3E73018
+		const auto fallbackAddr = reinterpret_cast<const std::uint32_t*>(base + 0x3E73018);
+		if (IsReadableFast(fallbackAddr, sizeof(std::uint32_t))) {
+			s_gameTlsIndexPtr = fallbackAddr;
+		}
+
+		s_tlsPtrResolved.store(true, std::memory_order_release);
+		return s_gameTlsIndexPtr;
+	}
+
+	bool ResolveGameTlsIndex(std::uint32_t& outIdx)
+	{
+		const auto* ptr = GetGameTlsIndexPtr();
+		if (!ptr) return false;
+		outIdx = *ptr;
+		return outIdx != 0;
 	}
 
 	bool HasGameTLSGuardSlot()
 	{
-		const auto tlsArray = reinterpret_cast<const void**>(__readgsqword(0x58));
+		const auto tlsArray = reinterpret_cast<const void* const*>(__readgsqword(0x58));
 		if (!tlsArray) return false;
 
-		static std::atomic<bool> s_inited{ false };
-		static std::uint32_t s_tlsIndex{ 0 };
-		static bool s_ok{ false };
+		const auto* ptr = GetGameTlsIndexPtr();
+		if (!ptr) return false;
 
-		if (!s_inited.load(std::memory_order_acquire)) {
-			std::uint32_t idx{};
-			s_ok = ResolveGameTlsIndex(idx);
-			if (s_ok) s_tlsIndex = idx;
-			s_inited.store(true, std::memory_order_release);
+		const auto idx = *ptr;
+		if (idx == 0) return false;
+
+		const void* slot = nullptr;
+#ifdef _MSC_VER
+		__try {
+			slot = tlsArray[idx];
+		} __except (EXCEPTION_EXECUTE_HANDLER) {
+			return false;
 		}
-		if (!s_ok) return false;
+#else
+		slot = tlsArray[idx];
+#endif
 
-		return *(tlsArray + s_tlsIndex) != nullptr;
+		return slot != nullptr;
 	}
 }

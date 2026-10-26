@@ -61,11 +61,14 @@ namespace patches
 	// RVA BSClothExtraData::SetWorld(hclBSWorld*)
 	static constexpr std::uintptr_t kBSClothExtraData_SetWorld_RVA = 0x18A0DA0; // 1.10.163: 0x1DA6C30
 
+	// Адрес переменной _tls_index в Fallout4.exe
+	const std::uint32_t* GetGameTlsIndexPtr();
+
 	// В первых ~0x80 байтах функции есть: 44 8B 05 xx xx xx xx  (mov r8d, dword ptr [rip+disp32]) -> cs:TlsIndex
 	bool ResolveGameTlsIndex(std::uint32_t& outIdx);
 
 	// Проверяет, что TLS[TlsIndex] != nullptr для текущего потока (как в игре).
-	// Это главный сторож от падения на Fallout4.exe+1DA6C5C.
+	// Это главный сторож от падения на Fallout4.exe+18A0DCC.
 	bool HasGameTLSGuardSlot();
 
 	// Безопасный вызов оригинала с перехватом AV (не даем упасть процессу).
