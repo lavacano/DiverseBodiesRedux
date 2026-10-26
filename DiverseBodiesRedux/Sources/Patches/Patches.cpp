@@ -519,25 +519,13 @@ namespace patches {
 
 		// Вызов не с игрового потока (нет TLS) — физ-моды (CBP/OCBP и т.п.) легитимно
 		// дёргают cloth-функции со своего потока каждый кадр, это НЕ признак порчи
-		// объекта. Раньше здесь стоял permanent Quarantine+Enqueue(detach) — единственный
-		// такой вызов навсегда отключал физику этого предмета одежды. Теперь просто
-		// пропускаем ЭТОТ вызов: объект не трогаем, на следующем (корректном) вызове
-		// SetWorld всё отработает как обычно.
+		// объекта. Пропускаем этот вызов молча без спама в лог.
 		if (!HasGameTLSGuardSlot()) {
-			if (ClothGuard::ShouldWarn(thisPtr)) {
-				logger::info("BSClothExtraData::SetWorld off-thread; skipping this call this=0x{:x}",
-					reinterpret_cast<std::uintptr_t>(thisPtr));
-			}
 			return;
 		}
 
-		// Цепочка выглядит битой/ещё не собранной — тоже пропускаем только этот вызов,
-		// а не детачим объект навсегда: к следующему SetWorld() движок мог её достроить.
+		// Цепочка выглядит битой/ещё не собранной — тоже пропускаем этот вызов молча.
 		if (!ValidateAllBSTransformSets(thisPtr)) {
-			if (ClothGuard::ShouldWarn(thisPtr)) {
-				logger::info("BSClothExtraData::SetWorld chain not ready; skipping this call this=0x{:x}",
-					reinterpret_cast<std::uintptr_t>(thisPtr));
-			}
 			return;
 		}
 
