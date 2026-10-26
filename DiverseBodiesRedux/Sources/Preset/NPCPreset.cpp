@@ -133,6 +133,88 @@ namespace {
 	inline void freeOwnedHeadPartArray(void* ptr) {
 		memoryManager.Deallocate(ptr, false);
 	}
+
+	std::vector<RE::BGSHeadPart*> s_femaleHairs;
+	std::vector<RE::BGSHeadPart*> s_maleHairs;
+	std::vector<RE::BGSHeadPart*> s_femaleEyes;
+	std::vector<RE::BGSHeadPart*> s_maleEyes;
+	std::mutex                    s_fallbackPartsMutex;
+	bool                          s_fallbackPartsInitialized = false;
+
+	inline void initFallbackHeadParts() {
+		std::lock_guard lock(s_fallbackPartsMutex);
+		if (s_fallbackPartsInitialized) return;
+
+		auto dataHandler = RE::TESDataHandler::GetSingleton();
+		if (!dataHandler) return;
+
+		auto& headParts = dataHandler->GetFormArray<RE::BGSHeadPart>();
+		for (auto* hp : headParts) {
+			if (!hp || hp->IsExtraPart()) continue;
+
+			if (hp->type.get() == RE::BGSHeadPart::HeadPartType::kHair) {
+				if (hp->flags.all(RE::BGSHeadPart::Flag::kPlayable)) {
+					if (!hp->flags.all(RE::BGSHeadPart::Flag::kCantBeFemale)) {
+						s_femaleHairs.push_back(hp);
+					}
+					if (!hp->flags.all(RE::BGSHeadPart::Flag::kCantBeMale)) {
+						s_maleHairs.push_back(hp);
+					}
+				}
+			} else if (hp->type.get() == RE::BGSHeadPart::HeadPartType::kEyes) {
+				if (hp->flags.all(RE::BGSHeadPart::Flag::kPlayable)) {
+					if (!hp->flags.all(RE::BGSHeadPart::Flag::kCantBeFemale)) {
+						s_femaleEyes.push_back(hp);
+					}
+					if (!hp->flags.all(RE::BGSHeadPart::Flag::kCantBeMale)) {
+						s_maleEyes.push_back(hp);
+					}
+				}
+			}
+		}
+
+		logger::info("initFallbackHeadParts: loaded {} female hairs, {} male hairs, {} female eyes, {} male eyes",
+			s_femaleHairs.size(), s_maleHairs.size(), s_femaleEyes.size(), s_maleEyes.size());
+		s_fallbackPartsInitialized = true;
+	}
+
+	inline RE::BGSHeadPart* getFallbackHair(RE::Actor* actor) {
+		if (!actor) return nullptr;
+		initFallbackHeadParts();
+		bool isFemale = actor->GetSex() == RE::Actor::Sex::Female;
+		const auto& list = isFemale ? s_femaleHairs : s_maleHairs;
+		if (list.empty()) return nullptr;
+
+		std::vector<RE::BGSHeadPart*> raceMatches;
+		raceMatches.reserve(list.size());
+		for (auto* hp : list) {
+			if (!hp->validRaces || !actor->race || hp->validRaces->ContainsItem(actor->race)) {
+				raceMatches.push_back(hp);
+			}
+		}
+		const auto& targetList = raceMatches.empty() ? list : raceMatches;
+		std::size_t idx = static_cast<std::size_t>(actor->formID) % targetList.size();
+		return targetList[idx];
+	}
+
+	inline RE::BGSHeadPart* getFallbackEyes(RE::Actor* actor) {
+		if (!actor) return nullptr;
+		initFallbackHeadParts();
+		bool isFemale = actor->GetSex() == RE::Actor::Sex::Female;
+		const auto& list = isFemale ? s_femaleEyes : s_maleEyes;
+		if (list.empty()) return nullptr;
+
+		std::vector<RE::BGSHeadPart*> raceMatches;
+		raceMatches.reserve(list.size());
+		for (auto* hp : list) {
+			if (!hp->validRaces || !actor->race || hp->validRaces->ContainsItem(actor->race)) {
+				raceMatches.push_back(hp);
+			}
+		}
+		const auto& targetList = raceMatches.empty() ? list : raceMatches;
+		std::size_t idx = static_cast<std::size_t>(actor->formID) % targetList.size();
+		return targetList[idx];
+	}
 }
 
 // Helper: collect editorIDs from TESNPC headParts
@@ -429,14 +511,24 @@ bool NPCPreset::applyImpl(RE::Actor* actor, bool reset3d, bool checkAlreadyAppli
 	// Схема 2: actorFace == actorNPC ВСЕГДА (см. detach выше) — отдельная блокировка
 	// по formID "общего faceNPC" больше не нужна, этот случай физически не возникает.
 
+	bool actorHasHair = false;
+	if (actorFace && actorFace->headParts && actorFace->numHeadParts > 0) {
+		for (int i = 0; i < actorFace->numHeadParts; ++i) {
+			if (actorFace->headParts[i] && actorFace->headParts[i]->type.get() == RE::BGSHeadPart::HeadPartType::kHair) {
+				actorHasHair = true;
+				break;
+			}
+		}
+	}
+
 	// Проверка и пометка NPC как обрабатываемого должны быть атомарными:
 	// два потока для разных actor-ов с одинаковым faceNPC могут одновременно
 	// пройти find() == end() и оба начать модифицировать одну TESNPC → гонка.
 	{
 		std::lock_guard lock(m_npcPresetsMtx);
 		bool firstTime = m_npcPresets.find(actorFace->formID) == m_npcPresets.end();
-		if (checkAlreadyApplied && !firstTime) {
-			// Блокируем только автоматическое повторное применение
+		if (checkAlreadyApplied && !firstTime && actorHasHair) {
+			// Блокируем только автоматическое повторное применение, если у актора уже есть волосы
 			logger::info("TESNPC id {:x} for actor [{:x}] {} is already modified, blocking automatic reapplication!", actorFace->formID, actor->formID, actor->GetDisplayFullName());
 			return false;
 		}
@@ -487,7 +579,7 @@ bool NPCPreset::applyImpl(RE::Actor* actor, bool reset3d, bool checkAlreadyAppli
 	}
 
 	auto onlyTints = m_conditions.onlyTints();
-	if (!onlyTints && !m_headParts.empty()) {
+	if (!onlyTints && (!m_headParts.empty() || !actorHasHair)) {
 		// Добавляем в исключения xCell
 		auto& xcell = xcell_patch::getInstance();
 		if (xcell.isInitialized() && !xcell.hasExceptionFormID(actorFace->formID)) {
@@ -523,6 +615,47 @@ bool NPCPreset::applyImpl(RE::Actor* actor, bool reset3d, bool checkAlreadyAppli
 				for (auto* extra : origPart->extraParts) {
 					if (extra && !alreadyHasPart(extra)) {
 						mergedHeadParts.push_back(extra);
+					}
+				}
+			}
+		}
+
+		// 3. Fallback: если ни пресет, ни исходный актёр не предоставили причёску или глаза
+		// (например, мод на причёски отсутствует, а актёр ранее уже был обработан с пустой причёской),
+		// гарантируем, что персонаж НЕ останется лысым или без глаз!
+		bool hasHair = false;
+		bool hasEyes = false;
+		for (auto* hp : mergedHeadParts) {
+			if (!hp) continue;
+			if (hp->type.get() == RE::BGSHeadPart::HeadPartType::kHair) hasHair = true;
+			if (hp->type.get() == RE::BGSHeadPart::HeadPartType::kEyes) hasEyes = true;
+		}
+
+		if (!hasHair) {
+			if (auto* fallbackHair = getFallbackHair(actor)) {
+				if (!alreadyHasPart(fallbackHair)) {
+					mergedHeadParts.push_back(fallbackHair);
+					logger::info("NPCPreset: Assigned fallback hair {:08X} ({}) for actor [{:x}] {} preset '{}'",
+						fallbackHair->GetFormID(), fallbackHair->GetFormEditorID(), actor->formID, actor->GetDisplayFullName(), id());
+					for (auto* extra : fallbackHair->extraParts) {
+						if (extra && !alreadyHasPart(extra)) {
+							mergedHeadParts.push_back(extra);
+						}
+					}
+				}
+			}
+		}
+
+		if (!hasEyes) {
+			if (auto* fallbackEyes = getFallbackEyes(actor)) {
+				if (!alreadyHasPart(fallbackEyes)) {
+					mergedHeadParts.push_back(fallbackEyes);
+					logger::info("NPCPreset: Assigned fallback eyes {:08X} ({}) for actor [{:x}] {} preset '{}'",
+						fallbackEyes->GetFormID(), fallbackEyes->GetFormEditorID(), actor->formID, actor->GetDisplayFullName(), id());
+					for (auto* extra : fallbackEyes->extraParts) {
+						if (extra && !alreadyHasPart(extra)) {
+							mergedHeadParts.push_back(extra);
+						}
 					}
 				}
 			}

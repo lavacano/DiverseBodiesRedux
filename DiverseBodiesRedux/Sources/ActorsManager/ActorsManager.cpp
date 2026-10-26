@@ -293,6 +293,7 @@ void ActorsManager::deserialize(const F4SE::SerializationInterface* a_intrfc) {
 	m_deserialized.store(false, std::memory_order_release);
 	clear(); // Очищаем текущие данные
 	SessionOverrides::get().clear();
+	NPCPreset::clearNpcMap();
 
 	// Сброс карты актёров, если это указано в INI
 	bool resetMap = false;
@@ -1248,6 +1249,7 @@ void ActorsManager::notifyNewGameStart() noexcept {
 	// Новая игра в той же сессии: карта актёров и оверрайды прошлой игры не должны остаться.
 	ActorsManager::get().clear();
 	SessionOverrides::get().clear();
+	NPCPreset::clearNpcMap();
 	ActorsManager::get().m_deserialized.store(true, std::memory_order_release);
 	{ std::lock_guard lock(ActorsManager::get().m_recentlyLoadedActorsMtx); ActorsManager::get().m_recentlyLoadedActors.clear(); }
 	m_gameInLoadingState.store(true, std::memory_order_release);
