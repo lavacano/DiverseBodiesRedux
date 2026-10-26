@@ -16,31 +16,12 @@ namespace
 	// 5-й аргумент (байт на стеке) во всех вызовах движка равен 0.
 	using GetBodyTintColor_t = void* (*)(RE::TESNPC*, RE::NiColorA*, void*, bool, bool);
 
-	// Fallout4.exe 1.11.240.0 RVA 0x6EF070 (1.10.163 RVA 0x68C530): рекурсивно красит skin-tint шейдеры (тип 5) поддерева в цвет color.
-	using ApplySkinTintToTree_t = void* (*)(RE::NiAVObject*, const RE::NiColorA*);
-
-	// Fallout4.exe 1.11.240.0 RVA 0x6E1140 (1.10.163 RVA 0x67B660): инвалидирует и обновляет константы шейдеров (BSTriShape::UpdateShaders) для поддерева.
-	using UpdateShadersInTree_t = void* (*)(RE::NiAVObject*, void*);
-
 	inline bool getBodyTintColor(RE::TESNPC* npc, RE::NiColorA& out, bool force) {
 		if (!npc) return false;
 		REL::Relocation<GetBodyTintColor_t> func{ REL::Module::get().base() + 0x655910 };
 		out = RE::NiColorA{};
 		func(npc, &out, nullptr, force, false);
 		return true;
-	}
-
-	inline void applySkinTintToTree(RE::NiAVObject* root, const RE::NiColorA& color) {
-		if (!root) return;
-		REL::Relocation<ApplySkinTintToTree_t> func{ REL::Module::get().base() + 0x6EF070 };
-		func(root, &color);
-	}
-
-	inline void updateShadersInTree(RE::NiAVObject* root) {
-		if (!root) return;
-		REL::Relocation<UpdateShadersInTree_t> func{ REL::Module::get().base() + 0x6E1140 };
-		uint8_t dummy = 0;
-		func(root, &dummy);
 	}
 
 	inline uint32_t packBodyTint(const RE::TESNPC* npc) {
@@ -293,17 +274,12 @@ void ActorResetQueue::DoRefreshSkinTint(RE::Actor* actor)
 	RE::NiColorA color{};
 	if (!getBodyTintColor(source, color, true)) return;
 
-	const auto rByte = static_cast<int8_t>(std::clamp(color.r * 255.0f, 0.0f, 255.0f));
-	const auto gByte = static_cast<int8_t>(std::clamp(color.g * 255.0f, 0.0f, 255.0f));
-	const auto bByte = static_cast<int8_t>(std::clamp(color.b * 255.0f, 0.0f, 255.0f));
-	const auto aByte = static_cast<int8_t>(std::clamp(color.a * 255.0f, 0.0f, 255.0f));
-
 	// Распространяем пересчитанный кэш цвета и данные тинтов по всей цепочке шаблонов:
 	for (auto* cur = npc; cur; cur = cur->faceNPC) {
-		cur->bodyTintColorR = rByte;
-		cur->bodyTintColorG = gByte;
-		cur->bodyTintColorB = bByte;
-		cur->bodyTintColorA = aByte;
+		cur->bodyTintColorR = source->bodyTintColorR;
+		cur->bodyTintColorG = source->bodyTintColorG;
+		cur->bodyTintColorB = source->bodyTintColorB;
+		cur->bodyTintColorA = source->bodyTintColorA;
 		if (!cur->tintingData && source->tintingData) {
 			cur->tintingData = source->tintingData;
 		}
@@ -313,18 +289,6 @@ void ActorResetQueue::DoRefreshSkinTint(RE::Actor* actor)
 		actor->GetFormID(), npc->GetFormID(), source->GetFormID(),
 		npcBefore, packBodyTint(npc), faceBefore, packBodyTint(source),
 		color.r, color.g, color.b, color.a);
-
-	if (auto* root3D = actor->Get3D(false)) {
-		applySkinTintToTree(root3D, color);
-		updateShadersInTree(root3D);
-		if (actor == RE::PlayerCharacter::GetSingleton()) {
-			if (auto* fp3D = actor->Get3D(true)) {
-				applySkinTintToTree(fp3D, color);
-				updateShadersInTree(fp3D);
-			}
-		}
-		logger::info("[SkinTint] actor={:#x} applied to loaded 3D and shaders updated", actor->GetFormID());
-	}
 }
 
 // ---------------------------------------------------------------------------
