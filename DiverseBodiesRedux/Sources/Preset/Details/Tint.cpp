@@ -297,21 +297,18 @@ RE::BGSCharacterTint::Template::Entry* Tint::tryToFindTemplateEntry(uint32_t uni
         return nullptr;
     }
 
-    const auto& faceRelatedData = *HumanRace->faceRelatedData;
-    auto& groups = faceRelatedData[0].tintingTemplate;
+    // Ищем шаблонную запись в обоих полах: 0 = Male, 1 = Female
+    for (int gender = 0; gender < 2; ++gender) {
+        auto* frd = HumanRace->faceRelatedData[gender];
+        if (!frd || !frd->tintingTemplate) continue;
 
-    if (!groups) {
-        logger::error("FindTemplateEntry: Tinting template groups is null");
-        return nullptr;
-    }
+        for (const auto* group : frd->tintingTemplate->groups) {
+            if (!group) continue;
 
-    // Ищем шаблонную запись с совпадающим uniqueID
-    for (const auto* group : groups->groups) {
-        if (!group) continue;
-
-        for (const auto* entry : group->entries) {
-            if (entry && entry->uniqueID == uniqueID) {
-                return const_cast<RE::BGSCharacterTint::Template::Entry*>(entry);
+            for (const auto* entry : group->entries) {
+                if (entry && entry->uniqueID == uniqueID) {
+                    return const_cast<RE::BGSCharacterTint::Template::Entry*>(entry);
+                }
             }
         }
     }

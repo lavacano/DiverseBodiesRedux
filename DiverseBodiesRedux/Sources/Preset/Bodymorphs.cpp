@@ -404,9 +404,6 @@ void ResetBodyMorphs::Run() {
 		}
 
 		if (m_doReset && m_actor->GetFullyLoaded3D()) {
-			if (auto npc = m_actor->GetNPC(); npc) {
-				npc->AddChange(0x4000);
-			}
 			logger::info("[BM] ResetBodyMorphs::Run: calling Reset3D for actor={:#x}", m_actor->formID);
 			using R3D = RE::RESET_3D_FLAGS;
 			// excludeFlags = kHead|kFace: не трогаем голову при сбросе тела.
