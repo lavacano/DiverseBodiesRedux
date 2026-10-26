@@ -5,21 +5,18 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <mutex>
+#include <condition_variable>
+#include <thread>
+#include <atomic>
 #include <functional>
 
 /**
  * @brief Единая очередь сброса 3D для актёров.
  *
- * Решает проблему визуального артефакта "голова без тела":
- * разные пресеты (HEAD, BODYMORPHS, OVERLAY) вызывали Reset3D асинхронно
- * в разных очередях, что давало промежуточные состояния видимые игроку.
- *
- * Принцип работы:
- * - Каждый вызов Schedule() накапливает (мержит) флаги для актёра.
- * - Один F4SE-таск на актёра — добавляется при первом Schedule(), дальше только мерж.
- * - При выполнении таска: DetachOverlays (если нужно) → Reset3D с накопленными флагами.
- * - priority=true (DirectApply): актёр перемещается в начало deque без создания нового таска.
- * - Clear() — при загрузке игры, чтобы не выполнять устаревшие сбросы.
+ * Решает проблему визуального артефакта "голова без тела" и зависания
+ * из-за массового Reset3D при загрузке ячейки:
+ * фоновый поток ActorResetQueue пошагово отдаёт по одному актёру на сброс
+ * в F4SE с паузой в 200 мс между ними.
  */
 class ActorResetQueue
 {
@@ -33,8 +30,8 @@ public:
 		bool needsHeadReset = false; // Reset3D для головы (flags=kHead|kFace, excludeFlags=kNone)
 		bool needsDetach    = false; // DetachOverlays перед body Reset3D
 		bool needsHeadFix   = false; // AddChange(0x800) для faceNPC перед head Reset3D
-		bool needsOverlayUpdate = false; // OverlayInterface::UpdateOverlays(actor) после body Reset3D (применить таблицу оверлеев к текущему 3D)
-		bool needsSkinTintRefresh = false; // пересчитать TESNPC::bodyTintColor из tintingData и перекрасить кожу текущего 3D (тело/ладони)
+		bool needsOverlayUpdate = false; // OverlayInterface::UpdateOverlays(actor) после body Reset3D
+		bool needsSkinTintRefresh = false; // пересчитать TESNPC::bodyTintColor из tintingData
 
 		ResetEntry& merge(const ResetEntry& other) noexcept {
 			needsBodyReset = needsBodyReset || other.needsBodyReset;
@@ -47,7 +44,8 @@ public:
 		}
 	};
 
-	ActorResetQueue() = default;
+	ActorResetQueue();
+	~ActorResetQueue();
 	ActorResetQueue(const ActorResetQueue&) = delete;
 	ActorResetQueue& operator=(const ActorResetQueue&) = delete;
 
@@ -58,38 +56,32 @@ public:
 	 * @brief Запланировать сброс 3D для актёра.
 	 *
 	 * Если для этого актёра уже есть pending-запись — мержит флаги.
-	 * Если нет — добавляет F4SE-таск.
 	 * @param actor    Актёр. Должен быть валиден на момент вызова.
 	 * @param entry    Флаги и параметры сброса.
-	 * @param priority Если true — перемещает актёра в начало очереди (для DirectApply).
+	 * @param priority Если true — перемещает актёра в начало очереди (для DirectApply/Player).
 	 */
 	void Schedule(RE::Actor* actor, ResetEntry entry, bool priority = false);
 
 	/**
 	 * @brief Очистить очередь. Вызывается при notifyGameStartLoading().
-	 * Все pending-таски будут отменены при выполнении (запись не найдена).
 	 */
 	void Clear() noexcept;
 
+	// Вспомогательный: синхронизация цвета кожи тела/ладоней с тинтами лица (см. .cpp)
+	static void DoRefreshSkinTint(RE::Actor* actor);
+
 private:
-	// F4SE-таск, пошагово обрабатывающий очередь (1 актёр за кадр)
-	struct WorkerTask : F4SE::ITaskDelegate {
-		void Run() override;
-	};
+	void StartWorker();
+	void WorkerLoop();
 
-	// Обработать следующего актёра из очереди (пошагово, 1 актёр за кадр)
-	void ProcessNext();
-
-	// Выполнить сброс для актёра (вызывается из ProcessNext на игровом потоке)
+	// Выполнить сброс для актёра (вызывается на игровом потоке через F4SE AddTask)
 	void ExecuteReset(uint32_t formID);
 
 	// Вспомогательный: DetachOverlays для актёра
 	static void DoDetachOverlays(RE::Actor* actor);
 
-	// Вспомогательный: синхронизация цвета кожи тела/ладоней с тинтами лица (см. .cpp)
-	static void DoRefreshSkinTint(RE::Actor* actor);
-
 	std::mutex m_mutex;
+	std::condition_variable m_cv;
 
 	// Порядок выполнения (formID). Позволяет priority-bump через move_to_front.
 	std::deque<uint32_t> m_order;
@@ -97,6 +89,6 @@ private:
 	// Накопленные флаги. Запись удаляется при выполнении таска.
 	std::unordered_map<uint32_t, ResetEntry> m_pending;
 
-	// Флаг активного F4SE-воркера очереди
-	bool m_workerActive = false;
+	std::atomic<bool> m_stop{ false };
+	std::thread m_workerThread;
 };

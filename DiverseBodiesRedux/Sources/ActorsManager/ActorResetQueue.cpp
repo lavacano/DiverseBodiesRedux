@@ -42,58 +42,68 @@ namespace
 }
 
 // ---------------------------------------------------------------------------
-// WorkerTask: пошагово обрабатывает очередь на игровом потоке (1 актёр за кадр)
+// Синглтон и управление фоновым потоком очереди
 // ---------------------------------------------------------------------------
 
-void ActorResetQueue::WorkerTask::Run()
+ActorResetQueue::ActorResetQueue() = default;
+
+ActorResetQueue::~ActorResetQueue()
 {
-	ActorResetQueue::GetSingleton().ProcessNext();
-}
-
-void ActorResetQueue::ProcessNext()
-{
-	uint32_t formID = 0;
-	bool hasMore = false;
-
-	{
-		std::lock_guard lock(m_mutex);
-		if (m_order.empty()) {
-			m_workerActive = false;
-			return;
-		}
-
-		formID = m_order.front();
-		m_order.pop_front();
-	}
-
-	// Выполняем сброс для ОДНОГО актёра (вне лока мьютекса)
-	ExecuteReset(formID);
-
-	// Проверяем, есть ли ещё работа на следующий игровой кадр
-	{
-		std::lock_guard lock(m_mutex);
-		if (!m_order.empty()) {
-			hasMore = true;
-		} else {
-			m_workerActive = false;
-		}
-	}
-
-	if (hasMore) {
-		// Ставим таск на следующий кадр — распределяем нагрузку по времени!
-		F4SE::GetTaskInterface()->AddTask(new WorkerTask());
+	m_stop = true;
+	m_cv.notify_all();
+	if (m_workerThread.joinable()) {
+		m_workerThread.join();
 	}
 }
-
-// ---------------------------------------------------------------------------
-// Синглтон (нужен WorkerTask, который не может держать указатель на очередь)
-// ---------------------------------------------------------------------------
 
 static ActorResetQueue s_instance;
 
 ActorResetQueue& ActorResetQueue::GetSingleton() noexcept
 {
 	return s_instance;
+}
+
+void ActorResetQueue::StartWorker()
+{
+	if (!m_workerThread.joinable()) {
+		m_stop = false;
+		m_workerThread = std::thread(&ActorResetQueue::WorkerLoop, this);
+		logger::info("[ActorResetQueue] Dedicated rate-limited worker thread started");
+	}
+}
+
+void ActorResetQueue::WorkerLoop()
+{
+	while (!m_stop) {
+		uint32_t formID = 0;
+		{
+			std::unique_lock lock(m_mutex);
+			m_cv.wait(lock, [this] { return m_stop.load() || !m_order.empty(); });
+			if (m_stop) break;
+
+			formID = m_order.front();
+			m_order.pop_front();
+		}
+
+		auto done = std::make_shared<std::atomic<bool>>(false);
+		F4SE::GetTaskInterface()->AddTask([this, formID, done]() {
+			ExecuteReset(formID);
+			done->store(true);
+		});
+
+		// Ждём пока игровой поток завершит сброс этого конкретного актёра
+		while (!done->load() && !m_stop) {
+			std::this_thread::sleep_for(std::chrono::milliseconds(5));
+		}
+
+		if (m_stop) break;
+
+		// Задержка между сбросами: 200 миллисекунд (~12 кадров при 60 FPS).
+		// Это гарантирует, что движок закончит асинхронную загрузку текстур и мешей
+		// для текущего актёра и Vulkan освободит временные буферы памяти перед
+		// тем, как начнётся сброс следующего актёра.
+		std::this_thread::sleep_for(std::chrono::milliseconds(200));
+	}
 }
 
 // ---------------------------------------------------------------------------
@@ -105,7 +115,6 @@ void ActorResetQueue::Schedule(RE::Actor* actor, ResetEntry entry, bool priority
 	if (!actor) return;
 	const uint32_t id = actor->GetFormID();
 
-	bool spawnWorker = false;
 	{
 		std::lock_guard lock(m_mutex);
 
@@ -117,7 +126,8 @@ void ActorResetQueue::Schedule(RE::Actor* actor, ResetEntry entry, bool priority
 			m_pending[id] = entry;
 		}
 
-		if (priority) {
+		const bool isPlayer = (actor == RE::PlayerCharacter::GetSingleton());
+		if (priority || isPlayer) {
 			// Поднимаем в начало deque (убираем старое вхождение, вставляем в front)
 			auto pos = std::find(m_order.begin(), m_order.end(), id);
 			if (pos != m_order.end()) {
@@ -131,17 +141,10 @@ void ActorResetQueue::Schedule(RE::Actor* actor, ResetEntry entry, bool priority
 			}
 		}
 
-		// Запускаем воркер только если он ещё не крутится
-		if (!m_workerActive) {
-			m_workerActive = true;
-			spawnWorker = true;
-		}
-	} // m_mutex освобождён здесь
-
-	if (spawnWorker) {
-		F4SE::GetTaskInterface()->AddTask(new WorkerTask());
-		logger::info("[ActorResetQueue] Started rate-limited worker task");
+		StartWorker();
 	}
+
+	m_cv.notify_one();
 }
 
 // ---------------------------------------------------------------------------
@@ -153,7 +156,6 @@ void ActorResetQueue::Clear() noexcept
 	std::lock_guard lock(m_mutex);
 	m_pending.clear();
 	m_order.clear();
-	m_workerActive = false;
 	logger::info("[ActorResetQueue] Cleared (game loading started)");
 }
 
@@ -219,9 +221,17 @@ void ActorResetQueue::ExecuteReset(uint32_t formID)
 		DoDetachOverlays(actor);
 	}
 
-	// --- Body Reset3D: excludeFlags=kHead|kFace — голова не затрагивается ---
-	// Это безопасно: async IO для headpart geometry не запускается.
-	if (entry.needsBodyReset) {
+	// --- UpdateOverlays: применить таблицу оверлеев LooksMenu к текущему 3D ---
+	if (entry.needsOverlayUpdate) {
+		if (auto* overlayInterface = LooksMenuInterfaces<OverlayInterface>::GetInterface(); overlayInterface) {
+			const bool ok = overlayInterface->UpdateOverlays(actor);
+			logger::info("[ActorResetQueue] UpdateOverlays: actor={:#x} result={}", formID, ok);
+		}
+	}
+
+	// --- Reset3D execution: ровно один вызов Reset3D на актёра ---
+	if (entry.needsBodyReset && !entry.needsHeadReset) {
+		// Только тело: исключаем голову (excludeFlags = kHead | kFace)
 		if (auto* npc = actor->GetNPC(); npc) {
 			npc->AddChange(0x4000); // CHANGE_ACTOR_FULL_LOD_SWAPPED
 		}
@@ -231,22 +241,8 @@ void ActorResetQueue::ExecuteReset(uint32_t formID)
 			formID,
 			actor->currentProcess ? static_cast<uint32_t>(actor->currentProcess->GetAll3DUpdateFlags()) : 0u);
 	}
-
-	// --- UpdateOverlays: применить таблицу оверлеев LooksMenu к текущему 3D ---
-	// AddOverlay/RemoveOverlay правят только данные; геометрию строит UpdateOverlays
-	// (аналог UpdateMorphs для морфов). Выполняется на игровом потоке.
-	if (entry.needsOverlayUpdate) {
-		if (auto* overlayInterface = LooksMenuInterfaces<OverlayInterface>::GetInterface(); overlayInterface) {
-			const bool ok = overlayInterface->UpdateOverlays(actor);
-			logger::info("[ActorResetQueue] UpdateOverlays: actor={:#x} result={}", formID, ok);
-		}
-	}
-
-
-	// --- Head Reset3D: flags=kHead|kFace, excludeFlags=kNone ---
-	// Запускает async IO для headpart geometry — выполняется отдельно от body,
-	// чтобы body reset не мог случайно включить голову через merge-логику.
-	if (entry.needsHeadReset) {
+	else if (entry.needsHeadReset) {
+		// Голова (или голова + тело): если нужно и тело, обновляем флаги для обоих
 		if (auto* npc = actor->GetNPC(); npc) {
 			if (entry.needsHeadFix) {
 				if (auto* face = npc->GetRootFaceNPC(); face) {
@@ -254,9 +250,12 @@ void ActorResetQueue::ExecuteReset(uint32_t formID)
 					npc->AddChange(0x800);
 				}
 			}
+			if (entry.needsBodyReset) {
+				npc->AddChange(0x4000); // CHANGE_ACTOR_FULL_LOD_SWAPPED
+			}
 		}
-		logger::info("[ActorResetQueue] Head Reset3D: actor={:#x}", formID);
-		actor->Reset3D(false, R3D::kHead | R3D::kFace, true, R3D::kNone);
+		logger::info("[ActorResetQueue] {}Reset3D: actor={:#x}", entry.needsBodyReset ? "Head+Body " : "Head ", formID);
+		actor->Reset3D(false, entry.needsBodyReset ? R3D::kNone : (R3D::kHead | R3D::kFace), true, R3D::kNone);
 	}
 
 	logger::info("[ActorResetQueue] ExecuteReset DONE: actor={:#x}", formID);
