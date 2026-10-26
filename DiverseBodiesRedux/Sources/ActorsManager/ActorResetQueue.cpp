@@ -19,6 +19,9 @@ namespace
 	// Fallout4.exe 1.11.240.0 RVA 0x6EF070 (1.10.163 RVA 0x68C530): рекурсивно красит skin-tint шейдеры (тип 5) поддерева в цвет color.
 	using ApplySkinTintToTree_t = void* (*)(RE::NiAVObject*, const RE::NiColorA*);
 
+	// Fallout4.exe 1.11.240.0 RVA 0x6E1140 (1.10.163 RVA 0x67B660): инвалидирует и обновляет константы шейдеров (BSTriShape::UpdateShaders) для поддерева.
+	using UpdateShadersInTree_t = void* (*)(RE::NiAVObject*, void*);
+
 	inline bool getBodyTintColor(RE::TESNPC* npc, RE::NiColorA& out, bool force) {
 		if (!npc) return false;
 		REL::Relocation<GetBodyTintColor_t> func{ REL::Module::get().base() + 0x655910 };
@@ -31,6 +34,13 @@ namespace
 		if (!root) return;
 		REL::Relocation<ApplySkinTintToTree_t> func{ REL::Module::get().base() + 0x6EF070 };
 		func(root, &color);
+	}
+
+	inline void updateShadersInTree(RE::NiAVObject* root) {
+		if (!root) return;
+		REL::Relocation<UpdateShadersInTree_t> func{ REL::Module::get().base() + 0x6E1140 };
+		uint8_t dummy = 0;
+		func(root, &dummy);
 	}
 
 	inline uint32_t packBodyTint(const RE::TESNPC* npc) {
@@ -188,10 +198,8 @@ void ActorResetQueue::ExecuteReset(uint32_t formID)
 		return;
 	}
 
-	// --- Цвет кожи тела/ладоней: делаем до проверки 3D — кэш bodyTintColor нужен и при будущей сборке ---
-	if (entry.needsSkinTintRefresh) {
-		DoRefreshSkinTint(actor);
-	}
+	// --- Цвет кожи тела/ладоней: синхронизируем кэш bodyTintColor и шейдеры ---
+	DoRefreshSkinTint(actor);
 
 	if (!actor->GetFullyLoaded3D()) {
 		// Get3D=false: движок ещё строит геометрию для этого актёра.
@@ -247,12 +255,13 @@ void ActorResetQueue::ExecuteReset(uint32_t formID)
 					npc->AddChange(0x800);
 				}
 			}
-			if (entry.needsBodyReset) {
-				npc->AddChange(0x4000); // CHANGE_ACTOR_FULL_LOD_SWAPPED
-			}
 		}
 		logger::info("[ActorResetQueue] {}Reset3D: actor={:#x}", entry.needsBodyReset ? "Head+Body " : "Head ", formID);
 		actor->Reset3D(false, entry.needsBodyReset ? R3D::kNone : (R3D::kHead | R3D::kFace), true, R3D::kNone);
+	}
+
+	if (entry.needsHeadReset || entry.needsBodyReset) {
+		DoRefreshSkinTint(actor);
 	}
 
 	logger::info("[ActorResetQueue] ExecuteReset DONE: actor={:#x}", formID);
@@ -284,13 +293,15 @@ void ActorResetQueue::DoRefreshSkinTint(RE::Actor* actor)
 	RE::NiColorA color{};
 	if (!getBodyTintColor(source, color, true)) return;
 
-	// Базовый NPC актёра (для NPC с шаблоном лица он отличается от faceNPC) должен выдавать
-	// тот же цвет: переносим пересчитанный кэш.
-	if (npc != source) {
-		npc->bodyTintColorR = source->bodyTintColorR;
-		npc->bodyTintColorG = source->bodyTintColorG;
-		npc->bodyTintColorB = source->bodyTintColorB;
-		npc->bodyTintColorA = source->bodyTintColorA;
+	// Распространяем пересчитанный кэш цвета и данные тинтов по всей цепочке шаблонов:
+	for (auto* cur = npc; cur; cur = cur->faceNPC) {
+		cur->bodyTintColorR = source->bodyTintColorR;
+		cur->bodyTintColorG = source->bodyTintColorG;
+		cur->bodyTintColorB = source->bodyTintColorB;
+		cur->bodyTintColorA = source->bodyTintColorA;
+		if (!cur->tintingData && source->tintingData) {
+			cur->tintingData = source->tintingData;
+		}
 	}
 
 	logger::info("[SkinTint] actor={:#x} npc={:#x} face={:#x} cache npc 0x{:08x}->0x{:08x}, face 0x{:08x}->0x{:08x}, color=({:.3f},{:.3f},{:.3f},{:.3f})",
@@ -298,12 +309,16 @@ void ActorResetQueue::DoRefreshSkinTint(RE::Actor* actor)
 		npcBefore, packBodyTint(npc), faceBefore, packBodyTint(source),
 		color.r, color.g, color.b, color.a);
 
-	if (actor->GetFullyLoaded3D()) {
-		applySkinTintToTree(actor->Get3D(false), color);
+	if (auto* root3D = actor->Get3D(false)) {
+		applySkinTintToTree(root3D, color);
+		updateShadersInTree(root3D);
 		if (actor == RE::PlayerCharacter::GetSingleton()) {
-			applySkinTintToTree(actor->Get3D(true), color);
+			if (auto* fp3D = actor->Get3D(true)) {
+				applySkinTintToTree(fp3D, color);
+				updateShadersInTree(fp3D);
+			}
 		}
-		logger::info("[SkinTint] actor={:#x} applied to loaded 3D", actor->GetFormID());
+		logger::info("[SkinTint] actor={:#x} applied to loaded 3D and shaders updated", actor->GetFormID());
 	}
 }
 

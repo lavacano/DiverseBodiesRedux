@@ -259,7 +259,29 @@ static inline bool Tint::applyTints(RE::TESNPC* npc, const Container& tints) {
         entries.emplace_back(entry);
     }
 
-    if (entries.empty()) {
+    // Проверяем, есть ли в пресете тинт скин-тона (slot == kSkinTone)
+    bool hasSkinToneInPreset = false;
+    for (auto* e : entries) {
+        if (e && e->templateEntry && e->templateEntry->slot == RE::BGSCharacterTint::EntrySlot::kSkinTone) {
+            hasSkinToneInPreset = true;
+            break;
+        }
+    }
+
+    // Если в пресете нет скин-тона — сохраняем существующий скин-тон NPC (чтобы не сбросился в серый цвет)
+    RE::BGSCharacterTint::Entry* preservedSkinTone = nullptr;
+    if (!hasSkinToneInPreset && npc->tintingData && npc->tintingData->data) {
+        for (uint32_t i = 0; i < npc->tintingData->size; ++i) {
+            auto* oldEntry = npc->tintingData->data[i];
+            if (oldEntry && oldEntry->templateEntry &&
+                oldEntry->templateEntry->slot == RE::BGSCharacterTint::EntrySlot::kSkinTone) {
+                preservedSkinTone = oldEntry;
+                break;
+            }
+        }
+    }
+
+    if (entries.empty() && !preservedSkinTone) {
         logger::warn("applyTints: No valid tints to apply");
         return false;
     }
@@ -268,15 +290,23 @@ static inline bool Tint::applyTints(RE::TESNPC* npc, const Container& tints) {
     auto oldSize = npc->tintingData->size;
     npc->tintingData->size = 0;
     
-    // Освобождаем память для старых entries
+    // Освобождаем память для старых entries (кроме сохранённого скин-тона)
     if (npc->tintingData->data) {
         for (uint32_t i = 0; i < oldSize; ++i) {
             if (npc->tintingData->data[i]) {
+                if (npc->tintingData->data[i] == preservedSkinTone) {
+                    continue;
+                }
                 // Вызываем деструктор перед освобождением памяти
                 npc->tintingData->data[i]->~Entry();
                 tints_memory::DeallocateScrapHeap(npc->tintingData->data[i]);
             }
         }
+    }
+
+    if (preservedSkinTone) {
+        entries.insert(entries.begin(), preservedSkinTone);
+        logger::info("applyTints: Preserved existing skin tone entry for NPC {:#x}", npc->formID);
     }
 
     // Проверяем, нужна ли переаллокация массива указателей

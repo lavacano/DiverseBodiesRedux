@@ -885,12 +885,11 @@ void ActorsManager::doReset3D(RE::Actor* actor, const std::set<PresetType>& appl
 	bool containsBodyMorphs = appliedTypes.contains(PresetType::BODYMORPHS);
 
 	// AddChange сообщает движку, что нужно перестроить соответствующие части геометрии.
-	// 0x800 = CHANGE_ACTOR_FACE_MORPHS, 0x4000 = CHANGE_ACTOR_BASE_DATA.
+	// 0x800 = CHANGE_ACTOR_FACE_MORPHS.
+	// 0x4000 (CHANGE_ACTOR_FULL_LOD_SWAPPED) намеренно НЕ ставим — это заставляет движок
+	// подменять геометрию на LOD-модели, ломая меши тела и одежды (пропадают ноги/бедра).
 	if (containsHead && actorFace) actorFace->AddChange(0x800);
 	if (containsHead && actorNPC) actorNPC->AddChange(0x800);
-	if (containsBodyMorphs && actorNPC) {
-		actorNPC->AddChange(0x4000);
-	}
 
 	/*if (containsHead) */flags |= RE::RESET_3D_FLAGS::kHead | RE::RESET_3D_FLAGS::kFace;
 
