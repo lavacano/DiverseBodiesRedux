@@ -72,14 +72,15 @@ public:
 	void Clear() noexcept;
 
 private:
-	// F4SE-таск который выполняет фактический сброс
-	struct RunTask : F4SE::ITaskDelegate {
-		uint32_t formID;
-		explicit RunTask(uint32_t id) : formID(id) {}
+	// F4SE-таск, пошагово обрабатывающий очередь (1 актёр за кадр)
+	struct WorkerTask : F4SE::ITaskDelegate {
 		void Run() override;
 	};
 
-	// Выполнить сброс для актёра (вызывается из RunTask::Run на игровом потоке)
+	// Обработать следующего актёра из очереди (пошагово, 1 актёр за кадр)
+	void ProcessNext();
+
+	// Выполнить сброс для актёра (вызывается из ProcessNext на игровом потоке)
 	void ExecuteReset(uint32_t formID);
 
 	// Вспомогательный: DetachOverlays для актёра
@@ -96,7 +97,6 @@ private:
 	// Накопленные флаги. Запись удаляется при выполнении таска.
 	std::unordered_map<uint32_t, ResetEntry> m_pending;
 
-	// Для кого уже добавлен F4SE-таск (но он ещё не выполнился).
-	// Нужно чтобы не добавлять дубли.
-	std::unordered_set<uint32_t> m_tasked;
+	// Флаг активного F4SE-воркера очереди
+	bool m_workerActive = false;
 };

@@ -1,6 +1,7 @@
 #include "Patches.h"
 #include "PatchesMemUtils.h"
 #include "ClothWorldFix.h"
+#include <unordered_set>
 
 namespace patches {
 	// Hook handler instances
@@ -67,23 +68,25 @@ namespace patches {
 	}
 
 	void removeWithExtra(RE::TESNPC* npc, RE::BGSHeadPart* hpart) {
-		// Используем стек для обхода в глубину
 		std::vector<RE::BGSHeadPart*> stack;
+		std::unordered_set<RE::BGSHeadPart*> visited;
 		stack.push_back(hpart);
+		visited.insert(hpart);
 
 		while (!stack.empty()) {
 			RE::BGSHeadPart* current = stack.back();
 			stack.pop_back();
 
-			// Сначала добавляем все extraParts в стек
+			// Сначала добавляем все extraParts в стек с защитой от циклов
 			for (auto it = current->extraParts.rbegin(); it != current->extraParts.rend(); ++it) {
 				RE::BGSHeadPart* extra = *it;
-				if (!extra->extraParts.empty()) {
-					stack.push_back(extra);
-				}
-				else {
-					// Если нет вложенных extraParts, сразу удаляем
-					ChangeHeadPartRemovePart.GetOriginal()(npc, extra, false);
+				if (extra && visited.insert(extra).second) {
+					if (!extra->extraParts.empty()) {
+						stack.push_back(extra);
+					}
+					else {
+						ChangeHeadPartRemovePart.GetOriginal()(npc, extra, false);
+					}
 				}
 			}
 			// После обработки всех extraParts удаляем сам current

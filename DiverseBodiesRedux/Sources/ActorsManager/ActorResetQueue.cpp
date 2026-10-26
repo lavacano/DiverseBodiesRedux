@@ -42,31 +42,52 @@ namespace
 }
 
 // ---------------------------------------------------------------------------
-// RunTask: выполняется на игровом потоке (F4SE task queue)
+// WorkerTask: пошагово обрабатывает очередь на игровом потоке (1 актёр за кадр)
 // ---------------------------------------------------------------------------
 
-void ActorResetQueue::RunTask::Run()
+void ActorResetQueue::WorkerTask::Run()
 {
-	// Получаем актёра по formID на момент выполнения — он может быть уже выгружен.
-	RE::Actor* actor = nullptr;
-	if (auto* form = RE::TESForm::GetFormByID(formID); form) {
-		actor = RE::fallout_cast<RE::Actor*>(form);
+	ActorResetQueue::GetSingleton().ProcessNext();
+}
+
+void ActorResetQueue::ProcessNext()
+{
+	uint32_t formID = 0;
+	bool hasMore = false;
+
+	{
+		std::lock_guard lock(m_mutex);
+		if (m_order.empty()) {
+			m_workerActive = false;
+			return;
+		}
+
+		formID = m_order.front();
+		m_order.pop_front();
 	}
 
-	// Независимо от того, нашли ли актёра — вызываем ExecuteReset,
-	// который сам вычистит запись из очереди.
-	ActorResetQueue::GetSingleton().ExecuteReset(formID);
-	(void)actor; // actor проверяется внутри ExecuteReset
+	// Выполняем сброс для ОДНОГО актёра (вне лока мьютекса)
+	ExecuteReset(formID);
+
+	// Проверяем, есть ли ещё работа на следующий игровой кадр
+	{
+		std::lock_guard lock(m_mutex);
+		if (!m_order.empty()) {
+			hasMore = true;
+		} else {
+			m_workerActive = false;
+		}
+	}
+
+	if (hasMore) {
+		// Ставим таск на следующий кадр — распределяем нагрузку по времени!
+		F4SE::GetTaskInterface()->AddTask(new WorkerTask());
+	}
 }
 
 // ---------------------------------------------------------------------------
-// Синглтон (нужен RunTask, который не может держать указатель на очередь)
+// Синглтон (нужен WorkerTask, который не может держать указатель на очередь)
 // ---------------------------------------------------------------------------
-
-// Объявлен в .h как static method — реализуем здесь.
-// Добавляем static-метод в тело класса через отдельный .cpp.
-// Чтобы не менять .h, используем глобальный экземпляр-синглтон,
-// получаемый через ActorResetQueue::GetSingleton().
 
 static ActorResetQueue s_instance;
 
@@ -84,42 +105,15 @@ void ActorResetQueue::Schedule(RE::Actor* actor, ResetEntry entry, bool priority
 	if (!actor) return;
 	const uint32_t id = actor->GetFormID();
 
-	// ВАЖНО: AddTask вызывается ПОСЛЕ освобождения m_mutex (см. ниже) — иначе AB-BA
-	// дедлок с внутренним локом самого F4SE: F4SE::TaskInterface::AddTask под капотом
-	// берёт свою критическую секцию, а её же держит F4SE, когда синхронно вызывает
-	// RunTask::Run() -> ActorResetQueue::ExecuteReset(), которому в свою очередь нужен
-	// этот самый m_mutex (в начале ExecuteReset). Если Schedule() вызывает AddTask,
-	// ещё держа m_mutex, а в этот момент F4SE-поток уже внутри RunTask::Run ждёт
-	// m_mutex — оба потока ждут друг друга навечно. Подтверждено снятыми стеками
-	// (2026-10-23): один поток стоял в ExecuteReset на std::lock_guard(m_mutex),
-	// другой — в этой функции на RtlEnterCriticalSection внутри AddTask.
-	bool needsTask = false;
+	bool spawnWorker = false;
 	{
 		std::lock_guard lock(m_mutex);
 
 		// Мержим флаги, если запись уже есть
 		auto it = m_pending.find(id);
 		if (it != m_pending.end()) {
-			logger::info("[ActorResetQueue] Schedule MERGE: actor={:#x} priority={} "
-				"before body={} head={} detach={} headFix={} "
-				"+ new body={} head={} detach={} headFix={}",
-				id, priority,
-				it->second.needsBodyReset, it->second.needsHeadReset,
-				it->second.needsDetach, it->second.needsHeadFix,
-				entry.needsBodyReset, entry.needsHeadReset,
-				entry.needsDetach, entry.needsHeadFix);
 			it->second.merge(entry);
-			logger::info("[ActorResetQueue] Schedule MERGE result: actor={:#x} "
-				"body={} head={} detach={} headFix={}",
-				id,
-				it->second.needsBodyReset, it->second.needsHeadReset,
-				it->second.needsDetach, it->second.needsHeadFix);
 		} else {
-			logger::info("[ActorResetQueue] Schedule NEW: actor={:#x} priority={} "
-				"body={} head={} detach={} headFix={}",
-				id, priority,
-				entry.needsBodyReset, entry.needsHeadReset,
-				entry.needsDetach, entry.needsHeadFix);
 			m_pending[id] = entry;
 		}
 
@@ -131,22 +125,22 @@ void ActorResetQueue::Schedule(RE::Actor* actor, ResetEntry entry, bool priority
 			}
 			m_order.push_front(id);
 		} else {
-			// Добавляем в конец только если ещё не запланирован
-			if (m_tasked.find(id) == m_tasked.end()) {
+			// Добавляем в конец очереди только если ещё не запланирован
+			if (std::find(m_order.begin(), m_order.end(), id) == m_order.end()) {
 				m_order.push_back(id);
 			}
 		}
 
-		// Решаем, нужен ли новый F4SE-таск — САМ вызов AddTask ниже, вне лока.
-		if (m_tasked.find(id) == m_tasked.end()) {
-			m_tasked.insert(id);
-			needsTask = true;
+		// Запускаем воркер только если он ещё не крутится
+		if (!m_workerActive) {
+			m_workerActive = true;
+			spawnWorker = true;
 		}
 	} // m_mutex освобождён здесь
 
-	if (needsTask) {
-		F4SE::GetTaskInterface()->AddTask(new RunTask(id));
-		logger::info("[ActorResetQueue] AddTask for actor={:#x}", id);
+	if (spawnWorker) {
+		F4SE::GetTaskInterface()->AddTask(new WorkerTask());
+		logger::info("[ActorResetQueue] Started rate-limited worker task");
 	}
 }
 
@@ -159,12 +153,12 @@ void ActorResetQueue::Clear() noexcept
 	std::lock_guard lock(m_mutex);
 	m_pending.clear();
 	m_order.clear();
-	m_tasked.clear();
+	m_workerActive = false;
 	logger::info("[ActorResetQueue] Cleared (game loading started)");
 }
 
 // ---------------------------------------------------------------------------
-// ExecuteReset — вызывается из RunTask::Run на игровом потоке
+// ExecuteReset — вызывается из ProcessNext на игровом потоке
 // ---------------------------------------------------------------------------
 
 void ActorResetQueue::ExecuteReset(uint32_t formID)
@@ -174,16 +168,11 @@ void ActorResetQueue::ExecuteReset(uint32_t formID)
 		std::lock_guard lock(m_mutex);
 		auto it = m_pending.find(formID);
 		if (it == m_pending.end()) {
-			// Запись была очищена (Clear() во время загрузки) — ничего не делаем
-			m_tasked.erase(formID);
 			logger::info("[ActorResetQueue] ExecuteReset: actor={:#x} — no pending entry (cleared), skip", formID);
 			return;
 		}
 		entry = it->second;
 		m_pending.erase(it);
-		m_tasked.erase(formID);
-		auto pos = std::find(m_order.begin(), m_order.end(), formID);
-		if (pos != m_order.end()) m_order.erase(pos);
 	}
 
 	// Получаем актёра. Если выгружен — пропускаем.
@@ -253,21 +242,6 @@ void ActorResetQueue::ExecuteReset(uint32_t formID)
 		}
 	}
 
-	// Диагностика: отложенный Reset3D должен быть обработан движком — смотрим, остались ли флаги.
-	if (entry.needsBodyReset) {
-		std::thread([formID]() {
-			std::this_thread::sleep_for(std::chrono::seconds(1));
-			F4SE::GetTaskInterface()->AddTask([formID]() {
-				auto* form = RE::TESForm::GetFormByID(formID);
-				auto* a = form ? RE::fallout_cast<RE::Actor*>(form) : nullptr;
-				if (!a) return;
-				logger::info("[ActorResetQueue] +1s: actor={:#x} flags3D=0x{:x} fullyLoaded3D={}",
-					formID,
-					a->currentProcess ? static_cast<uint32_t>(a->currentProcess->GetAll3DUpdateFlags()) : 0u,
-					a->GetFullyLoaded3D() != nullptr);
-			});
-		}).detach();
-	}
 
 	// --- Head Reset3D: flags=kHead|kFace, excludeFlags=kNone ---
 	// Запускает async IO для headpart geometry — выполняется отдельно от body,
