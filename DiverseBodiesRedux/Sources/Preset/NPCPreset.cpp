@@ -476,10 +476,16 @@ bool NPCPreset::applyImpl(RE::Actor* actor, bool reset3d, bool checkAlreadyAppli
 	std::set<RE::BGSHeadPart*> currentHeadParts{};
 	auto append = [&currentHeadParts](RE::BGSHeadPart** arr, std::int8_t count) {
 		if (!arr || count <= 0) return;
-		currentHeadParts.insert(arr, arr + count);
+		for (int i = 0; i < count; ++i) {
+			if (arr[i]) currentHeadParts.insert(arr[i]);
+		}
 	};
 
 	append(actorNPC->headParts, actorNPC->numHeadParts);
+	if (actorFace && actorFace != actorNPC) {
+		append(actorFace->headParts, actorFace->numHeadParts);
+	}
+
 	auto onlyTints = m_conditions.onlyTints();
 	if (!onlyTints && !m_headParts.empty()) {
 		// Добавляем в исключения xCell
@@ -488,8 +494,42 @@ bool NPCPreset::applyImpl(RE::Actor* actor, bool reset3d, bool checkAlreadyAppli
 			xcell.addExceptionFormID(actorFace->formID);
 		}
 
+		// 1. Собираем типы частей головы, которые есть в пресете
+		std::unordered_set<RE::BGSHeadPart::HeadPartType> presetTypes;
+		std::vector<RE::BGSHeadPart*> mergedHeadParts;
+
+		for (auto* hp : m_headParts) {
+			if (hp) {
+				presetTypes.insert(hp->type.get());
+				mergedHeadParts.push_back(hp);
+			}
+		}
+
+		// 2. Если в пресете отсутствует часть какого-то типа (например, причёска или глаза были
+		// в моде, которого нет в игре, или пресет просто их не задаёт), сохраняем оригинальную часть
+		// головы актёра, чтобы NPC не становился лысым или с пустыми глазницами!
+		auto alreadyHasPart = [&](RE::BGSHeadPart* part) {
+			return std::find(mergedHeadParts.begin(), mergedHeadParts.end(), part) != mergedHeadParts.end();
+		};
+
+		for (auto* origPart : currentHeadParts) {
+			if (!origPart) continue;
+			if (presetTypes.find(origPart->type.get()) == presetTypes.end()) {
+				if (!alreadyHasPart(origPart)) {
+					mergedHeadParts.push_back(origPart);
+					logger::info("NPCPreset: Retaining actor original headpart {:08X} (type {}) for preset '{}'",
+						origPart->GetFormID(), static_cast<int>(origPart->type.get()), id());
+				}
+				for (auto* extra : origPart->extraParts) {
+					if (extra && !alreadyHasPart(extra)) {
+						mergedHeadParts.push_back(extra);
+					}
+				}
+			}
+		}
+
 		// Fix A: количество headParts ограничено типом numHeadParts (int8_t).
-		std::size_t newCount = m_headParts.size();
+		std::size_t newCount = mergedHeadParts.size();
 		if (newCount > 127) {
 			logger::warn("NPCPreset: preset '{}' has {} head parts, clamping to 127", id(), newCount);
 			newCount = 127;
@@ -507,8 +547,8 @@ bool NPCPreset::applyImpl(RE::Actor* actor, bool reset3d, bool checkAlreadyAppli
 		const std::size_t capacity = (std::max)({ newCount, oldNPCCount, oldFaceCount, std::size_t{ 1 } });
 
 		auto fillHeadParts = [&](RE::BGSHeadPart** mem) {
-			for (std::size_t i = 0; i < newCount; ++i) mem[i] = m_headParts[static_cast<std::uint32_t>(i)];
-			RE::BGSHeadPart* pad = newCount ? m_headParts[static_cast<std::uint32_t>(newCount - 1)] : nullptr;
+			for (std::size_t i = 0; i < newCount; ++i) mem[i] = mergedHeadParts[i];
+			RE::BGSHeadPart* pad = newCount ? mergedHeadParts[newCount - 1] : nullptr;
 			for (std::size_t i = newCount; i < capacity; ++i) mem[i] = pad;
 		};
 

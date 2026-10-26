@@ -215,8 +215,8 @@ void ActorResetQueue::ExecuteReset(uint32_t formID)
 
 	using R3D = RE::RESET_3D_FLAGS;
 
-	// --- DetachOverlays (только перед body reset) ---
-	if (entry.needsDetach) {
+	// --- DetachOverlays (только если действительно обновляются оверлеи) ---
+	if (entry.needsDetach && entry.needsOverlayUpdate) {
 		logger::info("[ActorResetQueue] DoDetachOverlays: actor={:#x}", formID);
 		DoDetachOverlays(actor);
 	}
@@ -232,9 +232,6 @@ void ActorResetQueue::ExecuteReset(uint32_t formID)
 	// --- Reset3D execution: ровно один вызов Reset3D на актёра ---
 	if (entry.needsBodyReset && !entry.needsHeadReset) {
 		// Только тело: исключаем голову (excludeFlags = kHead | kFace)
-		if (auto* npc = actor->GetNPC(); npc) {
-			npc->AddChange(0x4000); // CHANGE_ACTOR_FULL_LOD_SWAPPED
-		}
 		logger::info("[ActorResetQueue] Body Reset3D: actor={:#x}", formID);
 		actor->Reset3D(false, R3D::kNone, true, R3D::kHead | R3D::kFace);
 		logger::info("[ActorResetQueue] Body Reset3D called: actor={:#x} flags3D=0x{:x}",
