@@ -371,10 +371,12 @@ print("[2/5] Resolved adult HumanRace NPC_ records per faction (with TPLT + TPTA
 for fk in factions_data["factions"]:
     print(f"  {fk:12s}: {len(faction_npc_targets[fk]):4d} NPC_ records")
 
-def convert_sliders(val_dict):
+def convert_sliders(val_dict, is_female=True):
     out = {}
     for k, v in val_dict.items():
         if k in ("DoubleMelon", "BreastFantasy"):
+            continue
+        if is_female and k in ("Arms", "ChubbyArms", "ForearmSize", "MuscularArms"):
             continue
         fv = round(float(v) / 100.0, 4)
         if k == "Breasts" and fv > 0.55:
@@ -430,7 +432,7 @@ def write_dbr_preset(is_female, base_name, norm_sliders, conds_obj=None):
 # 3a. General Pool -> DBR JSON (uses directory conds.json -> CoincidenceLevel::GENDER = 1)
 for pname, pinfo in pool_data["presets"].items():
     is_fem = (pinfo["sex"] == "female")
-    norm_s = convert_sliders(pinfo["values"])
+    norm_s = convert_sliders(pinfo["values"], is_fem)
     write_dbr_preset(is_fem, f"Sil_Pool_{pname}", norm_s, None)
 
 # 3b. Faction Pool -> DBR JSON + _conds.json (uses inFaction + priority notInFaction -> CoincidenceLevel::GENDER | FACTIONS = 5)
@@ -461,7 +463,7 @@ for idx, fk in enumerate(faction_priority):
 for pname, pinfo in factions_data["presets"].items():
     is_fem = (pinfo["sex"] == "female")
     fk = pinfo["faction"]
-    norm_s = convert_sliders(pinfo["values"])
+    norm_s = convert_sliders(pinfo["values"], is_fem)
     conds = {
         "gender": 1 if is_fem else 0,
         "formIDs": [],
@@ -476,7 +478,7 @@ for pname, pinfo in factions_data["presets"].items():
 # 3c. Named Characters -> DBR JSON + _conds.json (uses formIDs -> CoincidenceLevel::FULL = 0x7FFFFFFF)
 for cname, cinfo in chars_data["characters"].items():
     is_fem = (cinfo["sex"] == "female")
-    norm_s = convert_sliders(cinfo["values"])
+    norm_s = convert_sliders(cinfo["values"], is_fem)
     c_fids = []
     for plug, edid, fid_hex in cinfo["forms"]:
         if plug.lower() not in active_map:
@@ -548,19 +550,19 @@ sil_template_lines = [
 for pname, pinfo in pool_data["presets"].items():
     is_fem = (pinfo["sex"] == "female")
     tname = f"Sil_{pname}"
-    rhs = format_template_rhs(convert_sliders(pinfo["values"]), is_fem)
+    rhs = format_template_rhs(convert_sliders(pinfo["values"], is_fem), is_fem)
     sil_template_lines.append(f"{tname}={rhs}")
 
 for pname, pinfo in factions_data["presets"].items():
     is_fem = (pinfo["sex"] == "female")
     tname = f"Sil_{pname}"
-    rhs = format_template_rhs(convert_sliders(pinfo["values"]), is_fem)
+    rhs = format_template_rhs(convert_sliders(pinfo["values"], is_fem), is_fem)
     sil_template_lines.append(f"{tname}={rhs}")
 
 for cname, cinfo in chars_data["characters"].items():
     is_fem = (cinfo["sex"] == "female")
     tname = f"Sil_Char_{cname}"
-    rhs = format_template_rhs(convert_sliders(cinfo["values"]), is_fem)
+    rhs = format_template_rhs(convert_sliders(cinfo["values"], is_fem), is_fem)
     sil_template_lines.append(f"{tname}={rhs}")
 
 with open(templates_ini_path, "w") as f:
