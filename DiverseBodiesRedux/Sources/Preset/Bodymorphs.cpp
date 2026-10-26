@@ -140,19 +140,11 @@ bool BodymorphsPreset::apply(RE::Actor* actor, bool reset3d) const
 		return true;
 	}
 
-	if (reset3d) {
-		// Планируем DetachOverlays + body Reset3D через единую очередь.
-		// needsBodyReset=true: Reset3D(excludeFlags=kHead|kFace) — голова не трогается.
-		// needsDetach=true: DetachOverlays перед reset.
-		logger::info("[BM] apply: schedule ActorResetQueue actor={:#x}", actor->formID);
-		ActorResetQueue::GetSingleton().Schedule(actor, ActorResetQueue::ResetEntry{
-			.needsBodyReset = true,
-			.needsHeadReset = false,
-			.needsDetach    = true,
-			.needsHeadFix   = false,
-		});
-	}
-
+	// Morphs already applied directly to loaded 3D via UpdateMorphs(actor) above.
+	// We do NOT call Reset3D or DetachOverlays here:
+	// DetachOverlays destroys the body armor/skin slot in LooksMenu, which made pants/thighs invisible,
+	// and Reset3D triggers unnecessary mesh reloads.
+	logger::info("[BM] apply: actor={:#x} morphs applied directly via UpdateMorphs", actor->formID);
 	return true;
 }
 
