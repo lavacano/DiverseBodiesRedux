@@ -9,8 +9,8 @@ namespace patches {
 	// Дублирование с неверной сигнатурой (void*, uint32_t, void*) вместо (void*) повреждало стек и вызывало краш.
 	Hooks<BSClothExtraData_SetSettle_t> BSClothExtraData_SetSettle_Handler{ "", 0x18A1B60 /* 1.10.163: 0x1DA7A40 */, Hooked_BSClothExtraData_SetSettle };
 	Hooks<SetTransformSet_Handler_t> SetTransformSet_Handler{ "", 0x18C8530 /* 1.10.163: 0x1DDC7A0 */, Hooked_SetTransformSet };
-	Hooks<ChangeHeadPartRemovePartHandler_t> ChangeHeadPartRemovePart{ "", 5985632, Hooked_ChangeHeadPartRemovePart };
-	Hooks<ChangeHeadPartHandler_t> ChangeHeadPart{ "", 6003504, Hooked_ChangeHeadPart };
+	Hooks<ChangeHeadPartRemovePartHandler_t> ChangeHeadPartRemovePart{ "", 0x6555A0 /* 1.10.163: 0x5B5560 (5985632) */, Hooked_ChangeHeadPartRemovePart };
+	Hooks<ChangeHeadPartHandler_t> ChangeHeadPart{ "", 0x6599B0 /* 1.10.163: 0x5B9B30 (6003504) */, Hooked_ChangeHeadPart };
 	Hooks<cbp_sub_1800024C0_t> cbp_sub_1800024C0_Hook{ "cbp.dll", 0x24C0, Hooked_cbp_sub_1800024C0 };
 	Hooks<bhkStream_LoadBinary_t> bhkStream_LoadBinary_Handler{ "", 0x18AA10, Hooked_bhkStream_LoadBinary };
 	Hooks<HavokDeserializationCaller_t> HavokDeserializationCaller_Handler{ "", 0x175D80, Hooked_HavokDeserializationCaller };
@@ -287,12 +287,15 @@ namespace patches {
 
 			return PendingActorHeadData_Process.GetOriginal()(self);
 		}
-		__except (EXCEPTION_EXECUTE_HANDLER) {
-			__try {
-				*reinterpret_cast<std::uint8_t*>(reinterpret_cast<std::uintptr_t>(self) + 0x82) = 1;
-			} __except (EXCEPTION_EXECUTE_HANDLER) {}
-			logger::error("[HeadDataGuard] suppressed exception while processing pending head data");
-			return true;
+		__except (
+			[](unsigned int code, struct _EXCEPTION_POINTERS* ep) -> int {
+				auto* rec = ep ? ep->ExceptionRecord : nullptr;
+				logger::error("[HeadDataGuard] suppressed exception 0x{:x} at 0x{:x} while processing pending head data",
+					code, rec ? reinterpret_cast<uintptr_t>(rec->ExceptionAddress) : 0);
+				return EXCEPTION_EXECUTE_HANDLER;
+			}(GetExceptionCode(), GetExceptionInformation())
+		) {
+			return false;
 		}
 	}
 
