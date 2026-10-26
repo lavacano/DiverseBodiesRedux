@@ -26,20 +26,21 @@ namespace
 	}
 
 	// TESObjectREFR::ApplyEffectShader (1.11.240.0 RVA 0x5E21A0 / NG_ID 2205201; OG ID 652173 / 1.10.163 RVA 0x422180). Возвращает
-	// ShaderReferenceEffect*, нам он не нужен: останавливаем через ProcessLists::FinishShaderEffect.
+	// ShaderReferenceEffect*, завершаем установкой finished (offset 0x40) = true.
+	void* g_activeEffect{ nullptr };
+
 	void ApplyShader(RE::TESObjectREFR* a_ref, RE::TESEffectShader* a_shader)
 	{
 		using func_t = void* (*)(RE::TESObjectREFR*, RE::TESEffectShader*, float, RE::TESObjectREFR*, bool, bool, RE::NiAVObject*, bool);
 		static REL::Relocation<func_t> func{ REL::Module::get().base() + 0x5E21A0 };
-		func(a_ref, a_shader, -1.0f, nullptr, false, false, nullptr, false);
+		g_activeEffect = func(a_ref, a_shader, -1.0f, nullptr, false, false, nullptr, false);
 	}
 
 	void Stop(std::uint32_t a_actorFormID, RE::TESEffectShader* a_shader)
 	{
-		auto* actor = functions::getFormByFormID<RE::Actor>(a_actorFormID);
-		auto* lists = RE::ProcessLists::GetSingleton();
-		if (actor && lists && a_shader) {
-			lists->FinishShaderEffect(actor, a_shader);
+		if (g_activeEffect) {
+			*reinterpret_cast<bool*>(reinterpret_cast<char*>(g_activeEffect) + 0x40) = true;
+			g_activeEffect = nullptr;
 		}
 	}
 }

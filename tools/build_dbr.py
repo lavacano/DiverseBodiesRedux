@@ -28,10 +28,10 @@ sources = [
     f"{SRC_CLIB}/REL/Relocation.cpp",
     f"{SRC_CLIB}/RE/Bethesda/Actor.cpp",
     f"{SRC_CLIB}/RE/Bethesda/BGSCharacterTint.cpp",
-    f"{SRC_CLIB}/RE/Bethesda/BGSChargenUtils.cpp",
+    # f"{SRC_CLIB}/RE/Bethesda/BGSChargenUtils.cpp",
     f"{SRC_CLIB}/RE/Bethesda/BGSInventoryItem.cpp",
     f"{SRC_CLIB}/RE/Bethesda/BSExtraData.cpp",
-    f"{SRC_CLIB}/RE/Bethesda/BSFaceGenAnimationData.cpp",
+    # f"{SRC_CLIB}/RE/Bethesda/BSFaceGenAnimationData.cpp",
     f"{SRC_CLIB}/RE/Bethesda/BSFaceGenNiNode.cpp",
     f"{SRC_CLIB}/RE/Bethesda/BSResource.cpp",
     f"{SRC_CLIB}/RE/Bethesda/BSResourceNiBinaryStream.cpp",
@@ -138,8 +138,9 @@ def compile_source(src):
     obj_name = f"{parent}_{base}.obj" if parent not in ("src", "Sources") else f"{base}.obj"
     obj_path = os.path.join(BUILD_DIR, obj_name)
     
-    if os.path.exists(obj_path) and os.path.getmtime(obj_path) >= os.path.getmtime(src):
-        return (True, src, obj_path)
+    # Always recompile to ensure header changes are picked up cleanly
+    # if os.path.exists(obj_path) and os.path.getmtime(obj_path) >= os.path.getmtime(src):
+    #     return (True, src, obj_path)
     
     cmd = COMMON_FLAGS + [src, f"-Fo{obj_path}"]
     res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)

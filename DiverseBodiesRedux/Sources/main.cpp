@@ -271,7 +271,7 @@ void initAfterGameDataWasLoaded() {
 	patches::BSClothUtils_BSTransformSet_ResetPrediction_void_Handler.Install();
 	patches::BSClothExtraData_SetWorld_Handler.Install();
 
-	if (ini.at("PATCH/bHeadDataGuard", true)) {
+	if (ini.at("PATCH/bHeadDataGuard", false)) {
 		patches::PendingActorHeadData_Process.Install();
 	}
 	if (ini.at("PATCH/bChangeHeadPart", true)) {
