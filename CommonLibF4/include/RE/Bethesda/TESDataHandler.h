@@ -1,5 +1,6 @@
 #pragma once
 
+#include "REL/IDSelection.h"
 #include "RE/Bethesda/BSTEvent.h"
 #include "RE/Bethesda/BSTList.h"
 #include "RE/Bethesda/BSTSingleton.h"
@@ -65,28 +66,28 @@ namespace RE
 	public:
 		[[nodiscard]] static TESDataHandler* GetSingleton()
 		{
-			REL::Relocation<TESDataHandler**> singleton{ REL::ID(711558) };
+			REL::Relocation<TESDataHandler**> singleton{ REL::SelectVersionID(711558, 4796135) };
 			return *singleton;
 		}
 
 		[[nodiscard]] bool AddFormToDataHandler(TESForm* a_form)
 		{
 			using func_t = decltype(&TESDataHandler::AddFormToDataHandler);
-			REL::Relocation<func_t> func{ REL::ID(350112) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(350112, 2192271) };
 			return func(this, a_form);
 		}
 
 		[[nodiscard]] bool CheckModsLoaded(bool a_everModded)
 		{
 			using func_t = decltype(&TESDataHandler::CheckModsLoaded);
-			REL::Relocation<func_t> func{ REL::ID(1432894) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(1432894, 2192323) };
 			return func(this, a_everModded);
 		}
 
 		[[nodiscard]] ObjectRefHandle CreateReferenceAtLocation(NEW_REFR_DATA& a_data)
 		{
 			using func_t = decltype(&TESDataHandler::CreateReferenceAtLocation);
-			REL::Relocation<func_t> func{ REL::ID(500304) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(500304, 2192301) };
 			return func(this, a_data);
 		}
 
