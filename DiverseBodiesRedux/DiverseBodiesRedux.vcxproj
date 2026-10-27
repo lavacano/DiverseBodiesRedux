@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -119,10 +119,10 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;WIN32;_WINDOWS;_UNICODE;BOOST_STL_INTERFACES_DISABLE_CONCEPTS;WINVER=0x0601;_WIN32_WINNT=0x0601;FMT_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;WIN32;_WINDOWS;_UNICODE;F4_GAME_VERSION_AE;BOOST_STL_INTERFACES_DISABLE_CONCEPTS;WINVER=0x0601;_WIN32_WINNT=0x0601;FMT_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\cpp\DiverseBodiesRedux\DiverseBodiesRedux\Sources\spdlog\include;C:\cpp\DiverseBodiesRedux\DiverseBodiesRedux\Sources\mmio\include;C:\cpp\DiverseBodiesRedux\DiverseBodiesRedux\Sources\fmt\include;C:\cpp\DiverseBodiesRedux\DiverseBodiesRedux\Sources\zlib\include;$(BOOST);C:\cpp\CommonLibF4\CommonLibF4\include;.\Sources</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\cpp\DiverseBodiesRedux\DiverseBodiesRedux\Sources\spdlog\include;C:\cpp\DiverseBodiesRedux\DiverseBodiesRedux\Sources\mmio\include;C:\cpp\DiverseBodiesRedux\DiverseBodiesRedux\Sources\fmt\include;C:\cpp\DiverseBodiesRedux\DiverseBodiesRedux\Sources\zlib\include;$(BOOST);..\CommonLibF4\include;C:\cpp\CommonLibF4\CommonLibF4\include;.\Sources</AdditionalIncludeDirectories>
       <TreatWarningAsError>false</TreatWarningAsError>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>

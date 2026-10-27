@@ -4,10 +4,14 @@ import sys
 import subprocess
 import concurrent.futures
 
-SRC_DBR = "/home/lavac/.gemini/antigravity/brain/f414056b-e88d-4f2a-8025-fc9a9dedef6e/scratch/DiverseBodiesRedux/DiverseBodiesRedux/Sources"
-SRC_CLIB = "/tmp/CommonLibF4_PANDA/CommonLibF4/src"
-BUILD_DIR = "/tmp/dbr_build"
-OUT_DLL = "/tmp/dbr_build/DiverseBodiesRedux.dll"
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SRC_DBR = os.path.join(REPO_ROOT, "DiverseBodiesRedux", "Sources")
+CLIB_ROOT = os.environ.get("COMMONLIBF4_DIR", "/tmp/CommonLibF4_PANDA/CommonLibF4")
+SRC_CLIB = os.path.join(CLIB_ROOT, "src")
+BOOST_INC = os.environ.get("BOOST_INCLUDE_DIR", "/tmp/boost_inc")
+XWIN_DIR = os.environ.get("XWIN_DIR", os.path.expanduser("~/.xwin"))
+BUILD_DIR = os.environ.get("BUILD_DIR", "/tmp/dbr_build")
+OUT_DLL = os.environ.get("OUT_DLL", os.path.join(BUILD_DIR, "DiverseBodiesRedux.dll"))
 
 os.makedirs(BUILD_DIR, exist_ok=True)
 
@@ -108,15 +112,16 @@ INCLUDES = [
     f"-I{SRC_DBR}/mmio/include",
     f"-I{SRC_DBR}/fmt/include",
     f"-I{SRC_DBR}/zlib/include",
-    f"-I/tmp/CommonLibF4_PANDA/CommonLibF4/include",
-    f"-I/tmp/boost_inc",
+    f"-I{REPO_ROOT}/CommonLibF4/include",
+    f"-I{CLIB_ROOT}/include",
+    f"-I{BOOST_INC}",
 ]
 
 DEFINES = [
     "-DNDEBUG", "-D_CONSOLE", "-DWIN32", "-D_WINDOWS", "-D_UNICODE", "-DUNICODE",
     "-DF4_GAME_VERSION_AE", "-DNOMINMAX",
     "-DBOOST_STL_INTERFACES_DISABLE_CONCEPTS", "-DBOOST_JSON_NO_LIB", "-DBOOST_CONTAINER_NO_LIB",
-    "-DWINVER=0x0601", "-D_WIN32_WINNT=0x0601", "-DFMT_STATIC", "-DFMT_USE_CONSTEVAL=0", 
+    "-DWINVER=0x0601", "-D_WIN32_WINNT=0x0601", "-DFMT_STATIC", "-DFMT_USE_CONSTEVAL=0",
 ]
 
 WARNINGS = [
@@ -128,7 +133,7 @@ WARNINGS = [
 
 COMMON_FLAGS = [
     "clang-cl", "/c", "/std:c++latest", "/EHsc", "/O2", "/MD",
-    "-winsysroot", "/home/lavac/.xwin",
+    "-winsysroot", XWIN_DIR,
     "-Xclang", "-fdelayed-template-parsing",
 ] + DEFINES + WARNINGS + INCLUDES
 
@@ -137,11 +142,7 @@ def compile_source(src):
     parent = os.path.basename(os.path.dirname(src))
     obj_name = f"{parent}_{base}.obj" if parent not in ("src", "Sources") else f"{base}.obj"
     obj_path = os.path.join(BUILD_DIR, obj_name)
-    
-    # Always recompile to ensure header changes are picked up cleanly
-    # if os.path.exists(obj_path) and os.path.getmtime(obj_path) >= os.path.getmtime(src):
-    #     return (True, src, obj_path)
-    
+
     cmd = COMMON_FLAGS + [src, f"-Fo{obj_path}"]
     res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
     if res.returncode != 0:
@@ -171,16 +172,15 @@ if failed:
 print(f"All {len(objs)} objects compiled successfully! Linking {OUT_DLL}...")
 
 LIB_PATHS = [
-    "-libpath:/home/lavac/.xwin/Windows Kits/10/Lib/10.0.26100/um/x86_64",
-    "-libpath:/home/lavac/.xwin/Windows Kits/10/Lib/10.0.26100/ucrt/x86_64",
-    "-libpath:/home/lavac/.xwin/VC/Tools/MSVC/14.44.17.14/lib/x86_64",
+    f"-libpath:{XWIN_DIR}/Windows Kits/10/Lib/10.0.26100/um/x86_64",
+    f"-libpath:{XWIN_DIR}/Windows Kits/10/Lib/10.0.26100/ucrt/x86_64",
+    f"-libpath:{XWIN_DIR}/VC/Tools/MSVC/14.44.17.14/lib/x86_64",
 ]
 
 LIBS = [
     f"{SRC_DBR}/fmt/lib/fmt.lib",
     f"{SRC_DBR}/detourxs/lib/LDE64x64.lib",
     f"{SRC_DBR}/zlib/lib/zlibstatic.lib",
-    
     f"{SRC_DBR}/mmio/lib/mmio.lib",
     "version.lib", "kernel32.lib", "user32.lib", "gdi32.lib", "shell32.lib",
     "ole32.lib", "oleaut32.lib", "advapi32.lib", "shlwapi.lib",
@@ -195,7 +195,7 @@ link_cmd = [
 
 link_res = subprocess.run(
     link_cmd,
-    cwd="/home/lavac/.gemini/antigravity/brain/f414056b-e88d-4f2a-8025-fc9a9dedef6e/scratch/DiverseBodiesRedux/DiverseBodiesRedux",
+    cwd=os.path.join(REPO_ROOT, "DiverseBodiesRedux"),
     stdout=subprocess.PIPE,
     stderr=subprocess.STDOUT,
     text=True
