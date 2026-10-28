@@ -207,7 +207,7 @@ namespace RE
 		bool ShouldHandleEvent(const InputEvent* a_event) override  // 01
 		{
 			using func_t = decltype(&IMenu::ShouldHandleEvent);
-			REL::Relocation<func_t> func{ REL::ID(1241790) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(1241790, 2287392) };
 			return func(this, a_event);
 		}
 
@@ -259,7 +259,7 @@ namespace RE
 		virtual bool PassesRenderConditionText(MENU_RENDER_CONTEXT a_reason, const BSFixedString& a_customRendererName) const  // 07
 		{
 			using func_t = decltype(&IMenu::PassesRenderConditionText);
-			REL::Relocation<func_t> func{ REL::ID(937304) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(937304, 2287379) };
 			return func(this, a_reason, a_customRendererName);
 		}
 
@@ -311,7 +311,7 @@ namespace RE
 		void OnSetSafeRect()
 		{
 			using func_t = decltype(&IMenu::OnSetSafeRect);
-			REL::Relocation<func_t> func{ REL::ID(964859) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(964859, 2287375) };
 			return func(this);
 		}
 
@@ -320,14 +320,14 @@ namespace RE
 		UI_MESSAGE_RESULTS ProcessScaleformEvent(Scaleform::GFx::Movie* a_movie, const IUIMessageData* a_data)
 		{
 			using func_t = decltype(&IMenu::ProcessScaleformEvent);
-			REL::Relocation<func_t> func{ REL::ID(150211) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(150211, 2287395) };
 			return func(this, a_movie, a_data);
 		}
 
 		void RefreshPlatform()
 		{
 			using func_t = decltype(&IMenu::RefreshPlatform);
-			REL::Relocation<func_t> func{ REL::ID(1071829) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(1071829, 2287374) };
 			return func(this);
 		}
 
@@ -459,7 +459,7 @@ namespace RE
 		Scaleform::GFx::Value* AcquireFlashObjectByPath(const Scaleform::GFx::Movie& a_parentMovie, const char* a_absolutePathToMember)
 		{
 			using func_t = decltype(&BSGFxObject::AcquireFlashObjectByPath);
-			REL::Relocation<func_t> func{ REL::ID(1065592) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(1065592, 2286990) };
 			return func(this, a_parentMovie, a_absolutePathToMember);
 		}
 	};
@@ -509,7 +509,7 @@ namespace RE
 		void RemoveChild(const BSGFxDisplayObject& a_child) const
 		{
 			using func_t = decltype(&BSGFxDisplayObject::RemoveChild);
-			REL::Relocation<func_t> func{ REL::ID(1229383) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(1229383, 2287327) };
 			return func(this, a_child);
 		}
 
@@ -578,7 +578,7 @@ namespace RE
 		virtual BSEventNotifyControl ProcessEvent(const ApplyColorUpdateEvent& a_event, BSTEventSource<ApplyColorUpdateEvent>* a_source) override  // 01
 		{
 			using func_t = decltype(&BSGFxShaderFXTarget::ProcessEvent);
-			REL::Relocation<func_t> func{ REL::ID(848563) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(848563, 2287046) };
 			return func(this, a_event, a_source);
 		}
 
@@ -586,14 +586,14 @@ namespace RE
 		virtual void AppendShaderFXInfos(BSTArray<UIShaderFXInfo>& a_colorFXInfo, BSTArray<UIShaderFXInfo>& a_backgroundFXInfo)  // 02
 		{
 			using func_t = decltype(&BSGFxShaderFXTarget::AppendShaderFXInfos);
-			REL::Relocation<func_t> func{ REL::ID(544646) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(544646, 2287021) };
 			return func(this, a_colorFXInfo, a_backgroundFXInfo);
 		}
 
 		void CreateAndSetFiltersToHUD(HUDColorTypes a_colorType, float a_scale = 1.0)
 		{
 			using func_t = decltype(&BSGFxShaderFXTarget::CreateAndSetFiltersToHUD);
-			REL::Relocation<func_t> func{ REL::ID(876001) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(876001, 2287027) };
 			func(this, a_colorType, a_scale);
 		}
 

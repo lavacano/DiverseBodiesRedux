@@ -218,9 +218,9 @@ namespace RE
 
 		void Force3rdPerson() const
 		{
-			using func_t = decltype(&PlayerCamera::Force3rdPerson);
-			REL::Relocation<func_t> func{ REL::ID(162201) };
-			return func(this);
+			if (cameraStates[CameraState::k3rdPerson]) {
+				SetState(cameraStates[CameraState::k3rdPerson].get());
+			}
 		}
 
 		void ForceVATSMode() const

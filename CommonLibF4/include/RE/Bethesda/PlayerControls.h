@@ -199,9 +199,21 @@ namespace RE
 	private:
 		void DoRegisterHandler(PlayerInputHandler* a_handler, bool a_isHeldStateHandler)
 		{
-			using func_t = decltype(&PlayerControls::DoRegisterHandler);
-			REL::Relocation<func_t> func{ REL::ID(177801) };
-			return func(this, a_handler, a_isHeldStateHandler);
+			if (!a_handler) {
+				return;
+			}
+			if (a_isHeldStateHandler) {
+				const auto heldHandler = static_cast<HeldStateHandler*>(a_handler);
+				const auto it = std::find(heldStateHandlers.begin(), heldStateHandlers.end(), heldHandler);
+				if (it == heldStateHandlers.end()) {
+					heldStateHandlers.push_back(heldHandler);
+				}
+			} else {
+				const auto it = std::find(handlers.begin(), handlers.end(), a_handler);
+				if (it == handlers.end()) {
+					handlers.push_back(a_handler);
+				}
+			}
 		}
 	};
 	static_assert(sizeof(PlayerControls) == 0x260);
