@@ -268,22 +268,14 @@ namespace RE
 	class BGSObjectInstance
 	{
 	public:
-		BGSObjectInstance(TESForm* a_object, TBO_InstanceData* a_instanceData)
-		{
-			ctor(a_object, a_instanceData);
-		}
+		BGSObjectInstance(TESForm* a_object, TBO_InstanceData* a_instanceData) :
+			object(a_object),
+			instanceData(a_instanceData)
+		{}
 
 		// members
 		TESForm* object{ nullptr };                      // 00
 		BSTSmartPointer<TBO_InstanceData> instanceData;  // 08
-
-	private:
-		BGSObjectInstance* ctor(TESForm* a_object, TBO_InstanceData* a_instanceData)
-		{
-			using func_t = decltype(&BGSObjectInstance::ctor);
-			REL::Relocation<func_t> func{ REL::ID(1095748) };
-			return func(this, a_object, a_instanceData);
-		}
 	};
 	static_assert(sizeof(BGSObjectInstance) == 0x10);
 
@@ -463,14 +455,6 @@ namespace RE
 			NiPointer<ModelReferenceEffect> hitEffect;
 		};             // 48 - TODO
 		bool skinned;  // 50
-
-	private:
-		void Dtor()
-		{
-			using func_t = decltype(&BIPOBJECT::Dtor);
-			REL::Relocation<func_t> func{ REL::ID(765242) };
-			return func(this);
-		}
 	};
 	static_assert(sizeof(BIPOBJECT) == 0x58);
 
@@ -1153,9 +1137,18 @@ namespace RE
 
 		[[nodiscard]] std::uint32_t GetInventoryObjectCount(const TESBoundObject* a_object)
 		{
-			using func_t = decltype(&TESObjectREFR::GetInventoryObjectCount);
-			REL::Relocation<func_t> func{ REL::ID(333415) };
-			return func(this, a_object);
+			if (!a_object || !inventoryList) {
+				return 0;
+			}
+			std::uint32_t count = 0;
+			for (const auto& item : inventoryList->data) {
+				if (item.object == a_object) {
+					for (auto* stack = item.stackData.get(); stack; stack = stack->nextStack.get()) {
+						count += static_cast<std::uint32_t>(stack->count);
+					}
+				}
+			}
+			return count;
 		}
 
 		[[nodiscard]] TESObjectREFR* GetLinkedRef(BGSKeyword* a_keyword)
@@ -1223,16 +1216,15 @@ namespace RE
 
 		void SetScale(float a_scale)
 		{
-			using func_t = decltype(&TESObjectREFR::SetScale);
-			REL::Relocation<func_t> func{ REL::ID(817930) };
-			return func(this, a_scale);
+			refScale = static_cast<std::uint16_t>(a_scale * 100.0f);
+			if (auto node = Get3D()) {
+				node->local.scale = a_scale;
+			}
 		}
 
-		float GetScale()
+		float GetScale() const
 		{
-			using func_t = decltype(&TESObjectREFR::GetScale);
-			REL::Relocation<func_t> func{ REL::ID(911188) };
-			return func(this);
+			return static_cast<float>(refScale) / 100.0f;
 		}
 
 		void UpdateParentCell()

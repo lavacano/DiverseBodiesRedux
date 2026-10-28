@@ -313,7 +313,7 @@ namespace RE::Scaleform::GFx
 			void ObjectAddRef(Value* a_val, void* a_obj)
 			{
 				using func_t = decltype(&ObjectInterface::ObjectRelease);
-				REL::Relocation<func_t> func{ REL::ID(244786) };
+				REL::Relocation<func_t> func{ REL::SelectVersionID(244786, 2286228) };
 				return func(this, a_val, a_obj);
 			}
 
@@ -327,21 +327,21 @@ namespace RE::Scaleform::GFx
 			bool HasMember(void* a_data, const char* a_name, bool a_isdobj) const
 			{
 				using func_t = decltype(&ObjectInterface::HasMember);
-				REL::Relocation<func_t> func{ REL::ID(788691) };
+				REL::Relocation<func_t> func{ REL::SelectVersionID(788691, 2286128) };
 				return func(this, a_data, a_name, a_isdobj);
 			}
 
 			bool GetMember(void* a_data, const char* a_name, Value* a_val, bool a_isdobj) const
 			{
 				using func_t = decltype(&ObjectInterface::GetMember);
-				REL::Relocation<func_t> func{ REL::ID(1517430) };
+				REL::Relocation<func_t> func{ REL::SelectVersionID(1517430, 2286137) };
 				return func(this, a_data, a_name, a_val, a_isdobj);
 			}
 
 			bool SetMember(void* a_data, const char* a_name, const Value& a_value, bool a_isdobj)
 			{
 				using func_t = decltype(&ObjectInterface::SetMember);
-				REL::Relocation<func_t> func{ REL::ID(1360149) };
+				REL::Relocation<func_t> func{ REL::SelectVersionID(1360149, 2286103) };
 				return func(this, a_data, a_name, a_value, a_isdobj);
 			}
 
@@ -354,9 +354,8 @@ namespace RE::Scaleform::GFx
 
 			bool PushBack(void* a_data, const Value& a_value)
 			{
-				using func_t = decltype(&ObjectInterface::PushBack);
-				REL::Relocation<func_t> func{ REL::ID(1330475) };
-				return func(this, a_data, a_value);
+				Value result;
+				return Invoke(a_data, &result, "push", &a_value, 1, false);
 			}
 
 			// members
