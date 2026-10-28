@@ -42,7 +42,7 @@ sources = [
     f"{SRC_CLIB}/RE/Bethesda/BSResource/Stream.cpp",
     f"{SRC_CLIB}/RE/Bethesda/BSResource/StreamBase.cpp",
     f"{SRC_CLIB}/RE/Bethesda/BSScaleformManager.cpp",
-    f"{SRC_CLIB}/RE/Bethesda/BSScript.cpp",
+    # f"{SRC_CLIB}/RE/Bethesda/BSScript.cpp",
     f"{SRC_CLIB}/RE/Bethesda/BSScript/Array.cpp",
     f"{SRC_CLIB}/RE/Bethesda/BSScript/Internal/VirtualMachine.cpp",
     f"{SRC_CLIB}/RE/Bethesda/BSScript/Object.cpp",

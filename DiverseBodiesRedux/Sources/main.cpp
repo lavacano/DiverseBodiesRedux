@@ -270,7 +270,14 @@ void initAfterGameDataWasLoaded() {
 	patches::BSClothExtraData__SetSettleOnTransitionToSim_Bool_Handler.Install();
 	patches::BSClothUtils_BSTransformSet_QClothSupportsLOD_Handler.Install();
 	patches::BSClothUtils_BSTransformSet_ResetPrediction_void_Handler.Install();
-	patches::BSClothExtraData_SetWorld_Handler.Install();
+	// BSClothExtraData::SetWorld (0x18A0DA0) starts with a RIP-relative instruction:
+	// "mov r8d, [rip + 0x25d2267]" (loads _tls_index). DetourXS cannot relocate RIP-relative
+	// instructions when copying them into the trampoline buffer on the heap. This corrupted
+	// r8d with arbitrary heap garbage, causing out-of-bounds TLS array access and crash at
+	// Fallout4.exe+0x18A0DCC (0xC0000005). When SetWorld was suppressed by guards, Havok cloth
+	// transforms remained at (0,0,0), blowing up meshes across the sky.
+	// Leaving SetWorld unhooked allows Fallout4.exe's clean native implementation to run.
+	// patches::BSClothExtraData_SetWorld_Handler.Install();
 
 	if (ini.at("PATCH/bHeadDataGuard", false)) {
 		patches::PendingActorHeadData_Process.Install();
