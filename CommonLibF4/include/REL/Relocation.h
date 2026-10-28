@@ -616,7 +616,8 @@ namespace REL
 					return a_lhs.id < a_rhs.id;
 				});
 			if (it == _id2offset.end() || it->id != a_id) {
-				stl::report_and_fail("id not found"sv);
+				const auto msg = fmt::format("Address Library ID not found: {} (0x{:X})", a_id, a_id);
+				stl::report_and_fail(msg);
 			}
 
 			return static_cast<std::size_t>(it->offset);
@@ -789,4 +790,6 @@ namespace REL
 #undef REL_MAKE_MEMBER_FUNCTION_POD_TYPE
 #undef REL_MAKE_MEMBER_FUNCTION_POD_TYPE_HELPER
 #undef REL_MAKE_MEMBER_FUNCTION_POD_TYPE_HELPER_IMPL
+
+#include "REL/IDSelection.h"
 

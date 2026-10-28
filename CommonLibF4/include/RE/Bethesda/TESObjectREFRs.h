@@ -1252,7 +1252,7 @@ namespace RE
 		const char* GetDisplayFullName()
 		{
 			using func_t = decltype(&TESObjectREFR::GetDisplayFullName);
-			REL::Relocation<func_t> func{ REL::ID(1212056) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(1212056, 2201126) };
 			return func(this);
 		}
 
