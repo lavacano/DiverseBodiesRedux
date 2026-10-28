@@ -1396,12 +1396,7 @@ namespace RE
 			Female = 1
 		};
 
-		Sex GetSex()
-		{
-			using func_t = decltype(&Actor::GetSex);
-			REL::Relocation<func_t> func{ REL::ID(1216256) };
-			return func(this);
-		}
+		[[nodiscard]] Sex GetSex() const noexcept;
 
 		TESObjectREFR* GetFurnitureReference()
 		{

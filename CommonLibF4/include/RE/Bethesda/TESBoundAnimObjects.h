@@ -349,6 +349,14 @@ namespace RE
 	};
 	static_assert(sizeof(CreatureSounds) == 0x20);
 
+	enum class SEX : std::uint32_t
+	{
+		kNone = static_cast<std::uint32_t>(-1),
+		kMale = 0,
+		kFemale = 1,
+		kTotal = 2
+	};
+
 	class __declspec(novtable) TESNPC :
 		public TESActorBase,                     // 000
 		public TESRaceForm,                      // 1B0
@@ -435,6 +443,13 @@ namespace RE
 			}
 
 			return std::nullopt;
+		}
+
+		[[nodiscard]] SEX GetSex() noexcept
+		{
+			using func_t = decltype(&TESNPC::GetSex);
+			REL::Relocation<func_t> func{ REL::SelectVersionID(1257181, 2207107) };
+			return func(this);
 		}
 
 		[[nodiscard]] TESNPC* GetRootFaceNPC() noexcept
