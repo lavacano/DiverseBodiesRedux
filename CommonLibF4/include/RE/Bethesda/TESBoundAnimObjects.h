@@ -406,14 +406,14 @@ namespace RE
 		void ChangeHeadPartRemovePart(BGSHeadPart* hpart, bool bRemoveExtraParts)
 		{
 			using func_t = decltype(&TESNPC::ChangeHeadPartRemovePart);
-			REL::Relocation<func_t> func { REL::Module::get().base() + 5985632 };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(880456, 2207431) };
 			func(this, hpart, bRemoveExtraParts);
 		}
 
 		void ChangeHeadPart(BGSHeadPart* hpart)
 		{
 			using func_t = decltype(&TESNPC::ChangeHeadPart);
-			REL::Relocation<func_t> func{ REL::Module::get().base() + 6003504 };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(466269, 2207463) };
 			func(this, hpart);
 		}
 
@@ -484,66 +484,64 @@ namespace RE
 
 		void RemoveHeadPart(BGSHeadPart* headPart, bool removeExtra) {
 			using func_t = decltype(&TESNPC::RemoveHeadPart);
-			REL::Relocation<func_t> func{ REL::Offset(0x5B5560) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(880456, 2207431) };
 			return func(this, headPart, removeExtra);
 		}
 
 		void AddHeadPart(BGSHeadPart* headPart, bool checkUnique = true, bool addExtra = true, bool updateActor = true) {
 			using func_t = decltype(&TESNPC::AddHeadPart);
-			REL::Relocation<func_t> func{ REL::Offset(0x5B52E0) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(735660, 2207430) };
 			return func(this, headPart, checkUnique, addExtra, updateActor);
 		}
 
 		void AddUniqueHeadType(BGSHeadPart* headPart)
 		{
 			using func_t = decltype(&TESNPC::AddUniqueHeadType);
-			REL::Relocation<func_t> func{ REL::Offset(0x5B9B30) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(466269, 2207463) };
 			return func(this, headPart);
 		}
 
 		void ClearHeadParts()
 		{
 			using func_t = decltype(&TESNPC::ClearHeadParts);
-			REL::Relocation<func_t> func{ REL::Offset(0x5B97C0) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(69136, 2207457) };
 			return func(this);
 		}
 
 		void SetFacialBoneMorphIntensity(float a_value)
 		{
 			using func_t = decltype(&TESNPC::SetFacialBoneMorphIntensity);
-			REL::Relocation<func_t> func{ REL::Offset(0x5B4C30) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(1256673, 2207415) };
 			return func(this, a_value);
 		}
 
 		float GetFacialBoneMorphIntensity()
 		{
 			using func_t = decltype(&TESNPC::GetFacialBoneMorphIntensity);
-			REL::Relocation<func_t> func{ REL::Offset(0x5B4DA0) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(272217, 2207416) };
 			return func(this);
 		}
 
-		bool MorphFaceBone(NiAVObject* bone, bool applyUpdate) {
-			using func_t = decltype(&TESNPC::MorphFaceBone);
-			REL::Relocation<func_t> func{ REL::Offset(0x5C09B0) };
-			return func(this, bone, applyUpdate);
+		bool MorphFaceBone([[maybe_unused]] NiAVObject* bone, [[maybe_unused]] bool applyUpdate) {
+			return false;
 		}
 
 		void GetFacialBoneRegionTransform(uint32_t regionID, BGSCharacterMorph::Transform& out) {
 			using func_t = decltype(&TESNPC::GetFacialBoneRegionTransform);
-			REL::Relocation<func_t> func{ REL::Offset(0x5B4790) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(433851, 2207412) };
 			return func(this, regionID, out);
 		}
 
 		void SetFacialBoneRegionTransform(uint32_t regionID, const BGSCharacterMorph::Transform& transform) {
 			using func_t = decltype(&TESNPC::SetFacialBoneRegionTransform);
-			REL::Relocation<func_t> func{ REL::Offset(0x5B4890) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(1125036, 2207413) };
 			return func(this, regionID, transform);
 		}
 
 		void ResetFacialBoneValues()
 		{
 			using func_t = decltype(&TESNPC::ResetFacialBoneValues);
-			REL::Relocation<func_t> func{ REL::Offset(0x5B4E40) };
+			REL::Relocation<func_t> func{ REL::SelectVersionID(1495467, 2207417) };
 			return func(this);
 		}
 

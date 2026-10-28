@@ -106,6 +106,16 @@ sources = [
     f"{SRC_DBR}/Validate/ValidateTint.cpp",
 ]
 
+def resolve_src(path):
+    if path.startswith(SRC_CLIB):
+        rel = os.path.relpath(path, SRC_CLIB)
+        local = os.path.join(REPO_ROOT, "CommonLibF4", "src", rel)
+        if os.path.exists(local):
+            return local
+    return path
+
+sources = [resolve_src(s) for s in sources]
+
 INCLUDES = [
     f"-I{SRC_DBR}",
     f"-I{SRC_DBR}/spdlog/include",
