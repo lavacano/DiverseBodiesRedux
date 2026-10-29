@@ -14,13 +14,15 @@
    "values": {
     "LegsThin": 20,
     "Arms": 15,
-    "BreastsSmall": 30,
+    "BreastsSmall": 10,
     "BreastGravity2": 15,
-    "ChubbyWaist": 65,
+    "ChubbyWaist": 60,
     "WideWaistLine": 45,
     "HipUpperWidth": 25,
-    "Hips": -15,
-    "ButtSmall": 20
+    "Hips": 6,
+    "ButtSmall": 15,
+    "Breasts": 18,
+    "Butt": 11
    }
   },
   "Cait": {
@@ -39,12 +41,14 @@
     "MuscularButt": 60,
     "ChestWidth": 25,
     "Back": 20,
-    "BreastsSmall": 30,
+    "BreastsSmall": 10,
     "BreastPerkiness": 20,
     "ChubbyWaist": 55,
     "WideWaistLine": 35,
-    "Hips": -10,
-    "ButtSmall": 10
+    "Hips": 13,
+    "ButtSmall": 10,
+    "Breasts": 38,
+    "Butt": 20
    }
   },
   "Curie": {
@@ -63,14 +67,15 @@
    ],
    "vibe": "a new synth body, soft and unassuming: gentle curves, a little soft at the middle",
    "values": {
-    "ChubbyWaist": 70,
+    "ChubbyWaist": 60,
     "Belly": 25,
-    "Breasts": 15,
+    "Breasts": 29,
     "BreastGravity2": 25,
-    "Hips": 5,
+    "Hips": 15,
     "ChubbyArms": 15,
     "Thighs": 10,
-    "AppleCheeks": 15
+    "AppleCheeks": 15,
+    "Butt": 22
    }
   },
   "Magnolia": {
@@ -84,10 +89,10 @@
    ],
    "vibe": "lounge singer, the Commonwealth's one real hourglass",
    "values": {
-    "Breasts": 35,
+    "Breasts": 36,
     "7B Upper": 20,
     "BreastPerkiness": 20,
-    "Hips": 20,
+    "Hips": 24,
     "Butt": 25,
     "RoundAss": 35,
     "ChubbyWaist": 20,
@@ -106,15 +111,17 @@
    ],
    "vibe": "Railroad leader, middle-aged and severe: long, flat and square",
    "values": {
-    "BreastsSmall": 30,
+    "BreastsSmall": 10,
     "BreastGravity2": 35,
-    "ChubbyWaist": 75,
-    "WideWaistLine": 55,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "HipUpperWidth": 30,
-    "Hips": -20,
-    "ButtSmall": 30,
+    "Hips": -1,
+    "ButtSmall": 15,
     "LegsThin": 15,
-    "Back": 15
+    "Back": 15,
+    "Breasts": 24,
+    "Butt": 11
    }
   },
   "Glory": {
@@ -134,11 +141,14 @@
     "ChestWidth": 55,
     "Back": 55,
     "BigTorso": 35,
-    "BreastsSmall": 25,
+    "BreastsSmall": 10,
     "ChubbyWaist": 60,
     "WideWaistLine": 30,
     "Thighs": 30,
-    "CalfSize": 30
+    "CalfSize": 30,
+    "Breasts": 41,
+    "Hips": 12,
+    "Butt": 22
    }
   },
   "Haylen": {
@@ -152,15 +162,17 @@
    ],
    "vibe": "scribe, bookish: a desk body, soft arms and a soft belly",
    "values": {
-    "ChubbyWaist": 85,
+    "ChubbyWaist": 60,
     "Belly": 55,
     "BigBelly": 20,
     "ChubbyArms": 45,
     "ChubbyLegs": 30,
-    "Breasts": 15,
+    "Breasts": 40,
     "BreastGravity2": 40,
     "WideWaistLine": 35,
-    "ChubbyButt": 25
+    "ChubbyButt": 25,
+    "Hips": 12,
+    "Butt": 24
    }
   },
   "Madison Li": {
@@ -176,14 +188,16 @@
    "values": {
     "LegsThin": 30,
     "Arms": 25,
-    "BreastsSmall": 30,
+    "BreastsSmall": 10,
     "BreastGravity2": 50,
-    "BreastFlatness2": 20,
-    "ChubbyWaist": 80,
-    "WideWaistLine": 50,
+    "BreastFlatness2": 10,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "Belly": 25,
-    "Hips": -20,
-    "ButtSmall": 35
+    "Hips": 10,
+    "ButtSmall": 15,
+    "Breasts": 34,
+    "Butt": 12
    }
   },
   "Mama Murphy": {
@@ -200,14 +214,15 @@
     "LegsThin": 80,
     "Arms": 70,
     "SlimThighs": 50,
-    "ButtSmall": 70,
+    "ButtSmall": 15,
     "BreastGravity2": 100,
-    "BreastFlatness2": 60,
-    "Breasts": 10,
+    "BreastFlatness2": 10,
+    "Breasts": 39,
     "Belly": 40,
-    "ChubbyWaist": 85,
+    "ChubbyWaist": 60,
     "WideWaistLine": 40,
-    "Hips": -30
+    "Hips": 24,
+    "Butt": 15
    }
   },
   "Marcy Long": {
@@ -223,13 +238,15 @@
    "values": {
     "LegsThin": 35,
     "Arms": 30,
-    "BreastsSmall": 30,
+    "BreastsSmall": 10,
     "BreastGravity2": 45,
-    "ChubbyWaist": 75,
-    "WideWaistLine": 55,
-    "Hips": -25,
-    "ButtSmall": 40,
-    "SlimThighs": 20
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
+    "Hips": 24,
+    "ButtSmall": 15,
+    "SlimThighs": 20,
+    "Breasts": 40,
+    "Butt": 16
    }
   },
   "Fahrenheit": {
@@ -249,12 +266,13 @@
     "MuscularArms": 70,
     "MuscularLegs": 55,
     "ChubbyArms": 30,
-    "ChubbyWaist": 100,
-    "WideWaistLine": 70,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "Thighs": 45,
-    "Breasts": 10,
+    "Breasts": 40,
     "CalfSize": 50,
-    "Hips": -15
+    "Hips": 20,
+    "Butt": 23
    }
   },
   "Irma": {
@@ -273,11 +291,12 @@
     "BreastGravity2": 65,
     "Hips": 25,
     "Thighs": 30,
-    "ChubbyWaist": 80,
+    "ChubbyWaist": 60,
     "Belly": 35,
     "ChubbyArms": 30,
     "ChubbyButt": 30,
-    "BigButt": 20
+    "BigButt": 20,
+    "Butt": 13
    }
   },
   "Mags Black": {
@@ -292,8 +311,8 @@
    "vibe": "the Operators' boss: slim, elegant, cold",
    "values": {
     "LegsThin": 10,
-    "BreastsSmall": 20,
-    "Breasts": 5,
+    "BreastsSmall": 10,
+    "Breasts": 22,
     "BreastPerkiness": 25,
     "ChubbyWaist": 45,
     "Hips": 5,
@@ -316,12 +335,13 @@
     "Arms": 25,
     "MuscularArms": 30,
     "MuscularLegs": 25,
-    "BreastsSmall": 30,
-    "BreastsSmall2": 20,
+    "BreastsSmall": 10,
+    "BreastsSmall2": 10,
     "ChubbyWaist": 50,
     "WideWaistLine": 40,
-    "Hips": -20,
-    "ButtSmall": 30
+    "Hips": 23,
+    "ButtSmall": 15,
+    "Breasts": 34
    }
   },
   "Kasumi Nakano": {
@@ -335,15 +355,17 @@
    ],
    "vibe": "young runaway: small, slight, girlish",
    "values": {
-    "BreastsSmall": 30,
+    "BreastsSmall": 10,
     "BreastPerkiness": 30,
     "SlimThighs": 20,
     "Arms": 15,
     "LegsThin": 15,
     "ChubbyWaist": 55,
     "WideWaistLine": 30,
-    "Hips": -5,
-    "ButtSmall": 10
+    "Hips": 17,
+    "ButtSmall": 10,
+    "Breasts": 41,
+    "Butt": 13
    }
   },
   "Ronnie Shaw": {
@@ -360,14 +382,16 @@
     "BigTorso": 30,
     "Back": 35,
     "ChestWidth": 25,
-    "ChubbyWaist": 95,
-    "WideWaistLine": 60,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "Belly": 35,
     "BreastGravity2": 60,
-    "BreastFlatness2": 30,
-    "ButtSmall": 30,
-    "Hips": -15,
-    "MuscularArms": 15
+    "BreastFlatness2": 10,
+    "ButtSmall": 15,
+    "Hips": 23,
+    "MuscularArms": 15,
+    "Breasts": 31,
+    "Butt": 24
    }
   },
   "Myrna": {
@@ -381,15 +405,17 @@
    ],
    "vibe": "sour shopkeeper: pear-shaped, thick through the hips",
    "values": {
-    "BreastsSmall": 30,
+    "BreastsSmall": 10,
     "Hips": 35,
     "Thighs": 40,
     "ChubbyLegs": 35,
     "ChubbyButt": 40,
-    "ChubbyWaist": 80,
+    "ChubbyWaist": 60,
     "Belly": 30,
     "HipUpperWidth": 35,
-    "BreastGravity2": 40
+    "BreastGravity2": 40,
+    "Breasts": 35,
+    "Butt": 14
    }
   },
   "Doctor Amari": {
@@ -403,13 +429,15 @@
    ],
    "vibe": "neuroscientist, middle-aged: ordinary and a little soft",
    "values": {
-    "ChubbyWaist": 80,
+    "ChubbyWaist": 60,
     "WideWaistLine": 40,
     "Belly": 30,
-    "Breasts": 10,
+    "Breasts": 41,
     "BreastGravity2": 40,
     "ChubbyArms": 15,
-    "Thighs": 10
+    "Thighs": 10,
+    "Hips": 22,
+    "Butt": 23
    }
   },
   "Trudy": {
@@ -425,15 +453,16 @@
    "values": {
     "BigBelly": 30,
     "Belly": 95,
-    "ChubbyWaist": 120,
-    "WideWaistLine": 60,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "HipUpperWidth": 50,
     "Back": 45,
     "LegsThin": 20,
-    "ButtSmall": 30,
-    "Breasts": 25,
+    "ButtSmall": 15,
+    "Breasts": 31,
     "BreastGravity2": 75,
-    "ChubbyArms": 50
+    "ChubbyArms": 50,
+    "Hips": 13
    }
   },
   "Ellie Perkins": {
@@ -447,14 +476,16 @@
    ],
    "vibe": "the detective's secretary: plain and average",
    "values": {
-    "ChubbyWaist": 70,
+    "ChubbyWaist": 60,
     "WideWaistLine": 40,
     "HipUpperWidth": 25,
     "Belly": 25,
-    "Breasts": 5,
+    "Breasts": 38,
     "BreastGravity2": 25,
     "BreastsSmall": 10,
-    "ChubbyArms": 10
+    "ChubbyArms": 10,
+    "Hips": 13,
+    "Butt": 16
    }
   },
   "Cricket": {
@@ -471,13 +502,15 @@
     "BigTorso": 30,
     "Back": 35,
     "ChestWidth": 30,
-    "ChubbyWaist": 80,
+    "ChubbyWaist": 60,
     "WideWaistLine": 40,
     "MuscularArms": 30,
     "ChubbyArms": 25,
     "Thighs": 20,
-    "Breasts": 20,
-    "BreastGravity2": 40
+    "Breasts": 33,
+    "BreastGravity2": 40,
+    "Hips": 14,
+    "Butt": 23
    }
   },
   "Carla": {
@@ -494,12 +527,14 @@
     "LegsThin": 10,
     "MuscularLegs": 30,
     "CalfSize": 20,
-    "BreastsSmall": 30,
-    "ChubbyWaist": 65,
+    "BreastsSmall": 10,
+    "ChubbyWaist": 60,
     "WideWaistLine": 45,
-    "Hips": -10,
+    "Hips": 22,
     "ButtSmall": 15,
-    "BreastGravity2": 30
+    "BreastGravity2": 30,
+    "Breasts": 29,
+    "Butt": 14
    }
   },
   "Captain Avery": {
@@ -517,12 +552,14 @@
     "ChestWidth": 30,
     "BigTorso": 25,
     "MuscularArms": 25,
-    "ChubbyWaist": 85,
+    "ChubbyWaist": 60,
     "WideWaistLine": 45,
     "Belly": 20,
-    "Breasts": 10,
+    "Breasts": 33,
     "BreastGravity2": 45,
-    "Thighs": 20
+    "Thighs": 20,
+    "Hips": 20,
+    "Butt": 18
    }
   },
   "Aster": {
@@ -538,12 +575,13 @@
    "values": {
     "LegsThin": 25,
     "Arms": 20,
-    "BreastsSmall": 30,
+    "BreastsSmall": 10,
     "ChubbyWaist": 55,
     "WideWaistLine": 40,
-    "Hips": -15,
-    "ButtSmall": 25,
-    "SlimThighs": 25
+    "Hips": 5,
+    "ButtSmall": 15,
+    "SlimThighs": 25,
+    "Breasts": 24
    }
   },
   "Ivy": {
@@ -621,7 +659,7 @@
     "BigTorso": 35,
     "Breasts": 60,
     "BreastGravity2": 60,
-    "ChubbyWaist": 105,
+    "ChubbyWaist": 60,
     "Belly": 70,
     "WideWaistLine": 40,
     "Hips": 20,
@@ -643,16 +681,17 @@
    "vibe": "the salon gossip who greets you with \"You look terrible\": bloodshot, graying -- and a wreck herself, skinny-fat and sagging",
    "values": {
     "BreastGravity2": 120,
-    "BreastFlatness2": 90,
-    "Breasts": 20,
+    "BreastFlatness2": 10,
+    "Breasts": 33,
     "Belly": 90,
     "BigBelly": 45,
-    "ChubbyWaist": 105,
+    "ChubbyWaist": 60,
     "WideWaistLine": 45,
     "LegsThin": 60,
     "Arms": 55,
-    "ButtSmall": 70,
-    "Hips": -35
+    "ButtSmall": 15,
+    "Hips": 21,
+    "Butt": 22
    }
   },
   "Becky Fallon": {
@@ -666,9 +705,9 @@
    ],
    "vibe": "Fallon's Basement, \"quality and affordability\": everything has sunk to the basement -- a small bust over enormous hips, thighs and bottom",
    "values": {
-    "BreastsSmall": 30,
-    "Breasts": 0,
-    "ChubbyWaist": 65,
+    "BreastsSmall": 10,
+    "Breasts": 33,
+    "ChubbyWaist": 60,
     "Hips": 85,
     "Thighs": 105,
     "ChubbyLegs": 110,
@@ -676,7 +715,8 @@
     "ChubbyButt": 95,
     "HipUpperWidth": 55,
     "AppleCheeks": 35,
-    "Arms": 25
+    "Arms": 25,
+    "Butt": 19
    }
   },
   "Scarlett": {
@@ -693,14 +733,15 @@
     "LegsThin": 85,
     "Arms": 80,
     "SlimThighs": 70,
-    "ButtSmall": 85,
-    "BreastsSmall": 30,
-    "Breasts": 0,
-    "BreastFlatness2": 45,
-    "Hips": -45,
+    "ButtSmall": 15,
+    "BreastsSmall": 10,
+    "Breasts": 36,
+    "BreastFlatness2": 10,
+    "Hips": 11,
     "ChubbyWaist": 45,
     "WideWaistLine": 35,
-    "CalfSmooth": 60
+    "CalfSmooth": 60,
+    "Butt": 16
    }
   },
   "Roxy": {
@@ -717,12 +758,13 @@
     "MuscularArms": 35,
     "ForearmSize": 30,
     "LegsThin": 15,
-    "BreastsSmall": 20,
+    "BreastsSmall": 10,
     "BreastPerkiness": 30,
     "ChubbyWaist": 50,
-    "Hips": 10,
+    "Hips": 19,
     "RoundAss": 35,
-    "Butt": 15
+    "Butt": 15,
+    "Breasts": 42
    }
   },
   "Rowdy": {
@@ -741,12 +783,14 @@
     "BigTorso": 35,
     "MuscularArms": 60,
     "ForearmSize": 55,
-    "ChubbyWaist": 85,
+    "ChubbyWaist": 60,
     "WideWaistLine": 45,
     "Thighs": 35,
     "MuscularLegs": 35,
-    "Breasts": 20,
-    "BreastGravity2": 30
+    "Breasts": 32,
+    "BreastGravity2": 30,
+    "Hips": 10,
+    "Butt": 21
    }
   },
   "Alana Secord": {
@@ -762,13 +806,15 @@
    "values": {
     "LegsThin": 25,
     "Arms": 20,
-    "BreastsSmall": 25,
+    "BreastsSmall": 10,
     "BreastPerkiness": 25,
     "ChubbyWaist": 45,
     "WideWaistLine": 35,
-    "Hips": -10,
-    "ButtSmall": 20,
-    "SlimThighs": 20
+    "Hips": 10,
+    "ButtSmall": 15,
+    "SlimThighs": 20,
+    "Breasts": 34,
+    "Butt": 18
    }
   },
   "Rosalind Orman": {
@@ -782,16 +828,17 @@
    ],
    "vibe": "the Institute's veteran director of robotics, in a suit: decades at a desk under the ground -- broad, soft and settled",
    "values": {
-    "ChubbyWaist": 90,
-    "WideWaistLine": 55,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "Belly": 45,
-    "Breasts": 30,
+    "Breasts": 42,
     "BreastGravity2": 70,
     "ChubbyArms": 35,
     "Hips": 25,
     "Thighs": 30,
     "ChubbyButt": 30,
-    "HipUpperWidth": 30
+    "HipUpperWidth": 30,
+    "Butt": 18
    }
   },
   "Allie Filmore": {
@@ -808,12 +855,14 @@
     "LegsThin": 45,
     "Arms": 40,
     "SlimThighs": 40,
-    "BreastsSmall": 30,
-    "BreastsSmall2": 20,
+    "BreastsSmall": 10,
+    "BreastsSmall2": 10,
     "ChubbyWaist": 40,
     "WideWaistLine": 30,
-    "Hips": -25,
-    "ButtSmall": 45
+    "Hips": 21,
+    "ButtSmall": 15,
+    "Breasts": 38,
+    "Butt": 21
    }
   },
   "Kessler": {
@@ -832,11 +881,13 @@
     "BigTorso": 25,
     "MuscularArms": 40,
     "MuscularLegs": 30,
-    "ChubbyWaist": 80,
+    "ChubbyWaist": 60,
     "WideWaistLine": 45,
-    "Breasts": 15,
+    "Breasts": 39,
     "BreastGravity2": 35,
-    "Thighs": 20
+    "Thighs": 20,
+    "Hips": 20,
+    "Butt": 13
    }
   },
   "Kay": {
@@ -850,13 +901,15 @@
    ],
    "vibe": "Bunker Hill local in street clothes: an ordinary, sturdy settler, a little thick at the waist",
    "values": {
-    "ChubbyWaist": 80,
+    "ChubbyWaist": 60,
     "WideWaistLine": 40,
     "Belly": 20,
-    "Breasts": 15,
+    "Breasts": 33,
     "BreastGravity2": 30,
     "Thighs": 20,
-    "ChubbyArms": 15
+    "ChubbyArms": 15,
+    "Hips": 16,
+    "Butt": 11
    }
   },
   "Deb": {
@@ -870,15 +923,16 @@
    ],
    "vibe": "Bunker Hill trader who sells you everything at her stall: a comfortable, well-fed shopkeeper",
    "values": {
-    "ChubbyWaist": 95,
+    "ChubbyWaist": 60,
     "Belly": 45,
-    "Breasts": 35,
+    "Breasts": 38,
     "BreastGravity2": 55,
     "Hips": 25,
     "Thighs": 30,
     "ChubbyLegs": 25,
     "ChubbyArms": 30,
-    "ChubbyButt": 25
+    "ChubbyButt": 25,
+    "Butt": 15
    }
   },
   "Rachel": {
@@ -892,7 +946,7 @@
    ],
    "vibe": "Vault 81 cook in her vault suit: she tastes everything she makes -- round, soft and homely",
    "values": {
-    "ChubbyWaist": 100,
+    "ChubbyWaist": 60,
     "Belly": 60,
     "BigBelly": 15,
     "Breasts": 40,
@@ -901,7 +955,8 @@
     "Hips": 30,
     "Thighs": 35,
     "ChubbyLegs": 30,
-    "ChubbyButt": 35
+    "ChubbyButt": 35,
+    "Butt": 20
    }
   },
   "Tina De Luca": {
@@ -915,7 +970,7 @@
    ],
    "vibe": "Vault 81's restless young flirt, who wants out to see the world: petite and curvy, a pin-up in a vault suit",
    "values": {
-    "Breasts": 35,
+    "Breasts": 41,
     "BreastPerkiness": 40,
     "PushUp": 15,
     "ChubbyWaist": 40,
@@ -938,14 +993,15 @@
    ],
    "vibe": "Katy of Vault 81, shirt over her suit: a soft, ordinary vault-born body that never walked a mile",
    "values": {
-    "ChubbyWaist": 75,
+    "ChubbyWaist": 60,
     "WideWaistLine": 35,
     "Belly": 25,
-    "Breasts": 20,
+    "Breasts": 42,
     "BreastGravity2": 30,
     "ChubbyArms": 20,
-    "Hips": 10,
-    "Thighs": 15
+    "Hips": 14,
+    "Thighs": 15,
+    "Butt": 18
    }
   },
   "Alexis Combes": {
@@ -959,16 +1015,17 @@
    ],
    "vibe": "Vault 81 mother in a tactical suit, ready to fight for her family: a solid, capable, broad-hipped body",
    "values": {
-    "ChubbyWaist": 80,
+    "ChubbyWaist": 60,
     "WideWaistLine": 40,
     "Hips": 30,
     "HipUpperWidth": 30,
     "Thighs": 30,
     "MuscularArms": 25,
     "Back": 20,
-    "Breasts": 30,
+    "Breasts": 32,
     "BreastGravity2": 50,
-    "Belly": 20
+    "Belly": 20,
+    "Butt": 16
    }
   },
   "Doctor Penske": {
@@ -984,14 +1041,16 @@
    "values": {
     "LegsThin": 20,
     "Arms": 20,
-    "BreastsSmall": 20,
+    "BreastsSmall": 10,
     "BreastPerkiness": 20,
     "ChubbyWaist": 50,
     "WideWaistLine": 35,
-    "Hips": 0,
+    "Hips": 16,
     "ButtSmall": 15,
     "SlimThighs": 15,
-    "CalfSmooth": 40
+    "CalfSmooth": 40,
+    "Breasts": 33,
+    "Butt": 21
    }
   },
   "Gwen McNamara": {
@@ -1008,13 +1067,14 @@
     "ShoulderWidth": 30,
     "Back": 35,
     "BigTorso": 30,
-    "ChubbyWaist": 95,
-    "WideWaistLine": 60,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "Belly": 30,
-    "Breasts": 25,
+    "Breasts": 32,
     "BreastGravity2": 65,
     "ButtSmall": 15,
-    "Hips": -5
+    "Hips": 18,
+    "Butt": 12
    }
   },
   "Penny Fitzgerald": {
@@ -1055,14 +1115,15 @@
     "LegsThin": 90,
     "Arms": 85,
     "SlimThighs": 70,
-    "ButtSmall": 80,
+    "ButtSmall": 15,
     "BreastGravity2": 120,
-    "BreastFlatness2": 80,
-    "Breasts": 15,
+    "BreastFlatness2": 10,
+    "Breasts": 34,
     "Belly": 30,
-    "ChubbyWaist": 70,
+    "ChubbyWaist": 60,
     "WideWaistLine": 45,
-    "Hips": -35
+    "Hips": 20,
+    "Butt": 21
    }
   },
   "Tessa": {
@@ -1083,9 +1144,12 @@
     "ShoulderWidth": 30,
     "ChubbyWaist": 60,
     "WideWaistLine": 30,
-    "BreastsSmall": 25,
+    "BreastsSmall": 10,
     "Thighs": 30,
-    "CalfSize": 30
+    "CalfSize": 30,
+    "Breasts": 42,
+    "Hips": 12,
+    "Butt": 19
    }
   },
   "Captain Bridget": {
@@ -1105,11 +1169,13 @@
     "ShoulderWidth": 45,
     "MuscularArms": 80,
     "MuscularLegs": 60,
-    "ChubbyWaist": 90,
-    "WideWaistLine": 55,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "Thighs": 45,
     "CalfSize": 40,
-    "Breasts": 15
+    "Breasts": 37,
+    "Hips": 14,
+    "Butt": 16
    }
   },
   "Rei Nakano": {
@@ -1126,13 +1192,13 @@
     "LegsThin": 30,
     "Arms": 30,
     "BreastGravity2": 60,
-    "BreastFlatness2": 25,
-    "Breasts": 10,
-    "ChubbyWaist": 75,
+    "BreastFlatness2": 10,
+    "Breasts": 36,
+    "ChubbyWaist": 60,
     "WideWaistLine": 45,
     "Belly": 20,
-    "Hips": -10,
-    "ButtSmall": 25
+    "Hips": 23,
+    "ButtSmall": 15
    }
   },
   "Cassie Dalton": {
@@ -1150,12 +1216,14 @@
     "CalfSize": 30,
     "MuscularArms": 30,
     "LegsThin": 10,
-    "BreastsSmall": 20,
+    "BreastsSmall": 10,
     "ChubbyWaist": 60,
     "WideWaistLine": 40,
-    "Hips": -5,
+    "Hips": 14,
     "ButtSmall": 10,
-    "MuscularButt": 30
+    "MuscularButt": 30,
+    "Breasts": 32,
+    "Butt": 13
    }
   },
   "Sandra Lee": {
@@ -1169,7 +1237,7 @@
    ],
    "vibe": "Far Harbor islander in her going-out clothes: a fisherman's town body, full and strong",
    "values": {
-    "ChubbyWaist": 80,
+    "ChubbyWaist": 60,
     "WideWaistLine": 40,
     "Breasts": 35,
     "BreastGravity2": 40,
@@ -1214,15 +1282,16 @@
    ],
    "vibe": "Acadia synth who chose to forget what she was: a sleek, made-to-measure body that does not know it",
    "values": {
-    "Breasts": 25,
+    "Breasts": 35,
     "BreastPerkiness": 40,
     "ChubbyWaist": 35,
-    "Hips": 10,
+    "Hips": 17,
     "RoundAss": 30,
     "LegsThin": 10,
     "CalfSmooth": 70,
     "SlimThighs": 10,
-    "Arms": 10
+    "Arms": 10,
+    "Butt": 17
    }
   },
   "Jule": {
@@ -1240,12 +1309,15 @@
     "MuscularArms": 40,
     "MuscularButt": 50,
     "Back": 25,
-    "BreastsSmall": 20,
+    "BreastsSmall": 10,
     "BreastPerkiness": 35,
     "ChubbyWaist": 45,
     "WideWaistLine": 25,
     "CalfSize": 25,
-    "RoundAss": 25
+    "RoundAss": 25,
+    "Breasts": 38,
+    "Hips": 13,
+    "Butt": 18
    }
   },
   "Dixie": {
@@ -1262,13 +1334,15 @@
     "LegsThin": 50,
     "Arms": 45,
     "MuscularArms": 30,
-    "BreastsSmall": 30,
-    "BreastsSmall2": 25,
+    "BreastsSmall": 10,
+    "BreastsSmall2": 10,
     "ChubbyWaist": 35,
     "WideWaistLine": 45,
-    "Hips": -25,
-    "ButtSmall": 50,
-    "SlimThighs": 40
+    "Hips": 22,
+    "ButtSmall": 15,
+    "SlimThighs": 40,
+    "Breasts": 35,
+    "Butt": 24
    }
   },
   "Sierra Petrovita": {
@@ -1284,7 +1358,7 @@
    "values": {
     "Belly": 55,
     "BigBelly": 20,
-    "ChubbyWaist": 90,
+    "ChubbyWaist": 60,
     "Breasts": 40,
     "BreastGravity2": 35,
     "Hips": 35,
@@ -1292,7 +1366,8 @@
     "ChubbyLegs": 35,
     "ChubbyArms": 35,
     "ChubbyButt": 40,
-    "AppleCheeks": 30
+    "AppleCheeks": 30,
+    "Butt": 12
    }
   },
   "Shelbie Chase": {
@@ -1306,7 +1381,7 @@
    ],
    "vibe": "Nuka-World trader in a Nuka-Cherry costume: a park mascot's perky, cheerful curves",
    "values": {
-    "Breasts": 35,
+    "Breasts": 38,
     "BreastPerkiness": 45,
     "PushUp": 20,
     "ChubbyWaist": 50,
@@ -1327,13 +1402,15 @@
    ],
    "vibe": "Nuka-World trader in a Red Rocket uniform: a pump-attendant's plain, practical body",
    "values": {
-    "ChubbyWaist": 75,
+    "ChubbyWaist": 60,
     "WideWaistLine": 40,
     "Belly": 20,
-    "Breasts": 15,
+    "Breasts": 36,
     "BreastGravity2": 30,
     "Thighs": 20,
-    "MuscularArms": 15
+    "MuscularArms": 15,
+    "Hips": 20,
+    "Butt": 20
    }
   },
   "Lola": {
@@ -1371,10 +1448,10 @@
    ],
    "vibe": "brothel worker in lingerie, the young one: petite and perky, small and round",
    "values": {
-    "Breasts": 25,
+    "Breasts": 41,
     "BreastPerkiness": 50,
     "ChubbyWaist": 40,
-    "Hips": 20,
+    "Hips": 22,
     "RoundAss": 50,
     "Butt": 25,
     "AppleCheeks": 40,
@@ -1419,12 +1496,13 @@
     "LegsThin": 30,
     "Arms": 30,
     "BreastGravity2": 55,
-    "Breasts": 15,
+    "Breasts": 40,
     "ChubbyWaist": 55,
     "WideWaistLine": 40,
-    "Hips": -5,
-    "ButtSmall": 25,
-    "SlimThighs": 20
+    "Hips": 13,
+    "ButtSmall": 15,
+    "SlimThighs": 20,
+    "Butt": 12
    }
   },
   "Maisie": {
@@ -1460,14 +1538,15 @@
    ],
    "vibe": "Interesting NPCs' Penelope in a secretary's suit: a prim pencil-skirt figure, slim and neat",
    "values": {
-    "Breasts": 20,
+    "Breasts": 25,
     "BreastPerkiness": 35,
     "ChubbyWaist": 40,
     "Hips": 15,
     "RoundAss": 35,
     "LegsThin": 15,
     "CalfSmooth": 60,
-    "Arms": 15
+    "Arms": 15,
+    "Butt": 15
    }
   },
   "Switch": {
@@ -1486,12 +1565,14 @@
     "ShoulderWidth": 40,
     "MuscularArms": 60,
     "ChubbyArms": 35,
-    "ChubbyWaist": 95,
-    "WideWaistLine": 55,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "Thighs": 45,
     "ChubbyLegs": 30,
-    "Breasts": 30,
-    "BreastGravity2": 45
+    "Breasts": 34,
+    "BreastGravity2": 45,
+    "Hips": 24,
+    "Butt": 20
    }
   },
   "Spitball": {
@@ -1509,11 +1590,13 @@
     "Arms": 50,
     "SlimThighs": 45,
     "MuscularArms": 20,
-    "BreastsSmall": 30,
+    "BreastsSmall": 10,
     "ChubbyWaist": 45,
     "WideWaistLine": 40,
-    "Hips": -20,
-    "ButtSmall": 45
+    "Hips": 13,
+    "ButtSmall": 15,
+    "Breasts": 37,
+    "Butt": 21
    }
   },
   "Rabbit": {
@@ -1530,12 +1613,14 @@
     "LegsThin": 75,
     "Arms": 70,
     "SlimThighs": 60,
-    "ButtSmall": 70,
-    "BreastsSmall": 30,
-    "BreastFlatness2": 35,
-    "Hips": -35,
+    "ButtSmall": 15,
+    "BreastsSmall": 10,
+    "BreastFlatness2": 10,
+    "Hips": 16,
     "ChubbyWaist": 40,
-    "WideWaistLine": 35
+    "WideWaistLine": 35,
+    "Breasts": 39,
+    "Butt": 17
    }
   },
   "Harley Evans": {
@@ -1552,12 +1637,14 @@
     "Back": 30,
     "MuscularArms": 35,
     "MuscularLegs": 35,
-    "ChubbyWaist": 80,
+    "ChubbyWaist": 60,
     "WideWaistLine": 40,
     "Thighs": 35,
-    "Breasts": 25,
+    "Breasts": 34,
     "BreastGravity2": 35,
-    "CalfSize": 25
+    "CalfSize": 25,
+    "Hips": 13,
+    "Butt": 12
    }
   },
   "Doctor Kane": {
@@ -1574,12 +1661,13 @@
     "MuscularArms": 30,
     "MuscularLegs": 35,
     "MuscularButt": 35,
-    "BreastsSmall": 15,
+    "BreastsSmall": 10,
     "BreastPerkiness": 30,
     "ChubbyWaist": 45,
     "WideWaistLine": 30,
-    "Hips": 5,
-    "CalfSize": 20
+    "Hips": 21,
+    "CalfSize": 20,
+    "Breasts": 38
    }
   },
   "Quartermaster Barratt": {
@@ -1597,12 +1685,14 @@
     "Back": 35,
     "ChestWidth": 25,
     "MuscularArms": 25,
-    "ChubbyWaist": 95,
-    "WideWaistLine": 55,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "Belly": 35,
-    "Breasts": 25,
+    "Breasts": 42,
     "BreastGravity2": 50,
-    "Thighs": 30
+    "Thighs": 30,
+    "Hips": 22,
+    "Butt": 23
    }
   },
   "Christine Stennett": {
@@ -1618,13 +1708,14 @@
    "values": {
     "LegsThin": 25,
     "Arms": 20,
-    "Breasts": 15,
+    "Breasts": 40,
     "BreastPerkiness": 30,
     "ChubbyWaist": 45,
-    "Hips": 5,
+    "Hips": 24,
     "RoundAss": 20,
     "CalfSmooth": 60,
-    "SlimThighs": 15
+    "SlimThighs": 15,
+    "Butt": 11
    }
   },
   "Paula McKenzie": {
@@ -1638,14 +1729,15 @@
    ],
    "vibe": "Vault 4 dweller in a vault suit: soft and pale from a life underground",
    "values": {
-    "ChubbyWaist": 85,
+    "ChubbyWaist": 60,
     "Belly": 35,
-    "Breasts": 30,
+    "Breasts": 40,
     "BreastGravity2": 45,
     "Hips": 20,
     "Thighs": 25,
     "ChubbyArms": 25,
-    "ChubbyButt": 20
+    "ChubbyButt": 20,
+    "Butt": 13
    }
   },
   "Susan Janeway": {
@@ -1665,9 +1757,10 @@
     "MuscularLegs": 25,
     "ChubbyWaist": 60,
     "WideWaistLine": 35,
-    "Breasts": 20,
+    "Breasts": 30,
     "BreastPerkiness": 25,
-    "Hips": 5
+    "Hips": 22,
+    "Butt": 21
    }
   },
   "Kate Armstrong": {
@@ -1686,10 +1779,11 @@
     "ChubbyArms": 20,
     "ShoulderWidth": 35,
     "Back": 40,
-    "ChubbyWaist": 75,
+    "ChubbyWaist": 60,
     "WideWaistLine": 40,
-    "Breasts": 25,
-    "Thighs": 25
+    "Breasts": 36,
+    "Thighs": 25,
+    "Hips": 17
    }
   },
   "June Waters": {
@@ -1703,7 +1797,7 @@
    ],
    "vibe": "Vault 4 dweller in a maid's vault suit: a plump, homely housekeeper",
    "values": {
-    "ChubbyWaist": 100,
+    "ChubbyWaist": 60,
     "Belly": 50,
     "Breasts": 45,
     "BreastGravity2": 60,
@@ -1711,7 +1805,8 @@
     "Thighs": 40,
     "ChubbyLegs": 35,
     "ChubbyArms": 40,
-    "ChubbyButt": 40
+    "ChubbyButt": 40,
+    "Butt": 24
    }
   },
   "Nadine": {
@@ -1728,12 +1823,14 @@
     "LegsThin": 25,
     "MuscularArms": 35,
     "MuscularLegs": 35,
-    "BreastsSmall": 25,
+    "BreastsSmall": 10,
     "ChubbyWaist": 50,
     "WideWaistLine": 40,
-    "Hips": -10,
-    "ButtSmall": 20,
-    "CalfSize": 20
+    "Hips": 11,
+    "ButtSmall": 15,
+    "CalfSize": 20,
+    "Breasts": 41,
+    "Butt": 17
    }
   },
   "Marguerite": {
@@ -1749,7 +1846,7 @@
    "values": {
     "Breasts": 50,
     "BreastGravity2": 45,
-    "ChubbyWaist": 75,
+    "ChubbyWaist": 60,
     "Hips": 40,
     "Butt": 40,
     "BigButt": 25,
@@ -1769,15 +1866,16 @@
    ],
    "vibe": "Point Lookout local in casual clothes: a short, round, sturdy body",
    "values": {
-    "ChubbyWaist": 95,
+    "ChubbyWaist": 60,
     "Belly": 40,
     "WideWaistLine": 45,
-    "Breasts": 30,
+    "Breasts": 38,
     "BreastGravity2": 45,
     "Thighs": 35,
     "ChubbyLegs": 35,
     "ChubbyArms": 30,
-    "Hips": 20
+    "Hips": 20,
+    "Butt": 18
    }
   },
   "Marcella": {
@@ -1795,11 +1893,14 @@
     "MuscularButt": 50,
     "CalfSize": 35,
     "MuscularArms": 20,
-    "BreastsSmall": 25,
+    "BreastsSmall": 10,
     "BreastPerkiness": 35,
     "ChubbyWaist": 45,
     "WideWaistLine": 25,
-    "RoundAss": 30
+    "RoundAss": 30,
+    "Breasts": 37,
+    "Hips": 15,
+    "Butt": 22
    }
   },
   "Lisa": {
@@ -1813,14 +1914,15 @@
    ],
    "vibe": "Goodneighbor clubgoer in club clothes: slim, made for the dance floor",
    "values": {
-    "Breasts": 20,
+    "Breasts": 25,
     "BreastPerkiness": 40,
     "ChubbyWaist": 40,
     "Hips": 15,
     "RoundAss": 40,
     "LegsThin": 15,
     "CalfSmooth": 50,
-    "Arms": 15
+    "Arms": 15,
+    "Butt": 16
    }
   },
   "Sasha": {
@@ -1858,7 +1960,7 @@
    ],
    "vibe": "Goodneighbor nightlife in an elite bikini: a fitness-model body, toned and high-set",
    "values": {
-    "Breasts": 35,
+    "Breasts": 39,
     "BreastPerkiness": 50,
     "PushUp": 20,
     "MuscularButt": 60,
@@ -1867,7 +1969,7 @@
     "MuscularLegs": 40,
     "MuscularArms": 20,
     "ChubbyWaist": 30,
-    "Hips": 20,
+    "Hips": 23,
     "AppleCheeks": 40
    }
   },
@@ -1884,15 +1986,17 @@
    "values": {
     "BigBelly": 60,
     "Belly": 100,
-    "ChubbyWaist": 115,
-    "WideWaistLine": 55,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "LegsThin": 70,
     "Arms": 70,
     "SlimThighs": 50,
     "BreastGravity2": 90,
-    "BreastFlatness2": 50,
-    "ButtSmall": 60,
-    "Hips": -20
+    "BreastFlatness2": 10,
+    "ButtSmall": 15,
+    "Hips": 14,
+    "Breasts": 35,
+    "Butt": 22
    }
   },
   "Stingbreath": {
@@ -1909,12 +2013,14 @@
     "LegsThin": 30,
     "Arms": 30,
     "MuscularArms": 30,
-    "BreastsSmall": 25,
+    "BreastsSmall": 10,
     "ChubbyWaist": 25,
-    "Hips": 15,
+    "Hips": 23,
     "RoundAss": 30,
     "MuscularLegs": 25,
-    "SlimThighs": 20
+    "SlimThighs": 20,
+    "Breasts": 31,
+    "Butt": 20
    }
   },
   "White Widow": {
@@ -1957,13 +2063,15 @@
     "ShoulderWidth": 40,
     "MuscularArms": 45,
     "ChubbyArms": 45,
-    "ChubbyWaist": 110,
+    "ChubbyWaist": 60,
     "Belly": 60,
-    "WideWaistLine": 60,
+    "WideWaistLine": 45,
     "Thighs": 40,
     "ChubbyLegs": 35,
-    "Breasts": 30,
-    "BreastGravity2": 60
+    "Breasts": 36,
+    "BreastGravity2": 60,
+    "Hips": 17,
+    "Butt": 20
    }
   },
   "Confessor Campbell": {
@@ -1979,13 +2087,15 @@
    "values": {
     "LegsThin": 20,
     "Arms": 20,
-    "BreastsSmall": 25,
+    "BreastsSmall": 10,
     "ChubbyWaist": 55,
     "WideWaistLine": 40,
-    "Hips": -10,
-    "ButtSmall": 25,
+    "Hips": 14,
+    "ButtSmall": 15,
     "SlimThighs": 20,
-    "BreastGravity2": 20
+    "BreastGravity2": 20,
+    "Breasts": 31,
+    "Butt": 17
    }
   },
   "Daisy": {
@@ -2002,14 +2112,15 @@
     "LegsThin": 70,
     "Arms": 65,
     "SlimThighs": 55,
-    "ButtSmall": 60,
+    "ButtSmall": 15,
     "BreastGravity2": 110,
-    "BreastFlatness2": 60,
-    "Breasts": 20,
+    "BreastFlatness2": 10,
+    "Breasts": 29,
     "Belly": 35,
-    "ChubbyWaist": 75,
+    "ChubbyWaist": 60,
     "WideWaistLine": 45,
-    "Hips": -25
+    "Hips": 21,
+    "Butt": 14
    }
   },
   "Overseer Barstow": {
@@ -2026,13 +2137,15 @@
     "BigTorso": 30,
     "Back": 30,
     "ShoulderWidth": 20,
-    "ChubbyWaist": 95,
-    "WideWaistLine": 55,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "Belly": 35,
-    "Breasts": 25,
+    "Breasts": 31,
     "BreastGravity2": 60,
     "ButtSmall": 15,
-    "Thighs": 20
+    "Thighs": 20,
+    "Hips": 14,
+    "Butt": 15
    }
   },
   "Sammy": {
@@ -2049,12 +2162,14 @@
     "LegsThin": 55,
     "Arms": 50,
     "SlimThighs": 40,
-    "BreastsSmall": 30,
+    "BreastsSmall": 10,
     "ChubbyWaist": 50,
     "WideWaistLine": 40,
-    "Hips": -20,
-    "ButtSmall": 45,
-    "MuscularArms": 20
+    "Hips": 24,
+    "ButtSmall": 15,
+    "MuscularArms": 20,
+    "Breasts": 33,
+    "Butt": 18
    }
   },
   "Preston Garvey": {

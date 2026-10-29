@@ -12,11 +12,11 @@
    "tier": "beautiful",
    "archetype": "Hourglass",
    "values": {
-    "Breasts": 24,
+    "Breasts": 48,
     "7B Upper": 24,
     "BreastPerkiness": 28,
     "PushUp": 3,
-    "Hips": 15,
+    "Hips": 21,
     "Butt": 19,
     "RoundAss": 35,
     "ChubbyWaist": 9,
@@ -44,13 +44,14 @@
     "MuscularArms": 35,
     "MuscularLegs": 45,
     "MuscularButt": 56,
-    "BreastsSmall": 22,
-    "Breasts": 13,
+    "BreastsSmall": 10,
+    "Breasts": 35,
     "ChestWidth": 10,
     "ChubbyWaist": 16,
     "Butt": 21,
     "BreastPerkiness": 30,
-    "RoundAss": 20
+    "RoundAss": 20,
+    "Hips": 12
    },
    "measure": {
     "bust": 68.196,
@@ -73,12 +74,12 @@
    "values": {
     "LegsThin": 15,
     "Arms": 13,
-    "BreastsSmall": 13,
-    "Breasts": 19,
+    "BreastsSmall": 10,
+    "Breasts": 27,
     "BreastPerkiness": 37,
     "ChubbyWaist": 9,
     "Hips": 14,
-    "Butt": 10,
+    "Butt": 21,
     "SlimThighs": 8
    },
    "measure": {
@@ -103,12 +104,13 @@
     "7B Upper": 32,
     "Breasts": 44,
     "BreastGravity2": 15,
-    "Hips": 24,
+    "Hips": 35,
     "BigButt": 32,
     "Thighs": 31,
     "ChubbyWaist": 14,
     "ChubbyArms": 10,
-    "AppleCheeks": 21
+    "AppleCheeks": 21,
+    "Butt": 17
    },
    "measure": {
     "bust": 73.176,
@@ -129,15 +131,15 @@
    "tier": "beautiful",
    "archetype": "Petite",
    "values": {
-    "BreastsSmall": 28,
-    "Breasts": 13,
+    "BreastsSmall": 10,
+    "Breasts": 33,
     "BreastPerkiness": 30,
     "SlimThighs": 19,
     "Arms": 13,
     "LegsThin": 7,
     "RoundAss": 30,
     "ChubbyWaist": 6,
-    "Hips": 7
+    "Hips": 14
    },
    "measure": {
     "bust": 67.895,
@@ -158,13 +160,14 @@
    "tier": "beautiful",
    "archetype": "Pear",
    "values": {
-    "BreastsSmall": 17,
+    "BreastsSmall": 10,
     "Hips": 39,
     "Thighs": 33,
     "AppleCheeks": 38,
     "Butt": 27,
     "ChubbyWaist": 11,
-    "ChubbyButt": 20
+    "ChubbyButt": 20,
+    "Breasts": 38
    },
    "measure": {
     "bust": 67.739,
@@ -185,17 +188,17 @@
    "tier": "middle",
    "archetype": "Average",
    "values": {
-    "ChubbyWaist": 81,
+    "ChubbyWaist": 60,
     "WideWaistLine": 40,
     "HipUpperWidth": 34,
     "Belly": 32,
-    "Breasts": 15,
+    "Breasts": 31,
     "BreastGravity2": 34,
-    "Hips": 3,
-    "Butt": 2,
+    "Hips": 18,
+    "Butt": 19,
     "Thighs": 6,
     "ChubbyArms": 19,
-    "BreastsSmall": 18
+    "BreastsSmall": 10
    },
    "measure": {
     "bust": 66.624,
@@ -216,17 +219,17 @@
    "tier": "middle",
    "archetype": "Average",
    "values": {
-    "ChubbyWaist": 62,
+    "ChubbyWaist": 60,
     "WideWaistLine": 41,
     "HipUpperWidth": 21,
     "Belly": 39,
-    "Breasts": 13,
+    "Breasts": 28,
     "BreastGravity2": 20,
-    "Hips": -5,
-    "Butt": -2,
+    "Hips": 18,
+    "Butt": 13,
     "Thighs": 6,
     "ChubbyArms": 9,
-    "BreastsSmall": 15
+    "BreastsSmall": 10
    },
    "measure": {
     "bust": 67.231,
@@ -247,17 +250,17 @@
    "tier": "middle",
    "archetype": "Average",
    "values": {
-    "ChubbyWaist": 64,
-    "WideWaistLine": 51,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "HipUpperWidth": 27,
     "Belly": 21,
-    "Breasts": 3,
+    "Breasts": 39,
     "BreastGravity2": 36,
-    "Hips": 8,
-    "Butt": -5,
+    "Hips": 20,
+    "Butt": 21,
     "Thighs": 14,
     "ChubbyArms": 24,
-    "BreastsSmall": 23
+    "BreastsSmall": 10
    },
    "measure": {
     "bust": 66.004,
@@ -278,16 +281,18 @@
    "tier": "middle",
    "archetype": "Soft",
    "values": {
-    "ChubbyWaist": 87,
+    "ChubbyWaist": 60,
     "Belly": 55,
     "BigBelly": 21,
     "WideWaistLine": 22,
     "ChubbyArms": 38,
     "ChubbyLegs": 23,
-    "Breasts": 18,
+    "Breasts": 36,
     "BreastGravity2": 37,
     "ChubbyButt": 21,
-    "Back": 17
+    "Back": 17,
+    "Hips": 16,
+    "Butt": 13
    },
    "measure": {
     "bust": 67.154,
@@ -308,16 +313,18 @@
    "tier": "middle",
    "archetype": "Soft",
    "values": {
-    "ChubbyWaist": 73,
+    "ChubbyWaist": 60,
     "Belly": 45,
     "BigBelly": 16,
     "WideWaistLine": 21,
     "ChubbyArms": 38,
     "ChubbyLegs": 32,
-    "Breasts": 24,
+    "Breasts": 35,
     "BreastGravity2": 34,
     "ChubbyButt": 14,
-    "Back": 25
+    "Back": 25,
+    "Hips": 19,
+    "Butt": 14
    },
    "measure": {
     "bust": 67.634,
@@ -338,16 +345,17 @@
    "tier": "middle",
    "archetype": "Soft",
    "values": {
-    "ChubbyWaist": 93,
+    "ChubbyWaist": 60,
     "Belly": 48,
     "BigBelly": 32,
     "WideWaistLine": 39,
     "ChubbyArms": 30,
     "ChubbyLegs": 32,
-    "Breasts": 21,
+    "Breasts": 40,
     "BreastGravity2": 41,
     "ChubbyButt": 12,
-    "Back": 26
+    "Back": 26,
+    "Hips": 23
    },
    "measure": {
     "bust": 67.118,
@@ -370,13 +378,15 @@
    "values": {
     "LegsThin": 18,
     "Arms": 17,
-    "BreastsSmall": 27,
-    "ButtSmall": 24,
-    "ChubbyWaist": 72,
-    "WideWaistLine": 70,
+    "BreastsSmall": 10,
+    "ButtSmall": 15,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "HipUpperWidth": 27,
     "BreastGravity2": 12,
-    "Hips": -13
+    "Hips": 8,
+    "Breasts": 20,
+    "Butt": 13
    },
    "measure": {
     "bust": 66.887,
@@ -399,13 +409,15 @@
    "values": {
     "LegsThin": 28,
     "Arms": 12,
-    "BreastsSmall": 25,
-    "ButtSmall": 29,
+    "BreastsSmall": 10,
+    "ButtSmall": 15,
     "ChubbyWaist": 58,
     "WideWaistLine": 42,
     "HipUpperWidth": 25,
     "BreastGravity2": 18,
-    "Hips": -1
+    "Hips": -1,
+    "Breasts": 22,
+    "Butt": 11
    },
    "measure": {
     "bust": 66.628,
@@ -428,13 +440,14 @@
    "values": {
     "LegsThin": 13,
     "Arms": 14,
-    "BreastsSmall": 28,
+    "BreastsSmall": 10,
     "ButtSmall": 15,
-    "ChubbyWaist": 70,
-    "WideWaistLine": 48,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "HipUpperWidth": 36,
     "BreastGravity2": 25,
-    "Hips": -6
+    "Hips": -2,
+    "Breasts": 23
    },
    "measure": {
     "bust": 66.192,
@@ -458,14 +471,15 @@
     "BigTorso": 28,
     "Back": 29,
     "ChestWidth": 32,
-    "ChubbyWaist": 72,
+    "ChubbyWaist": 60,
     "WideWaistLine": 32,
     "MuscularLegs": 24,
     "MuscularArms": 27,
     "Thighs": 14,
-    "Hips": -5,
+    "Hips": 11,
     "ButtSmall": 9,
-    "Breasts": 12
+    "Breasts": 34,
+    "Butt": 15
    },
    "measure": {
     "bust": 70.491,
@@ -494,9 +508,10 @@
     "MuscularLegs": 19,
     "MuscularArms": 29,
     "Thighs": 22,
-    "Hips": -2,
+    "Hips": 15,
     "ButtSmall": 10,
-    "Breasts": 9
+    "Breasts": 41,
+    "Butt": 19
    },
    "measure": {
     "bust": 69.962,
@@ -520,14 +535,14 @@
     "BigTorso": 23,
     "Back": 33,
     "ChestWidth": 18,
-    "ChubbyWaist": 75,
+    "ChubbyWaist": 60,
     "WideWaistLine": 34,
     "MuscularLegs": 11,
     "MuscularArms": 14,
     "Thighs": 11,
-    "Hips": -6,
-    "ButtSmall": 17,
-    "Breasts": 6
+    "Hips": 22,
+    "ButtSmall": 15,
+    "Breasts": 32
    },
    "measure": {
     "bust": 69.885,
@@ -548,14 +563,15 @@
    "tier": "middle",
    "archetype": "Busty",
    "values": {
-    "Breasts": 26,
+    "Breasts": 49,
     "7B Upper": 17,
     "BreastGravity2": 36,
-    "ChubbyWaist": 71,
+    "ChubbyWaist": 60,
     "Belly": 30,
     "WideWaistLine": 20,
-    "Hips": 3,
-    "ChubbyArms": 17
+    "Hips": 32,
+    "ChubbyArms": 17,
+    "Butt": 18
    },
    "measure": {
     "bust": 69.257,
@@ -576,14 +592,15 @@
    "tier": "middle",
    "archetype": "Busty",
    "values": {
-    "Breasts": 25,
+    "Breasts": 52,
     "7B Upper": 19,
     "BreastGravity2": 53,
-    "ChubbyWaist": 83,
+    "ChubbyWaist": 60,
     "Belly": 24,
     "WideWaistLine": 39,
-    "Hips": 8,
-    "ChubbyArms": 19
+    "Hips": 30,
+    "ChubbyArms": 19,
+    "Butt": 17
    },
    "measure": {
     "bust": 68.428,
@@ -604,14 +621,15 @@
    "tier": "middle",
    "archetype": "Busty",
    "values": {
-    "Breasts": 36,
+    "Breasts": 46,
     "7B Upper": 15,
     "BreastGravity2": 47,
-    "ChubbyWaist": 85,
+    "ChubbyWaist": 60,
     "Belly": 37,
     "WideWaistLine": 32,
-    "Hips": -4,
-    "ChubbyArms": 13
+    "Hips": 27,
+    "ChubbyArms": 13,
+    "Butt": 26
    },
    "measure": {
     "bust": 68.841,
@@ -632,15 +650,17 @@
    "tier": "middle",
    "archetype": "WideHips",
    "values": {
-    "Hips": 22,
+    "Hips": 24,
     "Thighs": 35,
     "ChubbyLegs": 17,
     "ChubbyButt": 23,
-    "ChubbyWaist": 71,
+    "ChubbyWaist": 60,
     "HipUpperWidth": 31,
     "Belly": 22,
     "BreastsSmall": 10,
-    "BreastGravity2": 32
+    "BreastGravity2": 32,
+    "Breasts": 47,
+    "Butt": 17
    },
    "measure": {
     "bust": 66.206,
@@ -661,15 +681,17 @@
    "tier": "middle",
    "archetype": "WideHips",
    "values": {
-    "Hips": 16,
+    "Hips": 25,
     "Thighs": 20,
     "ChubbyLegs": 15,
     "ChubbyButt": 19,
-    "ChubbyWaist": 61,
+    "ChubbyWaist": 60,
     "HipUpperWidth": 29,
     "Belly": 16,
-    "BreastsSmall": 22,
-    "BreastGravity2": 15
+    "BreastsSmall": 10,
+    "BreastGravity2": 15,
+    "Breasts": 38,
+    "Butt": 24
    },
    "measure": {
     "bust": 66.813,
@@ -694,11 +716,13 @@
     "Thighs": 23,
     "ChubbyLegs": 12,
     "ChubbyButt": 16,
-    "ChubbyWaist": 77,
+    "ChubbyWaist": 60,
     "HipUpperWidth": 31,
     "Belly": 28,
-    "BreastsSmall": 23,
-    "BreastGravity2": 28
+    "BreastsSmall": 10,
+    "BreastGravity2": 28,
+    "Breasts": 39,
+    "Butt": 18
    },
    "measure": {
     "bust": 66.186,
@@ -719,11 +743,11 @@
    "tier": "ugly",
    "archetype": "Obese",
    "values": {
-    "ChubbyWaist": 128,
+    "ChubbyWaist": 60,
     "BigBelly": 50,
     "Belly": 112,
     "HipUpperWidth": 74,
-    "WideWaistLine": 73,
+    "WideWaistLine": 45,
     "ChubbyLegs": 93,
     "ChubbyArms": 107,
     "ChubbyButt": 88,
@@ -731,9 +755,11 @@
     "Back": 68,
     "Breasts": 48,
     "BreastGravity2": 71,
-    "BreastFlatness2": 26,
+    "BreastFlatness2": 10,
     "Thighs": 57,
-    "CalfSize": 44
+    "CalfSize": 44,
+    "Hips": 14,
+    "Butt": 17
    },
    "measure": {
     "bust": 69.538,
@@ -754,11 +780,11 @@
    "tier": "ugly",
    "archetype": "Obese",
    "values": {
-    "ChubbyWaist": 129,
+    "ChubbyWaist": 60,
     "BigBelly": 26,
     "Belly": 110,
     "HipUpperWidth": 61,
-    "WideWaistLine": 75,
+    "WideWaistLine": 45,
     "ChubbyLegs": 89,
     "ChubbyArms": 120,
     "ChubbyButt": 66,
@@ -766,9 +792,11 @@
     "Back": 74,
     "Breasts": 57,
     "BreastGravity2": 71,
-    "BreastFlatness2": 31,
+    "BreastFlatness2": 10,
     "Thighs": 40,
-    "CalfSize": 69
+    "CalfSize": 69,
+    "Hips": 23,
+    "Butt": 15
    },
    "measure": {
     "bust": 70.755,
@@ -789,11 +817,11 @@
    "tier": "ugly",
    "archetype": "Obese",
    "values": {
-    "ChubbyWaist": 114,
+    "ChubbyWaist": 60,
     "BigBelly": 26,
     "Belly": 118,
     "HipUpperWidth": 65,
-    "WideWaistLine": 75,
+    "WideWaistLine": 45,
     "ChubbyLegs": 98,
     "ChubbyArms": 117,
     "ChubbyButt": 87,
@@ -801,9 +829,11 @@
     "Back": 57,
     "Breasts": 57,
     "BreastGravity2": 73,
-    "BreastFlatness2": 27,
+    "BreastFlatness2": 10,
     "Thighs": 60,
-    "CalfSize": 70
+    "CalfSize": 70,
+    "Hips": 15,
+    "Butt": 15
    },
    "measure": {
     "bust": 69.399,
@@ -824,15 +854,15 @@
    "tier": "ugly",
    "archetype": "Flat",
    "values": {
-    "Breasts": 4,
-    "BreastsSmall": 27,
-    "BreastsSmall2": 64,
-    "BreastFlatness2": 72,
-    "ButtSmall": 79,
-    "Hips": -45,
+    "Breasts": 21,
+    "BreastsSmall": 10,
+    "BreastsSmall2": 10,
+    "BreastFlatness2": 10,
+    "ButtSmall": 15,
+    "Hips": 3,
     "SlimThighs": 32,
-    "ChubbyWaist": 84,
-    "WideWaistLine": 67,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "HipUpperWidth": 36
    },
    "measure": {
@@ -854,16 +884,17 @@
    "tier": "ugly",
    "archetype": "Flat",
    "values": {
-    "Breasts": 5,
-    "BreastsSmall": 24,
-    "BreastsSmall2": 42,
-    "BreastFlatness2": 51,
-    "ButtSmall": 64,
-    "Hips": -36,
+    "Breasts": 27,
+    "BreastsSmall": 10,
+    "BreastsSmall2": 10,
+    "BreastFlatness2": 10,
+    "ButtSmall": 15,
+    "Hips": 0,
     "SlimThighs": 39,
-    "ChubbyWaist": 99,
-    "WideWaistLine": 62,
-    "HipUpperWidth": 44
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
+    "HipUpperWidth": 44,
+    "Butt": 16
    },
    "measure": {
     "bust": 64.452,
@@ -884,16 +915,17 @@
    "tier": "ugly",
    "archetype": "Flat",
    "values": {
-    "Breasts": 2,
-    "BreastsSmall": 28,
-    "BreastsSmall2": 43,
-    "BreastFlatness2": 58,
-    "ButtSmall": 64,
-    "Hips": -42,
+    "Breasts": 21,
+    "BreastsSmall": 10,
+    "BreastsSmall2": 10,
+    "BreastFlatness2": 10,
+    "ButtSmall": 15,
+    "Hips": 0,
     "SlimThighs": 32,
-    "ChubbyWaist": 70,
-    "WideWaistLine": 64,
-    "HipUpperWidth": 33
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
+    "HipUpperWidth": 33,
+    "Butt": 15
    },
    "measure": {
     "bust": 64.082,
@@ -917,13 +949,14 @@
     "LegsThin": 80,
     "Arms": 71,
     "SlimThighs": 56,
-    "ButtSmall": 77,
-    "BreastsSmall": 26,
-    "Breasts": 2,
+    "ButtSmall": 15,
+    "BreastsSmall": 10,
+    "Breasts": 24,
     "BreastGravity2": 47,
-    "Hips": -38,
+    "Hips": 3,
     "CalfSmooth": 65,
-    "WideWaistLine": 33
+    "WideWaistLine": 33,
+    "Butt": 16
    },
    "measure": {
     "bust": 65.264,
@@ -947,11 +980,11 @@
     "LegsThin": 82,
     "Arms": 90,
     "SlimThighs": 66,
-    "ButtSmall": 64,
-    "BreastsSmall": 28,
-    "Breasts": 0,
+    "ButtSmall": 15,
+    "BreastsSmall": 10,
+    "Breasts": 21,
     "BreastGravity2": 57,
-    "Hips": -36,
+    "Hips": 5,
     "CalfSmooth": 47,
     "WideWaistLine": 39
    },
@@ -976,16 +1009,17 @@
    "values": {
     "BigBelly": 38,
     "Belly": 95,
-    "ChubbyWaist": 133,
-    "WideWaistLine": 70,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "HipUpperWidth": 51,
     "Back": 47,
     "LegsThin": 36,
-    "ButtSmall": 41,
+    "ButtSmall": 15,
     "SlimThighs": 20,
-    "Breasts": 14,
+    "Breasts": 31,
     "BreastGravity2": 70,
-    "ChubbyArms": 50
+    "ChubbyArms": 50,
+    "Hips": 23
    },
    "measure": {
     "bust": 66.15,
@@ -1008,16 +1042,18 @@
    "values": {
     "BigBelly": 32,
     "Belly": 113,
-    "ChubbyWaist": 114,
-    "WideWaistLine": 55,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "HipUpperWidth": 46,
     "Back": 52,
     "LegsThin": 49,
-    "ButtSmall": 54,
+    "ButtSmall": 15,
     "SlimThighs": 26,
-    "Breasts": 23,
+    "Breasts": 40,
     "BreastGravity2": 70,
-    "ChubbyArms": 43
+    "ChubbyArms": 43,
+    "Hips": 15,
+    "Butt": 16
    },
    "measure": {
     "bust": 66.441,
@@ -1040,16 +1076,18 @@
    "values": {
     "BigBelly": 49,
     "Belly": 90,
-    "ChubbyWaist": 113,
-    "WideWaistLine": 48,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "HipUpperWidth": 43,
     "Back": 43,
     "LegsThin": 30,
-    "ButtSmall": 46,
+    "ButtSmall": 15,
     "SlimThighs": 26,
-    "Breasts": 15,
+    "Breasts": 32,
     "BreastGravity2": 80,
-    "ChubbyArms": 58
+    "ChubbyArms": 58,
+    "Hips": 11,
+    "Butt": 13
    },
    "measure": {
     "bust": 65.853,
@@ -1071,13 +1109,15 @@
    "archetype": "Saggy",
    "values": {
     "BreastGravity2": 103,
-    "BreastFlatness2": 81,
-    "Breasts": 28,
+    "BreastFlatness2": 10,
+    "Breasts": 42,
     "Belly": 47,
     "BigBelly": 27,
-    "ChubbyWaist": 86,
-    "ButtSmall": 38,
-    "WideWaistLine": 32
+    "ChubbyWaist": 60,
+    "ButtSmall": 15,
+    "WideWaistLine": 32,
+    "Hips": 19,
+    "Butt": 24
    },
    "measure": {
     "bust": 63.921,
@@ -1099,13 +1139,15 @@
    "archetype": "Saggy",
    "values": {
     "BreastGravity2": 109,
-    "BreastFlatness2": 65,
-    "Breasts": 28,
+    "BreastFlatness2": 10,
+    "Breasts": 39,
     "Belly": 57,
     "BigBelly": 40,
-    "ChubbyWaist": 86,
-    "ButtSmall": 50,
-    "WideWaistLine": 41
+    "ChubbyWaist": 60,
+    "ButtSmall": 15,
+    "WideWaistLine": 41,
+    "Hips": 15,
+    "Butt": 13
    },
    "measure": {
     "bust": 63.971,
@@ -1131,10 +1173,11 @@
     "Hips": 70,
     "BigButt": 45,
     "ChubbyButt": 69,
-    "BreastsSmall": 27,
-    "Breasts": 3,
+    "BreastsSmall": 10,
+    "Breasts": 38,
     "Arms": 25,
-    "ChubbyWaist": 59
+    "ChubbyWaist": 59,
+    "Butt": 16
    },
    "measure": {
     "bust": 67.653,
@@ -1160,10 +1203,11 @@
     "Hips": 68,
     "BigButt": 66,
     "ChubbyButt": 62,
-    "BreastsSmall": 27,
-    "Breasts": 1,
+    "BreastsSmall": 10,
+    "Breasts": 42,
     "Arms": 19,
-    "ChubbyWaist": 62
+    "ChubbyWaist": 60,
+    "Butt": 20
    },
    "measure": {
     "bust": 67.56,
@@ -1187,13 +1231,15 @@
     "BigTorso": 66,
     "ChestWidth": 75,
     "Back": 67,
-    "ChubbyWaist": 102,
-    "WideWaistLine": 76,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "HipUpperWidth": 46,
-    "Hips": -45,
-    "ButtSmall": 59,
-    "BreastsSmall": 25,
-    "MuscularArms": 33
+    "Hips": -1,
+    "ButtSmall": 15,
+    "BreastsSmall": 10,
+    "MuscularArms": 33,
+    "Breasts": 25,
+    "Butt": 12
    },
    "measure": {
     "bust": 72.011,
@@ -1217,13 +1263,15 @@
     "BigTorso": 54,
     "ChestWidth": 75,
     "Back": 63,
-    "ChubbyWaist": 87,
-    "WideWaistLine": 92,
+    "ChubbyWaist": 60,
+    "WideWaistLine": 45,
     "HipUpperWidth": 45,
-    "Hips": -55,
-    "ButtSmall": 70,
-    "BreastsSmall": 21,
-    "MuscularArms": 31
+    "Hips": 2,
+    "ButtSmall": 15,
+    "BreastsSmall": 10,
+    "MuscularArms": 31,
+    "Breasts": 20,
+    "Butt": 16
    },
    "measure": {
     "bust": 71.435,
