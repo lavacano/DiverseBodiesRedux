@@ -182,6 +182,23 @@ namespace {
 		s_fallbackPartsInitialized = true;
 	}
 
+	inline bool isHeadPartGenderCompatible(const RE::BGSHeadPart* hp, bool isFemale) noexcept {
+		if (!hp) return false;
+		if (isFemale) {
+			if (hp->flags.all(RE::BGSHeadPart::Flag::kCantBeFemale)) {
+				return false;
+			}
+			if (hp->type.get() == RE::BGSHeadPart::HeadPartType::kFacialHair) {
+				return false;
+			}
+		} else {
+			if (hp->flags.all(RE::BGSHeadPart::Flag::kCantBeMale)) {
+				return false;
+			}
+		}
+		return true;
+	}
+
 	inline RE::BGSHeadPart* getFallbackHair(RE::Actor* actor) {
 		if (!actor) return nullptr;
 		initFallbackHeadParts();
@@ -569,11 +586,15 @@ bool NPCPreset::applyImpl(RE::Actor* actor, bool reset3d, bool checkAlreadyAppli
 
 	using scrapAllocator = RE::BSScrapArrayAllocator;
 
+	const bool isActorFemale = (actor->GetSex() == RE::Actor::Sex::Female);
+
 	std::set<RE::BGSHeadPart*> currentHeadParts{};
-	auto append = [&currentHeadParts](RE::BGSHeadPart** arr, std::int8_t count) {
+	auto append = [&currentHeadParts, isActorFemale](RE::BGSHeadPart** arr, std::int8_t count) {
 		if (!arr || count <= 0) return;
 		for (int i = 0; i < count; ++i) {
-			if (arr[i]) currentHeadParts.insert(arr[i]);
+			if (arr[i] && isHeadPartGenderCompatible(arr[i], isActorFemale)) {
+				currentHeadParts.insert(arr[i]);
+			}
 		}
 	};
 
@@ -596,6 +617,11 @@ bool NPCPreset::applyImpl(RE::Actor* actor, bool reset3d, bool checkAlreadyAppli
 
 		for (auto* hp : m_headParts) {
 			if (hp) {
+				if (!isHeadPartGenderCompatible(hp, isActorFemale)) {
+					logger::warn("NPCPreset: skipping gender-incompatible headpart {:08X} ('{}', type {}) for actor [{:x}] sex {}",
+						hp->GetFormID(), hp->GetFormEditorID(), static_cast<int>(hp->type.get()), actor->formID, isActorFemale ? "Female" : "Male");
+					continue;
+				}
 				presetTypes.insert(hp->type.get());
 				mergedHeadParts.push_back(hp);
 			}
@@ -610,6 +636,7 @@ bool NPCPreset::applyImpl(RE::Actor* actor, bool reset3d, bool checkAlreadyAppli
 
 		for (auto* origPart : currentHeadParts) {
 			if (!origPart) continue;
+			if (!isHeadPartGenderCompatible(origPart, isActorFemale)) continue;
 			if (presetTypes.find(origPart->type.get()) == presetTypes.end()) {
 				if (!alreadyHasPart(origPart)) {
 					mergedHeadParts.push_back(origPart);
@@ -617,7 +644,7 @@ bool NPCPreset::applyImpl(RE::Actor* actor, bool reset3d, bool checkAlreadyAppli
 						origPart->GetFormID(), static_cast<int>(origPart->type.get()), id());
 				}
 				for (auto* extra : origPart->extraParts) {
-					if (extra && !alreadyHasPart(extra)) {
+					if (extra && isHeadPartGenderCompatible(extra, isActorFemale) && !alreadyHasPart(extra)) {
 						mergedHeadParts.push_back(extra);
 					}
 				}
@@ -742,9 +769,13 @@ bool NPCPreset::applyImpl(RE::Actor* actor, bool reset3d, bool checkAlreadyAppli
 			actorFace->headRelatedData->hairColor = m_hairColor;
 			success = true;
 		}
-		if (m_faceHairColor && actorFace->headRelatedData->facialHairColor != m_faceHairColor) {
-			actorFace->headRelatedData->facialHairColor = m_faceHairColor;
-			success = true;
+		if (!isActorFemale) {
+			if (m_faceHairColor && actorFace->headRelatedData->facialHairColor != m_faceHairColor) {
+				actorFace->headRelatedData->facialHairColor = m_faceHairColor;
+				success = true;
+			}
+		} else if (actorFace->headRelatedData->facialHairColor) {
+			actorFace->headRelatedData->facialHairColor = nullptr;
 		}
 
 		flags |= RE::RESET_3D_FLAGS::kHead;
