@@ -54,18 +54,13 @@ namespace patches
             local.swap(ClothDetachQueue::_queue);
         }
 
-        auto orig = BSClothExtraData_SetWorld_Handler.GetOriginal();
-        if (!orig) {
-            return;
-        }
-
         for (void* p : local) {
             auto* cloth = static_cast<RE::BSClothExtraData*>(p);
             if (!cloth) {
                 continue;
             }
-            // Единожды мягко отсоединяем world
-            CallOriginalSafe(orig, cloth, nullptr);
+            // Единожды мягко отсоединяем world через безопасную нативную реализацию
+            Hooked_BSClothExtraData_SetWorld(cloth, nullptr);
             ClothGuard::MarkDetached(p);
         }
     }

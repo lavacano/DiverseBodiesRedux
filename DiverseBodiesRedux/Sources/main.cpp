@@ -265,27 +265,27 @@ void initAfterGameDataWasLoaded() {
 	// (см. PrewarmClothTlsGuard() в Patches.cpp) и физика ткани пропадёт целиком.
 	patches::PrewarmClothTlsGuard();
 
-	// Critical crash guards: SetTransformSet, SetTransformSet2, and SetSettleOnTransitionToSim
+	// Critical Havok cloth crash guards & simulation handlers:
+	// SetTransformSet, SetTransformSet2, SetSettleOnTransitionToSim, and SetWorld
 	// guard against null transformSet in hclClothInstance and BSClothExtraData.
-	// In vanilla Fallout4.exe, physics hair (e.g. AzarPonytailHairstyles) or cloth meshes with missing bones pass
-	// transformSet = nullptr, causing crashes at 0x18C85FF (SetTransformSet2) and 0x18A1B90 (SetSettleOnTransitionToSim).
-	// SetSettleOnTransitionToSim_Bool_Handler is implemented natively in C++ without GetOriginal(), safely skipping
-	// null transformSets and setting settle flags on valid cloth.
+	// In vanilla Fallout4.exe, physics hair (Dragonfly, KS Hairdos, AzarPonytails) or cloth meshes with missing bones pass
+	// transformSet = nullptr, causing crashes at:
+	// 1. 0x18C85FF (SetTransformSet2: cmp word ptr [r8+0xA], 0)
+	// 2. 0x18A1B90 (SetSettleOnTransitionToSim: mov [rcx+0x1B7], r9b)
+	// 3. 0x18A79F0 (SetWorld -> QClothSupportsLOD: cmp dword ptr [rcx+0x19C], 0xFFFFFFFF)
+	// Both SetSettleOnTransitionToSim and SetWorld are implemented as clean native C++ handlers without GetOriginal(),
+	// safely skipping null transformSets while properly attaching valid cloth (skirts, dresses, labcoats) to the Havok world
+	// and enabling seamless cloth simulation without freezing or detached meshes.
 	patches::SetTransformSet_Handler.Install();
 	patches::SetTransformSet2_Handler.Install();
 	patches::BSClothExtraData__SetSettleOnTransitionToSim_Bool_Handler.Install();
+	patches::BSClothExtraData_SetWorld_Handler.Install();
 
-	// Simulation hooks that MUST remain unhooked:
-	// In Fallout 4 1.11.240.0 (Next-Gen), DetourXS cannot safely hook these 3 simulation functions:
-	// 1. BSClothExtraData::SetWorld (0x18A0DA0) starts with RIP-relative [rip + 0x25d2267] (_tls_index).
-	// 2. QClothSupportsLOD (0x18A79F0) has relative jumps and RIP-relative memory reads that break in heap trampoline.
-	// 3. ResetPrediction (0x18A6070) is only 10 bytes long ('mov word [rcx+0x1b4], 0x101; ret'). Installing
-	//    a 14-byte 64-bit jump hook overwrites beyond the function boundary, corrupting the entry point
-	//    of the adjacent engine function at 0x18A6080.
-	// Leaving these 3 simulation functions unhooked allows Fallout4.exe's clean native Havok cloth engine to run.
+	// Simulation sub-hooks that remain unhooked:
+	// QClothSupportsLOD and ResetPrediction are safely handled inside the native SetWorld implementation above.
+	// Hooking them directly is unsafe because ResetPrediction (0x18A6070) is only 10 bytes long, and QClothSupportsLOD has RIP branches.
 	// patches::BSClothUtils_BSTransformSet_QClothSupportsLOD_Handler.Install();
 	// patches::BSClothUtils_BSTransformSet_ResetPrediction_void_Handler.Install();
-	// patches::BSClothExtraData_SetWorld_Handler.Install();
 
 	if (ini.at("PATCH/bHeadDataGuard", false)) {
 		patches::PendingActorHeadData_Process.Install();
