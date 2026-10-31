@@ -382,8 +382,59 @@ namespace patches {
 		if (!thisPtr || ClothGuard::IsQuarantined(thisPtr)) {
 			return;
 		}
-		if (ValidateClothChain(thisPtr)) {
-			BSClothExtraData__SetSettleOnTransitionToSim_Bool_Handler.GetOriginal()(thisPtr, enable);
+
+		// Full clean native implementation of BSClothExtraData::SetSettleOnTransitionToSim (0x18A1B60).
+		// In vanilla Fallout4.exe, the loop over clothInstance->transformSets[0] at 0x18A1B90 dereferences
+		// the transformSet pointer without checking for nullptr (mov [rcx+0x1B7], r9b).
+		// When physics hair (e.g. AzarPonytailHairstyles) or cloth meshes with missing bones pass
+		// transformSet = nullptr via SetTransformSet2, vanilla 0x18A1B90 immediately crashes with
+		// EXCEPTION_ACCESS_VIOLATION writing to 0x0000000001B7.
+		// Furthermore, DetourXS cannot relocate the relative branch 'je 0x18a1ba0' at 0x18A1B69 into
+		// its heap trampoline, so calling GetOriginal() is unsafe.
+		// By implementing the full loop here with explicit null checks and without GetOriginal(),
+		// valid cloth (skirts, dresses, labcoats) receives the settle flag cleanly while null transformSets
+		// are safely skipped without crashing.
+		__try {
+			auto* thisBytes = reinterpret_cast<uint8_t*>(thisPtr);
+			if (!IsReadableFast(thisBytes + 0x70, sizeof(uint32_t))) {
+				return;
+			}
+			uint32_t count = *reinterpret_cast<uint32_t*>(thisBytes + 0x70);
+			if (count == 0) {
+				return;
+			}
+
+			if (!IsReadableFast(thisBytes + 0x60, sizeof(uintptr_t))) {
+				return;
+			}
+			auto** arr = *reinterpret_cast<uint8_t***>(thisBytes + 0x60);
+			if (!arr || !IsReadableFast(arr, count * sizeof(uintptr_t))) {
+				return;
+			}
+
+			for (uint32_t i = 0; i < count; ++i) {
+				auto* clothInstance = arr[i];
+				if (!clothInstance || !IsReadableFast(clothInstance + 0x48, sizeof(int32_t))) {
+					continue;
+				}
+
+				int32_t numTransformSets = *reinterpret_cast<int32_t*>(clothInstance + 0x48);
+				if (numTransformSets > 0) {
+					if (!IsReadableFast(clothInstance + 0x40, sizeof(uintptr_t))) {
+						continue;
+					}
+					auto** transformSets = *reinterpret_cast<uint8_t***>(clothInstance + 0x40);
+					if (transformSets && IsReadableFast(transformSets, sizeof(uintptr_t))) {
+						auto* transformSet = transformSets[0];
+						if (transformSet && IsWritableFast(transformSet + 0x1B7, 1)) {
+							transformSet[0x1B7] = enable ? 1 : 0;
+						}
+					}
+				}
+			}
+		}
+		__except (EXCEPTION_EXECUTE_HANDLER) {
+			logger::error("Hooked_BSClothExtraData__SetSettleOnTransitionToSim_Bool: exception handled");
 		}
 	}
 

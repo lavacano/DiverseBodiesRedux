@@ -265,26 +265,24 @@ void initAfterGameDataWasLoaded() {
 	// (см. PrewarmClothTlsGuard() в Patches.cpp) и физика ткани пропадёт целиком.
 	patches::PrewarmClothTlsGuard();
 
-	// Critical crash guards: SetTransformSet & SetTransformSet2 guard against null transformSet
-	// in hclClothInstance::setTransformSet (0x18C8530 & 0x18C85F0). In vanilla Fallout4.exe,
-	// physics hair (e.g. AzarPonytailHairstyles) or cloth meshes with missing bones pass transformSet = nullptr,
-	// triggering an immediate null dereference crash at Fallout4.exe+18C85FF (cmp word ptr [r8+0xA], 0).
-	// Both functions have standard non-branching register/stack prologues (>=15 bytes) that safely hook via DetourXS.
+	// Critical crash guards: SetTransformSet, SetTransformSet2, and SetSettleOnTransitionToSim
+	// guard against null transformSet in hclClothInstance and BSClothExtraData.
+	// In vanilla Fallout4.exe, physics hair (e.g. AzarPonytailHairstyles) or cloth meshes with missing bones pass
+	// transformSet = nullptr, causing crashes at 0x18C85FF (SetTransformSet2) and 0x18A1B90 (SetSettleOnTransitionToSim).
+	// SetSettleOnTransitionToSim_Bool_Handler is implemented natively in C++ without GetOriginal(), safely skipping
+	// null transformSets and setting settle flags on valid cloth.
 	patches::SetTransformSet_Handler.Install();
 	patches::SetTransformSet2_Handler.Install();
+	patches::BSClothExtraData__SetSettleOnTransitionToSim_Bool_Handler.Install();
 
 	// Simulation hooks that MUST remain unhooked:
-	// In Fallout 4 1.11.240.0 (Next-Gen), DetourXS cannot safely hook these 4 simulation functions:
+	// In Fallout 4 1.11.240.0 (Next-Gen), DetourXS cannot safely hook these 3 simulation functions:
 	// 1. BSClothExtraData::SetWorld (0x18A0DA0) starts with RIP-relative [rip + 0x25d2267] (_tls_index).
-	// 2. SetSettleOnTransitionToSim (0x18A1B60) starts with a relative branch 'je 0x18a1ba0' at offset +9.
-	//    DetourXS copies 'je' into heap trampoline without branch relocation, jumping into arbitrary heap garbage,
-	//    and ValidateClothChain rejects valid cloth meshes, suppressing settle transitions.
-	// 3. QClothSupportsLOD (0x18A79F0) has relative jumps and RIP-relative memory reads that break in heap trampoline.
-	// 4. ResetPrediction (0x18A6070) is only 10 bytes long ('mov word [rcx+0x1b4], 0x101; ret'). Installing
+	// 2. QClothSupportsLOD (0x18A79F0) has relative jumps and RIP-relative memory reads that break in heap trampoline.
+	// 3. ResetPrediction (0x18A6070) is only 10 bytes long ('mov word [rcx+0x1b4], 0x101; ret'). Installing
 	//    a 14-byte 64-bit jump hook overwrites beyond the function boundary, corrupting the entry point
 	//    of the adjacent engine function at 0x18A6080.
-	// Leaving these 4 simulation functions unhooked allows Fallout4.exe's clean native Havok cloth engine to run.
-	// patches::BSClothExtraData__SetSettleOnTransitionToSim_Bool_Handler.Install();
+	// Leaving these 3 simulation functions unhooked allows Fallout4.exe's clean native Havok cloth engine to run.
 	// patches::BSClothUtils_BSTransformSet_QClothSupportsLOD_Handler.Install();
 	// patches::BSClothUtils_BSTransformSet_ResetPrediction_void_Handler.Install();
 	// patches::BSClothExtraData_SetWorld_Handler.Install();
