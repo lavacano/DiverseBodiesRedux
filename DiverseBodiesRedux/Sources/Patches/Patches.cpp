@@ -28,7 +28,7 @@ namespace patches {
 	void Hooked_BSClothExtraData_SetSettle(RE::BSClothExtraData* thisPtr, bool enable)
 	{
 		__try {
-			if (!thisPtr || ClothGuard::IsQuarantined(thisPtr)) {
+			if (!thisPtr) {
 				return;
 			}
 			if (!IsReadableFast(thisPtr, sizeof(void*))) {
@@ -423,7 +423,7 @@ namespace patches {
 
 	void Hooked_BSClothExtraData__SetSettleOnTransitionToSim_Bool(RE::BSClothExtraData* thisPtr, bool enable)
 	{
-		if (!thisPtr || ClothGuard::IsQuarantined(thisPtr)) {
+		if (!thisPtr) {
 			return;
 		}
 
@@ -603,7 +603,7 @@ namespace patches {
 
 	void Hooked_BSClothExtraData_SetWorld(RE::BSClothExtraData* thisPtr, void* newWorld)
 	{
-		if (!thisPtr || ClothGuard::IsQuarantined(thisPtr)) {
+		if (!thisPtr) {
 			return;
 		}
 

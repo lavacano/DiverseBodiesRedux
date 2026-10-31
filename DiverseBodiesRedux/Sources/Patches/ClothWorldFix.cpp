@@ -91,33 +91,19 @@ namespace patches
 
     void ClothGuard::Quarantine(void* key)
     {
-        std::scoped_lock lk(ClothGuard::_mtx);
-        ClothGuard::_map[key].quarantined = true;
     }
 
     bool ClothGuard::IsQuarantined(void* key)
     {
-        std::scoped_lock lk(ClothGuard::_mtx);
-        return ClothGuard::_map[key].quarantined;
+        return false;
     }
 
     bool ClothGuard::MarkPendingDetach(void* key)
     {
-        std::scoped_lock lk(ClothGuard::_mtx);
-        auto& e = ClothGuard::_map[key];
-        if (e.pendingDetach || e.detached) {
-            return false;
-        }
-        e.pendingDetach = true;
         return true;
     }
 
     void ClothGuard::MarkDetached(void* key)
     {
-        std::scoped_lock lk(ClothGuard::_mtx);
-        auto& e = ClothGuard::_map[key];
-        e.pendingDetach = false;
-        e.detached = true;
-        e.quarantined = true;
     }
 }

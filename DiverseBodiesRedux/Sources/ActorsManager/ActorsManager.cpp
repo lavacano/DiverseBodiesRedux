@@ -920,7 +920,9 @@ void ActorsManager::doReset3D(RE::Actor* actor, const std::set<PresetType>& appl
 
 	// currentProcess и extraList обязательны: без них Reset3D вызывает краш.
 	if (actor->currentProcess && actor->extraList) {
-		actor->Reset3D(false, flags, true, RE::RESET_3D_FLAGS::kNone);
+		using R3D = RE::RESET_3D_FLAGS;
+		auto excludeFlags = containsBodyMorphs ? R3D::kNone : (R3D::kModel | R3D::kSkin | R3D::kSkeleton | R3D::kScale);
+		actor->Reset3D(false, flags, true, excludeFlags);
 	}
 }
 
