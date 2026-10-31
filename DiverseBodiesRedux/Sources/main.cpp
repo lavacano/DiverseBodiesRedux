@@ -265,22 +265,25 @@ void initAfterGameDataWasLoaded() {
 	// (см. PrewarmClothTlsGuard() в Patches.cpp) и физика ткани пропадёт целиком.
 	patches::PrewarmClothTlsGuard();
 
-	// Havok Cloth hooks:
-	// In Fallout 4 1.11.240.0 (Next-Gen), hooking engine cloth internals via DetourXS causes severe
-	// Havok cloth freeze/desync bugs:
+	// Critical crash guards: SetTransformSet & SetTransformSet2 guard against null transformSet
+	// in hclClothInstance::setTransformSet (0x18C8530 & 0x18C85F0). In vanilla Fallout4.exe,
+	// physics hair (e.g. AzarPonytailHairstyles) or cloth meshes with missing bones pass transformSet = nullptr,
+	// triggering an immediate null dereference crash at Fallout4.exe+18C85FF (cmp word ptr [r8+0xA], 0).
+	// Both functions have standard non-branching register/stack prologues (>=15 bytes) that safely hook via DetourXS.
+	patches::SetTransformSet_Handler.Install();
+	patches::SetTransformSet2_Handler.Install();
+
+	// Simulation hooks that MUST remain unhooked:
+	// In Fallout 4 1.11.240.0 (Next-Gen), DetourXS cannot safely hook these 4 simulation functions:
 	// 1. BSClothExtraData::SetWorld (0x18A0DA0) starts with RIP-relative [rip + 0x25d2267] (_tls_index).
-	// 2. SetSettleOnTransitionToSim (0x18A1B60) starts with a relative jump 'je 0x18a1ba0' at offset +9.
-	//    DetourXS copies 'je' into heap trampoline without branch relocation, jumping into arbitrary heap garbage.
+	// 2. SetSettleOnTransitionToSim (0x18A1B60) starts with a relative branch 'je 0x18a1ba0' at offset +9.
+	//    DetourXS copies 'je' into heap trampoline without branch relocation, jumping into arbitrary heap garbage,
+	//    and ValidateClothChain rejects valid cloth meshes, suppressing settle transitions.
 	// 3. QClothSupportsLOD (0x18A79F0) has relative jumps and RIP-relative memory reads that break in heap trampoline.
 	// 4. ResetPrediction (0x18A6070) is only 10 bytes long ('mov word [rcx+0x1b4], 0x101; ret'). Installing
 	//    a 14-byte 64-bit jump hook overwrites beyond the function boundary, corrupting the entry point
 	//    of the adjacent engine function at 0x18A6080.
-	// 5. When cloth hooks fail or suppress simulation, Havok cloth bones never update to follow the actor.
-	//    Cloth meshes (skirts, dresses, labcoat tails) remain frozen in mid-air at spawn coordinates while
-	//    the actor's rigid body walks away, making the lower half of outfits appear missing/invisible.
-	// Leaving all cloth functions unhooked allows Fallout4.exe's clean native Havok cloth engine to run.
-	// patches::SetTransformSet_Handler.Install();
-	// patches::SetTransformSet2_Handler.Install();
+	// Leaving these 4 simulation functions unhooked allows Fallout4.exe's clean native Havok cloth engine to run.
 	// patches::BSClothExtraData__SetSettleOnTransitionToSim_Bool_Handler.Install();
 	// patches::BSClothUtils_BSTransformSet_QClothSupportsLOD_Handler.Install();
 	// patches::BSClothUtils_BSTransformSet_ResetPrediction_void_Handler.Install();
