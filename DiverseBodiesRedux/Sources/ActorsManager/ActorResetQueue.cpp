@@ -238,8 +238,7 @@ void ActorResetQueue::ExecuteReset(uint32_t formID)
 			}
 		}
 		logger::info("[ActorResetQueue] {}Reset3D: actor={:#x}", entry.needsBodyReset ? "Head+Body " : "Head ", formID);
-		const auto excludeFlags = entry.needsBodyReset ? R3D::kNone : (R3D::kModel | R3D::kSkin | R3D::kSkeleton | R3D::kScale);
-		actor->Reset3D(false, entry.needsBodyReset ? R3D::kNone : (R3D::kHead | R3D::kFace), true, excludeFlags);
+		actor->Reset3D(false, entry.needsBodyReset ? R3D::kNone : (R3D::kHead | R3D::kFace), true, R3D::kNone);
 	}
 
 	if (entry.needsHeadReset || entry.needsBodyReset) {
