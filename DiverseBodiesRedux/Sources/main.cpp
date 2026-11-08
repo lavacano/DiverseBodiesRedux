@@ -5,6 +5,8 @@
 #include <filesystem>
 #include "LooksMenu/LooksMenuHooks.hpp"
 #include "Patches/Patches.h"
+#include "Patches/ClothMorphFilter.h"
+#include "Patches/FaceGenFix.h"
 #include "DirectApply/DirectApply.h"
 #include "Patches/x-cell_patch.h"
 #include "PrismaMenu/PrismaMenu.h"
@@ -128,6 +130,12 @@ extern "C" DLLEXPORT bool F4SEAPI F4SEPlugin_Load(const F4SE::LoadInterface* a_f
 		logger::critical("Failed to read ini file... closing plugin.");
 		return false;
 	}
+	if (auto log = spdlog::get("global log"); log && globals::g_ini) {
+		const auto logLevel = std::clamp(globals::g_ini->at("DEBUG/iLogLevel", 3), 0, 6);
+		const auto logFlush = std::clamp(globals::g_ini->at("DEBUG/iLogFlush", 3), 0, 6);
+		log->set_level(static_cast<spdlog::level::level_enum>(logLevel));
+		log->flush_on(static_cast<spdlog::level::level_enum>(logFlush));
+	}
 
 	const auto serialization = F4SE::GetSerializationInterface();
 	if (!serialization) {
@@ -152,6 +160,9 @@ extern "C" DLLEXPORT bool F4SEAPI F4SEPlugin_Load(const F4SE::LoadInterface* a_f
 		logger::critical("Starting...");
 	}
 
+	// Install FaceGen engine patches (procedural fallback + null guard)
+	patches::InstallFaceGenFallbackPatches();
+
 	return true;
 }
 
@@ -162,6 +173,12 @@ void MessageHandler(F4SE::MessagingInterface::Message* a_msg)
 	}
 
 	switch (a_msg->type) {
+	case F4SE::MessagingInterface::kPostLoad: {
+		if (!globals::g_ini || globals::g_ini->at("PATCH/bStripClothBodyMorphs", true)) {
+			patches::InstallClothMorphFilter();
+		}
+		break;
+	}
 	case F4SE::MessagingInterface::kPreLoadGame: {
 		PrismaMenu::get().OnGameLoaded();
 		ActorsManager::notifyGameStartLoading();
@@ -293,6 +310,9 @@ void initAfterGameDataWasLoaded() {
 	if (ini.at("PATCH/bChangeHeadPart", true)) {
 		patches::ChangeHeadPart.Install();
 		patches::ChangeHeadPartRemovePart.Install();
+	}
+	if (ini.at("PATCH/bStripClothBodyMorphs", true)) {
+		patches::InstallClothMorphFilter();
 	}
 
 	xcell_patch::getInstance().reinitialize();
