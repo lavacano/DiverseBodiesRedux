@@ -235,13 +235,15 @@ void initAfterGameDataWasLoaded() {
 	if (!looksMenuHooks::initializeHookActorUpdateManagerTESInitScriptEvent()) 		
 		logger::critical("Failed to install ActorUpdateManagerTESInitScriptEventHook");
 
-	if (!looksMenuHooks::initializeHookActorUpdateManagerFlush())
-		logger::critical("Failed to install ActorUpdateManagerFlushHook");
+	if (ini.at("PATCH/bHookActorUpdateManagerFlush", false)) {
+		if (!looksMenuHooks::initializeHookActorUpdateManagerFlush())
+			logger::critical("Failed to install ActorUpdateManagerFlushHook");
+	}
 
 	/*if (!looksMenuHooks::initializeF4EEUpdateOverlaysRun()) 
 		logger::critical("Failed to install F4EEUpdateOverlaysRunHook");*/
 
-	if (ini.at("PATCH/bLooksMenuRemoveOverlayHook", true)) {
+	if (ini.at("PATCH/bLooksMenuRemoveOverlayHook", false)) {
 		if (!looksMenuHooks::initializeHookRemoveOverlay())
 			logger::critical("Failed to install RemoveOverlayHook");
 	}
