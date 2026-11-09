@@ -368,7 +368,15 @@ namespace patches {
 				return EXCEPTION_EXECUTE_HANDLER;
 			}(GetExceptionCode(), GetExceptionInformation())
 		) {
-			return false;
+			// CRITICAL FIX: Must mark *doneFlag = 1 and return true so the engine dequeues
+			// the invalid entry. Returning false causes the engine to endlessly retry the entry,
+			// causing an infinite loop, 100% CPU lockup, and game freeze.
+			__try {
+				if (self && reinterpret_cast<std::uintptr_t>(self) >= 0x10000) {
+					*reinterpret_cast<std::uint8_t*>(reinterpret_cast<std::uintptr_t>(self) + 0x82) = 1;
+				}
+			} __except (EXCEPTION_EXECUTE_HANDLER) {}
+			return true;
 		}
 	}
 
