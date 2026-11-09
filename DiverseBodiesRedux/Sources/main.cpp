@@ -6,7 +6,6 @@
 #include "LooksMenu/LooksMenuHooks.hpp"
 #include "Patches/Patches.h"
 #include "Patches/ClothMorphFilter.h"
-#include "Patches/FaceGenFix.h"
 #include "DirectApply/DirectApply.h"
 #include "Patches/x-cell_patch.h"
 #include "PrismaMenu/PrismaMenu.h"
@@ -160,8 +159,6 @@ extern "C" DLLEXPORT bool F4SEAPI F4SEPlugin_Load(const F4SE::LoadInterface* a_f
 		logger::critical("Starting...");
 	}
 
-	// Install FaceGen engine patches (procedural fallback + null guard)
-	patches::InstallFaceGenFallbackPatches();
 
 	return true;
 }

@@ -6,7 +6,9 @@ import concurrent.futures
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC_DBR = os.path.join(REPO_ROOT, "DiverseBodiesRedux", "Sources")
-CLIB_ROOT = os.environ.get("COMMONLIBF4_DIR", "/tmp/CommonLibF4_PANDA/CommonLibF4")
+SCRATCH_CLIB = "/home/lavac/.gemini/antigravity/brain/f414056b-e88d-4f2a-8025-fc9a9dedef6e/scratch/CommonLibF4_PANDA/CommonLibF4"
+default_clib = SCRATCH_CLIB if os.path.exists(SCRATCH_CLIB) else "/tmp/CommonLibF4_PANDA/CommonLibF4"
+CLIB_ROOT = os.environ.get("COMMONLIBF4_DIR", default_clib)
 SRC_CLIB = os.path.join(CLIB_ROOT, "src")
 BOOST_INC = os.environ.get("BOOST_INCLUDE_DIR", "/tmp/boost_inc")
 XWIN_DIR = os.environ.get("XWIN_DIR", os.path.expanduser("~/.xwin"))
@@ -90,7 +92,6 @@ sources = [
     f"{SRC_DBR}/Patches/Patches.cpp",
     f"{SRC_DBR}/Patches/PatchesMemUtils.cpp",
     f"{SRC_DBR}/Patches/x-cell_patch.cpp",
-    f"{SRC_DBR}/Patches/FaceGenFix.cpp",
     f"{SRC_DBR}/PresetsManager/PresetsManager.cpp",
     f"{SRC_DBR}/Preset/Bodyhairs.cpp",
     f"{SRC_DBR}/Preset/Bodymorphs.cpp",
