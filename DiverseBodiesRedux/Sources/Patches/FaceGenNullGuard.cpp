@@ -10,28 +10,9 @@
 namespace patches {
 	namespace {
 		// Fallout 4 Next-Gen 1.11.240.0 FaceGen Engine RVAs
-		constexpr std::uintptr_t kFaceGen_ProceduralFallback_RVA = 0x6E2625;
 		constexpr std::uintptr_t kFaceGen_NullGuard_RVA          = 0x6E0880;
 		constexpr std::uintptr_t kFaceGen_Resume_RVA             = 0x6E088F;
 		constexpr std::uintptr_t kFaceGen_Bypass_RVA             = 0x6E0B53;
-
-		// Patch A: Expected 16 bytes at 0x6E2625
-		// 48 8B CE             mov rcx, rsi
-		// E8 73 CD FF FF       call 0x1406df3a0
-		// 84 C0                test al, al
-		// 74 61                je 0x1406e2692
-		// 85 ED                test ebp, ebp
-		// 75 5D                jne 0x1406e2692
-		constexpr std::uint8_t kExpectedPatchA[16] = {
-			0x48, 0x8b, 0xce, 0xe8, 0x73, 0xcd, 0xff, 0xff,
-			0x84, 0xc0, 0x74, 0x61, 0x85, 0xed, 0x75, 0x5d
-		};
-
-		// Patch A replacement: jmp +0x6b (eb 6b) into 0x1406e2692 (procedural face generator), plus 14 NOPs
-		constexpr std::uint8_t kReplacementPatchA[16] = {
-			0xeb, 0x6b, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90,
-			0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90
-		};
 
 		// Expected 15 bytes at 0x6E0880
 		// 48 8B 55 E7             mov rdx, [rbp-0x19]
@@ -64,34 +45,8 @@ namespace patches {
 		}
 
 		// -------------------------------------------------------------
-		// 1. Install Patch A: Procedural Face Fallback at RVA 0x6E2625
-		//    Forces procedural head creation when pre-baked FaceGen is missing
-		//    (prevents Diamond City Security and templated NPCs from having no head)
-		// -------------------------------------------------------------
-		const auto patchA_Addr = base + kFaceGen_ProceduralFallback_RVA;
-		if (IsReadableFast(reinterpret_cast<const void*>(patchA_Addr), sizeof(kExpectedPatchA))) {
-			if (std::memcmp(reinterpret_cast<const void*>(patchA_Addr), kExpectedPatchA, sizeof(kExpectedPatchA)) == 0) {
-				DWORD oldProt = 0;
-				if (::VirtualProtect(reinterpret_cast<void*>(patchA_Addr), sizeof(kReplacementPatchA), F4SE::WinAPI::PAGE_EXECUTE_READWRITE, &oldProt)) {
-					std::memcpy(reinterpret_cast<void*>(patchA_Addr), kReplacementPatchA, sizeof(kReplacementPatchA));
-					::VirtualProtect(reinterpret_cast<void*>(patchA_Addr), sizeof(kReplacementPatchA), oldProt, &oldProt);
-					::FlushInstructionCache(::GetCurrentProcess(), reinterpret_cast<void*>(patchA_Addr), sizeof(kReplacementPatchA));
-					logger::info("[FaceGenNullGuard] Successfully installed Patch A (Procedural Face Fallback) at Fallout4.exe+0x{:X}.",
-						kFaceGen_ProceduralFallback_RVA);
-				} else {
-					logger::error("[FaceGenNullGuard] VirtualProtect failed on Patch A at Fallout4.exe+0x{:X}.", kFaceGen_ProceduralFallback_RVA);
-				}
-			} else if (std::memcmp(reinterpret_cast<const void*>(patchA_Addr), kReplacementPatchA, sizeof(kReplacementPatchA)) == 0) {
-				logger::info("[FaceGenNullGuard] Patch A already installed at Fallout4.exe+0x{:X}.", kFaceGen_ProceduralFallback_RVA);
-			} else {
-				logger::warn("[FaceGenNullGuard] Bytes at Fallout4.exe+0x{:X} mismatch expected prologue; skipping Patch A.",
-					kFaceGen_ProceduralFallback_RVA);
-			}
-		}
-
-		// -------------------------------------------------------------
-		// 2. Install Patch B: Null Pointer Guard Trampoline at RVA 0x6E0880
-		//    Guards against CTD if [rbp-0x19] is null
+		// Install FaceGen Null Pointer Guard Trampoline at RVA 0x6E0880
+		// Guards against CTD if [rbp-0x19] is null (GetDescription)
 		// -------------------------------------------------------------
 		const auto patchAddr = base + kFaceGen_NullGuard_RVA;
 		if (!IsReadableFast(reinterpret_cast<const void*>(patchAddr), sizeof(kExpectedPrologue))) {
