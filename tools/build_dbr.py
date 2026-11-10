@@ -93,6 +93,7 @@ sources = [
     f"{SRC_DBR}/Patches/PatchesMemUtils.cpp",
     f"{SRC_DBR}/Patches/x-cell_patch.cpp",
     f"{SRC_DBR}/Patches/FaceGenNullGuard.cpp",
+    f"{SRC_DBR}/Patches/FacialMorphIntensityFix.cpp",
     f"{SRC_DBR}/PresetsManager/PresetsManager.cpp",
     f"{SRC_DBR}/Preset/Bodyhairs.cpp",
     f"{SRC_DBR}/Preset/Bodymorphs.cpp",

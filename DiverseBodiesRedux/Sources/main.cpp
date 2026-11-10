@@ -7,6 +7,7 @@
 #include "Patches/Patches.h"
 #include "Patches/ClothMorphFilter.h"
 #include "Patches/FaceGenNullGuard.h"
+#include "Patches/FacialMorphIntensityFix.h"
 #include "DirectApply/DirectApply.h"
 #include "Patches/x-cell_patch.h"
 #include "PrismaMenu/PrismaMenu.h"
@@ -162,6 +163,9 @@ extern "C" DLLEXPORT bool F4SEAPI F4SEPlugin_Load(const F4SE::LoadInterface* a_f
 
 	// Install FaceGen null pointer guard (prevents CTD at Fallout4.exe+0x6E0887 when actor head data is null)
 	patches::InstallFaceGenNullGuard();
+
+	// Install FMIN Fix: normalizes Facial Morph Intensity to 1.0f fleet-wide (prevents collapsed/distorted faces on NPCs like Doctor Sun, Solomon, Vadim)
+	patches::InstallFacialMorphIntensityFix();
 
 	return true;
 }
